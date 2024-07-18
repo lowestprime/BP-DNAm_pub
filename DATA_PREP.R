@@ -1,21 +1,27 @@
-#### Update Sample Sheet and Process Data for GRIMAGE2 ####
-
+# Update Sample Sheet and Process Data for GRIMAGE2
 #### Data Prep ####
+# Go to project Dir
+setwd("~/project-ophoff/BP-DNAm")
+
 # load packages
 library(pacman)
-p_load(dplyr,tidyr,readxl)
+p_load(dplyr,tidyr,readxl,data.table)
 
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
 BPDNAm_SS <- read.csv("~/project-ophoff/BP-DNAm/Bipolar 2023 Sample Sheet.csv")
 BPDNAm_SS <- BPDNAm_SS %>% select(-Pool_ID)
 
 # Read in Complete BIG Data.xlsx as data frame
-bp_master <- read_excel("Complete BIG Data.xlsx")
+bp_master <- read_excel("~/project-ophoff/BP-DNAm/Complete BIG Data.xlsx")
 
-
-#### Update Sample Sheet ####
-# Rename 'Sample_id' in bp_master to 'Sample_Name' for matching
-bp_master <- bp_master %>% rename(Sample_Name = Sample_id)
+## Update Sample Sheet ##
+# Rename 'Sample_id' in bp_master to 'Sample_Name' for matching and remove duplicate entries
+bp_master <- bp_master %>% 
+  rename(Sample_Name = Sample_id) %>% 
+  group_by(Sample_Name) %>%
+  filter(`Date of sample collection` == max(`Date of sample collection`)) %>%
+  slice(1) %>%
+  ungroup()
 
 # Identify columns in bp_master that are not in BPDNAm_SS
 new_cols <- setdiff(colnames(bp_master), colnames(BPDNAm_SS))
@@ -34,10 +40,12 @@ na_summary <- BPDNAm_SS_updated %>%
   filter(NA_Count > 0) %>%
   arrange(desc(NA_Proportion))
 
-print(na_summary)
+# Export na_summary
+fwrite(na_summary, "na_summary_BPDNAm.csv")
 
 # Identify columns to keep (NA proportion < 0.2)
 cols_to_keep <- na_summary %>%
+  select(-Serum,-Plasma)
   filter(NA_Proportion < 0.2) %>%
   pull(Column)
 
@@ -46,22 +54,13 @@ BPDNAm_SS_NAs <- BPDNAm_SS_updated %>%
   select(Sample_Name, all_of(cols_to_keep)) %>%
   filter(if_any(everything(), is.na))
 
+# Export BPDNAm_SS_NAs
+fwrite(BPDNAm_SS_NAs, "na_samples_BPDNAm.csv")
+
 # Create a subset of BPDNAm_SS_updated with cols_to_keep and no NA rows
 BPDNAm_SS_updated_noNAs <- BPDNAm_SS_updated %>%
   select(Sample_Name, all_of(cols_to_keep)) %>%
   filter(if_all(everything(), ~!is.na(.)))
 
-# Print summaries
-cat("Dimensions of BPDNAm_SS_NAs:", dim(BPDNAm_SS_NAs), "\n")
-cat("Dimensions of BPDNAm_SS_updated_noNAs:", dim(BPDNAm_SS_updated_noNAs), "\n")
-
-# Verify that the sum of rows in both dataframes equals the total rows in the original
-total_rows <- nrow(BPDNAm_SS_updated)
-cat("Total rows in original dataframe:", total_rows, "\n")
-cat("Sum of rows in NA and no-NA dataframes:", 
-    nrow(BPDNAm_SS_NAs) + nrow(BPDNAm_SS_updated_noNAs), "\n")
-
 #### Process Data for GRIMAGE2 ####
-
-
 
