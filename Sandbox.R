@@ -38,3 +38,9 @@ summary(merged_data_normalized)[grepl("^smri_vol_scs", colnames(merged_data_norm
 
 # launch gptstudio
 gptstudio:::gptstudio_chat()
+
+# Remove files from R environement
+remove()
+
+# Restart RStudio session
+.rs.restartR()
