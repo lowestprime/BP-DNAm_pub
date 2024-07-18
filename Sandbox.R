@@ -19,7 +19,7 @@ combined_summary_df <- as.data.frame(as.table(summary(factor(c(merged_data_final
 setwd('~/')
 
 # take me back to proj dir
-setwd('~/project-lhernand/ABCD_Longitudinal_Subcortical_Imaging_GWAS/Analysis')
+setwd('/u/project/ophoff/cobeaman/BP-DNAm')
 
 # list column names
 paste(names(merged_data_final), collapse = ", ")

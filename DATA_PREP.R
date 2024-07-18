@@ -5,7 +5,7 @@ setwd("~/project-ophoff/BP-DNAm")
 
 # load packages
 library(pacman)
-p_load(dplyr,tidyr,readxl,data.table)
+p_load(dplyr,tidyr,readxl,data.table,lubridate)
 
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
 BPDNAm_SS <- read.csv("~/project-ophoff/BP-DNAm/Bipolar 2023 Sample Sheet.csv")
@@ -28,7 +28,16 @@ new_cols <- setdiff(colnames(bp_master), colnames(BPDNAm_SS))
 
 # Merge BPDNAm_SS with only the new columns from bp_master
 BPDNAm_SS_updated <- BPDNAm_SS %>%
-  left_join(bp_master %>% select(Sample_Name, all_of(new_cols)), by = "Sample_Name")
+  left_join(bp_master %>% select(Sample_Name, all_of(new_cols)), by = "Sample_Name") %>%
+  mutate(
+    Age_Months = interval(`Date of birth`, `Date of sample collection`) %>% 
+      time_length(unit = "months") %>% 
+      floor(),
+    Age_Years = interval(`Date of birth`, `Date of sample collection`) %>% 
+      time_length(unit = "years") %>% 
+      floor()
+  ) %>%
+  select(Sample_Name, all_of(new_cols), Age_Years, Age_Months, everything())
 
 # summarize NAs in BPDNAm_SS_updated
 na_summary <- BPDNAm_SS_updated %>%
@@ -41,13 +50,13 @@ na_summary <- BPDNAm_SS_updated %>%
   arrange(desc(NA_Proportion))
 
 # Export na_summary
-fwrite(na_summary, "na_summary_BPDNAm.csv")
+fwrite(na_summary, "BPDNAm_na_summary.csv")
 
 # Identify columns to keep (NA proportion < 0.2)
 cols_to_keep <- na_summary %>%
-  select(-Serum,-Plasma)
   filter(NA_Proportion < 0.2) %>%
-  pull(Column)
+  pull(Column) %>%
+  setdiff(c("Serum", "Plasma", "Type of sample"))
 
 # Create a subset of BPDNAm_SS_updated with cols_to_keep and NA rows
 BPDNAm_SS_NAs <- BPDNAm_SS_updated %>%
@@ -55,12 +64,16 @@ BPDNAm_SS_NAs <- BPDNAm_SS_updated %>%
   filter(if_any(everything(), is.na))
 
 # Export BPDNAm_SS_NAs
-fwrite(BPDNAm_SS_NAs, "na_samples_BPDNAm.csv")
+fwrite(BPDNAm_SS_NAs, "BPDNAm_NA_Samples.csv")
 
 # Create a subset of BPDNAm_SS_updated with cols_to_keep and no NA rows
-BPDNAm_SS_updated_noNAs <- BPDNAm_SS_updated %>%
+BPDNAm_SS_noNAs <- BPDNAm_SS_updated %>%
   select(Sample_Name, all_of(cols_to_keep)) %>%
-  filter(if_all(everything(), ~!is.na(.)))
+  filter(if_all(everything(), ~!is.na(.))) %>%
+  select(Sample_Name:`Date of sample collection`, Age_Years, Age_Months, everything())
+
+# Export BPDNAm_SS_noNAs
+fwrite(BPDNAm_SS_noNAs, "BPDNAm_Samples_noNAs.csv")
 
 #### Process Data for GRIMAGE2 ####
 
