@@ -1,0 +1,2001 @@
+Sample_id,UCLA RNA ID,Group,Gender,Diagnosis,Other info,Sample Age,RIN
+GK0063-001,108756A,Affected,Male,Schizophrenia,extracted 2010,36,
+GK0159-001,109165B,Affected,Male,Schizophrenia,extracted 2010,23,8
+GK0238-001,118039A,Affected,Male,Schizophrenia,extracted 2010,22,7.9
+GK0246-001,109033B,Affected,Male,Schizophrenia,extracted 2010,23,7.2
+GK0257-003,108527A,Affected,Male,Schizophrenia,extracted 2010,30,8.3
+GK0347-003,108684B,Affected,Male,Schizophrenia,extracted 2010,40,2.9
+GK0369-001,108916A,Affected,Male,Schizophrenia,extracted 2010,29,7.4
+GK0388-003,108603B,Affected,Female,Schizophrenia,extracted 2010,31,6.3
+GK0395-003,108720A,Affected,Male,Schizophrenia,extracted 2010,30,8.3
+GK0415-001,109414A,Affected,Male,Schizophrenia,extracted 2010,19,7.2
+GK1153-005,099189B,Affected,Female,Schizophrenia,extracted 2010,31,2.7
+GK1208-003,099258B,Affected,Male,Schizophrenia,extracted 2010,28,3.8
+GK1316-004,108543A,Affected,Male,Schizophrenia,extracted 2010,33,1.1
+GK1337-001,108306B,Affected,Male,Schizophrenia,extracted 2010,22,7.1
+GK1360-001,108929B,Affected,Male,Schizophrenia,extracted 2010,25,4.8
+GK1376-001,108672B,Affected,Male,Schizophrenia,extracted 2010,24,
+GK1380-001,109496A,Affected,Male,Schizophrenia,extracted 2010,28,7.1
+GK1381-001,108305A,Affected,Male,Schizophrenia,extracted 2010,37,5.2
+GK1401-001,108486A,Affected,Male,Schizophrenia,extracted 2010,26,2.8
+GK1413-001,109197B,Affected,Male,Schizophrenia,extracted 2010,25,7
+GK1416-003,108545A,Affected,Male,Schizophrenia,extracted 2010,41,
+GK1419-001,108845B,Affected,Male,Schizophrenia,extracted 2010,22,
+GK1423-003,108982A,Affected,Female,Schizophrenia,extracted 2010,31,6.5
+GK1434-001,109080A,Affected,Male,Schizophrenia,extracted 2010,35,6.3
+GK1436-001,108942A,Affected,Male,Schizophrenia,extracted 2010,25,3.3
+GK1444-004,108963A,Affected,Male,Schizophrenia,extracted 2010,33,7.5
+GK1447-003,109053B,Affected,Female,Schizophrenia,extracted 2010,30,
+GK1448-001,109097A,Affected,Male,Schizophrenia,extracted 2010,41,7.9
+GK1459-001,109134B,Affected,Male,Schizophrenia,extracted 2010,23,7
+GK1461-003,109025A,Affected,Male,Schizophrenia,extracted 2010,29,7.5
+GK1468-001,118033B,Affected,Male,Schizophrenia,extracted 2010,25,
+GK1469-001,109449B,Affected,Female,Schizophrenia,extracted 2010,34,2.5
+GK1471-001,109629A,Affected,Male,Schizophrenia,extracted 2010,29,8.2
+GK1476-003,109659A,Affected,Male,Schizophrenia,extracted 2010,45,7.4
+GK2020-001,108951B,Affected,Male,Schizophrenia,extracted 2010,35,5.5
+GK2056-001,109107A,Affected,Female,Schizophrenia,extracted 2010,44,3
+GK2110-001,118122A,Affected,Male,Schizophrenia,extracted 2010,27,6
+GK2154-001,109611B,Affected,Male,Schizophrenia,extracted 2010,37,6.2
+GK2172-003,109489A,Affected,Male,Schizophrenia,extracted 2010,36,7.6
+GK2202-001,118031A,Affected,Male,Schizophrenia,extracted 2010,38,6.6
+GK2223-001,108887B,Affected,Male,Schizophrenia,extracted 2010,27,3
+GK2241-003,108534B,Affected,Male,Schizophrenia,extracted 2010,29,3
+GK2250-001,109675B,Affected,Female,Schizophrenia,extracted 2010,42,6.7
+GK2252-003,108288A,Affected,Male,Schizophrenia,extracted 2010,39,5.7
+GK2253-003,108742A,Affected,Male,Schizophrenia,extracted 2010,46,6.4
+GK2280-004,109062B,Affected,Male,Schizophrenia,extracted 2010,36,
+GK2290-004,109152B,Affected,Male,Schizophrenia,extracted 2010,32,4.4
+GK2292-004,108323B,Affected,Male,Schizophrenia,extracted 2010,26,
+GK2293-003,109212A,Affected,Male,Schizophrenia,extracted 2010,34,2.6
+GK2303-004,109346B,Affected,Male,Schizophrenia,extracted 2010,27,7.1
+GK2307-003,118027A,Affected,Male,Schizophrenia,extracted 2010,38,3.1
+GK2310-003,108448A,Affected,Female,Schizophrenia,extracted 2010,40,6.4
+GK2318-003,108836A,Affected,Male,Schizophrenia,extracted 2010,30,2.6
+GK2320-001,109043A,Affected,Male,Schizophrenia,extracted 2010,39,
+GK2321-003,108616B,Affected,Male,Schizophrenia,extracted 2010,25,2.5
+GK2322-001,108721B,Affected,Male,Schizophrenia,extracted 2010,29,6.9
+GK2341-003,108515A,Affected,Female,Schizophrenia,extracted 2010,26,6.9
+GK2343-004,109111A,Affected,Male,Schizophrenia,extracted 2010,38,
+GK2349-001,109276B,Affected,Male,Schizophrenia,extracted 2010,28,
+GK2354-003,108855B,Affected,Female,Schizophrenia,extracted 2010,36,3.9
+GK2372-004,109677B,Affected,Male,Schizophrenia,extracted 2010,33,
+GK2383-003,109385A,Affected,Female,Schizophrenia,extracted 2010,24,6.9
+GK2385-003,109609A,Affected,Male,Schizophrenia,extracted 2010,24,7.1
+GK2397-003,109070B,Affected,Male,Schizophrenia,extracted 2010,33,7.5
+GK2403-003,109654A,Affected,Male,Schizophrenia,extracted 2010,29,5.5
+GK2404-003,118067B,Affected,Male,Schizophrenia,extracted 2010,38,8.1
+GK2405-004,109697B,Affected,Male,Schizophrenia,extracted 2010,28,5.8
+GK2408-003,109394B,Affected,Male,Schizophrenia,extracted 2010,32,6.5
+GK2412-003,109578B,Affected,Male,Schizophrenia,extracted 2010,26,1
+GK3134-001,108744A,Affected,Male,Schizophrenia,extracted 2010,26,5.8
+GK3309-001,108832B,Affected,Male,Schizophrenia,extracted 2010,30,7.1
+GK3364-004,108232A,Affected,Male,Schizophrenia,extracted 2010,29,
+GK3389-003,109633A,Affected,Male,Schizophrenia,extracted 2010,21,8.4
+GK3390-003,109356A,Affected,Female,Schizophrenia,extracted 2010,25,3.1
+GK3401-003,109696A,Affected,Female,Schizophrenia,extracted 2010,26,7
+GK3409-003,109295A,Affected,Female,Schizophrenia,extracted 2010,26,2.4
+GK3423-003,109296A,Affected,Female,Schizophrenia,extracted 2010,21,3
+GK3509-004,118154A,Affected,Female,Schizophrenia,extracted 2010,29,
+GK3523-001,108612B,Affected,Female,Schizophrenia,extracted 2010,48,2.3
+GK3529-004,109632A,Affected,Male,Schizophrenia,extracted 2010,31,8.2
+GK3535-001,109637B,Affected,Male,Schizophrenia,extracted 2010,50,7.3
+GK3567-003,109226B,Affected,Female,Schizophrenia,extracted 2010,22,5.9
+GK3568-004,108470A,Affected,Male,Schizophrenia,extracted 2010,20,
+GK3574-003,109299B,Affected,Male,Schizophrenia,extracted 2010,29,
+GK3575-006,109256B,Affected,Male,Schizophrenia,extracted 2010,34,7.9
+GK3577-001,108713B,Affected,Male,Schizophrenia,extracted 2010,37,4.1
+GK3581-005,109543B,Affected,Male,Schizophrenia,extracted 2010,28,2.5
+GK3582-003,109382A,Affected,Female,Schizophrenia,extracted 2010,21,6.6
+GK3584-004,108973B,Affected,Male,Schizophrenia,extracted 2010,23,6.1
+GK3588-003,108445A,Affected,Male,Schizophrenia,extracted 2010,35,
+GK3598-003,108680A,Affected,Female,Schizophrenia,extracted 2010,27,
+GK3599-001,108709B,Affected,Male,Schizophrenia,extracted 2010,34,3.4
+GK3603-003,109259B,Affected,Male,Schizophrenia,extracted 2010,24,4
+GK3607-003,118019A,Affected,Male,Schizophrenia,extracted 2010,26,
+GK3612-003,109662A,Affected,Female,Schizophrenia,extracted 2010,35,6.6
+GK3616-003,108814A,Affected,Male,Schizophrenia,extracted 2010,29,2.7
+GK3627-003,118020A,Affected,Male,Schizophrenia,extracted 2010,34,7.5
+GK3630-003,109427A,Affected,Male,Schizophrenia,extracted 2010,34,
+GK3631-004,108841A,Affected,Male,Schizophrenia,extracted 2010,20,2.8
+GK3635-001,109499A,Affected,Male,Schizophrenia,extracted 2010,34,7.4
+GK3637-001,109387A,Affected,Male,Schizophrenia,extracted 2010,33,
+GK3640-001,109348A,Affected,Male,Schizophrenia,extracted 2010,48,
+GK3642-005,109325A,Affected,Male,Schizophrenia,extracted 2010,32,
+SC4384-201,108691A,Affected,Male,Schizophrenia,extracted 2010,30,4.5
+SC8027-001,109282B,Affected,Male,Schizophrenia,extracted 2010,27,8.7
+431-BG00151,11R0563,Brother,Male,Control,No diagnosis,65,9
+431-BG00156,11R0551,Brother,Male,Control,No diagnosis,46,8.4
+431-BG00182,11R0615,Brother,Male,Control,No diagnosis,67,8.1
+431-BG00308,12R0154,Brother,Male,Control,No diagnosis,63,8.9
+431-BG00480,12R0457,Brother,Male,Control,No diagnosis,61,8.4
+431-BG00484,12R0466,Brother,Male,Control,No diagnosis,56,8.1
+431-BG00519,12R0418,Brother,Male,Control,No diagnosis,66,8.8
+431-BG00822,12R1543,Brother,Male,Control,No diagnosis,62,9.3
+431-BG01038,12R2353,Brother,Male,Control,No diagnosis,70,9.1
+431-BG01789,13R1522,Brother,Male,Control,No diagnosis,62,8.6
+431-BG01803,13R1436,Brother,Male,Control,No diagnosis,71,9.2
+431-BG01821,13R1526,Brother,Male,Control,No diagnosis,43,8.4
+431-BG01842,13R1561,Brother,Male,Control,No diagnosis,55,8.3
+431-BG01953,14R1879,Brother,Male,Control,No diagnosis,37,8.9
+431-BG02007,13R1753,Brother,Male,Control,No diagnosis,43,8.8
+431-BG02116,14R2496,Brother,Male,Control,No diagnosis,63,8.9
+431-BG02363,14R2314,Brother,Male,Control,No diagnosis,52,9.2
+431-BG02511,14R0412,Brother,Male,Control,No diagnosis,67,8.3
+431-BG02767,15R0066,Brother,Male,Control,No diagnosis,26,7.6
+431-BG02771,14R0452,Brother,Male,Control,No diagnosis,58,9.1
+431-BG02793,14R0500,Brother,Male,Control,No diagnosis,60,8.6
+431-BG50031,15R0139,Brother,Male,Control,No diagnosis,44,8.3
+431-BG50061,15R0144,Brother,Male,Control,No diagnosis,34,8.3
+431-BG00071,11R0883,Child,Male,Control,No diagnosis,33,8.8
+431-BG00097,11R0588,Child,Male,Control,No diagnosis,21,8.5
+431-BG00337,12R0166,Child,Male,Control,No diagnosis,34,8.9
+431-BG00376,12R0238,Child,Female,Control,No diagnosis,34,8.4
+431-BG00409,12R0193,Child,Female,Control,No diagnosis,29,8.3
+431-BG00525,12R0539,Child,Male,Control,No diagnosis,25,8.1
+431-BG00550,12R0863,Child,Male,Control,No diagnosis,47,8.3
+431-BG00579,12R0811,Child,Male,Control,No diagnosis,25,8.3
+431-BG00631,12R0813,Child,Male,Control,No diagnosis,24,8.1
+431-BG00644,12R0838,Child,Male,Control,No diagnosis,23,8.7
+431-BG01251,13R0099,Child,Female,Control,No diagnosis,19,8.7
+431-BG01371,13R0393,Child,Female,Control,No diagnosis,35,8.3
+431-BG01978,14R1868,Child,Female,Control,No diagnosis,33,9.2
+431-BG02105,14R2179,Child,Female,Control,No diagnosis,29,9.2
+431-BG02244,14R2218,Child,Male,Control,No diagnosis,36,8.4
+431-BG02358,14R0368,Child,Female,Control,No diagnosis,21,8.6
+431-BG02549,15R0760,Child,Female,Control,No diagnosis,20,8.6
+431-BG02708,15R0415,Child,Female,Control,No diagnosis,46,8.1
+B102,12R0752,Control,Female,Control,0,46,8.3
+B105,12R0755,Control,Female,Control,0,62,8.4
+B11,11R0376,Control,Female,Control,0,54,8.4
+B110,12R0804,Control,Male,Control,0,25,7.9
+B121,12R2088,Control,#N/A,Control,0,#N/A,8.7
+B126,13R1744,Control,#N/A,Control,0,#N/A,8.6
+B128,13R1746,Control,#N/A,Control,0,#N/A,8.8
+B132,14R0393,Control,#N/A,Control,0,#N/A,8
+B15,11R0362,Control,Female,Control,0,67,7.8
+B20,11R0351,Control,unknown,Control,0,unknown,N/A
+B21,11R0357,Control,Female,Control,0,49,7.4
+B24,11R0315,Control,Female,Control,0,64,7.4
+B25,11R0301,Control,Female,Control,0,65,7.6
+B26,11R0303,Control,Male,Control,0,72,7.8
+B28,11R0337,Control,Male,Control,0,unknown,8.1
+B32,11R0321,Control,Male,Control,0,46,6.7
+B33,11R0313,Control,Male,Control,0,67,8.1
+B34,11R318,Control,Female,Control,0,44,7.3
+B35,11R0328,Control,Female,Control,0,52,8
+B37,11R0309,Control,Female,Control,0,54,7
+B38,11R0324,Control,Male,Control,0,50,8.5
+B39,12R0030,Control,Male,Control,0,50,9
+B4,12R0004,Control,Female,Control,0,44,7.2
+B41,11R0319,Control,Female,Control,0,58,8
+B43,11R0241,Control,Female,Control,0,67,7.6
+B45,11R0012,Control,Male,Control,0,unknown,9.2
+B46,11R0233,Control,Male,Control,0,unknown,8.5
+B47,11R0227,Control,Female,Control,0,45,7.9
+B49,11R0237,Control,Female,Control,0,60,8.3
+B50,11R0007,Control,Female,Control,0,60,N/A
+B51,11R0011,Control,Female,Control,0,65,8.2
+B52,11R0010,Control,Male,Control,0,45,8.1
+B55,11R0223,Control,unknown,Control,0,72,9
+B58,11R0235,Control,Female,Control,0,45,N/A
+B6,12R0006,Control,Female,Control,0,45,8.3
+B62,11R0224,Control,Female,Control,0,unknown,7.9
+B72,11R0094,Control,Male,Control,0,53,9
+B81,11R0097,Control,Male,Control,0,6,8.1
+B82,11R0404,Control,unknown,Control,0,unknown,8.2
+B83,11R0384,Control,Female,Control,0,18,N/A
+B88,11R0399,Control,Female,Control,0,60,7.8
+B9,12R0029,Control,Female,Control,0,67,5.4
+B90,11R0389,Control,Male,Control,0,62,7.4
+B95,12R0745,Control,Female,Control,0,59,8.3
+B97,12R0761,Control,Female,Control,0,36,7.8
+SF0002,12R0339,Control,Female,Control,0,62,8.3
+SF0004,12R0341,Control,Female,Control,0,unk,8.2
+SF0006,12R0411,Control,Female,Control,0,unk,2.5
+SF0015,12R1371,Control,Male,Control,0,n/a,6.1
+SF0017,12R1818,Control,Male,Control,0,n/a,7.8
+SF0019,12R1820,Control,Female,Control,0,0,7.6
+SF0021,12R1821,Control,Female,Control,0,49,8.1
+SF0023,12R1828,Control,Female,Control,0,72,7.5
+SF0025,12R1830,Control,Female,Control,0,66,7.1
+SF0030,12R1889,Control,Male,Control,0,63,8
+SF0032,12R1881,Control,Male,Control,0,54,7.1
+SF0034,12R1937,Control,Female,Control,0,66,6.9
+SF0036,12R1939,Control,Female,Control,0,40,7.8
+SF0038,12R1941,Control,Female,Control,0,50,8.1
+SF0041,12R2149,Control,Female,Control,0,76,6.1
+SF0043,12R2332,Control,Female,Control,0,64,6.9
+SF0047,12R2151,Control,Male,Control,0,65,9
+SF0049,12R2321,Control,Female,Control,0,51,6.8
+SF0052,12R2324,Control,Female,Control,0,40,7
+SF0053,12R2337,Control,Male,Control,0,67,8.2
+SF0056,12R2328,Control,Male,Control,0,70,7.3
+SF0057,12R2329,Control,Female,Control,0,63,7.2
+SF0059,12R2331,Control,Male,Control,0,24,7.7
+SF0063,12R2351,Control,Female,Control,0,49,9.1
+SF0066,12R2363,Control,Female,Control,0,67,8.4
+SF0069,12R2366,Control,Female,Control,0,67,8.1
+SF0071,12R2368,Control,Female,Control,0,69,7.5
+SF0073,13R0313,Control,Female,Control,0,61,8.2
+SF0076,13R0316,Control,Female,Control,0,55,8.2
+SF0078,13R0612,Control,Male,Control,0,50,7.7
+SF0080,13R0613,Control,Female,Control,0,50,7.5
+SF0085,13R0616,Control,Female,Control,0,58,3.4
+SF0088,13R1134,Control,Female,Control,0,,5.5
+SF0091,13R1123,Control,Male,Control,0,53,6.5
+SF0094,13R1127,Control,Female,Control,0,81,6.4
+SF0096,13R1129,Control,Male,Control,0,62,7.3
+SF0098,13R1131,Control,Female,Control,0,60,8.4
+SF0099,13R1143,Control,Female,Control,0,41,7.2
+SF0100,13R1132,Control,0,Control,0,47,7.8
+SF0103,13R1368,Control,Female,Control,0,,2.4
+SF0104,13R1346,Control,Female,Control,0,65,N/A
+SF0107,13R1348,Control,Female,Control,0,,6.4
+SF0109,13R1408,Control,Male,Control,0,,N/A
+SF0110,13R1600,Control,0,Control,0,,7.5
+SF0113,13R1632,Control,Female,Control,0,62,7.4
+SF0121,13R1677,Control,Male,Control,0,66,7.3
+SF0124,13R1680,Control,Female,Control,0,60,7.4
+SF0125,13R1681,Control,Female,Control,0,63,7.6
+SF0136,14R1988,Control,Female,Control,0,54,5.6
+SF0146,14R1795,Control,Male,Control,0,57,N/A
+SF0150,14R1840,Control,Female,Control,0,42,7.3
+SF0151,14R1841,Control,Female,Control,0,46,7.3
+SF0162,14R1902,Control,Female,Control,0,,8.8
+SF0191,14R0080,Control,Female,Control,0,40,7.7
+SF0199,14R0140,Control,Male,Control,0,66,8
+SF0202,14R0143,Control,Male,Control,0,71,8.1
+SF0208,14R0225,Control,Female,Control,0,49,7.5
+SF0212,15R0038,Control,Male,Control,0,85,8
+SF0216,15R0099,Control,Female,Control,0,66,8.4
+SF0222,15R0320,Control,Female,Control,0,11/165,7.6
+SF0225,15R0323,Control,Male,Control,0,58,7.4
+SF0229,15R0327,Control,Male,Control,0,64,7.2
+SF0232,15R0329,Control,Male,Control,0,,7.9
+SF0240,15R0446,Control,Female,Control,0,29,4.3
+SF0243,15R0449,Control,Female,Control,0,43,7.9
+SF0245,15R0483,Control,Male,Control,0,44,7
+B17,11R0346,Control,Female,Control, (daughter of B16),33,7.6
+B84,11R0392,Control,Male,Control, (parent B83),53,8.1
+B85,11R0382,Control,Female,Control, (parent B83),42,8.4
+B93,11R0408,Control,Female,Control, (twin B92),unknown,8.6
+SF0079,13R0630,Control,Female,Control,Associated to patient, ,7.9
+431-BG01654,13R0968,Control,Male,Bipolar,Bipolar II,27,8.7
+431-BG02273,14R2170,Control,Male,Bipolar,Bipolar II,60,9.1
+SF0027,12R1832,Control,Male,Control,Brother,57,7.7
+SF0090,13R1124,Control,Female,Control,Daughter,30,6.7
+SF0112,13R1631,Control,Female,Control,Daughter,50,7.7
+SF0118,13R1674,Control,Female,Control,Daughter,27,6
+SF0119,13R1675,Control,Female,Control,Daughter,31,7.5
+SF0129,13R1696,Control,Female,Control,Daughter,48,8.7
+SF0132,13R1725,Control,Female,Control,Daughter,43,7.8
+SF0144,13R1780,Control,Female,Control,Daughter,30,8.6
+SF0159,14R1878,Control,Female,Control,Daughter,,9.1
+SF0164,14R1992,Control,Female,Control,Daughter,,8.4
+SF0166,14R1994,Control,Female,Control,Daughter,,8.8
+SF0235,15R0394,Control,Female,Control,daughter,36,7.4
+SF0215,15R0098,Control,Female,Control,Daughter ,26,8.8
+GK0133-001,109133B,Control,Female,Control,extracted 2010,27,6.9
+GK0155-004,108829A,Control,Male,Control,extracted 2010,23,8.7
+GK0158-004,109492A,Control,Female,Control,extracted 2010,29,7.5
+GK0162-001,109270B,Control,Female,Control,extracted 2010,23,
+GK0166-001,099177B,Control,Male,Control,extracted 2010,32,8
+GK0228-001,118037B,Control,Male,Control,extracted 2010,35,8.2
+GK0234-001,099157B,Control,Male,Control,extracted 2010,32,9.2
+GK0251-001,109354B,Control,Male,Control,extracted 2010,23,8.1
+GK0322-001,109201B,Control,Male,Control,extracted 2010,46,7.6
+GK0350-001,109462A,Control,Female,Control,extracted 2010,22,
+GK0352-001,109284B,Control,Male,Control,extracted 2010,22,8.3
+GK0370-003,108698A,Control,Male,Control,extracted 2010,22,6.9
+GK0371-003,109108B,Control,Female,Control,extracted 2010,26,6.9
+GK0398-001,109518B,Control,Female,Control,extracted 2010,44,6.2
+GK0401-003,109392B,Control,Male,Control,extracted 2010,40,7.4
+GK0404-001,108961A,Control,Female,Control,extracted 2010,36,
+GK0405-001,108725B,Control,Female,Control,extracted 2010,45,6.8
+GK0411-001,108910A,Control,Male,Control,extracted 2010,42,8.2
+GK0422-001,109386B,Control,Male,Control,extracted 2010,25,7
+GK0427-001,109687B,Control,Male,Control,extracted 2010,24,8.5
+GK0429-003,109686B,Control,Male,Control,extracted 2010,47,8.7
+GK0433-001,118011A,Control,Female,Control,extracted 2010,27,6.4
+GK0437-001,118171A,Control,Male,Control,extracted 2010,33,8.8
+GK0438-001,118113A,Control,Male,Control,extracted 2010,27,5.9
+GK0448-001,118136B,Control,Male,Control,extracted 2010,24,8.3
+GK0450-001,118168B,Control,Female,Control,extracted 2010,27,
+GK0454-001,118245A,Control,Female,Control,extracted 2010,25,6.5
+GK0456-001,118253A,Control,Male,Control,extracted 2010,27,7.5
+GK0461-001,118218A,Control,Female,Control,extracted 2010,31,1
+GK0466-001,118159B,Control,Female,Control,extracted 2010,28,
+GK0469-003,118070A,Control,Female,Control,extracted 2010,30,7.7
+GK0477-001,118060A,Control,Male,Control,extracted 2010,40,8.8
+GK1255-001,099193B,Control,Female,Control,extracted 2010,33,
+GK1261-001,108950A,Control,Male,Control,extracted 2010,56,7.2
+GK1276-001,108533A,Control,Male,Control,extracted 2010,34,
+GK1278-001,099161B,Control,Male,Control,extracted 2010,26,8.4
+GK1317-001,109289A,Control,Male,Control,extracted 2010,43,
+GK1349-001,108516A,Control,Female,Control,extracted 2010,48,7.8
+GK1351-001,108517B,Control,Female,Control,extracted 2010,49,7.4
+GK1352-001,108500B,Control,Female,Control,extracted 2010,42,7.1
+GK1354-001,108518B,Control,Female,Control,extracted 2010,47,7.5
+GK1396-001,109202B,Control,Male,Control,extracted 2010,23,2.9
+GK1403-001,108856B,Control,Female,Control,extracted 2010,56,2.7
+GK1406-001,108457A,Control,Male,Control,extracted 2010,28,
+GK1441-001,109577A,Control,Female,Control,extracted 2010,45,7.7
+GK1449-001,109372B,Control,Male,Control,extracted 2010,30,
+GK1457-001,118063A,Control,Female,Control,extracted 2010,28,7.4
+GK2145-001,118022A,Control,Female,Control,extracted 2010,32,7.7
+GK2188-001,109096A,Control,Female,Control,extracted 2010,31,
+GK2270-001,099246B,Control,Male,Control,extracted 2010,50,5.6
+GK2273-001,108231A,Control,Female,Control,extracted 2010,39,8.3
+GK2398-001,109039B,Control,Female,Control,extracted 2010,35,5.8
+GK2399-001,109401A,Control,Male,Control,extracted 2010,46,7.6
+GK2411-001,109324B,Control,Female,Control,extracted 2010,42,8.6
+GK2413-001,109477A,Control,Male,Control,extracted 2010,50,6.6
+GK3047-004,108674B,Control,Male,Control,extracted 2010,24,7.2
+GK3136-001,109634A,Control,Female,Control,extracted 2010,50,7.5
+GK3155-001,108954A,Control,Female,Control,extracted 2010,21,
+GK3208-002,109248A,Control,Female,Control,extracted 2010,46,7.8
+GK3210-003,108762A,Control,Male,Control,extracted 2010,39,
+GK3211-002,109037A,Control,Female,Control,extracted 2010,50,
+GK3218-001,109565B,Control,Male,Control,extracted 2010,35,1
+GK3220-001,109507A,Control,Male,Control,extracted 2010,30,
+GK3222-001,109557B,Control,Male,Control,extracted 2010,30,7.9
+GK3223-001,109429A,Control,Male,Control,extracted 2010,22,3.5
+GK3225-001,118124A,Control,Male,Control,extracted 2010,23,7.4
+GK3302-002,108304B,Control,Female,Control,extracted 2010,54,5.6
+GK3353-001,109688B,Control,Female,Control,extracted 2010,24,
+GK3412-001,109263B,Control,Female,Control,extracted 2010,44,
+GK3420-001,109228B,Control,Male,Control,extracted 2010,43,7
+GK3444-001,109209A,Control,Female,Control,extracted 2010,32,7.3
+GK3453-001,118147A,Control,Female,Control,extracted 2010,29,
+GK3474-001,109264A,Control,Female,Control,extracted 2010,25,7.5
+GK3475-001,118009B,Control,Male,Control,extracted 2010,38,
+GK3487-001,109262B,Control,Male,Control,extracted 2010,26,
+GK3491-001,109301B,Control,Female,Control,extracted 2010,29,
+GK3492-001,109524A,Control,Female,Control,extracted 2010,27,
+GK3496-001,108717B,Control,Female,Control,extracted 2010,44,5
+GK3527-001,108330B,Control,Female,Control,extracted 2010,32,6.7
+GK3579-001,108450A,Control,Female,Control,extracted 2010,42,
+GK3617-001,109523A,Control,Female,Control,extracted 2010,51,7.8
+GK3643-001,109457A,Control,Female,Control,extracted 2010,44,8.1
+SF0045,12R2125,Control,Male,Control,Family,48,8.4
+S0314,118326B,Control,Female,Control,LQ000B-001,47,7.6
+S0318,118327B,Control,Female,Control,LQ000C-001,51,8.4
+K0224,118329B,Control,Male,Control,LQ000D-001,32,8.4
+K0235,118328A,Control,Male,Control,LQ000E-001,36,8.7
+S0323,118343B,Control,Male,Control,LQ000G-001,57,9
+J0161,108382B,Control,Male,Control,LQ0269-001,38,
+J0190,108557B,Control,Male,Control,LQ0283-001,51,
+K0120,108556B,Control,Female,Control,LQ0284-001,57,
+J0191,108702A,Control,Male,Control,LQ0299-001,48,8.5
+J0202,108811A,Control,Male,Control,LQ0305-001,27,#N/A
+J0207,108853A,Control,Male,Control,LQ0311-001,22,8.6
+A0077,108972A,Control,Male,Control,LQ0317-001,44,8.1
+K0145,109013A,Control,Male,Control,LQ0323-001,40,8.6
+A0088,109041A,Control,Female,Control,LQ0326-001,33,7.6
+J0194,109076A,Control,Male,Control,LQ0329-001,55,9.1
+J0225,109084A,Control,Female,Control,LQ0339-001,25,8.7
+J0226,109085A,Control,Male,Control,LQ0340-001,30,8.9
+A0089,109104A,Control,Male,Control,LQ0345-001,48,8.2
+J0212,109131B,Control,Male,Control,LQ0348-001,41,9.2
+K0142,109113A,Control,Male,Control,LQ0350-001,49,8.1
+K0136,109112A,Control,Female,Control,LQ0351-001,50,8.2
+J0233,109187A,Control,Male,Control,LQ0358-001,50,7.1
+S0211,109190A,Control,Male,Control,LQ0361-001,37,7.3
+J0236,109251A,Control,Female,Control,LQ0364-001,42,7.8
+J0220,109279A,Control,Male,Control,LQ0371-001,41,8.1
+J0238,109280A,Control,Male,Control,LQ0372-001,23,N/A
+K0156,109328A,Control,Male,Control,LQ0376-001,28,8.5
+K0171,109423A,Control,Male,Control,LQ0383-001,58,8.2
+S0244,109463A,Control,Male,Control,LQ0387-001,46,8.5
+K0175,109470A,Control,Male,Control,LQ0389-001,54,8.5
+K0184,109472A,Control,Female,Control,LQ0391-001,48,7.4
+S0243,109491A,Control,Male,Control,LQ0393-001,46,6.7
+J0215,109527A,Control,Male,Control,LQ0395-001,54,8.2
+K0169,109506A,Control,Male,Control,LQ0397-001,20,N/A
+K0187,109526A,Control,Male,Control,LQ0398-001,60,N/A
+K0161,109550A,Control,Male,Control,LQ0401-001,38,7.6
+A0108,109540A,Control,Male,Control,LQ0402-001,42,8
+S0246,109528B,Control,Male,Control,LQ0409-001,37,8.9
+S0248,109560A,Control,Male,Control,LQ0410-001,51,7
+S0261,109531A,Control,Male,Control,LQ0415-001,48,8.4
+S0250,109614A,Control,Female,Control,LQ0419-001,57,
+A0115,109685A,Control,Male,Control,LQ0430-001,48,9.1
+S0266,109684A,Control,Female,Control,LQ0431-001,48,8.5
+A0110,118058A,Control,Male,Control,LQ0434-001,48,8.5
+S0272,118036A,Control,Male,Control,LQ0438-001,52,8.6
+K0208,118071A,Control,Female,Control,LQ0440-001,19,8.7
+K0202,118114A,Control,Male,Control,LQ0446-001,48,
+K0212,118127A,Control,Male,Control,LQ0448-001,51,
+J0252,118129A,Control,Male,Control,LQ0451-001,58,
+K0215,118143A,Control,Male,Control,LQ0456-001,35,
+J0258,118132A,Control,Male,Control,LQ0459-001,31,
+J0263,118215A,Control,Male,Control,LQ0472-001,33,
+J0216,118228A,Control,Male,Control,LQ0478-001,29,
+S0300,118229A,Control,Male,Control,LQ0479-001,58,7.7
+S0299,118230A,Control,Male,Control,LQ0480-001,29,#N/A
+K0209,118231B,Control,Female,Control,LQ0481-001,46,8.4
+K0222,118242A,Control,Male,Control,LQ0482-001,49,7.5
+S0302,118252A,Control,Male,Control,LQ0484-001,49,9.1
+A0135,118266A,Control,Male,Control,LQ0485-001,45,8.9
+J0264,118267A,Control,Male,Control,LQ0486-001,36,8.9
+J0270,118256B,Control,Female,Control,LQ0488-001,27,8.6
+K0229,118265A,Control,Female,Control,LQ0490-001,48,7.6
+K0233,118289A,Control,Female,Control,LQ0492-001,33,6.5
+J0186,118291A,Control,Male,Control,LQ0494-001,#N/A,8.2
+A0130,118306B,Control,Female,Control,LQ0496-001,60,
+S0316,118318A,Control,Male,Control,LQ0497-001,24,
+A0136,118349A,Control,Female,Control,LQ0499-001,25,
+A0137,118350A,Control,Male,Control,LQ0500-001,23,
+A0138,118351A,Control,Female,Control,LQ0501-001,#N/A,
+K0238,118359A,Control,Male,Control,LQ0502-001,25,
+S0321,118352A,Control,Male,Control,LQ0504-001,34,
+S0324,12R0363,Control,Female,Control,LQ0505-001,22,
+S0329,12R0367,Control,Female,Control,LQ0506-001,47,
+S0312,12R0372,Control,Male,Control,LQ0507-001,52,
+K0250,12R0350,Control,Male,Control,LQ0508-001,50,
+S0332,12R0362,Control,Male,Control,LQ0509-001,34,
+S0322,12R0354,Control,Male,Control,LQ0513-001,60,
+K0273,12R0349,Control,Female,Control,LQ0521-001,33,
+K0291,12R0346,Control,Female,Control,LQ0543-001,37,
+S0365,12R0356,Control,Female,Control,LQ0544-001,47,
+S0358,12R0380,Control,Male,Control,LQ0546-001,44,
+S0361,12R0381,Control,Male,Control,LQ0547-001,#N/A,
+A0155,12R0388,Control,Female,Control,LQ0548-001,46,
+K0277,12R0383,Control,Male,Control,LQ0549-001,44,
+K0292,12R0351,Control,Female,Control,LQ0550-001,48,
+S0366,12R0359,Control,Female,Control,LQ0551-001,53,
+A0157,12R0360,Control,Female,Control,LQ0552-001,#N/A,
+K0294,12R0393,Control,Female,Control,LQ0553-001,41,
+K0303,12R0342,Control,Female,Control,LQ0554-001,52,
+K0307,12R0403,Control,Female,Control,LQ0556-001,25,
+A0158,12R0394,Control,Male,Control,LQ0557-001,44,
+K0295,12R0344,Control,Female,Control,LQ0558-001,43,
+K0304,12R0355,Control,Male,Control,LQ0559-001,52,
+K0305,12R0352,Control,Female,Control,LQ0560-001,41,
+K0296,12R0348,Control,Male,Control,LQ0561-001,55,
+S0372,12R0369,Control,Male,Control,LQ0562-001,35,
+A0160,12R0364,Control,Female,Control,LQ0563-001,27,
+K0312,12R0343,Control,Female,Control,LQ0564-001,56,
+S0374,12R0370,Control,Male,Control,LQ0565-001,57,
+SF0141,14R1809,Control,Female,Control,Mother,70,8.3
+SF0221,15R0104,Control,Female,Control,Mother to SF220,74,8.4
+SF0140,14R1808,Control,Female,Control,Niece,55,7.5
+431-BG00194,12R0850,Control,Female,Control,No diagnosis,79,8.1
+431-BG00214,12R0124,Control,Female,Control,No diagnosis,60,NA
+431-BG00226,11R0579,Control,Male,Control,No diagnosis,22,8.9
+431-BG00300,12R0271,Control,Female,Control,No diagnosis,49,N/A
+431-BG00350,12R0243,Control,Female,Control,No diagnosis,29,8.8
+431-BG00559,12R0439,Control,Female,Control,No diagnosis,20,N/A
+431-BG00678,12R0842,Control,Male,Control,No diagnosis,26,8.1
+431-BG00681,12R0990,Control,Female,Control,No diagnosis,55,8.8
+431-BG00682,12R0859,Control,Female,Control,No diagnosis,27,8.4
+431-BG00791,12R1471,Control,Male,Control,No diagnosis,65,9
+431-BG00871,12R1342,Control,Female,Control,No diagnosis,61,8.6
+431-BG00874,15R0073,Control,Female,Control,No diagnosis,65, N/A
+431-BG00903,12R2227,Control,Female,Control,No diagnosis,28,N/A
+431-BG00930,12R2170,Control,Female,Control,No diagnosis,49,8.8
+431-BG00952,12R2051,Control,Male,Control,No diagnosis,49,8.4
+431-BG00953,12R2006,Control,Female,Control,No diagnosis,52,8.2
+431-BG00969,12R2271,Control,Female,Control,No diagnosis,66,8.9
+431-BG01003,12R2184,Control,Male,Control,No diagnosis,26,5.9
+431-BG01082,13R0324,Control,Female,Control,No diagnosis,46,8.5
+431-BG01233,13R0004,Control,Female,Control,No diagnosis,25,4.9
+431-BG01367,13R0478,Control,Male,Control,No diagnosis,38,9.3
+431-BG01384,13R0533,Control,Female,Control,No diagnosis,54,8.5
+431-BG01407,13R0714,Control,Male,Control,No diagnosis,56,8.7
+431-BG01411,14R0018,Control,Male,Control,No diagnosis,66,9.2
+431-BG01420,13R0845,Control,Male,Control,No diagnosis,73,N/A
+431-BG01567,13R0838,Control,Male,Control,No diagnosis,39,6
+431-BG01570,13R0791,Control,Male,Control,No diagnosis,51,8.9
+431-BG01577,13R0666,Control,Male,Control,No diagnosis,47,8.4
+431-BG01578,13R0963,Control,Female,Control,No diagnosis,43,N/A
+431-BG01581,13R1037,Control,Female,Control,No diagnosis,56,9.1
+431-BG01584,13R0777,Control,Male,Control,No diagnosis,62,8.9
+431-BG01586,13R0873,Control,Female,Control,No diagnosis,47,8.6
+431-BG01589,13R0795,Control,Female,Control,No diagnosis,55,9
+431-BG01590,13R0787,Control,Male,Control,No diagnosis,53,8.6
+431-BG01592,13R1445,Control,Male,Control,No diagnosis,47,8.4
+431-BG01593,13R0999,Control,Male,Control,No diagnosis,43,7.5
+431-BG01594,13R0882,Control,Female,Control,No diagnosis,55,8.3
+431-BG01596,13R0839,Control,Female,Control,No diagnosis,47,8.9
+431-BG01599,13R1011,Control,Male,Control,No diagnosis,61,9.2
+431-BG01602,13R1023,Control,Male,Control,No diagnosis,58,9
+431-BG01604,13R1070,Control,Male,Control,No diagnosis,50,9.3
+431-BG01606,13R0991,Control,Male,Control,No diagnosis,55,8.3
+431-BG01609,13R1001,Control,Female,Control,No diagnosis,59,6.6
+431-BG01615,13R0875,Control,Male,Control,No diagnosis,61,8.7
+431-BG01619,13R0802,Control,Male,Control,No diagnosis,45,9
+431-BG01628,13R1003,Control,Male,Control,No diagnosis,42,8.3
+431-BG01634,13R1006,Control,Male,Control,No diagnosis,48,8.2
+431-BG01636,13R0784,Control,Male,Control,No diagnosis,58,9.3
+431-BG01639,13R0862,Control,Female,Control,No diagnosis,25,9.3
+431-BG01645,13R0863,Control,Male,Control,No diagnosis,54,9.1
+431-BG01646,13R1068,Control,Male,Control,No diagnosis,44,8.3
+431-BG01659,13R0886,Control,Male,Control,No diagnosis,53,8.9
+431-BG01680,13R1030,Control,Female,Control,No diagnosis,44,7.7
+431-BG01684,13R1482,Control,Male,Control,No diagnosis,30,8.6
+431-BG01690,13R1042,Control,Male,Control,No diagnosis,44,9.2
+431-BG01691,13R1577,Control,Female,Control,No diagnosis,46,7.3
+431-BG01692,13R0717,Control,Male,Control,No diagnosis,55,8.2
+431-BG01695,13R1529,Control,Male,Control,No diagnosis,57,8.2
+431-BG01706,13R1469,Control,Female,Control,No diagnosis,53,8.2
+431-BG01711,13R1386,Control,Male,Control,No diagnosis,58,7.6
+431-BG01727,13R1495,Control,Male,Control,No diagnosis,30,8.4
+431-BG01742,13R1397,Control,Male,Control,No diagnosis,56,N/A
+431-BG01744,13R0722,Control,Female,Control,No diagnosis,48,8.1
+431-BG01754,13R0776,Control,Male,Control,No diagnosis,51,9.2
+431-BG01756,14R2108,Control,Male,Control,No diagnosis,56,8.5
+431-BG01784,13R0689,Control,Male,Control,No diagnosis,55,9.4
+431-BG01797,13R1472,Control,Female,Control,No diagnosis,49,8.3
+431-BG01799,13R1534,Control,Female,Control,No diagnosis,29,N/A
+431-BG01818,13R1771,Control,Male,Control,No diagnosis,62,N/A
+431-BG01833,13R1620,Control,Female,Control,No diagnosis,48,8.6
+431-BG01843,13R1515,Control,Female,Control,No diagnosis,50,8.3
+431-BG01864,13R1571,Control,Female,Control,No diagnosis,24,7.6
+431-BG01869,13R1478,Control,Male,Control,No diagnosis,29,8.3
+431-BG01874,13R1573,Control,Male,Control,No diagnosis,41,7.8
+431-BG01877,13R1598,Control,Male,Control,No diagnosis,47,8.6
+431-BG01885,13R1467,Control,Female,Control,No diagnosis,26,8.3
+431-BG01903,14R1976,Control,Female,Control,No diagnosis,72,9
+431-BG01932,13R1627,Control,Female,Control,No diagnosis,27,8
+431-BG01937,13R1761,Control,Female,Control,No diagnosis,71,8.5
+431-BG01952,14R1921,Control,Male,Control,No diagnosis,34,N/A
+431-BG02297,14R2346,Control,Female,Control,No diagnosis,46,8.7
+431-BG02333,14R2329,Control,Male,Control,No diagnosis,20,8.6
+431-BG02380,14R2316,Control,Female,Control,No diagnosis,65,N/A
+431-BG02412,14R2342,Control,Male,Control,No diagnosis,46,8.9
+431-BG02527,15R0459,Control,Male,Control,No diagnosis,57,8.8
+431-BG02599,14R0198,Control,Male,Control,No diagnosis,46,9.2
+431-BG02610,14R0469,Control,Male,Control,No diagnosis,56,8.4
+431-BG02611,15R0553,Control,Female,Control,No diagnosis,31,8.3
+431-BG02614,15R0148,Control,Female,Control,No diagnosis,19, N/A
+431-BG02630,14R0460,Control,Male,Control,No diagnosis,66,9.3
+431-BG02651,14R0486,Control,Female,Control,No diagnosis,62,7.2
+431-BG02697,15R0389,Control,Male,Control,No diagnosis,58,8.2
+431-BG02709,15R0534,Control,Female,Control,No diagnosis,39,8.5
+431-BG02734,15R0550,Control,Male,Control,No diagnosis,45,8.9
+431-BG02737,15R0363,Control,Female,Control,No diagnosis,30,7.9
+431-BG02746,15R0164,Control,Male,Control,No diagnosis,56,8.6
+431-BG02747,15R0767,Control,Male,Control,No diagnosis,50,8.7
+431-BG02779,15R0018,Control,Female,Control,No diagnosis,20,8.2
+431-BG02781,15R0166,Control,Male,Control,No diagnosis,41,8.2
+431-BG02789,15R0238,Control,Female,Control,No diagnosis,26,8.2
+431-BG02826,15R0024,Control,Male,Control,No diagnosis,56,8.8
+431-BG02832,15R0009,Control,Female,Control,No diagnosis,56,8.4
+431-BG02838,15R0126,Control,Male,Control,No diagnosis,57,8.7
+431-BG02870,15R0847,Control,Female,Control,No diagnosis,58,8.3
+431-BG02887,15R1104,Control,Female,Control,No diagnosis,47,8.4
+431-BG02889,15R0598,Control,Female,Control,No diagnosis,56,6.5_9
+431-BG02897,15R1129,Control,Female,Control,No diagnosis,62,9.1
+431-BG02910,15R1130,Control,Female,Control,No diagnosis,20,9.1
+431-BG02921,15R0721,Control,Female,Control,No diagnosis,50,8.6
+431-BG02924,15R1027,Control,Male,Control,No diagnosis,47,2.8_8.8
+431-BG02929,15R0697,Control,Female,Control,No diagnosis,52,8.9
+431-BG02968,15R0904,Control,Female,Control,No diagnosis,76,8.7
+431-BG02977,15R0659,Control,Male,Control,No diagnosis,18,8.3
+431-BG03053,15R0994,Control,Male,Control,No diagnosis,56,8.7
+431-BG03820,15R0023,Control,Male,Control,No diagnosis,25,9.1
+431-BG50020,15R1173,Control,Male,Control,No diagnosis,23, N/A
+431-BG50035,16R1279,Control,Female,Control,No diagnosis,61,8.3
+431-BG50075,16R0022,Control,Female,Control,No diagnosis,69,8.7
+431-BG50083,15R1210,Control,Female,Control,No diagnosis,22,8.5
+431-BG50088,15R1224,Control,Male,Control,No diagnosis,64, N/A
+431-BG50090,15R1212,Control,Male,Control,No diagnosis,66,8.1
+431-BG00252,12R0035,Control,Male,Control,Other,23,9.2
+431-BG00597,12R0938,Control,Female,Control,Other,55,8.1
+431-BG00647,12R0806,Control,Male,Control,Other,76,8.5
+431-BG00938,12R2156,Control,Male,Control,Other,38,9
+431-BG00987,12R2065,Control,Male,Control,Other,63,6.3
+431-BG01322,13R0063,Control,Female,Control,Other,51,8.8
+431-BG01339,13R0028,Control,Male,Control,Other,66,9.5
+431-BG01571,13R0962,Control,Female,Control,Other,59,9.2
+431-BG01605,13R1071,Control,Male,Control,Other,55,9.1
+431-BG01668,13R0996,Control,Male,Control,Other,57,8.5
+431-BG01688,13R0752,Control,Female,Control,Other,59,8.6
+431-BG01696,13R0940,Control,Male,Control,Other,46,8.8
+431-BG01710,13R0958,Control,Male,Control,Other,51,9.6
+431-BG01757,13R0835,Control,Male,Control,Other,60,8.8
+431-BG01810,13R1448,Control,Male,Control,Other,29,8.1
+431-BG01828,13R1461,Control,Male,Control,Other,58,8.7
+431-BG02070,13R1642,Control,Male,Control,Other,55,7.9
+431-BG02112,14R2460,Control,Female,Control,Other,59,9
+431-BG02115,14R2142,Control,Male,Control,Other,36,9.5
+431-BG02260,14R2159,Control,Male,Control,Other,79,8.6
+431-BG02287,14R2265,Control,Female,Control,Other,38,8.8
+431-BG02378,14R2277,Control,Male,Control,Other,54,9.2
+431-BG02410,14R2271,Control,Male,Control,Other,57,6.5
+431-BG02505,14R0333,Control,Female,Control,Other,43,8.9
+431-BG02692,14R0488,Control,Female,Control,Other,55,8.6
+431-BG02714,15R0350,Control,Male,Control,Other,58,8.6
+431-BG02740,15R0364,Control,Male,Control,Other,32,7.9
+431-BG02763,15R0870,Control,Female,Control,Other,59,7.7
+431-BG02768,15R0770,Control,Female,Control,Other,29,7.8
+431-BG02899,15R0690,Control,Female,Control,Other,58,8.1
+431-BG02950,15R0824,Control,Female,Control,Other,30,7.9
+431-BG03027,15R0955,Control,Male,Control,Other,27,8.2
+431-BG03054,15R1008,Control,Male,Control,Other,20,2.6_N/A
+431-BG03065,15R0985,Control,Female,Control,Other,62,9.3
+431-BG50021,15R1174,Control,Female,Control,Other,50,8.5
+SF0067,12R2364,Control,Female,Control,Sister,58,8
+SF0114,13R1633,Control,Female,Control,Sister,63,7.6
+SF0122,13R1678,Control,Female,Control,Sister,60,7.7
+SF0184,14R2455,Control,Female,Control,SISTER,60,8.1
+SF0236,15R0395,Control,Female,Control,sister,53,7.6
+SF0133,13R1726,Control,Male,Control,Son,35,8.1
+SF0142,14R1810,Control,Male,Control,Son,40,8.3
+SF0156,14R1876,Control,Male,Control,Son,,8.4
+SF0173,14R2122,Control,Male,Control,Son,,8.5
+A0168,12R1983,Control,,Control,,,9
+A0170,13R1174,Control,,Control,,,8
+A0172,13R1166,Control,,Control,,,7.5
+A0175,13R1171,Control,,Control,,,9
+A0176,13R1188,Control,,Control,,,7.4
+A0177,13R1172,Control,,Control,,,8.7
+A0178,13R1098,Control,,Control,,,8.9
+A0182,13R1242,Control,,Control,,,8.5
+A0184,13R1086,Control,,Control,,,7.7
+A0186,13R1231,Control,,Control,,,9.2
+A0188,13R1076,Control,,Control,,,9.2
+A0189,13R1244,Control,,Control,,,7.9
+A0191,13R1110,Control,,Control,,,9.3
+A0192,13R1111,Control,,Control,,,8.6
+A0193,13R1112,Control,,Control,,,8.8
+A0195,13R1216,Control,,Control,,,8.7
+A0196,13R1222,Control,,Control,,,9
+A0200,13R1211,Control,,Control,,,8.2
+K0324,13R1173,Control,,Control,,,9
+K0325,13R1149,Control,,Control,,,8.2
+K0327,13R1178,Control,,Control,,,9.2
+K0330,13R1168,Control,,Control,,,8.5
+K0333,13R1150,Control,,Control,,,8.9
+K0334,13R1175,Control,,Control,,,9.2
+K0335,13R1157,Control,,Control,,,9.3
+K0346,13R1100,Control,,Control,,,8.8
+K0349,13R1146,Control,,Control,,,8
+K0350,13R1180,Control,,Control,,,9.4
+K0352,13R1147,Control,,Control,,,8.6
+K0353,13R1114,Control,,Control,,,9.4
+K0356,13R1151,Control,,Control,,,8.5
+K0357,13R1212,Control,,Control,,,8.7
+K0358,13R1214,Control,,Control,,,9
+K0359,13R1115,Control,,Control,,,9.5
+K0361,13R1235,Control,,Control,,,8.1
+K0362,13R1090,Control,,Control,,,8.9
+K0364,13R1221,Control,,Control,,,9
+K0366,13R1077,Control,,Control,,,9.2
+K0367,13R1116,Control,,Control,,,9.5
+K0369,13R1091,Control,,Control,,,9.1
+K0377,13R1210,Control,,Control,,,9.3
+K0378,13R1078,Control,,Control,,,9.4
+K0379,13R1092,Control,,Control,,,9
+K0380,13R1079,Control,,Control,,,9.1
+K0382,13R1239,Control,,Control,,,8.5
+S0370,13R1102,Control,,Control,,,9
+S0380,13R1104,Control,,Control,,,8.8
+S0382,13R1177,Control,,Control,,,8.4
+S0386,13R1169,Control,,Control,,,7.7
+S0389,13R1176,Control,,Control,,,9.2
+S0397,13R1182,Control,,Control,,,8.5
+S0399,13R1145,Control,,Control,,,8.3
+S0404,13R1118,Control,,Control,,,9.3
+S0413,13R1206,Control,,Control,,,7.8
+S0418,13R1205,Control,,Control,,,8.2
+S0421,13R1119,Control,,Control,,,9.3
+S0423,13R1209,Control,,Control,,,8.5
+S0425,13R1217,Control,,Control,,,9.3
+S0427,13R1213,Control,,Control,,,8.8
+431-BG00076,11R0630,Father,Male,Control,No diagnosis,57,8.7
+431-BG00087,11R0623,Father,Male,Control,No diagnosis,67,8.9
+431-BG00096,11R0622,Father,Male,Control,No diagnosis,65,8.4
+431-BG00202,12R0056,Father,Male,Control,No diagnosis,59,9
+431-BG00230,12R0065,Father,Male,Control,No diagnosis,55,9
+431-BG00242,12R0079,Father,Male,Control,No diagnosis,55,8.6
+431-BG00277,12R0161,Father,Male,Control,No diagnosis,65,8.9
+431-BG00335,12R0190,Father,Male,Control,No diagnosis,77,8.9
+431-BG00342,12R0222,Father,Male,Control,No diagnosis,79,9.3
+431-BG00364,12R0248,Father,Male,Control,No diagnosis,71,8.7
+431-BG00372,12R0545,Father,Male,Control,No diagnosis,73,7.4
+431-BG00485,12R0455,Father,Male,Control,No diagnosis,69,8.5
+431-BG00501,12R0420,Father,Male,Control,No diagnosis,61,9.1
+431-BG00545,12R0450,Father,Male,Control,No diagnosis,67,8.7
+431-BG00603,12R0795,Father,Male,Control,No diagnosis,83,8.5
+431-BG00618,12R1015,Father,Male,Control,No diagnosis,80,9.1
+431-BG00629,12R0805,Father,Male,Control,No diagnosis,74,8.7
+431-BG00731,12R1332,Father,Male,Control,No diagnosis,59,8.9
+431-BG00813,12R1360,Father,Male,Control,No diagnosis,61,8.9
+431-BG00891,12R2166,Father,Male,Control,No diagnosis,77,9.4
+431-BG00911,12R2036,Father,Male,Control,No diagnosis,70,8.4
+431-BG00944,12R2132,Father,Male,Control,No diagnosis,62,8.3
+431-BG00996,12R2208,Father,Male,Control,No diagnosis,85,8.8
+431-BG01129,12R2388,Father,Male,Control,No diagnosis,67,9.5
+431-BG01328,13R0462,Father,Male,Control,No diagnosis,67,9.7
+431-BG01329,13R0470,Father,Male,Control,No diagnosis,86,9.1
+431-BG01331,13R0064,Father,Male,Control,No diagnosis,62,8.8
+431-BG01354,13R0390,Father,Male,Control,No diagnosis,69,9
+431-BG01357,13R0375,Father,Male,Control,No diagnosis,66,8.9
+431-BG01400,13R0412,Father,Male,Control,No diagnosis,69,8.2
+431-BG01565,13R0526,Father,Male,Control,No diagnosis,69,9.1
+431-BG01733,13R1446,Father,Male,Control,No diagnosis,74,8.6
+431-BG01876,13R1575,Father,Male,Control,No diagnosis,70,8.1
+431-BG01999,14R1880,Father,Male,Control,No diagnosis,59,8.9
+431-BG02131,14R0023,Father,Male,Control,No diagnosis,61,9.2
+431-BG02324,14R2327,Father,Male,Control,No diagnosis,65,8.7
+431-BG02338,14R2178,Father,Male,Control,No diagnosis,56,9.7
+431-BG02418,14R0456,Father,Male,Control,No diagnosis,69,8.5
+431-BG02479,14R0375,Father,Male,Control,No diagnosis,62,8.7
+431-BG02650,14R0485,Father,Male,Control,No diagnosis,82,8.7
+431-BG02784,15R0089,Father,Male,Control,No diagnosis,46,9.2
+431-BG02845,15R0120,Father,Male,Control,No diagnosis,65,8.7
+431-BG03005,14R2246,Father,Male,Control,No diagnosis,65,9.3
+431-BG00070,11R0161,Mother,Female,Control,No diagnosis,83,8.9
+431-BG00086,11R0627,Mother,Female,Control,No diagnosis,59,8.6
+431-BG00095,11R0617,Mother,Female,Control,No diagnosis,63,8.5
+431-BG00183,12R0112,Mother,Female,Control,No diagnosis,60,8.6
+431-BG00203,12R0057,Mother,Female,Control,No diagnosis,64,7.7
+431-BG00231,12R0045,Mother,Female,Control,No diagnosis,55,8.5
+431-BG00263,12R0233,Mother,Female,Control,No diagnosis,58,9
+431-BG00279,12R0162,Mother,Female,Control,No diagnosis,63,8.6
+431-BG00596,12R1532,Mother,Female,Control,No diagnosis,61,8.6
+431-BG00623,12R0836,Mother,Female,Control,No diagnosis,76,8.9
+431-BG00660,12R0829,Mother,Female,Control,No diagnosis,78,8
+431-BG00686,12R0855,Mother,Female,Control,No diagnosis,73,8.4
+431-BG00715,12R1462,Mother,Female,Control,No diagnosis,56,8.9
+431-BG00757,12R1390,Mother,Female,Control,No diagnosis,70,8.5
+431-BG00819,12R1349,Mother,Female,Control,No diagnosis,60,8.3
+431-BG00824,12R1363,Mother,Female,Control,No diagnosis,53,9.2
+431-BG00995,12R2009,Mother,Female,Control,No diagnosis,82,8
+431-BG01316,13R0468,Mother,Female,Control,No diagnosis,70,8.9
+431-BG01330,13R0471,Mother,Female,Control,No diagnosis,86,8.9
+431-BG01332,13R0076,Mother,Female,Control,No diagnosis,67,9.4
+431-BG01353,13R0358,Mother,Female,Control,No diagnosis,69,8.9
+431-BG01358,13R0376,Mother,Female,Control,No diagnosis,65,9
+431-BG01422,13R0683,Mother,Female,Control,No diagnosis,69,9
+431-BG01436,13R0513,Mother,Female,Control,No diagnosis,66,9.5
+431-BG01613,13R1073,Mother,Female,Control,No diagnosis,71,9.2
+431-BG01633,13R1005,Mother,Female,Control,No diagnosis,74,8.7
+431-BG01703,13R0944,Mother,Female,Control,No diagnosis,58,8.8
+431-BG01730,13R0914,Mother,Female,Control,No diagnosis,69,8.4
+431-BG01771,13R1661,Mother,Female,Control,No diagnosis,82,8.2
+431-BG01837,13R1511,Mother,Female,Control,No diagnosis,75,8.7
+431-BG01896,13R1729,Mother,Female,Control,No diagnosis,70,9.1
+431-BG02012,14R1947,Mother,Female,Control,No diagnosis,72,9.1
+431-BG02052,13R1754,Mother,Female,Control,No diagnosis,65,8.8
+431-BG02092,14R2138,Mother,Female,Control,No diagnosis,52,9.3
+431-BG02114,14R2261,Mother,Female,Control,No diagnosis,70,8.9
+431-BG02268,14R2219,Mother,Female,Control,No diagnosis,67,8.9
+431-BG02310,14R2266,Mother,Female,Control,No diagnosis,63,8
+431-BG02315,14R2088,Mother,Female,Control,No diagnosis,67,8.3
+431-BG02325,14R2328,Mother,Female,Control,No diagnosis,62,8.6
+431-BG02344,14R2348,Mother,Female,Control,No diagnosis,55,8.9
+431-BG02375,14R0489,Mother,Female,Control,No diagnosis,69,8.9
+431-BG02438,14R2379,Mother,Female,Control,No diagnosis,81,9.2
+431-BG02623,14R0470,Mother,Female,Control,No diagnosis,68,8.1
+431-BG02725,15R0378,Mother,Female,Control,No diagnosis,55,8.8
+431-BG02756,15R0079,Mother,Female,Control,No diagnosis,49,8.7
+431-BG02808,15R0118,Mother,Female,Control,No diagnosis,68,8.9
+431-BG00011,11R0133,Proband,Male,Bipolar,Bipolar I,38,N/A
+431-BG00012,13R0209,Proband,Male,Bipolar,Bipolar I,45,9.4
+431-BG00042,11R0153,Proband,Male,Bipolar,Bipolar I,53,na
+431-BG00060,11R0167,Proband,Female,Bipolar,Bipolar I,65,N/A
+431-BG00062,11R0172,Proband,Female,Bipolar,Bipolar I,31,N/A
+431-BG00078,14R0166,Proband,Female,Bipolar,Bipolar I,51,8.7
+431-BG00110,11R0555,Proband,Female,Bipolar,Bipolar I,49,8.6
+431-BG00111,11R0636,Proband,Female,Bipolar,Bipolar I,40,8.8
+431-BG00112,11R0643,Proband,Female,Bipolar,Bipolar I,42,N/A
+431-BG00116,11R0644,Proband,Male,Bipolar,Bipolar I,32,8.4
+431-BG00126,11R0554,Proband,Male,Bipolar,Bipolar I,49,8.6
+431-BG00135,12R0864,Proband,Female,Bipolar,Bipolar I,40,8.1
+431-BG00137,13R0905,Proband,Female,Bipolar,Bipolar I,29,8.2
+431-BG00138,11R0802,Proband,Female,Bipolar,Bipolar I,34,8.6
+431-BG00140,11R0566,Proband,Female,Bipolar,Bipolar I,27,N/A
+431-BG00146,11R0600,Proband,Male,Bipolar,Bipolar I,54,8.8
+431-BG00161,12R0568,Proband,Female,Bipolar,Bipolar I,34,6.6
+431-BG00163,12R1436,Proband,Male,Bipolar,Bipolar I,53,6.7
+431-BG00193,15R0963,Proband,Male,Bipolar,Bipolar I,43,8
+431-BG00205,12R0230,Proband,Male,Bipolar,Bipolar I,53,9
+431-BG00213,12R0061,Proband,Female,Bipolar,Bipolar I,73,8.2
+431-BG00221,12R0043,Proband,Male,Bipolar,Bipolar I,43,8.3
+431-BG00222,12R0044,Proband,Female,Bipolar,Bipolar I,47,N/A
+431-BG00240,12R0087,Proband,Female,Bipolar,Bipolar I,29,NA
+431-BG00251,12R0064,Proband,Male,Bipolar,Bipolar I,36,8.8
+431-BG00266,12R0131,Proband,Male,Bipolar,Bipolar I,42,8.9
+431-BG00269,12R0216,Proband,Female,Bipolar,Bipolar I,49,8.7
+431-BG00274,12R1406,Proband,Male,Bipolar,Bipolar I,39,8.7
+431-BG00278,12R0978,Proband,Female,Bipolar,Bipolar I,52,7.6
+431-BG00283,12R0317,Proband,Female,Bipolar,Bipolar I,54,N/A
+431-BG00298,12R0152,Proband,Female,Bipolar,Bipolar I,59,7.4
+431-BG00306,12R0072,Proband,Female,Bipolar,Bipolar I,58,N/A
+431-BG00312,12R0447,Proband,Female,Bipolar,Bipolar I,52,N/A
+431-BG00319,12R0725,Proband,Female,Bipolar,Bipolar I,55,7.9
+431-BG00323,13R0065,Proband,Male,Bipolar,Bipolar I,66,9.3
+431-BG00324,12R0178,Proband,Female,Bipolar,Bipolar I,41,7.8
+431-BG00346,16R1287,Proband,Female,Bipolar,Bipolar I,55,8.2
+431-BG00349,12R0485,Proband,Female,Bipolar,Bipolar I,44,N/A
+431-BG00356,12R0572,Proband,Male,Bipolar,Bipolar I,60,6.3
+431-BG00368,12R0544,Proband,Female,Bipolar,Bipolar I,52,5.7
+431-BG00383,12R0223,Proband,Female,Bipolar,Bipolar I,59,8.9
+431-BG00391,12R0180,Proband,Female,Bipolar,Bipolar I,51,8
+431-BG00394,12R0570,Proband,Female,Bipolar,Bipolar I,54,6.6
+431-BG00403,12R0250,Proband,Female,Bipolar,Bipolar I,70,7.9
+431-BG00404,12R0558,Proband,Male,Bipolar,Bipolar I,67,4.8
+431-BG00415,12R0446,Proband,Female,Bipolar,Bipolar I,64,N/A
+431-BG00416,12R0983,Proband,Female,Bipolar,Bipolar I,65,9
+431-BG00421,12R0576,Proband,Female,Bipolar,Bipolar I,60,6.3
+431-BG00433,12R0478,Proband,Female,Bipolar,Bipolar I,48,N/A
+431-BG00436,12R0499,Proband,Female,Bipolar,Bipolar I,59,4.4
+431-BG00446,12R0848,Proband,Female,Bipolar,Bipolar I,61,3
+431-BG00448,12R0445,Proband,Female,Bipolar,Bipolar I,55,N/A
+431-BG00451,12R0577,Proband,Female,Bipolar,Bipolar I,42,6.6
+431-BG00452,12R0633,Proband,Female,Bipolar,Bipolar I,54,N/A
+431-BG00454,15R0133,Proband,Male,Bipolar,Bipolar I,51,8.3
+431-BG00467,12R0458,Proband,Female,Bipolar,Bipolar I,34,8.3
+431-BG00474,12R0705,Proband,Female,Bipolar,Bipolar I,64,3.8
+431-BG00476,12R0444,Proband,Male,Bipolar,Bipolar I,66,N/A
+431-BG00495,12R0853,Proband,Male,Bipolar,Bipolar I,57,8.9
+431-BG00497,13R0281,Proband,Male,Bipolar,Bipolar I,66,8.9
+431-BG00500,12R0480,Proband,Female,Bipolar,Bipolar I,61,8.9
+431-BG00513,12R0840,Proband,Male,Bipolar,Bipolar I,44,7.9
+431-BG00535,12R1688,Proband,Female,Bipolar,Bipolar I,54,9.2
+431-BG00539,13R0245,Proband,Male,Bipolar,Bipolar I,65,8.4
+431-BG00555,12R0827,Proband,Male,Bipolar,Bipolar I,22,8.2
+431-BG00571,12R0915,Proband,Male,Bipolar,Bipolar I,66,N/A
+431-BG00575,12R0437,Proband,Male,Bipolar,Bipolar I,44,N/A
+431-BG00581,12R0932,Proband,Female,Bipolar,Bipolar I,56,8.6
+431-BG00582,12R0866,Proband,Male,Bipolar,Bipolar I,56,7.7
+431-BG00588,13R0407,Proband,Female,Bipolar,Bipolar I,46,8.4
+431-BG00589,12R0950,Proband,Female,Bipolar,Bipolar I,66,8.5
+431-BG00600,12R0814,Proband,Male,Bipolar,Bipolar I,61,8.5
+431-BG00601,12R0953,Proband,Male,Bipolar,Bipolar I,57,8.4
+431-BG00615,12R0844,Proband,Female,Bipolar,Bipolar I,53,8.2
+431-BG00620,12R0971,Proband,Female,Bipolar,Bipolar I,79,7.9
+431-BG00634,12R1545,Proband,Female,Bipolar,Bipolar I,78,8.5
+431-BG00637,12R2012,Proband,Male,Bipolar,Bipolar I,40,7.8
+431-BG00638,12R0930,Proband,Male,Bipolar,Bipolar I,68,8.1
+431-BG00645,12R0834,Proband,Female,Bipolar,Bipolar I,46,8
+431-BG00654,12R0816,Proband,Female,Bipolar,Bipolar I,58,8.7
+431-BG00655,12R0872,Proband,Male,Bipolar,Bipolar I,49,8.2
+431-BG00658,12R0843,Proband,Female,Bipolar,Bipolar I,27,8.3
+431-BG00662,12R0808,Proband,Female,Bipolar,Bipolar I,46,7.5
+431-BG00673,12R1534,Proband,Female,Bipolar,Bipolar I,45,8.8
+431-BG00676,12R1031,Proband,Female,Bipolar,Bipolar I,51,8.8
+431-BG00677,14R2011,Proband,Female,Bipolar,Bipolar I,42,8
+431-BG00680,12R1019,Proband,Female,Bipolar,Bipolar I,49,7.5
+431-BG00683,12R0886,Proband,Female,Bipolar,Bipolar I,51,8.5
+431-BG00685,12R1003,Proband,Male,Bipolar,Bipolar I,39,9.1
+431-BG00689,12R1438,Proband,Female,Bipolar,Bipolar I,45,8.6
+431-BG00691,12R0984,Proband,Female,Bipolar,Bipolar I,44,8.2
+431-BG00692,12R1448,Proband,Male,Bipolar,Bipolar I,53,8.2
+431-BG00693,12R0875,Proband,Male,Bipolar,Bipolar I,56,8.9
+431-BG00696,12R0980,Proband,Male,Bipolar,Bipolar I,42,9.8
+431-BG00698,12R2126,Proband,Female,Bipolar,Bipolar I,48,8.2
+431-BG00699,12R0952,Proband,Male,Bipolar,Bipolar I,30,8.8
+431-BG00700,12R1013,Proband,Male,Bipolar,Bipolar I,56,8.1
+431-BG00705,12R1533,Proband,Female,Bipolar,Bipolar I,45,8.7
+431-BG00707,12R0988,Proband,Female,Bipolar,Bipolar I,45,8.6
+431-BG00709,13R0089,Proband,Female,Bipolar,Bipolar I,37,8.9
+431-BG00710,12R1811,Proband,Female,Bipolar,Bipolar I,57,7.8
+431-BG00711,12R0989,Proband,Female,Bipolar,Bipolar I,67,7.3
+431-BG00714,12R1461,Proband,Female,Bipolar,Bipolar I,25,8.3
+431-BG00717,12R0839,Proband,Male,Bipolar,Bipolar I,68,9
+431-BG00718,12R1383,Proband,Female,Bipolar,Bipolar I,44,8.5
+431-BG00719,12R1384,Proband,Female,Bipolar,Bipolar I,41,8.5
+431-BG00720,12R1497,Proband,Female,Bipolar,Bipolar I,60,7.2
+431-BG00721,12R1385,Proband,Female,Bipolar,Bipolar I,51,9.1
+431-BG00723,12R1329,Proband,Male,Bipolar,Bipolar I,61,n/a
+431-BG00725,12R1386,Proband,Female,Bipolar,Bipolar I,60,8.4
+431-BG00726,12R1440,Proband,Male,Bipolar,Bipolar I,41,7.3
+431-BG00727,12R2213,Proband,Male,Bipolar,Bipolar I,41,6.7
+431-BG00728,12R1536,Proband,Male,Bipolar,Bipolar I,54,8.7
+431-BG00732,12R1464,Proband,Female,Bipolar,Bipolar I,48,8.1
+431-BG00733,12R1813,Proband,Female,Bipolar,Bipolar I,54,8.1
+431-BG00734,12R1465,Proband,Male,Bipolar,Bipolar I,60,7.4
+431-BG00738,12R1466,Proband,Female,Bipolar,Bipolar I,64,6.2
+431-BG00742,12R1331,Proband,Female,Bipolar,Bipolar I,55,8.8
+431-BG00744,12R1388,Proband,Female,Bipolar,Bipolar I,35,8.8
+431-BG00745,12R1790,Proband,Female,Bipolar,Bipolar I,62,9
+431-BG00751,12R1792,Proband,Female,Bipolar,Bipolar I,65,8.6
+431-BG00752,12R1444,Proband,Male,Bipolar,Bipolar I,60,8.1
+431-BG00756,12R1425,Proband,Male,Bipolar,Bipolar I,42,N/A
+431-BG00759,12R1445,Proband,Female,Bipolar,Bipolar I,49,7.2
+431-BG00761,12R1446,Proband,Female,Bipolar,Bipolar I,50,7.4
+431-BG00763,12R1467,Proband,Male,Bipolar,Bipolar I,49,7.3
+431-BG00764,12R1816,Proband,Female,Bipolar,Bipolar I,58,8
+431-BG00766,12R1468,Proband,Male,Bipolar,Bipolar I,53,7.8
+431-BG00768,12R1469,Proband,Female,Bipolar,Bipolar I,29,7.2
+431-BG00769,12R1470,Proband,Male,Bipolar,Bipolar I,63,7.5
+431-BG00770,12R1794,Proband,Female,Bipolar,Bipolar I,62,7.7
+431-BG00771,12R1404,Proband,Female,Bipolar,Bipolar I,62,8.3
+431-BG00772,12R1842,Proband,Male,Bipolar,Bipolar I,22,9
+431-BG00773,12R1403,Proband,Male,Bipolar,Bipolar I,52,7.4
+431-BG00774,12R2190,Proband,Male,Bipolar,Bipolar I,40,7.5
+431-BG00775,12R1504,Proband,Male,Bipolar,Bipolar I,49,8.7
+431-BG00776,12R1795,Proband,Female,Bipolar,Bipolar I,28,8.4
+431-BG00777,12R1506,Proband,Female,Bipolar,Bipolar I,51,8
+431-BG00778,12R1538,Proband,Female,Bipolar,Bipolar I,31,9.1
+431-BG00779,12R1391,Proband,Female,Bipolar,Bipolar I,54,8.1
+431-BG00780,12R1336,Proband,Male,Bipolar,Bipolar I,64,9.4
+431-BG00782,12R1402,Proband,Male,Bipolar,Bipolar I,33,8.4
+431-BG00783,12R1539,Proband,Female,Bipolar,Bipolar I,55,9.1
+431-BG00784,12R1540,Proband,Female,Bipolar,Bipolar I,45,8.6
+431-BG00785,12R1844,Proband,Female,Bipolar,Bipolar I,49,8.4
+431-BG00786,12R1359,Proband,Male,Bipolar,Bipolar I,30,8
+431-BG00787,12R1401,Proband,Male,Bipolar,Bipolar I,52,8.4
+431-BG00788,12R1362,Proband,Female,Bipolar,Bipolar I,51,n/a
+431-BG00789,12R1802,Proband,Male,Bipolar,Bipolar I,37,8.2
+431-BG00794,12R1377,Proband,Female,Bipolar,Bipolar I,47,8.4
+431-BG00796,12R1849,Proband,Male,Bipolar,Bipolar I,36,7.1
+431-BG00798,12R1801,Proband,Female,Bipolar,Bipolar I,60,N/A
+431-BG00799,13R0066,Proband,Male,Bipolar,Bipolar I,62,N/A
+431-BG00801,12R1368,Proband,Male,Bipolar,Bipolar I,38,7.4
+431-BG00802,12R2127,Proband,Male,Bipolar,Bipolar I,60,9.4
+431-BG00803,14R2071,Proband,Female,Bipolar,Bipolar I,61, N/A
+431-BG00804,12R1378,Proband,Male,Bipolar,Bipolar I,25,8.9
+431-BG00805,12R1399,Proband,Female,Bipolar,Bipolar I,50,7.3
+431-BG00806,12R1392,Proband,Male,Bipolar,Bipolar I,47,8.2
+431-BG00807,12R1335,Proband,Female,Bipolar,Bipolar I,44,9.2
+431-BG00808,12R1379,Proband,Male,Bipolar,Bipolar I,31,8.7
+431-BG00809,12R1338,Proband,Male,Bipolar,Bipolar I,48,7
+431-BG00810,12R1380,Proband,Female,Bipolar,Bipolar I,25,8.2
+431-BG00811,14R0454,Proband,Female,Bipolar,Bipolar I,47,7.6
+431-BG00812,12R1426,Proband,Female,Bipolar,Bipolar I,36,N/A
+431-BG00814,12R1352,Proband,Male,Bipolar,Bipolar I,61,8.4
+431-BG00815,12R1393,Proband,Female,Bipolar,Bipolar I,41,9
+431-BG00826,12R1429,Proband,Female,Bipolar,Bipolar I,36,N/A
+431-BG00827,12R1351,Proband,Female,Bipolar,Bipolar I,44,8.4
+431-BG00829,12R1447,Proband,Male,Bipolar,Bipolar I,46,3.6
+431-BG00830,12R1398,Proband,Male,Bipolar,Bipolar I,47,8.3
+431-BG00832,12R1431,Proband,Female,Bipolar,Bipolar I,63,N/A
+431-BG00833,12R1348,Proband,Male,Bipolar,Bipolar I,25,8.6
+431-BG00838,12R2069,Proband,Male,Bipolar,Bipolar I,34,8.1
+431-BG00840,12R1366,Proband,Female,Bipolar,Bipolar I,51,8.2
+431-BG00841,12R1350,Proband,Male,Bipolar,Bipolar I,48,8.3
+431-BG00842,12R1369,Proband,Female,Bipolar,Bipolar I,43,8.9
+431-BG00843,12R1395,Proband,Female,Bipolar,Bipolar I,29,8.1
+431-BG00844,12R1361,Proband,Male,Bipolar,Bipolar I,73,6.2
+431-BG00847,12R1432,Proband,Male,Bipolar,Bipolar I,46,9
+431-BG00848,12R1347,Proband,Male,Bipolar,Bipolar I,43,5.4
+431-BG00850,12R1364,Proband,Female,Bipolar,Bipolar I,48,9
+431-BG00851,12R2297,Proband,Male,Bipolar,Bipolar I,20,8.9
+431-BG00853,12R1344,Proband,Male,Bipolar,Bipolar I,61,8.5
+431-BG00854,12R1367,Proband,Female,Bipolar,Bipolar I,56,8.6
+431-BG00857,12R1434,Proband,Male,Bipolar,Bipolar I,59,8.8
+431-BG00859,12R1339,Proband,Male,Bipolar,Bipolar I,38,9.2
+431-BG00861,12R1343,Proband,Female,Bipolar,Bipolar I,44,8
+431-BG00863,12R2091,Proband,Female,Bipolar,Bipolar I,42,8
+431-BG00866,12R1433,Proband,Male,Bipolar,Bipolar I,35,9
+431-BG00867,12R1382,Proband,Male,Bipolar,Bipolar I,53,8.3
+431-BG00868,12R1370,Proband,Male,Bipolar,Bipolar I,47,7.7
+431-BG00869,12R2099,Proband,Male,Bipolar,Bipolar I,41,N/A
+431-BG00870,12R2191,Proband,Female,Bipolar,Bipolar I,76,4.5
+431-BG00873,12R2001,Proband,Male,Bipolar,Bipolar I,68,7.9
+431-BG00875,12R1333,Proband,Female,Bipolar,Bipolar I,33,8.7
+431-BG00880,12R2002,Proband,Male,Bipolar,Bipolar I,74,N/A
+431-BG00881,12R2109,Proband,Male,Bipolar,Bipolar I,39,8.7
+431-BG00883,12R2261,Proband,Female,Bipolar,Bipolar I,59,9.1
+431-BG00885,12R2033,Proband,Female,Bipolar,Bipolar I,44,N/A
+431-BG00886,12R2014,Proband,Male,Bipolar,Bipolar I,52,8.7
+431-BG00887,12R2288,Proband,Female,Bipolar,Bipolar I,43,N/A
+431-BG00888,12R2239,Proband,Female,Bipolar,Bipolar I,43,8.8
+431-BG00889,12R2034,Proband,Female,Bipolar,Bipolar I,35,8.7
+431-BG00893,12R2062,Proband,Female,Bipolar,Bipolar I,42,N/A
+431-BG00894,12R2003,Proband,Female,Bipolar,Bipolar I,27,7.1
+431-BG00895,12R2263,Proband,Male,Bipolar,Bipolar I,43,N/A
+431-BG00896,12R2035,Proband,Male,Bipolar,Bipolar I,51,9
+431-BG00897,12R2167,Proband,Female,Bipolar,Bipolar I,40,N/A
+431-BG00905,12R2251,Proband,Male,Bipolar,Bipolar I,55,8.6
+431-BG00908,12R2240,Proband,Male,Bipolar,Bipolar I,42,8.7
+431-BG00910,12R2063,Proband,Female,Bipolar,Bipolar I,44,7
+431-BG00913,12R2188,Proband,Male,Bipolar,Bipolar I,62,8.4
+431-BG00916,12R2113,Proband,Male,Bipolar,Bipolar I,63,9.3
+431-BG00918,12R2130,Proband,Male,Bipolar,Bipolar I,21,8.9
+431-BG00920,12R2303,Proband,Male,Bipolar,Bipolar I,30,8.9
+431-BG00921,12R2277,Proband,Male,Bipolar,Bipolar I,58,9.4
+431-BG00924,12R2154,Proband,Female,Bipolar,Bipolar I,47,8.9
+431-BG00927,12R2037,Proband,Male,Bipolar,Bipolar I,68,9.1
+431-BG00928,12R2315,Proband,Male,Bipolar,Bipolar I,64,7.4
+431-BG00950,12R2185,Proband,Male,Bipolar,Bipolar I,67,9.2
+431-BG00954,12R2133,Proband,Female,Bipolar,Bipolar I,35,9.2
+431-BG00957,12R2316,Proband,Female,Bipolar,Bipolar I,53,8.1
+431-BG00958,12R2267,Proband,Male,Bipolar,Bipolar I,42,9
+431-BG00959,12R2317,Proband,Female,Bipolar,Bipolar I,58,8.8
+431-BG00960,12R2229,Proband,Male,Bipolar,Bipolar I,59,8.8
+431-BG00962,12R2268,Proband,Male,Bipolar,Bipolar I,41,8.5
+431-BG00963,12R2039,Proband,Female,Bipolar,Bipolar I,31,N/A
+431-BG00964,12R2007,Proband,Male,Bipolar,Bipolar I,33,8.6
+431-BG00967,12R2019,Proband,Female,Bipolar,Bipolar I,55,N/A
+431-BG00968,12R2270,Proband,Male,Bipolar,Bipolar I,65,9.3
+431-BG00970,12R2254,Proband,Male,Bipolar,Bipolar I,46,N/A
+431-BG00973,12R2040,Proband,Female,Bipolar,Bipolar I,52,9
+431-BG00974,12R2246,Proband,Male,Bipolar,Bipolar I,58,8
+431-BG00978,12R2021,Proband,Male,Bipolar,Bipolar I,29,7.7
+431-BG00981,12R2282,Proband,Female,Bipolar,Bipolar I,55,9.3
+431-BG00985,12R2041,Proband,Female,Bipolar,Bipolar I,60,8.6
+431-BG00990,12R2042,Proband,Female,Bipolar,Bipolar I,36,N/A
+431-BG00993,12R2008,Proband,Female,Bipolar,Bipolar I,46,8.4
+431-BG00998,12R2248,Proband,Female,Bipolar,Bipolar I,53,9.3
+431-BG01001,12R2010,Proband,Male,Bipolar,Bipolar I,59,7.4
+431-BG01006,12R2054,Proband,Male,Bipolar,Bipolar I,61,5.6
+431-BG01008,13R0006,Proband,Female,Bipolar,Bipolar I,50,9
+431-BG01011,12R2145,Proband,Male,Bipolar,Bipolar I,42,9
+431-BG01015,12R2163,Proband,Female,Bipolar,Bipolar I,58,9.4
+431-BG01016,12R2259,Proband,Male,Bipolar,Bipolar I,32,9.1
+431-BG01018,13R0007,Proband,Female,Bipolar,Bipolar I,54,4.2
+431-BG01019,12R2011,Proband,Male,Bipolar,Bipolar I,51,8.3
+431-BG01021,13R0053,Proband,Female,Bipolar,Bipolar I,33,8.7
+431-BG01023,12R2296,Proband,Male,Bipolar,Bipolar I,46,7.5
+431-BG01025,13R0018,Proband,Male,Bipolar,Bipolar I,57,8.7
+431-BG01026,13R0323,Proband,Male,Bipolar,Bipolar I,44,8.6
+431-BG01027,13R0234,Proband,Male,Bipolar,Bipolar I,64,8.5
+431-BG01029,12R2383,Proband,Female,Bipolar,Bipolar I,60,9.2
+431-BG01030,12R2139,Proband,Female,Bipolar,Bipolar I,59,8.5
+431-BG01031,13R0257,Proband,Female,Bipolar,Bipolar I,51,8.3
+431-BG01032,13R0042,Proband,Female,Bipolar,Bipolar I,65,8.8
+431-BG01033,12R2022,Proband,Female,Bipolar,Bipolar I,56,N/A
+431-BG01034,13R0008,Proband,Male,Bipolar,Bipolar I,63,8.8
+431-BG01035,12R2395,Proband,Female,Bipolar,Bipolar I,43,5
+431-BG01039,12R2023,Proband,Male,Bipolar,Bipolar I,39,8.2
+431-BG01040,13R0019,Proband,Female,Bipolar,Bipolar I,45,8.9
+431-BG01041,13R0030,Proband,Female,Bipolar,Bipolar I,48,9
+431-BG01042,13R0282,Proband,Female,Bipolar,Bipolar I,34,8.7
+431-BG01043,13R0068,Proband,Male,Bipolar,Bipolar I,62,9.2
+431-BG01046,12R2043,Proband,Female,Bipolar,Bipolar I,63,8.9
+431-BG01047,13R0283,Proband,Male,Bipolar,Bipolar I,57,8.1
+431-BG01048,12R2164,Proband,Female,Bipolar,Bipolar I,34,9
+431-BG01049,12R2140,Proband,Male,Bipolar,Bipolar I,62,8.3
+431-BG01051,13R0020,Proband,Female,Bipolar,Bipolar I,58,9.3
+431-BG01052,13R0009,Proband,Female,Bipolar,Bipolar I,49,8.8
+431-BG01053,13R0021,Proband,Female,Bipolar,Bipolar I,72,9.2
+431-BG01054,12R2354,Proband,Female,Bipolar,Bipolar I,36,9.2
+431-BG01055,12R2224,Proband,Female,Bipolar,Bipolar I,48,9.1
+431-BG01056,13R0010,Proband,Male,Bipolar,Bipolar I,55,N/A
+431-BG01059,12R2370,Proband,Male,Bipolar,Bipolar I,45,4.7
+431-BG01060,12R2355,Proband,Male,Bipolar,Bipolar I,60,8.4
+431-BG01061,12R2384,Proband,Female,Bipolar,Bipolar I,76,9.3
+431-BG01063,12R2356,Proband,Male,Bipolar,Bipolar I,53,8.8
+431-BG01064,15R0987,Proband,Female,Bipolar,Bipolar I,46,8
+431-BG01071,13R0032,Proband,Male,Bipolar,Bipolar I,74,9.5
+431-BG01076,12R2357,Proband,Female,Bipolar,Bipolar I,50,8.7
+431-BG01078,13R0395,Proband,Female,Bipolar,Bipolar I,66,8.9
+431-BG01079,12R2386,Proband,Female,Bipolar,Bipolar I,51,9
+431-BG01081,13R0258,Proband,Male,Bipolar,Bipolar I,49,2.4
+431-BG01084,12R2376,Proband,Male,Bipolar,Bipolar I,57,9.2
+431-BG01085,12R2377,Proband,Male,Bipolar,Bipolar I,47,N/A
+431-BG01087,13R0084,Proband,Female,Bipolar,Bipolar I,60,8.1
+431-BG01088,12R2379,Proband,Female,Bipolar,Bipolar I,47,2.1
+431-BG01092,13R0114,Proband,Female,Bipolar,Bipolar I,38,7.5
+431-BG01093,13R0127,Proband,Female,Bipolar,Bipolar I,65,9.5
+431-BG01096,13R0091,Proband,Female,Bipolar,Bipolar I,55,8.9
+431-BG01097,13R0092,Proband,Female,Bipolar,Bipolar I,44,8
+431-BG01098,13R0162,Proband,Male,Bipolar,Bipolar I,24,8.8
+431-BG01100,13R0342,Proband,Female,Bipolar,Bipolar I,22,8.5
+431-BG01102,13R0093,Proband,Female,Bipolar,Bipolar I,37,5.2
+431-BG01103,13R0139,Proband,Male,Bipolar,Bipolar I,51,7.5
+431-BG01106,12R2387,Proband,Male,Bipolar,Bipolar I,60,9.1
+431-BG01107,13R0115,Proband,Female,Bipolar,Bipolar I,28,6.7
+431-BG01108,13R0094,Proband,Female,Bipolar,Bipolar I,55,1
+431-BG01109,13R0129,Proband,Female,Bipolar,Bipolar I,67,6.7
+431-BG01110,13R0334,Proband,Male,Bipolar,Bipolar I,55,9
+431-BG01112,13R0335,Proband,Female,Bipolar,Bipolar I,53,6.6
+431-BG01115,13R0116,Proband,Female,Bipolar,Bipolar I,60,8.3
+431-BG01117,13R0243,Proband,Male,Bipolar,Bipolar I,22,9
+431-BG01120,13R0325,Proband,Male,Bipolar,Bipolar I,51,8.4
+431-BG01121,13R0102,Proband,Male,Bipolar,Bipolar I,51,9.4
+431-BG01122,13R0320,Proband,Male,Bipolar,Bipolar I,25,7.1
+431-BG01125,13R0103,Proband,Female,Bipolar,Bipolar I,70,9
+431-BG01130,13R0344,Proband,Male,Bipolar,Bipolar I,65,8.9
+431-BG01133,13R0297,Proband,Female,Bipolar,Bipolar I,44,7.8
+431-BG01138,13R0299,Proband,Female,Bipolar,Bipolar I,47,9.3
+431-BG01140,13R0095,Proband,Female,Bipolar,Bipolar I,56,N/A
+431-BG01142,13R0346,Proband,Male,Bipolar,Bipolar I,29,8.7
+431-BG01146,13R1505,Proband,Male,Bipolar,Bipolar I,78,6.7
+431-BG01147,12R2389,Proband,Female,Bipolar,Bipolar I,41,9.5
+431-BG01165,12R2389,Proband,Male,Bipolar,Bipolar I,59,8.8
+431-BG01190,13R1409,Proband,Female,Bipolar,Bipolar I,56,6.7
+431-BG01211,12R2400,Proband,Male,Bipolar,Bipolar I,45,9.4
+431-BG01214,13R0700,Proband,Female,Bipolar,Bipolar I,61,8.8
+431-BG01215,14R2430,Proband,Female,Bipolar,Bipolar I,58,8.7
+431-BG01217,13R0118,Proband,Female,Bipolar,Bipolar I,66,8.6
+431-BG01218,13R0443,Proband,Male,Bipolar,Bipolar I,54,9.1
+431-BG01219,14R2431,Proband,Male,Bipolar,Bipolar I,66,6.5
+431-BG01220,13R0119,Proband,Female,Bipolar,Bipolar I,58,9.1
+431-BG01221,13R0120,Proband,Male,Bipolar,Bipolar I,49,9.3
+431-BG01224,13R0002,Proband,Female,Bipolar,Bipolar I,68,8.6
+431-BG01225,13R0105,Proband,Female,Bipolar,Bipolar I,45,8.9
+431-BG01226,13R0528,Proband,Male,Bipolar,Bipolar I,79,9.2
+431-BG01228,13R0003,Proband,Male,Bipolar,Bipolar I,66,8.9
+431-BG01229,13R0301,Proband,Male,Bipolar,Bipolar I,45,7.9
+431-BG01232,12R2380,Proband,Male,Bipolar,Bipolar I,52,9
+431-BG01234,13R0096,Proband,Male,Bipolar,Bipolar I,60,N/A
+431-BG01235,13R0121,Proband,Male,Bipolar,Bipolar I,58,8.9
+431-BG01236,13R0251,Proband,Female,Bipolar,Bipolar I,48,9.6
+431-BG01238,13R0057,Proband,Female,Bipolar,Bipolar I,35,8.8
+431-BG01240,13R0058,Proband,Female,Bipolar,Bipolar I,50,9
+431-BG01241,13R0013,Proband,Female,Bipolar,Bipolar I,65,9.4
+431-BG01243,13R0302,Proband,Female,Bipolar,Bipolar I,52,9.1
+431-BG01245,13R0134,Proband,Female,Bipolar,Bipolar I,53,9.2
+431-BG01246,13R0106,Proband,Male,Bipolar,Bipolar I,50,8.9
+431-BG01248,13R0097,Proband,Female,Bipolar,Bipolar I,58,7.4
+431-BG01250,13R0123,Proband,Female,Bipolar,Bipolar I,37,8.9
+431-BG01253,13R0108,Proband,Female,Bipolar,Bipolar I,39,9.4
+431-BG01257,13R0059,Proband,Female,Bipolar,Bipolar I,45,8.6
+431-BG01260,13R0109,Proband,Female,Bipolar,Bipolar I,37,9.4
+431-BG01261,13R0493,Proband,Female,Bipolar,Bipolar I,30,8.7
+431-BG01262,13R0467,Proband,Female,Bipolar,Bipolar I,47,8.2
+431-BG01270,13R0110,Proband,Male,Bipolar,Bipolar I,66,8.8
+431-BG01271,13R0254,Proband,Female,Bipolar,Bipolar I,38,9
+431-BG01273,13R0014,Proband,Female,Bipolar,Bipolar I,34,9.3
+431-BG01276,13R0124,Proband,Male,Bipolar,Bipolar I,57,5.8
+431-BG01277,13R0111,Proband,Male,Bipolar,Bipolar I,33,9.5
+431-BG01278,13R0112,Proband,Female,Bipolar,Bipolar I,34,8.1
+431-BG01280,13R0049,Proband,Male,Bipolar,Bipolar I,61,8.7
+431-BG01282,13R0135,Proband,Female,Bipolar,Bipolar I,65,9.3
+431-BG01283,13R0015,Proband,Female,Bipolar,Bipolar I,58,9.2
+431-BG01284,13R0494,Proband,Female,Bipolar,Bipolar I,38,8.7
+431-BG01285,13R0074,Proband,Male,Bipolar,Bipolar I,57,9.1
+431-BG01286,13R0136,Proband,Male,Bipolar,Bipolar I,52,5.6
+431-BG01287,13R0050,Proband,Male,Bipolar,Bipolar I,60,9.4
+431-BG01288,13R0016,Proband,Male,Bipolar,Bipolar I,51,9.2
+431-BG01289,13R0051,Proband,Male,Bipolar,Bipolar I,25,N/A
+431-BG01293,13R0444,Proband,Female,Bipolar,Bipolar I,35,9
+431-BG01296,13R0040,Proband,Female,Bipolar,Bipolar I,52,9.3
+431-BG01297,13R0371,Proband,Female,Bipolar,Bipolar I,52,9.1
+431-BG01298,13R0087,Proband,Male,Bipolar,Bipolar I,35,8.9
+431-BG01299,13R0445,Proband,Male,Bipolar,Bipolar I,39,9.3
+431-BG01305,14R0199,Proband,Female,Bipolar,Bipolar I,42,7.4
+431-BG01307,13R0881,Proband,Female,Bipolar,Bipolar I,52,8.8
+431-BG01317,13R0088,Proband,Male,Bipolar,Bipolar I,41,9.5
+431-BG01318,13R0372,Proband,Female,Bipolar,Bipolar I,37,7.8
+431-BG01326,13R0386,Proband,Female,Bipolar,Bipolar I,52,8.3
+431-BG01333,13R0356,Proband,Female,Bipolar,Bipolar I,53,8.8
+431-BG01335,13R0449,Proband,Female,Bipolar,Bipolar I,63,9.1
+431-BG01336,13R0436,Proband,Male,Bipolar,Bipolar I,55,8.8
+431-BG01337,13R0450,Proband,Female,Bipolar,Bipolar I,48,9.6
+431-BG01338,13R0437,Proband,Female,Bipolar,Bipolar I,53,9.1
+431-BG01343,13R0357,Proband,Female,Bipolar,Bipolar I,47,8.8
+431-BG01344,13R0474,Proband,Female,Bipolar,Bipolar I,58,n/a
+431-BG01346,13R0401,Proband,Female,Bipolar,Bipolar I,58,9
+431-BG01347,13R0452,Proband,Female,Bipolar,Bipolar I,59,9.1
+431-BG01348,13R0475,Proband,Male,Bipolar,Bipolar I,47,8.8
+431-BG01350,13R0374,Proband,Female,Bipolar,Bipolar I,53,9
+431-BG01351,13R0498,Proband,Male,Bipolar,Bipolar I,60,9.2
+431-BG01352,13R0453,Proband,Female,Bipolar,Bipolar I,35,8.8
+431-BG01359,13R0377,Proband,Male,Bipolar,Bipolar I,51,8.3
+431-BG01360,13R0378,Proband,Female,Bipolar,Bipolar I,53,8.3
+431-BG01361,13R0454,Proband,Female,Bipolar,Bipolar I,61,9.5
+431-BG01363,13R0504,Proband,Male,Bipolar,Bipolar I,56,8.4
+431-BG01364,13R0379,Proband,Female,Bipolar,Bipolar I,33,8.5
+431-BG01365,13R0529,Proband,Female,Bipolar,Bipolar I,56,7.8
+431-BG01366,13R0974,Proband,Female,Bipolar,Bipolar I,47,9.4
+431-BG01368,13R0359,Proband,Female,Bipolar,Bipolar I,74,8.9
+431-BG01369,13R0360,Proband,Female,Bipolar,Bipolar I,63,8.4
+431-BG01370,13R0347,Proband,Male,Bipolar,Bipolar I,35,8.6
+431-BG01372,13R0381,Proband,Male,Bipolar,Bipolar I,59,9.5
+431-BG01374,13R0662,Proband,Female,Bipolar,Bipolar I,63,7.9
+431-BG01375,13R0409,Proband,Female,Bipolar,Bipolar I,70,8.7
+431-BG01376,13R0420,Proband,Female,Bipolar,Bipolar I,64,8.7
+431-BG01383,13R0406,Proband,Female,Bipolar,Bipolar I,65,2.6
+431-BG01385,13R0411,Proband,Male,Bipolar,Bipolar I,59,8.7
+431-BG01386,13R0676,Proband,Female,Bipolar,Bipolar I,33,9
+431-BG01389,13R0517,Proband,Female,Bipolar,Bipolar I,50,8.9
+431-BG01391,13R0713,Proband,Female,Bipolar,Bipolar I,53,8.4
+431-BG01396,13R0349,Proband,Female,Bipolar,Bipolar I,55,6.7
+431-BG01398,13R0678,Proband,Female,Bipolar,Bipolar I,48,9.9
+431-BG01399,13R0973,Proband,Male,Bipolar,Bipolar I,39,9.4
+431-BG01402,13R0521,Proband,Female,Bipolar,Bipolar I,40,9.1
+431-BG01403,13R0424,Proband,Female,Bipolar,Bipolar I,44,9.3
+431-BG01406,13R0414,Proband,Female,Bipolar,Bipolar I,58,8.9
+431-BG01408,13R0985,Proband,Male,Bipolar,Bipolar I,54,2.8
+431-BG01409,13R0657,Proband,Female,Bipolar,Bipolar I,50,7
+431-BG01410,14R2459,Proband,Female,Bipolar,Bipolar I,68,8.3
+431-BG01412,13R0986,Proband,Male,Bipolar,Bipolar I,64,7.9
+431-BG01414,13R0706,Proband,Male,Bipolar,Bipolar I,54,8.7
+431-BG01416,13R0508,Proband,Male,Bipolar,Bipolar I,27,9
+431-BG01418,13R0415,Proband,Male,Bipolar,Bipolar I,37,8.5
+431-BG01419,13R0906,Proband,Female,Bipolar,Bipolar I,72,8.2
+431-BG01428,13R0826,Proband,Male,Bipolar,Bipolar I,69,9.1
+431-BG01430,13R0510,Proband,Female,Bipolar,Bipolar I,57,9.2
+431-BG01432,13R0417,Proband,Male,Bipolar,Bipolar I,54,8.2
+431-BG01433,13R1021,Proband,Female,Bipolar,Bipolar I,38,9.1
+431-BG01434,13R0511,Proband,Female,Bipolar,Bipolar I,38,9.1
+431-BG01438,13R0514,Proband,Female,Bipolar,Bipolar I,52,9.3
+431-BG01441,13R0502,Proband,Female,Bipolar,Bipolar I,38,9
+431-BG01442,13R0675,Proband,Female,Bipolar,Bipolar I,41,9.1
+431-BG01444,13R0673,Proband,Female,Bipolar,Bipolar I,37,9.1
+431-BG01445,13R0669,Proband,Male,Bipolar,Bipolar I,61,9.1
+431-BG01446,13R0814,Proband,Male,Bipolar,Bipolar I,45,8.9
+431-BG01447,13R1009,Proband,Female,Bipolar,Bipolar I,24,9.3
+431-BG01449,13R0843,Proband,Male,Bipolar,Bipolar I,69,7.1
+431-BG01450,13R0801,Proband,Female,Bipolar,Bipolar I,70,9
+431-BG01451,13R0823,Proband,Female,Bipolar,Bipolar I,67,8.5
+431-BG01538,13R0975,Proband,Female,Bipolar,Bipolar I,,9.3
+431-BG01562,13R1059,Proband,Female,Bipolar,Bipolar I,49,8.8
+431-BG01564,13R0824,Proband,Female,Bipolar,Bipolar I,52,8.3
+431-BG01569,13R1022,Proband,Male,Bipolar,Bipolar I,66,7.9
+431-BG01580,13R0538,Proband,Female,Bipolar,Bipolar I,57,6.3
+431-BG01610,13R1052,Proband,Female,Bipolar,Bipolar I,64,N/A
+431-BG01612,13R1062,Proband,Female,Bipolar,Bipolar I,55,9.3
+431-BG01614,13R0874,Proband,Female,Bipolar,Bipolar I,57,8.4
+431-BG01621,13R1074,Proband,Female,Bipolar,Bipolar I,31,8.8
+431-BG01622,13R0699,Proband,Female,Bipolar,Bipolar I,63,8.5
+431-BG01626,13R0696,Proband,Male,Bipolar,Bipolar I,62,9.1
+431-BG01649,13R0864,Proband,Female,Bipolar,Bipolar I,80,8.4
+431-BG01658,13R0888,Proband,Female,Bipolar,Bipolar I,51,9
+431-BG01660,13R0703,Proband,Female,Bipolar,Bipolar I,41,8.9
+431-BG01663,13R0715,Proband,Female,Bipolar,Bipolar I,53,7.9
+431-BG01665,13R0697,Proband,Female,Bipolar,Bipolar I,48,8.8
+431-BG01666,13R0760,Proband,Female,Bipolar,Bipolar I,63,9.2
+431-BG01670,13R0765,Proband,Female,Bipolar,Bipolar I,43,9
+431-BG01672,13R1029,Proband,Male,Bipolar,Bipolar I,43,8.9
+431-BG01681,13R0766,Proband,Female,Bipolar,Bipolar I,69,8.7
+431-BG01683,13R0769,Proband,Male,Bipolar,Bipolar I,65,9
+431-BG01694,13R0688,Proband,Male,Bipolar,Bipolar I,61,8.7
+431-BG01697,13R0741,Proband,Female,Bipolar,Bipolar I,52,8.9
+431-BG01699,13R0908,Proband,Male,Bipolar,Bipolar I,59,9
+431-BG01701,13R0942,Proband,Female,Bipolar,Bipolar I,44,8.4
+431-BG01704,13R0718,Proband,Female,Bipolar,Bipolar I,43,7.8
+431-BG01709,13R1625,Proband,Female,Bipolar,Bipolar I,32,5.6
+431-BG01715,13R0719,Proband,Female,Bipolar,Bipolar I,33,N/A
+431-BG01716,13R0911,Proband,Female,Bipolar,Bipolar I,56,8.3
+431-BG01718,13R1421,Proband,Male,Bipolar,Bipolar I,52,5.9
+431-BG01719,13R1735,Proband,Female,Bipolar,Bipolar I,59,9.1
+431-BG01720,14R1927,Proband,Female,Bipolar,Bipolar I,53,8.5
+431-BG01723,13R1494,Proband,Male,Bipolar,Bipolar I,67,8.6
+431-BG01724,13R0690,Proband,Female,Bipolar,Bipolar I,66,8.8
+431-BG01726,13R0832,Proband,Male,Bipolar,Bipolar I,61,9
+431-BG01728,13R1043,Proband,Male,Bipolar,Bipolar I,66,4.1
+431-BG01732,13R1496,Proband,Male,Bipolar,Bipolar I,41,8.7
+431-BG01737,13R1485,Proband,Female,Bipolar,Bipolar I,66,8.9
+431-BG01738,13R0775,Proband,Female,Bipolar,Bipolar I,61,8.3
+431-BG01740,13R0915,Proband,Female,Bipolar,Bipolar I,60,8.8
+431-BG01741,13R0891,Proband,Male,Bipolar,Bipolar I,50,8.6
+431-BG01745,13R0829,Proband,Female,Bipolar,Bipolar I,48,9.1
+431-BG01747,13R0834,Proband,Female,Bipolar,Bipolar I,61,7.5
+431-BG01748,13R1518,Proband,Female,Bipolar,Bipolar I,55,8.3
+431-BG01750,13R0892,Proband,Male,Bipolar,Bipolar I,29,8.4
+431-BG01752,13R1530,Proband,Female,Bipolar,Bipolar I,39,N/A
+431-BG01755,14R2107,Proband,Female,Bipolar,Bipolar I,55,N/A
+431-BG01758,13R1616,Proband,Female,Bipolar,Bipolar I,67,7
+431-BG01761,13R0916,Proband,Female,Bipolar,Bipolar I,53,8.7
+431-BG01762,13R0771,Proband,Female,Bipolar,Bipolar I,33,7.7
+431-BG01763,13R1519,Proband,Female,Bipolar,Bipolar I,28,8.3
+431-BG01767,13R1497,Proband,Female,Bipolar,Bipolar I,48,7.8
+431-BG01774,13R1458,Proband,Female,Bipolar,Bipolar I,52,9.1
+431-BG01777,13R0686,Proband,Male,Bipolar,Bipolar I,65,8.4
+431-BG01778,13R0779,Proband,Female,Bipolar,Bipolar I,52,8.8
+431-BG01779,13R0687,Proband,Female,Bipolar,Bipolar I,47,9.1
+431-BG01781,13R1507,Proband,Female,Bipolar,Bipolar I,43,7.7
+431-BG01782,13R1605,Proband,Female,Bipolar,Bipolar I,38,8.6
+431-BG01785,13R1471,Proband,Female,Bipolar,Bipolar I,39,6.2
+431-BG01787,13R1487,Proband,Female,Bipolar,Bipolar I,50,9
+431-BG01794,13R1413,Proband,Female,Bipolar,Bipolar I,50,8.1
+431-BG01796,13R1542,Proband,Female,Bipolar,Bipolar I,48,N/A
+431-BG01798,13R0691,Proband,Female,Bipolar,Bipolar I,48,8.7
+431-BG01805,13R1524,Proband,Female,Bipolar,Bipolar I,50,7.2
+431-BG01806,13R1558,Proband,Male,Bipolar,Bipolar I,70,7.6
+431-BG01808,13R1460,Proband,Female,Bipolar,Bipolar I,73,N/A
+431-BG01809,13R1537,Proband,Male,Bipolar,Bipolar I,66,7.6
+431-BG01815,13R1416,Proband,Male,Bipolar,Bipolar I,36,7.9
+431-BG01819,13R1393,Proband,Male,Bipolar,Bipolar I,51,7.9
+431-BG01820,13R1509,Proband,Male,Bipolar,Bipolar I,45,7.8
+431-BG01823,13R1449,Proband,Female,Bipolar,Bipolar I,36,8.6
+431-BG01825,14R2109,Proband,Female,Bipolar,Bipolar I,23,N/A
+431-BG01826,13R1545,Proband,Male,Bipolar,Bipolar I,49,N/A
+431-BG01827,13R1490,Proband,Female,Bipolar,Bipolar I,57,9
+431-BG01835,16R1289,Proband,Female,Bipolar,Bipolar I,33,8.9
+431-BG01836,13R1462,Proband,Female,Bipolar,Bipolar I,53,7.6
+431-BG01841,13R1514,Proband,Male,Bipolar,Bipolar I,52,8.9
+431-BG01847,13R1437,Proband,Female,Bipolar,Bipolar I,46,N/A
+431-BG01848,13R1451,Proband,Male,Bipolar,Bipolar I,51,5.2
+431-BG01849,14R1856,Proband,Female,Bipolar,Bipolar I,29,8.1
+431-BG01850,13R1585,Proband,Male,Bipolar,Bipolar I,41,8
+431-BG01851,13R1516,Proband,Male,Bipolar,Bipolar I,66,8.1
+431-BG01852,13R1550,Proband,Female,Bipolar,Bipolar I,69,8.8
+431-BG01854,13R1417,Proband,Male,Bipolar,Bipolar I,58,8.3
+431-BG01856,13R1475,Proband,Male,Bipolar,Bipolar I,58,8.2
+431-BG01857,13R1476,Proband,Male,Bipolar,Bipolar I,70,8.5
+431-BG01859,13R1563,Proband,Female,Bipolar,Bipolar I,28,N/A
+431-BG01860,13R1418,Proband,Female,Bipolar,Bipolar I,61,8.1
+431-BG01862,13R1464,Proband,Female,Bipolar,Bipolar I,48,8.7
+431-BG01865,13R1419,Proband,Male,Bipolar,Bipolar I,71,8.6
+431-BG01866,13R1452,Proband,Female,Bipolar,Bipolar I,42,6.3
+431-BG01867,13R1477,Proband,Male,Bipolar,Bipolar I,67,8.4
+431-BG01868,13R1465,Proband,Male,Bipolar,Bipolar I,62,8.9
+431-BG01870,15R0651,Proband,Female,Bipolar,Bipolar I,58,8.1
+431-BG01872,13R1389,Proband,Female,Bipolar,Bipolar I,54,8.1
+431-BG01878,13R1390,Proband,Male,Bipolar,Bipolar I,53,8
+431-BG01879,13R1466,Proband,Female,Bipolar,Bipolar I,34,8.4
+431-BG01880,13R1639,Proband,Female,Bipolar,Bipolar I,53,8.4
+431-BG01882,13R1403,Proband,Male,Bipolar,Bipolar I,58,8.3
+431-BG01883,13R1426,Proband,Female,Bipolar,Bipolar I,40,8.4
+431-BG01884,13R1427,Proband,Male,Bipolar,Bipolar I,61,7.7
+431-BG01886,13R1428,Proband,Male,Bipolar,Bipolar I,25,8.1
+431-BG01887,13R1392,Proband,Male,Bipolar,Bipolar I,67,7.8
+431-BG01890,13R1406,Proband,Male,Bipolar,Bipolar I,60,8.6
+431-BG01891,13R1455,Proband,Male,Bipolar,Bipolar I,21,6.9
+431-BG01892,13R1663,Proband,Male,Bipolar,Bipolar I,44,7.6
+431-BG01893,13R1664,Proband,Male,Bipolar,Bipolar I,37,8.2
+431-BG01894,14R1928,Proband,Female,Bipolar,Bipolar I,46,8.8
+431-BG01898,13R1430,Proband,Male,Bipolar,Bipolar I,52,7.9
+431-BG01899,13R1395,Proband,Male,Bipolar,Bipolar I,67,7.6
+431-BG01901,13R1665,Proband,Male,Bipolar,Bipolar I,44,7.6
+431-BG01902,13R1396,Proband,Male,Bipolar,Bipolar I,59,7.6
+431-BG01905,13R1456,Proband,Female,Bipolar,Bipolar I,45,8.3
+431-BG01907,14R1977,Proband,Male,Bipolar,Bipolar I,70,N/A
+431-BG01909,14R1978,Proband,Female,Bipolar,Bipolar I,35,8.5
+431-BG01912,13R1503,Proband,Male,Bipolar,Bipolar I,45,9.2
+431-BG01913,13R1504,Proband,Male,Bipolar,Bipolar I,45,9
+431-BG01915,14R1891,Proband,Male,Bipolar,Bipolar I,73,5.3
+431-BG01918,13R1640,Proband,Male,Bipolar,Bipolar I,50,8
+431-BG01920,13R1760,Proband,Male,Bipolar,Bipolar I,32,N/A
+431-BG01921,13R1730,Proband,Male,Bipolar,Bipolar I,52,8.3
+431-BG01928,13R1651,Proband,Male,Bipolar,Bipolar I,63,8.3
+431-BG01931,13R1711,Proband,Male,Bipolar,Bipolar I,51,8.3
+431-BG01933,14R1932,Proband,Male,Bipolar,Bipolar I,58,9.1
+431-BG01935,14R1916,Proband,Female,Bipolar,Bipolar I,52,8.9
+431-BG01938,14R2110,Proband,Female,Bipolar,Bipolar I,62,N/A
+431-BG01939,14R1903,Proband,Female,Bipolar,Bipolar I,42,N/A
+431-BG01940,13R1668,Proband,Male,Bipolar,Bipolar I,45,8.5
+431-BG01944,14R2007,Proband,Male,Bipolar,Bipolar I,55,8.5
+431-BG01951,14R1920,Proband,Female,Bipolar,Bipolar I,43,8.7
+431-BG01954,14R1894,Proband,Female,Bipolar,Bipolar I,54,9
+431-BG01955,14R1956,Proband,Female,Bipolar,Bipolar I,67,8.4
+431-BG01957,13R1652,Proband,Female,Bipolar,Bipolar I,50,8.1
+431-BG01959,14R1895,Proband,Male,Bipolar,Bipolar I,50,7.8
+431-BG01960,14R1896,Proband,Female,Bipolar,Bipolar I,48,9.2
+431-BG01963,14R1814,Proband,Female,Bipolar,Bipolar I,85,N/A
+431-BG01964,13R1653,Proband,Female,Bipolar,Bipolar I,29,6.8
+431-BG01965,14R1897,Proband,Female,Bipolar,Bipolar I,44,6.6
+431-BG01966,14R1858,Proband,Male,Bipolar,Bipolar I,58,N/A
+431-BG01968,14R2111,Proband,Female,Bipolar,Bipolar I,40,N/A
+431-BG01969,13R1654,Proband,Male,Bipolar,Bipolar I,44,7.2
+431-BG01970,13R1684,Proband,Female,Bipolar,Bipolar I,32,8.7
+431-BG01972,14R1946,Proband,Female,Bipolar,Bipolar I,42,8.9
+431-BG01977,14R1971,Proband,Male,Bipolar,Bipolar I,55,8.6
+431-BG01981,14R1802,Proband,Female,Bipolar,Bipolar I,47,N/A
+431-BG01984,13R1656,Proband,Male,Bipolar,Bipolar I,51,8.1
+431-BG01986,14R1984,Proband,Male,Bipolar,Bipolar I,68,8.4
+431-BG01987,14R1869,Proband,Female,Bipolar,Bipolar I,33,N/A
+431-BG01988,14R1859,Proband,Female,Bipolar,Bipolar I,40,8.1
+431-BG01991,14R1972,Proband,Male,Bipolar,Bipolar I,41,8.3
+431-BG01992,13R1657,Proband,Female,Bipolar,Bipolar I,57,7.1
+431-BG01993,14R1835,Proband,Male,Bipolar,Bipolar I,44,8.7
+431-BG01994,14R2097,Proband,Female,Bipolar,Bipolar I,30,3.2
+431-BG01997,14R2197,Proband,Female,Bipolar,Bipolar I,58,N/A
+431-BG02001,14R2483,Proband,Female,Bipolar,Bipolar I,64,8.7
+431-BG02002,14R0005,Proband,Female,Bipolar,Bipolar I,39,7.6
+431-BG02005,13R1671,Proband,Female,Bipolar,Bipolar I,52,8
+431-BG02006,13R1787,Proband,Female,Bipolar,Bipolar I,46,N/A
+431-BG02043,14R1837,Proband,Male,Bipolar,Bipolar I,30,8.8
+431-BG02045,14R2112,Proband,Male,Bipolar,Bipolar I,47,N/A
+431-BG02050,14R2321,Proband,Female,Bipolar,Bipolar I,50,8.2
+431-BG02051,13R1672,Proband,Male,Bipolar,Bipolar I,56,8.4
+431-BG02053,13R1713,Proband,Female,Bipolar,Bipolar I,28,8.6
+431-BG02056,14R1860,Proband,Male,Bipolar,Bipolar I,45,8
+431-BG02058,14R1861,Proband,Male,Bipolar,Bipolar I,54,8.3
+431-BG02060,14R1815,Proband,Male,Bipolar,Bipolar I,59,7.5
+431-BG02061,14R2237,Proband,Female,Bipolar,Bipolar I,61,8.5
+431-BG02064,14R0007,Proband,Female,Bipolar,Bipolar I,57,8.3
+431-BG02067,13R1765,Proband,Female,Bipolar,Bipolar I,46,7.9
+431-BG02068,13R1789,Proband,Male,Bipolar,Bipolar I,35,8.7
+431-BG02069,13R1629,Proband,Female,Bipolar,Bipolar I,47,8
+431-BG02072,13R1716,Proband,Female,Bipolar,Bipolar I,60,8
+431-BG02074,13R1643,Proband,Male,Bipolar,Bipolar I,51,N/A
+431-BG02076,13R1766,Proband,Female,Bipolar,Bipolar I,49,9.5
+431-BG02077,13R1791,Proband,Male,Bipolar,Bipolar I,20,N/A
+431-BG02080,14R1805,Proband,Female,Bipolar,Bipolar I,56,8.9
+431-BG02081,14R1829,Proband,Male,Bipolar,Bipolar I,47,8.8
+431-BG02084,14R0226,Proband,Female,Bipolar,Bipolar I,55,8.1
+431-BG02085,14R2136,Proband,Female,Bipolar,Bipolar I,20,9.3
+431-BG02086,14R1818,Proband,Female,Bipolar,Bipolar I,45,7.5
+431-BG02088,14R2297,Proband,Male,Bipolar,Bipolar I,29,8.9
+431-BG02089,14R1949,Proband,Male,Bipolar,Bipolar I,44,9.3
+431-BG02090,14R1854,Proband,Male,Bipolar,Bipolar I,23,N/A
+431-BG02091,14R2137,Proband,Male,Bipolar,Bipolar I,26,9.4
+431-BG02095,14R2147,Proband,Male,Bipolar,Bipolar I,56,N/A
+431-BG02098,14R2199,Proband,Female,Bipolar,Bipolar I,55,8.4
+431-BG02100,14R2495,Proband,Female,Bipolar,Bipolar I,71,7.9
+431-BG02101,14R0021,Proband,Female,Bipolar,Bipolar I,50,8.2
+431-BG02102,14R2139,Proband,Female,Bipolar,Bipolar I,58,N/A
+431-BG02103,14R2225,Proband,Female,Bipolar,Bipolar I,63,8.2
+431-BG02106,14R2140,Proband,Male,Bipolar,Bipolar I,35,8.8
+431-BG02107,14R2239,Proband,Female,Bipolar,Bipolar I,31,8.6
+431-BG02109,14R2150,Proband,Male,Bipolar,Bipolar I,52,8.8
+431-BG02111,14R0087,Proband,Female,Bipolar,Bipolar I,54,8.7
+431-BG02113,14R2433,Proband,Male,Bipolar,Bipolar I,39,8.8
+431-BG02118,14R2127,Proband,Male,Bipolar,Bipolar I,71,9.1
+431-BG02123,14R2073,Proband,Male,Bipolar,Bipolar I,39,N/A
+431-BG02124,14R2114,Proband,Male,Bipolar,Bipolar I,54,8.7
+431-BG02125,14R2201,Proband,Female,Bipolar,Bipolar I,42,N/A
+431-BG02129,14R2489,Proband,Male,Bipolar,Bipolar I,45,8.5
+431-BG02130,14R2499,Proband,Female,Bipolar,Bipolar I,32,8.7
+431-BG02133,14R2115,Proband,Male,Bipolar,Bipolar I,45,8.6
+431-BG02138,14R2491,Proband,Male,Bipolar,Bipolar I,70,8.2
+431-BG02141,14R2012,Proband,Female,Bipolar,Bipolar I,65,7.3
+431-BG02166,14R2074,Proband,Male,Bipolar,Bipolar I,57,8.6
+431-BG02184,14R2250,Proband,Female,Bipolar,Bipolar I,20,8.4
+431-BG02185,14R0012,Proband,Male,Bipolar,Bipolar I,33,9.1
+431-BG02186,14R0013,Proband,Male,Bipolar,Bipolar I,65,8.7
+431-BG02189,14R0431,Proband,Male,Bipolar,Bipolar I,61,8.2
+431-BG02190,14R2116,Proband,Female,Bipolar,Bipolar I,32,N/A
+431-BG02191,14R0014,Proband,Male,Bipolar,Bipolar I,72,9
+431-BG02193,14R0015,Proband,Female,Bipolar,Bipolar I,62,8.8
+431-BG02194,14R2240,Proband,Female,Bipolar,Bipolar I,48,9.1
+431-BG02195,14R2181,Proband,Male,Bipolar,Bipolar I,71,9.2
+431-BG02197,14R2478,Proband,Male,Bipolar,Bipolar I,44,9.1
+431-BG02202,14R2492,Proband,Male,Bipolar,Bipolar I,51,8.4
+431-BG02203,14R0403,Proband,Female,Bipolar,Bipolar I,78,8.3
+431-BG02204,14R0003,Proband,Male,Bipolar,Bipolar I,54,8.1
+431-BG02205,14R0004,Proband,Male,Bipolar,Bipolar I,73,8.2
+431-BG02206,14R2117,Proband,Female,Bipolar,Bipolar I,31,8.5
+431-BG02207,14R2217,Proband,Female,Bipolar,Bipolar I,42,8.8
+431-BG02240,14R2167,Proband,Female,Bipolar,Bipolar I,53,8.7
+431-BG02248,14R2394,Proband,Female,Bipolar,Bipolar I,57,9
+431-BG02249,14R2480,Proband,Female,Bipolar,Bipolar I,45,8.8
+431-BG02250,14R2445,Proband,Female,Bipolar,Bipolar I,50,8
+431-BG02251,14R2254,Proband,Male,Bipolar,Bipolar I,47,N/A
+431-BG02255,14R2438,Proband,Female,Bipolar,Bipolar I,75,8.6
+431-BG02256,14R2381,Proband,Female,Bipolar,Bipolar I,43,8.8
+431-BG02257,14R2129,Proband,Male,Bipolar,Bipolar I,51,8.9
+431-BG02258,14R2359,Proband,Female,Bipolar,Bipolar I,67,8.5
+431-BG02259,14R2158,Proband,Female,Bipolar,Bipolar I,47,8.6
+431-BG02261,14R2449,Proband,Male,Bipolar,Bipolar I,35,9
+431-BG02265,14R0418,Proband,Female,Bipolar,Bipolar I,51,8.8
+431-BG02266,14R2183,Proband,Female,Bipolar,Bipolar I,46,9.5
+431-BG02267,14R2382,Proband,Female,Bipolar,Bipolar I,55,9.4
+431-BG02269,14R2273,Proband,Female,Bipolar,Bipolar I,49,8.6
+431-BG02271,14R2169,Proband,Female,Bipolar,Bipolar I,43,8.9
+431-BG02272,14R2185,Proband,Female,Bipolar,Bipolar I,56,9.2
+431-BG02274,14R2253,Proband,Female,Bipolar,Bipolar I,45,N/A
+431-BG02275,14R2235,Proband,Female,Bipolar,Bipolar I,43,8.6
+431-BG02277,14R2406,Proband,Female,Bipolar,Bipolar I,38,8.6
+431-BG02278,14R2203,Proband,Female,Bipolar,Bipolar I,45,N/A
+431-BG02279,14R2370,Proband,Male,Bipolar,Bipolar I,65,8.3
+431-BG02280,14R0028,Proband,Male,Bipolar,Bipolar I,48,9
+431-BG02281,14R0130,Proband,Male,Bipolar,Bipolar I,57,N/A
+431-BG02282,14R2171,Proband,Male,Bipolar,Bipolar I,61,8.9
+431-BG02283,14R2162,Proband,Male,Bipolar,Bipolar I,52,9.1
+431-BG02284,14R2163,Proband,Female,Bipolar,Bipolar I,53,8.5
+431-BG02285,14R2439,Proband,Female,Bipolar,Bipolar I,77,8.7
+431-BG02286,14R2164,Proband,Male,Bipolar,Bipolar I,57,N/A
+431-BG02288,14R2255,Proband,Male,Bipolar,Bipolar I,57,N/A
+431-BG02289,14R2165,Proband,Female,Bipolar,Bipolar I,46,8.4
+431-BG02291,14R2175,Proband,Female,Bipolar,Bipolar I,50,8.6
+431-BG02292,14R2236,Proband,Male,Bipolar,Bipolar I,26,8.9
+431-BG02293,14R2014,Proband,Female,Bipolar,Bipolar I,32,8.4
+431-BG02295,14R2323,Proband,Female,Bipolar,Bipolar I,51,8.5
+431-BG02296,14R2087,Proband,Male,Bipolar,Bipolar I,50,8.2
+431-BG02301,14R2049,Proband,Female,Bipolar,Bipolar I,44,8.8
+431-BG02302,14R2040,Proband,Male,Bipolar,Bipolar I,58,8.1
+431-BG02303,14R2176,Proband,Female,Bipolar,Bipolar I,48,8.8
+431-BG02304,14R2333,Proband,Female,Bipolar,Bipolar I,47,N/A
+431-BG02306,14R2325,Proband,Male,Bipolar,Bipolar I,39,7.6
+431-BG02307,14R0477,Proband,Female,Bipolar,Bipolar I,27,8.4
+431-BG02308,14R2177,Proband,Male,Bipolar,Bipolar I,25,9.6
+431-BG02311,14R0367,Proband,Male,Bipolar,Bipolar I,78,8.2
+431-BG02312,14R0339,Proband,Male,Bipolar,Bipolar I,53,8.5
+431-BG02313,14R2243,Proband,Female,Bipolar,Bipolar I,59,9.1
+431-BG02317,14R2052,Proband,Female,Bipolar,Bipolar I,67,8.2
+431-BG02318,14R2424,Proband,Male,Bipolar,Bipolar I,62,9
+431-BG02319,14R2223,Proband,Female,Bipolar,Bipolar I,63,9
+431-BG02320,14R2334,Proband,Female,Bipolar,Bipolar I,38,8.5
+431-BG02322,14R2256,Proband,Male,Bipolar,Bipolar I,29,8.1
+431-BG02323,14R2190,Proband,Female,Bipolar,Bipolar I,51,9.6
+431-BG02327,14R2063,Proband,Female,Bipolar,Bipolar I,56,8.6
+431-BG02330,14R2274,Proband,Female,Bipolar,Bipolar I,45,N/A
+431-BG02331,14R2374,Proband,Female,Bipolar,Bipolar I,38,9.1
+431-BG02332,14R2310,Proband,Female,Bipolar,Bipolar I,55,9
+431-BG02335,14R2275,Proband,Male,Bipolar,Bipolar I,43,9.4
+431-BG02336,14R2400,Proband,Male,Bipolar,Bipolar I,48,9.2
+431-BG02337,14R2064,Proband,Female,Bipolar,Bipolar I,52,9
+431-BG02339,14R0434,Proband,Male,Bipolar,Bipolar I,26,8.5
+431-BG02340,14R2411,Proband,Female,Bipolar,Bipolar I,34,8.6
+431-BG02343,14R2118,Proband,Female,Bipolar,Bipolar I,43,9.3
+431-BG02346,14R2375,Proband,Female,Bipolar,Bipolar I,58,9.3
+431-BG02347,14R2413,Proband,Female,Bipolar,Bipolar I,42,9
+431-BG02348,14R2065,Proband,Female,Bipolar,Bipolar I,42,9
+431-BG02350,14R2041,Proband,Male,Bipolar,Bipolar I,62,8
+431-BG02351,14R2298,Proband,Male,Bipolar,Bipolar I,42,9.5
+431-BG02352,14R0395,Proband,Female,Bipolar,Bipolar I,46,7.4
+431-BG02353,14R2312,Proband,Male,Bipolar,Bipolar I,34,9.2
+431-BG02354,14R2387,Proband,Male,Bipolar,Bipolar I,31,8.8
+431-BG02355,14R2335,Proband,Female,Bipolar,Bipolar I,62,8.1
+431-BG02357,14R0120,Proband,Female,Bipolar,Bipolar I,54,8.5
+431-BG02361,14R2388,Proband,Male,Bipolar,Bipolar I,65,9.2
+431-BG02364,14R2054,Proband,Female,Bipolar,Bipolar I,58,8.8
+431-BG02365,14R2299,Proband,Male,Bipolar,Bipolar I,41,9.1
+431-BG02366,14R0420,Proband,Female,Bipolar,Bipolar I,45,8.7
+431-BG02367,14R2352,Proband,Female,Bipolar,Bipolar I,62,8.4
+431-BG02368,14R0369,Proband,Female,Bipolar,Bipolar I,39,9
+431-BG02369,14R0212,Proband,Male,Bipolar,Bipolar I,55,8.5
+431-BG02370,15R0551,Proband,Male,Bipolar,Bipolar I,53,8
+431-BG02372,14R0187,Proband,Male,Bipolar,Bipolar I,38,8.9
+431-BG02374,14R0455,Proband,Male,Bipolar,Bipolar I,57,8.5
+431-BG02376,14R2300,Proband,Male,Bipolar,Bipolar I,67,9.1
+431-BG02377,14R2301,Proband,Female,Bipolar,Bipolar I,51,8.9
+431-BG02379,14R2055,Proband,Male,Bipolar,Bipolar I,63,8
+431-BG02381,14R2278,Proband,Male,Bipolar,Bipolar I,42,9.1
+431-BG02382,14R2337,Proband,Female,Bipolar,Bipolar I,44,8.2
+431-BG02385,14R0325,Proband,Female,Bipolar,Bipolar I,48,N/A
+431-BG02386,14R0213,Proband,Female,Bipolar,Bipolar I,67,8.6
+431-BG02387,14R2045,Proband,Female,Bipolar,Bipolar I,58,7.5
+431-BG02389,14R2056,Proband,Male,Bipolar,Bipolar I,63,8.7
+431-BG02394,14R0105,Proband,Female,Bipolar,Bipolar I,53,8.8
+431-BG02397,14R2340,Proband,Female,Bipolar,Bipolar I,34,8.7
+431-BG02398,14R2330,Proband,Female,Bipolar,Bipolar I,51,8.6
+431-BG02399,14R2292,Proband,Male,Bipolar,Bipolar I,33,9
+431-BG02400,14R0175,Proband,Male,Bipolar,Bipolar I,69,7.4
+431-BG02402,14R0167,Proband,Male,Bipolar,Bipolar I,58,9
+431-BG02405,14R2365,Proband,Male,Bipolar,Bipolar I,41,8.2
+431-BG02406,14R0178,Proband,Female,Bipolar,Bipolar I,51,7.7
+431-BG02413,14R2030,Proband,Female,Bipolar,Bipolar I,50,8
+431-BG02414,14R0169,Proband,Female,Bipolar,Bipolar I,54,8.8
+431-BG02415,14R2294,Proband,Female,Bipolar,Bipolar I,65,9
+431-BG02416,14R0214,Proband,Female,Bipolar,Bipolar I,55,7.9
+431-BG02417,14R0157,Proband,Female,Bipolar,Bipolar I,61,8.7
+431-BG02419,14R2355,Proband,Female,Bipolar,Bipolar I,24,8.6
+431-BG02420,14R0121,Proband,Female,Bipolar,Bipolar I,60,8.7
+431-BG02421,14R2057,Proband,Male,Bipolar,Bipolar I,68,8.8
+431-BG02422,14R2343,Proband,Female,Bipolar,Bipolar I,41,8.6
+431-BG02424,14R2305,Proband,Female,Bipolar,Bipolar I,57,9.1
+431-BG02427,14R2281,Proband,Female,Bipolar,Bipolar I,49,8.7
+431-BG02429,14R0160,Proband,Male,Bipolar,Bipolar I,58,9.1
+431-BG02430,14R2402,Proband,Female,Bipolar,Bipolar I,52,8.8
+431-BG02431,14R2391,Proband,Female,Bipolar,Bipolar I,45,9.4
+431-BG02433,14R0098,Proband,Male,Bipolar,Bipolar I,26,8.1
+431-BG02436,14R0405,Proband,Female,Bipolar,Bipolar I,59,7.9
+431-BG02439,15R0529,Proband,Female,Bipolar,Bipolar I,46,8.2
+431-BG02441,14R2282,Proband,Female,Bipolar,Bipolar I,40,8.9
+431-BG02442,14R0439,Proband,Male,Bipolar,Bipolar I,46,8.6
+431-BG02445,14R0370,Proband,Male,Bipolar,Bipolar I,61,N/A
+431-BG02446,14R0179,Proband,Male,Bipolar,Bipolar I,59,7.9
+431-BG02449,14R0131,Proband,Female,Bipolar,Bipolar I,53,7.9
+431-BG02450,14R0444,Proband,Female,Bipolar,Bipolar I,38,9.4
+431-BG02452,14R0240,Proband,Female,Bipolar,Bipolar I,37,8.4
+431-BG02453,14R0328,Proband,Male,Bipolar,Bipolar I,63,8.6
+431-BG02454,14R0384,Proband,Female,Bipolar,Bipolar I,77,8.4
+431-BG02455,14R0190,Proband,Female,Bipolar,Bipolar I,55,8
+431-BG02456,14R0170,Proband,Male,Bipolar,Bipolar I,46,8.6
+431-BG02458,14R0241,Proband,Male,Bipolar,Bipolar I,49,8.9
+431-BG02459,14R0242,Proband,Female,Bipolar,Bipolar I,52,8
+431-BG02461,14R0445,Proband,Male,Bipolar,Bipolar I,71,9.2
+431-BG02462,14R0181,Proband,Male,Bipolar,Bipolar I,45,7.6
+431-BG02463,14R0303,Proband,Female,Bipolar,Bipolar I,60,8.9
+431-BG02466,15R0169,Proband,Female,Bipolar,Bipolar I,42,7.8
+431-BG02468,14R0243,Proband,Female,Bipolar,Bipolar I,54,8.8
+431-BG02470,14R0341,Proband,Female,Bipolar,Bipolar I,44,5.1
+431-BG02471,14R2046,Proband,Female,Bipolar,Bipolar I,43,8
+431-BG02473,15R0575,Proband,Male,Bipolar,Bipolar I,55,8.8
+431-BG02475,14R0205,Proband,Female,Bipolar,Bipolar I,53,6.3
+431-BG02477,15R0181,Proband,Male,Bipolar,Bipolar I,50, N/A
+431-BG02478,14R2392,Proband,Male,Bipolar,Bipolar I,74,9.4
+431-BG02482,14R0134,Proband,Female,Bipolar,Bipolar I,49,8.6
+431-BG02483,14R0244,Proband,Female,Bipolar,Bipolar I,68,8.6
+431-BG02486,14R0426,Proband,Female,Bipolar,Bipolar I,47,9
+431-BG02487,14R0099,Proband,Male,Bipolar,Bipolar I,47,8.2
+431-BG02488,14R0306,Proband,Male,Bipolar,Bipolar I,44,8.7
+431-BG02491,14R0228,Proband,Female,Bipolar,Bipolar I,52,N/A
+431-BG02492,14R0307,Proband,Female,Bipolar,Bipolar I,59,8.9
+431-BG02493,14R0136,Proband,Male,Bipolar,Bipolar I,56,8.5
+431-BG02494,14R0219,Proband,Female,Bipolar,Bipolar I,30,8.6
+431-BG02497,14R0411,Proband,Male,Bipolar,Bipolar I,35,N/A
+431-BG02499,15R0025,Proband,Female,Bipolar,Bipolar I,54,8.8
+431-BG02500,15R0831,Proband,Male,Bipolar,Bipolar I,43,7.8
+431-BG02502,14R0109,Proband,Male,Bipolar,Bipolar I,64,9.1
+431-BG02503,14R0150,Proband,Female,Bipolar,Bipolar I,48,8.4
+431-BG02506,15R0530,Proband,Male,Bipolar,Bipolar I,47,8.5
+431-BG02507,14R0229,Proband,Female,Bipolar,Bipolar I,65,8.2
+431-BG02508,14R0246,Proband,Female,Bipolar,Bipolar I,41,9.1
+431-BG02510,14R0334,Proband,Male,Bipolar,Bipolar I,65,8.9
+431-BG02512,14R0123,Proband,Male,Bipolar,Bipolar I,50,9
+431-BG02513,14R0183,Proband,Male,Bipolar,Bipolar I,57,7.9
+431-BG02516,14R0377,Proband,Female,Bipolar,Bipolar I,22,8.7
+431-BG02517,15R0603,Proband,Male,Bipolar,Bipolar I,51,N/A
+431-BG02520,14R0159,Proband,Female,Bipolar,Bipolar I,35,N/A
+431-BG02522,14R0100,Proband,Male,Bipolar,Bipolar I,52,7.3
+431-BG02525,14R0208,Proband,Female,Bipolar,Bipolar I,45,7.9
+431-BG02526,15R0170,Proband,Female,Bipolar,Bipolar I,54,7.6
+431-BG02528,14R0173,Proband,Female,Bipolar,Bipolar I,57,8.5
+431-BG02529,15R0460,Proband,Female,Bipolar,Bipolar I,37,8.7
+431-BG02530,14R0112,Proband,Female,Bipolar,Bipolar I,34,8.2
+431-BG02531,14R0209,Proband,Male,Bipolar,Bipolar I,57,7.3
+431-BG02532,14R0210,Proband,Female,Bipolar,Bipolar I,42,7.5
+431-BG02535,14R0195,Proband,Female,Bipolar,Bipolar I,53,9
+431-BG02538,14R0310,Proband,Female,Bipolar,Bipolar I,47,N/A
+431-BG02539,14R0184,Proband,Male,Bipolar,Bipolar I,58,8
+431-BG02542,15R0183,Proband,Male,Bipolar,Bipolar I,36,7.5
+431-BG02543,14R0185,Proband,Male,Bipolar,Bipolar I,54,7.7
+431-BG02544,15R0819,Proband,Male,Bipolar,Bipolar I,62,8
+431-BG02545,14R0174,Proband,Male,Bipolar,Bipolar I,45,9.3
+431-BG02548,14R0481,Proband,Female,Bipolar,Bipolar I,50,8.8
+431-BG02550,14R0196,Proband,Male,Bipolar,Bipolar I,70,8.8
+431-BG02551,14R0197,Proband,Male,Bipolar,Bipolar I,64,8.6
+431-BG02553,15R0171,Proband,Male,Bipolar,Bipolar I,58,8
+431-BG02554,14R0162,Proband,Male,Bipolar,Bipolar I,51,8.7
+431-BG02555,15R0450,Proband,Male,Bipolar,Bipolar I,44,8.4
+431-BG02557,15R0381,Proband,Female,Bipolar,Bipolar I,52,7.6
+431-BG02559,15R0761,Proband,Female,Bipolar,Bipolar I,50, N/A
+431-BG02561,14R0101,Proband,Female,Bipolar,Bipolar I,44,8.3
+431-BG02562,15R0074,Proband,Female,Bipolar,Bipolar I,61,8.8
+431-BG02563,15R0463,Proband,Female,Bipolar,Bipolar I,59,8.2
+431-BG02566,15R0424,Proband,Male,Bipolar,Bipolar I,58,8.1
+431-BG02567,14R0490,Proband,Female,Bipolar,Bipolar I,45,8.1
+431-BG02568,15R0750,Proband,Male,Bipolar,Bipolar I,62,9
+431-BG02569,15R0173,Proband,Female,Bipolar,Bipolar I,59,7.9
+431-BG02570,15R0604,Proband,Male,Bipolar,Bipolar I,55,9
+431-BG02571,15R0706,Proband,Male,Bipolar,Bipolar I,45,8.3
+431-BG02572,15R0452,Proband,Male,Bipolar,Bipolar I,65,8.6
+431-BG02578,14R0491,Proband,Male,Bipolar,Bipolar I,54,8.1
+431-BG02580,14R0222,Proband,Female,Bipolar,Bipolar I,45,8.6
+431-BG02581,14R0102,Proband,Male,Bipolar,Bipolar I,29,8.1
+431-BG02583,15R0784,Proband,Female,Bipolar,Bipolar I,29,7.1
+431-BG02584,15R0383,Proband,Male,Bipolar,Bipolar I,19,7.9
+431-BG02587,15R0175,Proband,Female,Bipolar,Bipolar I,46,7.6
+431-BG02589,15R0385,Proband,Female,Bipolar,Bipolar I,48,N/A
+431-BG02590,14R0492,Proband,Female,Bipolar,Bipolar I,60,8.5
+431-BG02591,15R0552,Proband,Female,Bipolar,Bipolar I,67,8.1
+431-BG02594,15R0218,Proband,Male,Bipolar,Bipolar I,40,7.3
+431-BG02596,14R0114,Proband,Male,Bipolar,Bipolar I,53,9
+431-BG02597,15R0772,Proband,Male,Bipolar,Bipolar I,48,8.1
+431-BG02598,15R0146,Proband,Female,Bipolar,Bipolar I,59,8
+431-BG02603,15R0219,Proband,Male,Bipolar,Bipolar I,52,8
+431-BG02605,15R0763,Proband,Male,Bipolar,Bipolar I,35,9.4
+431-BG02607,14R0457,Proband,Male,Bipolar,Bipolar I,55,8.4
+431-BG02613,15R0425,Proband,Female,Bipolar,Bipolar I,64,8.1
+431-BG02616,15R0409,Proband,Male,Bipolar,Bipolar I,21,6.8
+431-BG02617,15R0456,Proband,Male,Bipolar,Bipolar I,29,8.4
+431-BG02618,15R0531,Proband,Male,Bipolar,Bipolar I,57,8.7
+431-BG02620,15R0715,Proband,Female,Bipolar,Bipolar I,46,7.5
+431-BG02622,15R0041,Proband,Female,Bipolar,Bipolar I,52,8.7
+431-BG02627,15R0555,Proband,Female,Bipolar,Bipolar I,39,7.6
+431-BG02628,14R0484,Proband,Female,Bipolar,Bipolar I,56,9.1
+431-BG02629,14R0459,Proband,Female,Bipolar,Bipolar I,67,9.3
+431-BG02631,15R0777,Proband,Female,Bipolar,Bipolar I,52,7.9
+431-BG02633,15R0778,Proband,Male,Bipolar,Bipolar I,52,7.8
+431-BG02635,15R0739,Proband,Female,Bipolar,Bipolar I,35,8.1
+431-BG02636,15R0556,Proband,Female,Bipolar,Bipolar I,47,7.7
+431-BG02637,15R0345,Proband,Female,Bipolar,Bipolar I,60,8.1
+431-BG02640,15R0221,Proband,Female,Bipolar,Bipolar I,53,7.4
+431-BG02642,15R0757,Proband,Male,Bipolar,Bipolar I,73,8.9
+431-BG02646,15R0371,Proband,Male,Bipolar,Bipolar I,67,7.9
+431-BG02647,14R0493,Proband,Male,Bipolar,Bipolar I,42,8.9
+431-BG02648,15R0042,Proband,Female,Bipolar,Bipolar I,45,7.7
+431-BG02652,15R0222,Proband,Female,Bipolar,Bipolar I,47,7.6
+431-BG02653,15R0484,Proband,Male,Bipolar,Bipolar I,42,7.8
+431-BG02655,15R0804,Proband,Female,Bipolar,Bipolar I,66,7.3
+431-BG02656,14R0474,Proband,Female,Bipolar,Bipolar I,59,8.7
+431-BG02657,15R0387,Proband,Female,Bipolar,Bipolar I,47,7.8
+431-BG02659,14R0495,Proband,Female,Bipolar,Bipolar I,50,9
+431-BG02663,15R0428,Proband,Female,Bipolar,Bipolar I,46,7.6
+431-BG02664,15R0224,Proband,Male,Bipolar,Bipolar I,64,7.2
+431-BG02665,14R0487,Proband,Female,Bipolar,Bipolar I,48,9.1
+431-BG02666,14R0463,Proband,Male,Bipolar,Bipolar I,65,8.8
+431-BG02672,15R0053,Proband,Female,Bipolar,Bipolar I,46,2.8
+431-BG02673,15R0485,Proband,Female,Bipolar,Bipolar I,58,7.7
+431-BG02675,15R0026,Proband,Male,Bipolar,Bipolar I,70,8.3
+431-BG02676,15R0355,Proband,Female,Bipolar,Bipolar I,61,8
+431-BG02677,15R0346,Proband,Male,Bipolar,Bipolar I,53,7.6
+431-BG02678,15R0374,Proband,Male,Bipolar,Bipolar I,49,8.3
+431-BG02679,14R0464,Proband,Male,Bipolar,Bipolar I,43,8.3
+431-BG02681,15R0388,Proband,Female,Bipolar,Bipolar I,40,7.9
+431-BG02682,15R0546,Proband,Male,Bipolar,Bipolar I,58,8
+431-BG02685,15R0532,Proband,Male,Bipolar,Bipolar I,63,7.2
+431-BG02686,15R0488,Proband,Male,Bipolar,Bipolar I,60,7.8
+431-BG02688,15R0567,Proband,Female,Bipolar,Bipolar I,55,8.6
+431-BG02691,15R0469,Proband,Female,Bipolar,Bipolar I,42,6.3
+431-BG02694,15R0347,Proband,Female,Bipolar,Bipolar I,39,7.9
+431-BG02699,15R0359,Proband,Male,Bipolar,Bipolar I,31,9
+431-BG02703,15R0375,Proband,Male,Bipolar,Bipolar I,68,9.4
+431-BG02705,15R0376,Proband,Male,Bipolar,Bipolar I,76,8.6
+431-BG02710,15R0361,Proband,Male,Bipolar,Bipolar I,65,8.9
+431-BG02713,15R0349,Proband,Male,Bipolar,Bipolar I,55,8.3
+431-BG02715,15R0230,Proband,Female,Bipolar,Bipolar I,66,7.4
+431-BG02716,15R0377,Proband,Male,Bipolar,Bipolar I,66,9.4
+431-BG02717,15R0077,Proband,Female,Bipolar,Bipolar I,78,8.9
+431-BG02719,15R0351,Proband,Male,Bipolar,Bipolar I,49,8
+431-BG02722,15R0362,Proband,Female,Bipolar,Bipolar I,30,8.4
+431-BG02723,15R0549,Proband,Male,Bipolar,Bipolar I,52,7.7
+431-BG02728,15R0379,Proband,Female,Bipolar,Bipolar I,43,7.8
+431-BG02729,15R0352,Proband,Female,Bipolar,Bipolar I,54,8.1
+431-BG02735,15R0001,Proband,Male,Bipolar,Bipolar I,41,8.8
+431-BG02736,15R0014,Proband,Female,Bipolar,Bipolar I,62,8.7
+431-BG02738,15R0392,Proband,Female,Bipolar,Bipolar I,46,6.3
+431-BG02739,15R0184,Proband,Male,Bipolar,Bipolar I,70,6.4
+431-BG02744,15R0086,Proband,Female,Bipolar,Bipolar I,34,8.5
+431-BG02745,15R0607,Proband,Male,Bipolar,Bipolar I,66,7.7
+431-BG02748,15R0618,Proband,Female,Bipolar,Bipolar I,40,9.1
+431-BG02753,15R0365,Proband,Female,Bipolar,Bipolar I,20,7.3
+431-BG02755,15R0232,Proband,Female,Bipolar,Bipolar I,19,8.3
+431-BG02757,15R0080,Proband,Female,Bipolar,Bipolar I,58,8.3
+431-BG02759,15R0492,Proband,Female,Bipolar,Bipolar I,48,4.6
+431-BG02764,15R0015,Proband,Female,Bipolar,Bipolar I,49,8.4
+431-BG02766,15R0027,Proband,Female,Bipolar,Bipolar I,28,8.5
+431-BG02772,15R0016,Proband,Female,Bipolar,Bipolar I,78,8.5
+431-BG02776,15R0082,Proband,Male,Bipolar,Bipolar I,48,8.8
+431-BG02778,15R0165,Proband,Male,Bipolar,Bipolar I,40,7.4
+431-BG02783,15R0088,Proband,Female,Bipolar,Bipolar I,23,N/A
+431-BG02787,15R0030,Proband,Male,Bipolar,Bipolar I,24,9.1
+431-BG02790,15R0186,Proband,Male,Bipolar,Bipolar I,62,7.7
+431-BG02791,15R0045,Proband,Male,Bipolar,Bipolar I,53,N/A
+431-BG02792,15R0031,Proband,Male,Bipolar,Bipolar I,58,8.6
+431-BG02798,15R0006,Proband,Female,Bipolar,Bipolar I,27,8.5
+431-BG02799,15R1120,Proband,Female,Bipolar,Bipolar I,49,9
+431-BG02800,15R0019,Proband,Male,Bipolar,Bipolar I,29,8.7
+431-BG02801,15R0020,Proband,Male,Bipolar,Bipolar I,23,8.5
+431-BG02805,15R0123,Proband,Female,Bipolar,Bipolar I,73,7.9
+431-BG02806,15R0021,Proband,Male,Bipolar,Bipolar I,47, N/A
+431-BG02807,15R0124,Proband,Female,Bipolar,Bipolar I,37,8.4
+431-BG02811,15R0090,Proband,Female,Bipolar,Bipolar I,38,N/A
+431-BG02812,15R0034,Proband,Female,Bipolar,Bipolar I,63,N/A
+431-BG02813,15R0619,Proband,Female,Bipolar,Bipolar I,46,8.6
+431-BG02817,15R0022,Proband,Female,Bipolar,Bipolar I,26,7.3
+431-BG02818,15R0125,Proband,Female,Bipolar,Bipolar I,68,8.4
+431-BG02819,15R0007,Proband,Male,Bipolar,Bipolar I,45,N/A
+431-BG02821,15R0008,Proband,Female,Bipolar,Bipolar I,59,8.9
+431-BG02823,15R1108,Proband,Female,Bipolar,Bipolar I,28,8.7
+431-BG02829,15R0035,Proband,Male,Bipolar,Bipolar I,53,N/A
+431-BG02835,15R0621,Proband,Female,Bipolar,Bipolar I,59,9
+431-BG02836,15R0606,Proband,Female,Bipolar,Bipolar I,31,9
+431-BG02841,15R0594,Proband,Female,Bipolar,Bipolar I,52,7.6_7.8
+431-BG02843,15R0010,Proband,Male,Bipolar,Bipolar I,57,8.8
+431-BG02853,15R0096,Proband,Male,Bipolar,Bipolar I,47,4.6
+431-BG02854,15R1072,Proband,Male,Bipolar,Bipolar I,75,8.8
+431-BG02856,15R0988,Proband,Female,Bipolar,Bipolar I,54,8.8
+431-BG02860,15R0677,Proband,Male,Bipolar,Bipolar I,26,6
+431-BG02867,15R0596,Proband,Female,Bipolar,Bipolar I,52,8.1_7.3
+431-BG02869,15R1112,Proband,Male,Bipolar,Bipolar I,44,8.3
+431-BG02872,15R1086,Proband,Female,Bipolar,Bipolar I,55,9.2
+431-BG02874,15R1125,Proband,Female,Bipolar,Bipolar I,25,8.7
+431-BG02875,15R1073,Proband,Female,Bipolar,Bipolar I,41,9.1
+431-BG02876,15R1088,Proband,Female,Bipolar,Bipolar I,50,9.1
+431-BG02877,15R1074,Proband,Female,Bipolar,Bipolar I,50,9.5
+431-BG02879,15R1100,Proband,Female,Bipolar,Bipolar I,35,8.4
+431-BG02880,15R1089,Proband,Female,Bipolar,Bipolar I,59,9.2
+431-BG02883,15R1076,Proband,Female,Bipolar,Bipolar I,57,8.9
+431-BG02884,15R1092,Proband,Male,Bipolar,Bipolar I,34,9.2
+431-BG02885,15R0613,Proband,Female,Bipolar,Bipolar I,29,9.3
+431-BG02886,15R1128,Proband,Male,Bipolar,Bipolar I,51,8.9
+431-BG02894,15R1093,Proband,Female,Bipolar,Bipolar I,56,8.8
+431-BG02896,15R0707,Proband,Female,Bipolar,Bipolar I,25,8.9
+431-BG02898,15R0848,Proband,Female,Bipolar,Bipolar I,42,7.7
+431-BG02902,15R0860,Proband,Female,Bipolar,Bipolar I,38,8.8
+431-BG02903,15R0820,Proband,Female,Bipolar,Bipolar I,50,8.9
+431-BG02904,15R0681,Proband,Male,Bipolar,Bipolar I,42,8.7
+431-BG02905,15R0833,Proband,Female,Bipolar,Bipolar I,31,8.5
+431-BG02906,15R0884,Proband,Female,Bipolar,Bipolar I,47,8.6
+431-BG02908,15R0691,Proband,Female,Bipolar,Bipolar I,48,8.5
+431-BG02914,15R0976,Proband,Female,Bipolar,Bipolar I,36,8.9
+431-BG02917,15R0693,Proband,Female,Bipolar,Bipolar I,71,8.8
+431-BG02919,15R0682,Proband,Male,Bipolar,Bipolar I,38,8.8
+431-BG02920,15R0683,Proband,Male,Bipolar,Bipolar I,63,8.7
+431-BG02923,15R0864,Proband,Female,Bipolar,Bipolar I,44,8.4
+431-BG02926,15R0834,Proband,Male,Bipolar,Bipolar I,60,N/A
+431-BG02927,15R0655,Proband,Male,Bipolar,Bipolar I,37,8
+431-BG02928,15R0696,Proband,Male,Bipolar,Bipolar I,53,8.5
+431-BG02931,15R1038,Proband,Female,Bipolar,Bipolar I,29,8.8
+431-BG02932,15R0684,Proband,Female,Bipolar,Bipolar I,60,8.8
+431-BG02936,15R0835,Proband,Male,Bipolar,Bipolar I,31,8.5
+431-BG02937,15R0836,Proband,Female,Bipolar,Bipolar I,49,8.4
+431-BG02938,15R0710,Proband,Male,Bipolar,Bipolar I,35,8.3
+431-BG02939,15R0885,Proband,Male,Bipolar,Bipolar I,68,N/A
+431-BG02943,15R0821,Proband,Male,Bipolar,Bipolar I,58,8.6
+431-BG02944,15R0822,Proband,Female,Bipolar,Bipolar I,39,8.6
+431-BG02947,15R0838,Proband,Male,Bipolar,Bipolar I,49,8.5
+431-BG02951,15R0825,Proband,Male,Bipolar,Bipolar I,55,8.5
+431-BG02953,15R1148,Proband,Male,Bipolar,Bipolar I,47,9
+431-BG02954,15R1149,Proband,Male,Bipolar,Bipolar I,68,8.8
+431-BG02959,15R0842,Proband,Female,Bipolar,Bipolar I,47,7.7
+431-BG02960,15R1161,Proband,Male,Bipolar,Bipolar I,67,8.7
+431-BG02961,15R1151,Proband,Male,Bipolar,Bipolar I,52,9.3
+431-BG02962,15R0903,Proband,Female,Bipolar,Bipolar I,52,8.5
+431-BG02964,15R0656,Proband,Male,Bipolar,Bipolar I,65,7.9
+431-BG02965,15R0657,Proband,Female,Bipolar,Bipolar I,48,7.6
+431-BG02972,15R0669,Proband,Female,Bipolar,Bipolar I,62,7.9
+431-BG02979,15R0939,Proband,Male,Bipolar,Bipolar I,40,8.2
+431-BG02980,15R0894,Proband,Male,Bipolar,Bipolar I,58,8.5
+431-BG02984,15R0888,Proband,Male,Bipolar,Bipolar I,53,8.9
+431-BG02985,15R0952,Proband,Female,Bipolar,Bipolar I,48,7.6
+431-BG02987,15R0930,Proband,Male,Bipolar,Bipolar I,38,8.6
+431-BG02990,15R0919,Proband,Male,Bipolar,Bipolar I,52,7.8
+431-BG02991,15R0896,Proband,Female,Bipolar,Bipolar I,48,8.2
+431-BG02992,15R1004,Proband,Female,Bipolar,Bipolar I,29,1_8.6
+431-BG02993,15R0909,Proband,Male,Bipolar,Bipolar I,61,8.3
+431-BG02994,15R0920,Proband,Female,Bipolar,Bipolar I,54,8.2
+431-BG02995,15R0990,Proband,Female,Bipolar,Bipolar I,54,8.6
+431-BG02997,15R0954,Proband,Male,Bipolar,Bipolar I,49,8.4
+431-BG03000,14R2244,Proband,Female,Bipolar,Bipolar I,25,9.2
+431-BG03003,14R2320,Proband,Female,Bipolar,Bipolar I,34,N/A
+431-BG03007,14R2428,Proband,Male,Bipolar,Bipolar I,59,9.1
+431-BG03009,14R2058,Proband,Female,Bipolar,Bipolar I,50,N/A
+431-BG03011,15R0239,Proband,Male,Bipolar,Bipolar I,25,8.1
+431-BG03012,15R0011,Proband,Female,Bipolar,Bipolar I,51,8.8
+431-BG03013,15R0057,Proband,Female,Bipolar,Bipolar I,46,8.4
+431-BG03015,15R0083,Proband,Female,Bipolar,Bipolar I,32, N/A
+431-BG03016,15R0815,Proband,Female,Bipolar,Bipolar I,43,8.9
+431-BG03017,15R0806,Proband,Male,Bipolar,Bipolar I,75,7.2_8.8
+431-BG03018,15R0047,Proband,Female,Bipolar,Bipolar I,42,8.7
+431-BG03020,15R0201,Proband,Male,Bipolar,Bipolar I,20,8.5
+431-BG03021,15R1152,Proband,Female,Bipolar,Bipolar I,64,8.8
+431-BG03023,15R0932,Proband,Female,Bipolar,Bipolar I,58,8.2
+431-BG03024,15R0828,Proband,Male,Bipolar,Bipolar I,64,7.8
+431-BG03026,15R0921,Proband,Female,Bipolar,Bipolar I,46,8.7
+431-BG03032,15R0934,Proband,Female,Bipolar,Bipolar I,23,8.3
+431-BG03034,15R0935,Proband,Male,Bipolar,Bipolar I,45,8.6
+431-BG03044,15R0992,Proband,Male,Bipolar,Bipolar I,67,9.1
+431-BG03045,15R1006,Proband,Female,Bipolar,Bipolar I,51,4.5_8.9
+431-BG03047,15R1049,Proband,Female,Bipolar,Bipolar I,53,8.7
+431-BG03048,15R0980,Proband,Female,Bipolar,Bipolar I,51,8.6
+431-BG03050,15R0993,Proband,Female,Bipolar,Bipolar I,53,8.3
+431-BG03055,15R0969,Proband,Female,Bipolar,Bipolar I,37,8.5
+431-BG03056,15R0983,Proband,Male,Bipolar,Bipolar I,35,9.4
+431-BG03057,15R1021,Proband,Female,Bipolar,Bipolar I,52,8.5
+431-BG03058,15R1080,Proband,Female,Bipolar,Bipolar I,35,9.2
+431-BG03059,15R1009,Proband,Male,Bipolar,Bipolar I,57,9.2
+431-BG03062,15R0996,Proband,Male,Bipolar,Bipolar I,44,8.4
+431-BG03064,15R0984,Proband,Male,Bipolar,Bipolar I,68,9.3
+431-BG03066,15R1051,Proband,Male,Bipolar,Bipolar I,30,N/A
+431-BG03067,15R1052,Proband,Female,Bipolar,Bipolar I,72,8.7
+431-BG03068,15R1053,Proband,Female,Bipolar,Bipolar I,66,8.7
+431-BG03072,15R1044,Proband,Female,Bipolar,Bipolar I,32,9
+431-BG03074,15R1045,Proband,Female,Bipolar,Bipolar I,45,8.5
+431-BG03075,15R0970,Proband,Female,Bipolar,Bipolar I,36,7.8
+431-BG03079,15R1057,Proband,Male,Bipolar,Bipolar I,33,8.9
+431-BG03081,15R0973,Proband,Male,Bipolar,Bipolar I,26,8.4
+431-BG03084,15R1058,Proband,Female,Bipolar,Bipolar I,56,9.3
+431-BG03815,15R0191,Proband,Male,Bipolar,Bipolar I,42,8.3
+431-BG03817,15R0012,Proband,Female,Bipolar,Bipolar I,33,9.1
+431-BG03821,15R0059,Proband,Female,Bipolar,Bipolar I,39,7.7
+431-BG03822,15R0048,Proband,Male,Bipolar,Bipolar I,50,8.9
+431-BG03823,15R0204,Proband,Male,Bipolar,Bipolar I,53,7.9
+431-BG03828,15R0662,Proband,Male,Bipolar,Bipolar I,63,8.8
+431-BG03830,15R1034,Proband,Male,Bipolar,Bipolar I,53,2.8_9.4
+431-BG09000,14R1985,Proband,Male,Bipolar,Bipolar I,54,8.2
+431-BG50001,15R1227,Proband,Male,Bipolar,Bipolar I,70, N/A
+431-BG50002,16R1267,Proband,Female,Bipolar,Bipolar I,44,7.3
+431-BG50004,15R1180,Proband,Male,Bipolar,Bipolar I,59,9.6
+431-BG50005,15R1169,Proband,Female,Bipolar,Bipolar I,46, N/A
+431-BG50006,15R1182,Proband,Male,Bipolar,Bipolar I,56,N/A
+431-BG50007,15R1183,Proband,Female,Bipolar,Bipolar I,37,6.3
+431-BG50008,15R0134,Proband,Female,Bipolar,Bipolar I,43,8.3
+431-BG50009,16R1283,Proband,Female,Bipolar,Bipolar I,59, N/A
+431-BG50011,15R0128,Proband,Female,Bipolar,Bipolar I,60,8.7
+431-BG50014,15R0149,Proband,Female,Bipolar,Bipolar I,48,8.7
+431-BG50015,15R0136,Proband,Male,Bipolar,Bipolar I,60,7.1
+431-BG50016,15R0137,Proband,Female,Bipolar,Bipolar I,57,8.3
+431-BG50017,16R1292,Proband,Male,Bipolar,Bipolar I,53,8
+431-BG50018,15R0150,Proband,Female,Bipolar,Bipolar I,51,8.5
+431-BG50022,16R1293,Proband,Female,Bipolar,Bipolar I,57,8.1
+431-BG50023,15R1175,Proband,Male,Bipolar,Bipolar I,64,8.4
+431-BG50024,15R1205,Proband,Female,Bipolar,Bipolar I,24,9.2
+431-BG50025,15R1176,Proband,Male,Bipolar,Bipolar I,40,9.1
+431-BG50026,15R0138,Proband,Male,Bipolar,Bipolar I,32,8.6
+431-BG50027,15R0129,Proband,Female,Bipolar,Bipolar I,57,8.1
+431-BG50029,15R1187,Proband,Male,Bipolar,Bipolar I,63,8.1
+431-BG50030,15R1165,Proband,Male,Bipolar,Bipolar I,58,7.3
+431-BG50032,15R0140,Proband,Female,Bipolar,Bipolar I,29,7.9
+431-BG50033,15R1166,Proband,Female,Bipolar,Bipolar I,52,8.8
+431-BG50034,16R1268,Proband,Male,Bipolar,Bipolar I,61,8.2
+431-BG50038,15R0154,Proband,Male,Bipolar,Bipolar I,66,8.5
+431-BG50039,15R0141,Proband,Male,Bipolar,Bipolar I,52,8.4
+431-BG50040,16R1281,Proband,Male,Bipolar,Bipolar I,59,9
+431-BG50041,15R0130,Proband,Female,Bipolar,Bipolar I,53,7.3
+431-BG50042,15R0131,Proband,Female,Bipolar,Bipolar I,44,7.1
+431-BG50043,16R1271,Proband,Male,Bipolar,Bipolar I,62,7.6
+431-BG50045,15R0132,Proband,Female,Bipolar,Bipolar I,53,8.1
+431-BG50046,16R1272,Proband,Male,Bipolar,Bipolar I,65,6.5
+431-BG50047,16R1282,Proband,Female,Bipolar,Bipolar I,54,9.2
+431-BG50048,16R1277,Proband,Female,Bipolar,Bipolar I,53,8.5
+431-BG50052,16R0013,Proband,Female,Bipolar,Bipolar I,37,6.9
+431-BG50056,16R1297,Proband,Male,Bipolar,Bipolar I,43,8.6
+431-BG50057,16R1274,Proband,Male,Bipolar,Bipolar I,56,6.3
+431-BG50058,16R1298,Proband,Female,Bipolar,Bipolar I,53,8.8
+431-BG50064,15R1196,Proband,Male,Bipolar,Bipolar I,54,N/A
+431-BG50065,16R0016,Proband,Male,Bipolar,Bipolar I,35,9.1
+431-BG50067,16R0010,Proband,Male,Bipolar,Bipolar I,59,9.1
+431-BG50068,16R0004,Proband,Female,Bipolar,Bipolar I,28,8.5
+431-BG50071,16R0020,Proband,Female,Bipolar,Bipolar I,52,8.3
+431-BG50072,15R1207,Proband,Female,Bipolar,Bipolar I,47,8.5
+431-BG50076,15R1190,Proband,Male,Bipolar,Bipolar I,55,8.3
+431-BG50077,15R1202,Proband,Female,Bipolar,Bipolar I,31,9
+431-BG50078,15R1208,Proband,Male,Bipolar,Bipolar I,46,8.9
+431-BG50079,15R1209,Proband,Male,Bipolar,Bipolar I,49,9.1
+431-BG50080,15R1218,Proband,Female,Bipolar,Bipolar I,60,7.9
+431-BG50084,15R1221,Proband,Male,Bipolar,Bipolar I,59, N/A
+431-BG50085,15R1222,Proband,Female,Bipolar,Bipolar I,53,8.5
+431-BG50089,15R1211,Proband,Female,Bipolar,Bipolar I,41,9.1
+431-BG00067,11R0829,Sister,Female,Control,No diagnosis,46,8.6
+431-BG00098,11R0844,Sister,Female,Control,No diagnosis,66,8.5
+431-BG00136,11R0552,Sister,Female,Control,No diagnosis,62,9
+431-BG00236,12R0231,Sister,Female,Control,No diagnosis,53,9.3
+431-BG00311,12R0173,Sister,Female,Control,No diagnosis,58,9
+431-BG00328,12R0423,Sister,Female,Control,No diagnosis,63,9.2
+431-BG00329,12R0422,Sister,Female,Control,No diagnosis,59,8.7
+431-BG00348,12R0168,Sister,Female,Control,No diagnosis,44,9
+431-BG00408,12R0476,Sister,Female,Control,No diagnosis,32,8.6
+431-BG00422,12R0535,Sister,Female,Control,No diagnosis,50,7.6
+431-BG00529,12R0541,Sister,Female,Control,No diagnosis,45,8.1
+431-BG00566,12R0946,Sister,Female,Control,No diagnosis,58,8.7
+431-BG00607,12R0801,Sister,Female,Control,No diagnosis,48,8.4
+431-BG00625,12R0861,Sister,Female,Control,No diagnosis,51,8.6
+431-BG00716,12R1330,Sister,Female,Control,No diagnosis,28,8.7
+431-BG00739,12R1441,Sister,Female,Control,No diagnosis,73,7.6
+431-BG00750,12R1443,Sister,Female,Control,No diagnosis,69,8.5
+431-BG01136,12R2359,Sister,Female,Control,No diagnosis,59,8.7
+431-BG01263,13R0039,Sister,Female,Control,No diagnosis,48,9.3
+431-BG01267,13R0048,Sister,Female,Control,No diagnosis,60,9.7
+431-BG01290,13R0061,Sister,Female,Control,No diagnosis,51,8.9
+431-BG01380,13R0532,Sister,Female,Control,No diagnosis,69,9
+431-BG01404,13R0425,Sister,Female,Control,No diagnosis,61,9.2
+431-BG01405,13R0535,Sister,Female,Control,No diagnosis,56,9.1
+431-BG01667,13R0759,Sister,Female,Control,No diagnosis,62,9.3
+431-BG01766,13R1506,Sister,Female,Control,No diagnosis,65,8.9
+431-BG01908,14R1804,Sister,Female,Control,No diagnosis,44,8.9
+431-BG01947,13R1683,Sister,Female,Control,No diagnosis,58,8.8
+431-BG01949,14R1813,Sister,Female,Control,No diagnosis,68,8.5
+431-BG02096,14R0008,Sister,Female,Control,No diagnosis,43,9
+431-BG02110,14R2113,Sister,Female,Control,No diagnosis,62,9
+431-BG02117,14R2487,Sister,Female,Control,No diagnosis,54,8.8
+431-BG02362,14R2336,Sister,Female,Control,No diagnosis,58,9
+431-BG02371,14R0478,Sister,Female,Control,No diagnosis,60,8.4
+431-BG02392,14R0326,Sister,Female,Control,No diagnosis,63,9.1
+431-BG02407,14R0097,Sister,Female,Control,No diagnosis,60,8.6
+431-BG02426,14R0216,Sister,Female,Control,No diagnosis,50,8.9
+431-BG02428,14R0217,Sister,Female,Control,No diagnosis,66,8.5
+431-BG02484,14R0135,Sister,Female,Control,No diagnosis,25,8.7
+431-BG02504,14R0427,Sister,Female,Control,No diagnosis,64,8.8
+431-BG02519,14R0110,Sister,Female,Control,No diagnosis,58,8.8
+431-BG02521,14R0347,Sister,Female,Control,No diagnosis,54,8.7
+431-BG02536,14R0233,Sister,Female,Control,No diagnosis,51,8.4
+431-BG02606,15R0455,Sister,Female,Control,No diagnosis,66,8.6
+431-BG02609,14R0468,Sister,Female,Control,No diagnosis,51,8.2
+431-BG02624,14R0505,Sister,Female,Control,No diagnosis,39,8.5
+431-BG02661,14R0451,Sister,Female,Control,No diagnosis,41,9.2
+431-BG02706,15R0489,Sister,Female,Control,No diagnosis,47,8.6
+431-BG02732,15R0353,Sister,Female,Control,No diagnosis,36,7.9
+431-BG02847,15R0095,Sister,Female,Control,No diagnosis,56,8.6
+431-BG03014,14R0512,Sister,Female,Control,No diagnosis,89,9.3
+431-BG09001,14R1997,Sister,Female,Control,No diagnosis,68,9.1
+431-BG09003,13R1778,Sister,Female,Control,No diagnosis,70,8.7
+GK0019-003,109195A,Unaffected,Female,Control,extracted 2010,31,7
+GK0021-004,109344A,Unaffected,Male,Control,extracted 2010,30,6.9
+GK0189-004,099190B,Unaffected,Female,Control,extracted 2010,29,9
+GK0323-005,109290B,Unaffected,Female,Control,extracted 2010,24,7.7
+GK0326-004,099203B,Unaffected,Female,Control,extracted 2010,24,8.4
+GK0376-004,109082B,Unaffected,Male,Control,extracted 2010,41,
+GK0380-003,108514B,Unaffected,Female,Control,extracted 2010,29,7.4
+GK0414-003,109285B,Unaffected,Male,Control,extracted 2010,29,
+GK1245-004,108940B,Unaffected,Female,Control,extracted 2010,20,6.2
+GK1292-004,109200A,Unaffected,Female,Control,extracted 2010,43,8.4
+GK1362-005,109345B,Unaffected,Male,Control,extracted 2010,37,6.2
+GK1405-005,109511B,Unaffected,Male,Control,extracted 2010,31,1
+GK1412-006,108833A,Unaffected,Male,Control,extracted 2010,26,6.2
+GK1417-004,109100A,Unaffected,Female,Control,extracted 2010,23,
+GK1429-004,109203A,Unaffected,Male,Control,extracted 2010,20,7.8
+GK1437-004,109476B,Unaffected,Male,Control,extracted 2010,34,7.9
+GK1453-004,109260B,Unaffected,Male,Control,extracted 2010,18,8.2
+GK1472-004,118008B,Unaffected,Male,Control,extracted 2010,35,
+GK2157-004,108295A,Unaffected,Male,Control,extracted 2010,41,5.8
+GK2186-004,109562A,Unaffected,Male,Control,extracted 2010,26,6
+GK2246-005,118029B,Unaffected,Male,Control,extracted 2010,43,7.1
+GK2277-004,118088A,Unaffected,Female,Control,extracted 2010,35,8.6
+GK2331-003,109676A,Unaffected,Female,Control,extracted 2010,41,7.4
+GK2364-004,109374A,Unaffected,Male,Control,extracted 2010,23,8.1
+GK2368-004,109232B,Unaffected,Female,Control,extracted 2010,28,6
+GK2391-003,118028B,Unaffected,Female,Control,extracted 2010,24,6.8
+GK2395-004,109554B,Unaffected,Male,Control,extracted 2010,19,6.9
+GK3379-003,109558A,Unaffected,Female,Control,extracted 2010,24,8.4
+GK3385-004,108468B,Unaffected,Female,Control,extracted 2010,27,6.2
+GK3388-004,109626A,Unaffected,Male,Control,extracted 2010,33,8.1
+GK3415-003,118016B,Unaffected,Female,Control,extracted 2010,27,8.2
+GK3435-004,118012A,Unaffected,Male,Control,extracted 2010,19,7.5
+GK3473-006,109249A,Unaffected,Female,Control,extracted 2010,23,
+GK3490-003,108313B,Unaffected,Female,Control,extracted 2010,29,4.9
+GK3583-004,109155A,Unaffected,Female,Control,extracted 2010,33,
+GK3590-003,109292A,Unaffected,Female,Control,extracted 2010,27,6.8
+GK3610-004,108933A,Unaffected,Male,Control,extracted 2010,23,7.1
+GK3613-003,109639A,Unaffected,Female,Control,extracted 2010,32,7
+GK3615-004,118048A,Unaffected,Male,Control,extracted 2010,28,7.1
+GK3621-003,109383B,Unaffected,Female,Control,extracted 2010,28,5.5
+GK3628-004,109069A,Unaffected,Male,Control,extracted 2010,28,
+GK3633-004,108898B,Unaffected,Male,Control,extracted 2010,19,6.2
+GK3641-005,118018A,Unaffected,Male,Control,extracted 2010,43,8.1

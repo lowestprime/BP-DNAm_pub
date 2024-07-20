@@ -1,18 +1,18 @@
 # Update Sample Sheet and Process Data for GRIMAGE2
 #### Data Prep ####
-# Go to project Dir
+# Go to project dir or skip and run in current project dir
 setwd("~/project-ophoff/BP-DNAm")
 
 # load packages
-library(pacman)
-p_load(dplyr,tidyr,readxl,data.table,lubridate)
+if (!require("pacman", quietly = TRUE)) install.packages("pacman")
+pacman::p_load(dplyr, tidyr, stringr, readr, readxl, data.table, lubridate)
 
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
-BPDNAm_SS <- read.csv("~/project-ophoff/BP-DNAm/Bipolar 2023 Sample Sheet.csv")
+BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv")
 BPDNAm_SS <- BPDNAm_SS %>% select(-Pool_ID)
 
 # Read in Complete BIG Data.xlsx as data frame
-bp_master <- read_excel("~/project-ophoff/BP-DNAm/Complete BIG Data.xlsx")
+bp_master <- read_excel("Complete BIG Data.xlsx")
 
 ## Update Sample Sheet ##
 # Rename 'Sample_id' in bp_master to 'Sample_Name' for matching and remove duplicate entries
@@ -22,6 +22,10 @@ bp_master <- bp_master %>%
   filter(`Date of sample collection` == max(`Date of sample collection`)) %>%
   slice(1) %>%
   ungroup()
+
+# Create BPDNAm_SS missing entries df for samples not present in bp_master
+missing_samples <- BPDNAm_SS %>%
+  anti_join(bp_master, by = "Sample_Name")
 
 # Identify columns in bp_master that are not in BPDNAm_SS
 new_cols <- setdiff(colnames(bp_master), colnames(BPDNAm_SS))
@@ -37,10 +41,24 @@ BPDNAm_SS_updated <- BPDNAm_SS %>%
       time_length(unit = "years") %>% 
       floor()
   ) %>%
-  select(Sample_Name, all_of(new_cols), Age_Years, Age_Months, everything())
+  select(Sample_Name, all_of(new_cols), Age_Years, Age_Months)
+
+# summarize Sample_Names with _Rep pair
+BPDNAm_SS_REP <- BPDNAm_SS_updated %>%
+  mutate(base_name = str_remove(Sample_Name, "_REP$")) %>%
+  group_by(base_name) %>%
+  filter(n() == 2 & sum(str_detect(Sample_Name, "_REP$")) == 1) %>%
+  ungroup() %>%
+  select(-base_name) %>%
+  arrange(Sample_Name) %>%
+  left_join(BPDNAm_SS %>% select(Sample_Name, Basename, Sample_Plate, Sample_Well, Sentrix_ID, Sentrix_Position, Sample_Group), 
+            by = "Sample_Name")
+
+# Export BPDNAm_SS_REP
+fwrite(BPDNAm_SS_REP, "BPDNAm_SS_REP_Pairs.csv")
 
 # summarize NAs in BPDNAm_SS_updated
-na_summary <- BPDNAm_SS_updated %>%
+NA_summary <- BPDNAm_SS_updated %>%
   summarise(across(everything(), ~sum(is.na(.)) / n())) %>%
   pivot_longer(everything(), names_to = "Column", values_to = "NA_Proportion") %>%
   mutate(
@@ -49,19 +67,20 @@ na_summary <- BPDNAm_SS_updated %>%
   filter(NA_Count > 0) %>%
   arrange(desc(NA_Proportion))
 
-# Export na_summary
-fwrite(na_summary, "BPDNAm_na_summary.csv")
+# Export NA_summary
+fwrite(NA_summary, "BPDNAm_NA_Summary.csv")
 
 # Identify columns to keep (NA proportion < 0.2)
-cols_to_keep <- na_summary %>%
+cols_to_keep <- NA_summary %>%
   filter(NA_Proportion < 0.2) %>%
   pull(Column) %>%
-  setdiff(c("Serum", "Plasma", "Type of sample"))
+  setdiff(c("Serum", "Plasma", "Type of sample", "Time of inclusion", "AZU NR"))
 
-# Create a subset of BPDNAm_SS_updated with cols_to_keep and NA rows
+# Create a subset of BPDNAm_SS_updated with cols_to_keep and NA rows joining in cols from missing_data
 BPDNAm_SS_NAs <- BPDNAm_SS_updated %>%
   select(Sample_Name, all_of(cols_to_keep)) %>%
-  filter(if_any(everything(), is.na))
+  filter(if_any(everything(), is.na)) %>%
+  left_join(missing_samples, by = "Sample_Name")
 
 # Export BPDNAm_SS_NAs
 fwrite(BPDNAm_SS_NAs, "BPDNAm_NA_Samples.csv")
@@ -69,11 +88,20 @@ fwrite(BPDNAm_SS_NAs, "BPDNAm_NA_Samples.csv")
 # Create a subset of BPDNAm_SS_updated with cols_to_keep and no NA rows
 BPDNAm_SS_noNAs <- BPDNAm_SS_updated %>%
   select(Sample_Name, all_of(cols_to_keep)) %>%
-  filter(if_all(everything(), ~!is.na(.))) %>%
-  select(Sample_Name:`Date of sample collection`, Age_Years, Age_Months, everything())
+  filter(if_all(everything(), ~!is.na(.)))
 
 # Export BPDNAm_SS_noNAs
 fwrite(BPDNAm_SS_noNAs, "BPDNAm_Samples_noNAs.csv")
+
+# Export comma separated list of Sample_Names in BPDNAm_SS_NAs
+BPDNAm_SS_NAs %>%
+  pull(Sample_Name) %>%
+  {
+    sample_names <- .
+    filename <- sprintf("BPDNAm_NA_Sample_Names_%d.txt", length(sample_names))
+    paste(sample_names, collapse = ",") %>%
+    write_file(filename)
+  }
 
 #### Process Data for GRIMAGE2 ####
 
