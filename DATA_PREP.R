@@ -5,16 +5,29 @@ setwd("~/project-ophoff/BP-DNAm")
 
 # load packages
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
-pacman::p_load(dplyr, tidyr, stringr, readr, readxl, data.table, lubridate)
+pacman::p_load(dplyr, tidyr, stringr, readr, readxl, data.table, lubridate, tibble)
+
+# load external functions
+source('BPDNAm_external_functions.R')
 
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
-BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv")
-BPDNAm_SS <- BPDNAm_SS %>% select(-Pool_ID)
+BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv") %>%
+  select(-Pool_ID)
+
+# Read in 2000_sample_covariates.csv as data frame, remove Pool_ID col and rename 'Sample_id' col
+BPDNAm_ext <- read.csv("From_Roel/2000_sample_covariates.csv") %>%
+  select(-RIN) %>% 
+  rename(Sample_Name = Sample_id)
+
+# Read in highcov_technical_covariates.txt as data frame
+BPDNAm_cov <- read.table("From_Roel/highcov_technical_covariates.txt", sep = "\t", header = TRUE, row.names = 1) %>%
+  t() %>%
+  as_tibble(rownames = "Sample_Name") %>%
+  select(Sample_Name, !starts_with("/u/project/"))
 
 # Read in Complete BIG Data.xlsx as data frame
 bp_master <- read_excel("Complete BIG Data.xlsx")
 
-## Update Sample Sheet ##
 # Rename 'Sample_id' in bp_master to 'Sample_Name' for matching and remove duplicate entries
 bp_master <- bp_master %>% 
   rename(Sample_Name = Sample_id) %>% 
