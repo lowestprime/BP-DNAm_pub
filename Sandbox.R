@@ -3,6 +3,9 @@
 # We can list the libraries that are actually loaded doing
 (.packages())
 
+# list all dataframes in Global Environment
+names(which(unlist(eapply(.GlobalEnv,is.data.frame))))
+
 # Unload all currently loaded packages using pacman
 pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
 
