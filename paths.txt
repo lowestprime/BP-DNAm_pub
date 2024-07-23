@@ -1,2 +1,20 @@
 BipolarMethylationData.RData
 /u/project/ophoff/ophoff/BP DNAm project 2024/BipolarMethylationData.RData
+
+[cobeaman@n6124 ~]$ Rscript -e "print(load('/u/project/ophoff/cobeaman/BP-DNAm/BipolarMethylationData.RData', verbose=TRUE))"
+WARNING: ignoring environment value of R_HOME
+Loading objects:
+  .pbd_env
+Warning: namespace ‘pbdZMQ’ is not available and has been replaced
+by .GlobalEnv when processing object ‘.pbd_env’
+  mSetSqFlt
+[1] ".pbd_env"  "mSetSqFlt"
+
+A cross-package Bioconductor workflow for analysing methylation array data
+https://bioconductor.org/packages/release/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html
+
+print(system_time_load)
+process    real 
+  3.04m   4.08m 
+  
+  

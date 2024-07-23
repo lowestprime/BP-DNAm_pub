@@ -8,7 +8,7 @@ if (!require("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(dplyr, tidyr, stringr, readr, readxl, data.table, lubridate, tibble)
 
 # load external functions
-# source('BPDNAm_external_functions.R')
+source('BPDNAm_external_functions.R')
 
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
 BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv") %>%
@@ -164,3 +164,26 @@ BPDNAm_SS_noNAs %>%
   }
 
 #### Process Data for GRIMAGE2 ####
+# load in required packages
+pacman::p_load(qs, ggplot2, reshape2, minfi, GenomicRanges, SummarizedExperiment)
+
+# load in mSetSqFlt.qs S4 object of GenomicRatioSet class
+qload(mSetSqFlt.qs, nthreads = 36)
+
+# summarize contents of mSetSqFlt S4 object of GenomicRatioSet class
+slot_names <- slotNames(mSetSqFlt)
+print(slot_names)
+print_slots(mSetSqFlt)
+
+# Perform quality control checks
+# Extract M-values
+M_values <- assays(mSetSqFlt)$M
+
+# Convert M-values to long format for ggplot2
+M_values_long <- melt(M_values)
+
+# Plot density
+ggplot(M_values_long, aes(x = value, color = Var2)) +
+  geom_density() +
+  labs(title = "Density Plot of M-values", x = "M-values", y = "Density") +
+  theme_minimal()

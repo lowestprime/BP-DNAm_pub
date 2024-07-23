@@ -21,6 +21,18 @@ combined_summary_df <- as.data.frame(as.table(summary(factor(c(merged_data_final
 # take me back home
 setwd('~/')
 
+# list library paths
+.libPaths()
+
+# Set the R_LIBS_USER environment variable to specific directory
+.libPaths("/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
+
+# force install of packages to specified lib path with BiocManager::install()
+BiocManager::install(c(), lib = "/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
+
+# force install of packages to specified lib path with install.packages()
+install.packages(c(), lib = "/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
+
 # take me back to proj dir
 setwd('/u/project/ophoff/cobeaman/BP-DNAm')
 
