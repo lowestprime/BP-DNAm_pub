@@ -12,6 +12,9 @@ pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
 # Check which packages are currently loaded
 pacman::p_loaded()
 
+# creating ".RData" in current working directory
+save.image()
+
 # count and list the number of each unique in dataframe column
 summary(factor(merged_data_final$mri_info_deviceserialnumber))
 summary(factor(merged_data_final$batch))
@@ -21,8 +24,17 @@ combined_summary_df <- as.data.frame(as.table(summary(factor(c(merged_data_final
 # take me back home
 setwd('~/')
 
+# take me back to proj dir
+setwd('/u/project/ophoff/cobeaman/BP-DNAm')
+
+# take me to lib dir
+setwd('~/R/APPTAINER/h2-rstudio_4.4.0')
+
 # list library paths
 .libPaths()
+
+# List Package Functions
+ls("package:qs")
 
 # Set the R_LIBS_USER environment variable to specific directory
 .libPaths("/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
@@ -32,9 +44,6 @@ BiocManager::install(c(), lib = "/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0
 
 # force install of packages to specified lib path with install.packages()
 install.packages(c(), lib = "/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
-
-# take me back to proj dir
-setwd('/u/project/ophoff/cobeaman/BP-DNAm')
 
 # list column names
 paste(names(merged_data_final), collapse = ", ")
@@ -56,6 +65,7 @@ gptstudio:::gptstudio_chat()
 
 # Remove files from R environement
 remove()
+rm()
 
 # Restart RStudio session
 .rs.restartR()

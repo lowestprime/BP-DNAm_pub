@@ -7,9 +7,6 @@ setwd("~/project-ophoff/BP-DNAm")
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(dplyr, tidyr, stringr, readr, readxl, data.table, lubridate, tibble)
 
-# load external functions
-source('BPDNAm_external_functions.R')
-
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
 BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv") %>%
   select(-Pool_ID)
@@ -165,25 +162,48 @@ BPDNAm_SS_noNAs %>%
 
 #### Process Data for GRIMAGE2 ####
 # load in required packages
-pacman::p_load(qs, ggplot2, reshape2, minfi, GenomicRanges, SummarizedExperiment)
+pacman::p_load(qs, ggplot2, plotly, RColorBrewer, reshape2, minfi, GenomicRanges, SummarizedExperiment)
+
+# load external functions
+source('BPDNAm_external_functions.R')
+
+# save mSetSqFlt.qs S4 object of GenomicRatioSet class
+# load("BipolarMethylationData.RData")
+# qsavem(mSetSqFlt, file = "BipolarMethylationData.qs", nthreads = 36, preset = "uncompressed")
 
 # load in mSetSqFlt.qs S4 object of GenomicRatioSet class
-qload(mSetSqFlt.qs, nthreads = 36)
+qload("BipolarMethylationData.qs", nthreads = 36)
 
-# summarize contents of mSetSqFlt S4 object of GenomicRatioSet class
+# summarize contents of mSetSqFlt
 slot_names <- slotNames(mSetSqFlt)
 print(slot_names)
 print_slots(mSetSqFlt)
 
-# Perform quality control checks
-# Extract M-values
-M_values <- assays(mSetSqFlt)$M
+# Visualize the distribution of the beta values for each sample after normalization
+# Extract Beta Values from GenomicRatioSet
+# beta_values <- getBeta(mSetSqFlt)
 
-# Convert M-values to long format for ggplot2
-M_values_long <- melt(M_values)
+# Extract Sample Groups from GenomicRatioSet
+# sample_groups <- as.factor(pData(mSetSqFlt)$Sample_Group)
 
-# Plot density
-ggplot(M_values_long, aes(x = value, color = Var2)) +
+# Plot Density of Beta Values
+# densityPlot <- densityPlot(beta_values, sampGroups = sample_groups, main = "Normalized", legend = FALSE)
+# densityPlot <- recordPlot()
+# load density plot data
+qload("Density_Data.qs", nthreads=36)
+print(densityPlot)
+
+# Assuming beta_values is a data frame and sample_groups is a factor vector
+beta_df <- as.data.frame(beta_values) %>%
+  mutate(SampleGroup = sample_groups)
+
+# Convert to long format for ggplot2
+beta_long <- beta_df %>%
+  gather(key = "Probe", value = "BetaValue", -SampleGroup)
+
+# Plot using ggplot2 with facets
+ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
   geom_density() +
-  labs(title = "Density Plot of M-values", x = "M-values", y = "Density") +
-  theme_minimal()
+  facet_wrap(~ SampleGroup, scales = "free_y") +
+  theme_minimal() +
+  labs(title = "Density Plot of Beta Values by Sample Group", x = "Beta Value", y = "Density")
