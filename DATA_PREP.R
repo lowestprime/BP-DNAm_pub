@@ -193,13 +193,12 @@ print_slots(mSetSqFlt)
 qload("Density_Data.qs", nthreads=36)
 print(densityPlot)
 
-# Assuming beta_values is a data frame and sample_groups is a factor vector
-beta_df <- as.data.frame(beta_values) %>%
-  mutate(SampleGroup = sample_groups)
+# Reshape beta_values to long format
+beta_values_long <- melt(beta_values, varnames = c("CpG_Site", "Sample"), value.name = "Beta_Value")
 
-# Convert to long format for ggplot2
-beta_long <- beta_df %>%
-  gather(key = "Probe", value = "BetaValue", -SampleGroup)
+# Merge with sample_groups
+beta_values_long <- beta_values_long %>%
+  mutate(SampleGroup = sample_groups[match(beta_values_long$Sample, colnames(beta_values))])
 
 # Plot using ggplot2 with facets
 ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +

@@ -12,6 +12,12 @@ pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
 # Check which packages are currently loaded
 pacman::p_loaded()
 
+# free unused R memory
+gc()
+
+# save large files fast
+qsave(beta_values_long,file="beta_values_long.qs",nthreads=36,preset="uncompressed")
+
 # creating ".RData" in current working directory
 save.image()
 
@@ -66,6 +72,8 @@ gptstudio:::gptstudio_chat()
 # Remove files from R environement
 remove()
 rm()
+# Remove multiple files by pattern
+rm(list = ls(pattern = "_df"))
 
 # Restart RStudio session
 .rs.restartR()
