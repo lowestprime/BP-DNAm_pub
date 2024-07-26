@@ -2,6 +2,7 @@
 
 ## Motivation and Background
   - [Relevant Literature+](https://docs.google.com/spreadsheets/d/10S1L54l_t6icdOtmu1MQopsLwvqsSE8iASmZKH2Rtlc)
+  - [Meta-analysis of epigenetic aging in schizophrenia reveals multifaceted relationships with age, sex, illness duration, and polygenic risk](https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-024-01660-8)
 
 ## Investigation Overview
 
@@ -18,7 +19,6 @@
 - [ ] Compare _REP vs non _REP sample pair methylation data. 
 - [ ] Finalize sample sheet and DNAm data for [GrimAge version 2](https://www.aging-us.com/article/204434/text)
 - [ ] Install and additionally compute biological age using all other methylation clocks in [dnaMethyAge](https://github.com/yiluyucheng/dnaMethyAge)
-- [ ] Research and potentially also run [CheekAge: a next-generation buccal epigenetic aging clock associated with lifestyle and health](https://link.springer.com/article/10.1007/s11357-024-01094-3)
 - [ ] Plot chronological vs methylation-predicted biological age for all samples
 
 ### **Stage 2 - Run and analyze GrimAge version 2 data**
