@@ -190,11 +190,13 @@ print_slots(mSetSqFlt)
 # densityPlot <- densityPlot(beta_values, sampGroups = sample_groups, main = "Normalized", legend = FALSE)
 # densityPlot <- recordPlot()
 # load density plot data
-qload("Density_Data.qs", nthreads=36)
+qread("Density_Data.qs", nthreads=36)$densityPlot
 print(densityPlot)
 
 # Reshape beta_values to long format
-beta_values_long <- melt(beta_values, varnames = c("CpG_Site", "Sample"), value.name = "Beta_Value")
+# beta_values_long <- melt(beta_values, varnames = c("CpG_Site", "Sample"), value.name = "Beta_Value")
+qread(beta_values_long.qs, nthreads = 36)
+sample_groups <- qread("Density_Data.qs", nthreads=36)$sample_groups
 
 # Merge with sample_groups
 beta_values_long <- beta_values_long %>%

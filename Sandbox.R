@@ -15,6 +15,13 @@ pacman::p_loaded()
 # free unused R memory
 gc()
 
+# detect total cores and total + available memory
+pacman::p_load(parallelly)
+source('BPDNAm_external_functions.R')
+get_memory_info()
+detect_custom_cores()
+
+
 # save large files fast
 qsave(beta_values_long,file="beta_values_long.qs",nthreads=36,preset="uncompressed")
 
