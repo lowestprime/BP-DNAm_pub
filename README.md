@@ -1,6 +1,6 @@
 # **BP-DNAm**
 
-### _Tasks_
+## Tasks
 - [ ] Format sample sheet and crosscheck with DNAm data
 - [ ] Complete [A cross-package Bioconductor workflow for analysing methylation array data vignette](https://bioconductor.org/packages/release/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html#data-exploration) for cohort DNAm data
 - [ ] Compare _REP vs non _REP sample pair methylation data
