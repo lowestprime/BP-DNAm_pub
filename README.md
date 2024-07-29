@@ -6,7 +6,8 @@
 - [ ] Compare _REP vs non _REP sample pair methylation data
 - [ ] Finalize sample sheet and DNAm data for [GrimAge version 2](https://www.aging-us.com/article/204434/text)
 - [ ] Compute biological age using other methylation clocks and compare with chronological and GrimAge2
-  - [ ] [dnaMethyAge](https://github.com/yiluyucheng/dnaMethyAge)
+  - [ ] [dnaMethyAge: predict epigenetic age from DNA methylation data](https://github.com/yiluyucheng/dnaMethyAge)
+  - [ ] [pyaging: a Python-based compendium of GPU-optimized aging clocks](https://github.com/rsinghlab/pyaging)
   - [ ] [Others](https://chatgpt.com/share/62a27044-dbc2-4f25-8202-dbef1f2c51c8)
 - [ ] Plot chronological vs methylation-predicted biological age for all samples
 
