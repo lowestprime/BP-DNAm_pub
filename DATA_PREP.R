@@ -468,12 +468,9 @@ fwrite(master_data, "Bipolar_Epigenetic_Clock_Data.csv", sep = ",",
        row.names = F, quote = F)
 
 # --- End of R Workflow ---
-content_copy
-Use code with caution.
-R
-Execution:
 
+Execution:
 Run the R script (Part 1) on Hoffman2. This will calculate GrimAge2, dnaMethyAge clocks, Dunedin clocks, and prepare data for Python.
 Run the Python script on Hoffman2 (request GPU resources). This will calculate all pyaging clocks, including PhenoAge, DunedinPoAm, DunedinPACE, and methylCIPHER, and combine them with the R-based clock results.
 Once the Python script is finished, continue running the R script (Part 2) on Hoffman2. This will perform comprehensive benchmarking, create the composite clock, and allow you to explore the integrated results.
-This workflow is more efficient, using pyaging's meta-tool capabilities to simplify the Python steps. By thoroughly benchmarking and selectively combining clocks, you will gain powerful insights into biological aging in your bipolar disorder cohort!
+This workflow is more efficient, using pyaging's meta-tool capabilities to simplify the Python steps.
