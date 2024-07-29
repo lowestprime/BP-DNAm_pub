@@ -8,7 +8,8 @@
 - [ ] Compute biological age using other methylation clocks and compare with chronological and GrimAge2
   - [ ] [dnaMethyAge: predict epigenetic age from DNA methylation data](https://github.com/yiluyucheng/dnaMethyAge)
   - [ ] [pyaging: a Python-based compendium of GPU-optimized aging clocks](https://github.com/rsinghlab/pyaging)
-  - [ ] [Others](https://chatgpt.com/share/62a27044-dbc2-4f25-8202-dbef1f2c51c8)
+  - [ ] [Others](https://chatgpt.com/share/4f6a56e0-6ecb-47fb-be89-32ea2363e644)
+  - [ ] [Others2](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221UxleECM1aPXNsQPsFwGrlLcdvhqkd8-V%22%5D,%22action%22:%22open%22,%22userId%22:%22105635218484851934159%22,%22resourceKeys%22:%7B%7D%7D)
 - [ ] Plot chronological vs methylation-predicted biological age for all samples
 
 ## Motivation and Background
