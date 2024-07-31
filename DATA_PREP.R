@@ -190,7 +190,7 @@ print_slots(mSetSqFlt)
 # densityPlot <- densityPlot(beta_values, sampGroups = sample_groups, main = "Normalized", legend = FALSE)
 # densityPlot <- recordPlot()
 # load density plot data
-qread("Density_Data.qs", nthreads=36)$densityPlot
+densityPlot <- qread("Density_Data.qs", nthreads=36)$densityPlot
 print(densityPlot)
 
 # Reshape beta_values to long format
@@ -216,19 +216,14 @@ ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
 # ----
 
 # 1. Load Libraries and Set Working Directory
-library(minfi)
-library(IlluminaHumanMethylation450kanno.ilmn12.hg19) 
-library(dplyr)
-library(data.table)
-library(dnaMethyAge) 
-library(meffil)       
-library(methylClock)  
+pacman::p_load(minfi, IlluminaHumanMethylation450kanno.ilmn12.hg19, dplyr, data.table, dnaMethyAge, meffil, methylClock, qs, ggplot2, plotly, RColorBrewer, reshape2, GenomicRanges, SummarizedExperiment)
+
 # ... Add other benchmarking libraries as needed (e.g., BioAge) ...
 
 setwd("~/project-ophoff/BP-DNAm")  # Replace with your actual project directory
 
 # 2. Load and Preprocess Methylation Data
-qload("BipolarMethylationData.qs", nthreads = 36) # Assuming .qs format
+Density_data <- qread("Density_Data.qs", nthreads = 36)
 sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv") 
 
 # Quality Control (adapt based on your data):
@@ -241,17 +236,20 @@ sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv")
 # mSetSqFlt <- preprocessQuantile(mSetSqFlt)  
 
 # Blood Cell Composition Estimation
-cellCounts <- estimateCellCounts(mSetSqFlt, compositeCellType = "Blood", 
-                                 referencePlatform = "IlluminaHumanMethylation450k") 
+# cellCounts <- estimateCellCounts(mSetSqFlt, compositeCellType = "Blood", 
+#                                  referencePlatform = "IlluminaHumanMethylation450k") 
 
 # Extract beta values 
-beta_values <- getBeta(mSetSqFlt)
+beta_values <- Density_data$beta_values
+# beta_values <- getBeta(mSetSqFlt)
 
 # 3. Sample and CpG Verification 
 # ----
 
 # Get sample names from methylation data
-meth_sample_names <- colnames(beta_values) 
+S <- Density_data$sample_groups
+# S <- qread("Density_Data.qs", nthreads=36)$densityPlot
+
 
 # Check for samples in annotation NOT in methylation data
 missing_in_meth <- setdiff(sample_annotation$Sample_Name, meth_sample_names)
