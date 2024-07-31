@@ -39,6 +39,7 @@ setwd('~/')
 
 # take me back to proj dir
 setwd('/u/project/ophoff/cobeaman/BP-DNAm')
+setwd('/u/project/lhernand/cobeaman/ABCD_Longitudinal_Subcortical_Imaging_GWAS')
 
 # take me to lib dir
 setwd('~/R/APPTAINER/h2-rstudio_4.4.0')
