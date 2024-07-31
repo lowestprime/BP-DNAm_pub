@@ -15,6 +15,9 @@ pacman::p_loaded()
 # free unused R memory
 gc()
 
+# Assign qread() load() etc output in environment to an object when you forget to assign it
+my_data <- .Last.value
+
 # detect total cores and total + available memory
 pacman::p_load(parallelly)
 source('BPDNAm_external_functions.R')

@@ -212,9 +212,8 @@ ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
 #### Remaining Analysis (Work in Progress) ####
 # Source: https://shorturl.at/hKHuc
 
-I. R Workflow (Hoffman2)
-
-# --- R SECTION ---
+#### I. R Workflow (Hoffman2) ####
+# ----
 
 # 1. Load Libraries and Set Working Directory
 library(minfi)
@@ -249,7 +248,7 @@ cellCounts <- estimateCellCounts(mSetSqFlt, compositeCellType = "Blood",
 beta_values <- getBeta(mSetSqFlt)
 
 # 3. Sample and CpG Verification 
-# ------------------------------
+# ----
 
 # Get sample names from methylation data
 meth_sample_names <- colnames(beta_values) 
@@ -282,7 +281,7 @@ if (length(missing_cpgs) > 0) {
 }
 
 # 4. Calculate GrimAge2 (Using Provided Source Code)
-# ---------------------------------------------------
+# ----
 # Load GrimAge2 source code data
 grimage2 <- readRDS("DNAmGrimAge2_final.rds") # Replace with your file if needed
 cpgs <- grimage2[[1]]
@@ -335,7 +334,7 @@ for (k in 1:length(old.name)) {
 }
 
 # 5. Run dnaMethyAge Clocks
-# --------------------------
+# ----
 dna_methy_age_results <- data.frame(SampleID = sample_annotation$Sample_Name)
 dnam_clocks <- c("HannumG2013", "HorvathS2013", "YangZ2016", "ZhangY2017",
                  "HorvathS2018", "LevineM2018", "McEwenL2019", "ZhangQ2019", 
@@ -348,17 +347,17 @@ for (clock in dnam_clocks) {
   dna_methy_age_results[[paste0("AgeAccel", clock)]] <- dnam_age$AgeAccel
 }
 
-# 6. Run DunedinPoAm and DunedinPACE
-# -------------------------------------
+# 6. Run DunedinPoAm and DunedinPACE  
+# ----
 dunedin_poam <- DunedinPoAm(beta_values)
 dunedin_pace <- DunedinPACE(beta_values)
 
 # 7. Run PC-Clocks (if needed)
-# ----------------------------
+# ----
 # ... (Code for PC-Clocks similar to dnaMethyAge loop - adapt data format) ... 
 
 # 8. Combine R-based Clock Results and Prepare for Python
-# ---------------------------------------------------------
+# ----
 r_clock_results <- data.frame(SampleID = sample_annotation$Sample_Name,
                              DunedinPoAm = dunedin_poam$PoAmAge,
                              DunedinPACE = dunedin_pace$PACE) %>%
@@ -369,51 +368,46 @@ r_clock_results <- data.frame(SampleID = sample_annotation$Sample_Name,
 fwrite(r_clock_results, "R_Clock_Results.csv", sep = ",", row.names = F, quote = F)
 
 # --- End of R Section (Part 1) ---
-content_copy
-Use code with caution.
-R
-II. Python Workflow (Hoffman2)
+
+#### II. Python Workflow (Hoffman2) ####
 
 # --- PYTHON SECTION ---
-import pandas as pd
-import pyaging 
+# import pandas as pd
+# import pyaging 
+# 
+# # Load methylation data (adapt file path and format)
+# meth_data = pd.read_csv("mymetharray.csv", index_col="SampleID") # Example for beta values
+# 
+# # Load R-based clock results
+# r_clock_results = pd.read_csv("R_Clock_Results.csv", index_col="SampleID")
+# 
+# # Calculate ALL pyaging clocks
+# pyaging_results = pyaging.calculate_all_clocks(meth_data, platform='450k') 
+# 
+# # Select relevant clocks and create a data frame
+# python_clock_results = pd.DataFrame({
+#     'SampleID': meth_data.index, 
+#     'PhenoAge': pyaging_results['phenoage'],
+#     'AgeAccelPheno': pyaging_results['phenoage_acceleration'],
+#     'DunedinPoAm_pyaging': pyaging_results['dunedin_poam'], 
+#     'AgeAccelDunedinPoAm_pyaging': pyaging_results['dunedin_poam_acceleration'],
+#     'DunedinPACE_pyaging': pyaging_results['dunedin_pace'],
+#     'AgeAccelDunedinPACE_pyaging': pyaging_results['dunedin_pace_acceleration'],
+#     'MethylCipherAge': pyaging_results['methyl_cipher'],
+#     'AgeAccelMethylCipher': pyaging_results['methyl_cipher_acceleration']
+#     # ... Add other pyaging clock names and age accelerations ...
+#     })
+# 
+# # Combine with R-based clocks 
+# python_clock_results = python_clock_results.join(r_clock_results, on="SampleID")
+# 
+# # Save Python-based clock results 
+# python_clock_results.to_csv("Python_Clock_Results.csv", index=False)
+# 
+# # --- End of Python Section ---
 
-# Load methylation data (adapt file path and format)
-meth_data = pd.read_csv("mymetharray.csv", index_col="SampleID") # Example for beta values
-
-# Load R-based clock results
-r_clock_results = pd.read_csv("R_Clock_Results.csv", index_col="SampleID")
-
-# Calculate ALL pyaging clocks
-pyaging_results = pyaging.calculate_all_clocks(meth_data, platform='450k') 
-
-# Select relevant clocks and create a data frame
-python_clock_results = pd.DataFrame({
-    'SampleID': meth_data.index, 
-    'PhenoAge': pyaging_results['phenoage'],
-    'AgeAccelPheno': pyaging_results['phenoage_acceleration'],
-    'DunedinPoAm_pyaging': pyaging_results['dunedin_poam'], 
-    'AgeAccelDunedinPoAm_pyaging': pyaging_results['dunedin_poam_acceleration'],
-    'DunedinPACE_pyaging': pyaging_results['dunedin_pace'],
-    'AgeAccelDunedinPACE_pyaging': pyaging_results['dunedin_pace_acceleration'],
-    'MethylCipherAge': pyaging_results['methyl_cipher'],
-    'AgeAccelMethylCipher': pyaging_results['methyl_cipher_acceleration']
-    # ... Add other pyaging clock names and age accelerations ...
-    })
-
-# Combine with R-based clocks 
-python_clock_results = python_clock_results.join(r_clock_results, on="SampleID")
-
-# Save Python-based clock results 
-python_clock_results.to_csv("Python_Clock_Results.csv", index=False)
-
-# --- End of Python Section ---
-content_copy
-Use code with caution.
-Python
-III. R Workflow (Hoffman2 - Continued)
-
-# --- R SECTION (Part 2) ---
+#### III. R Workflow (Hoffman2 - Continued) ####
+# R SECTION (Part 2) ----
 
 # 9. Import Python Clock Results
 python_clock_results <- fread("Python_Clock_Results.csv")
@@ -436,7 +430,7 @@ print(benchmark_results)
 fwrite(benchmark_results, "Clock_Benchmark_Results.csv", sep = ",", row.names = F, quote = F) 
 
 # 12. Create a Composite Clock (using PCR as an example)
-# -------------------------------------------------------
+# ----
 # Select top-performing clocks based on benchmarking (using correlation as example)
 top_clocks <- benchmark_results %>%
                 slice_max(n = 3, order_by = Correlation) %>% # Get top 3 by correlation
@@ -458,7 +452,7 @@ master_data$AgeAccelComposite <- residuals(lm(CompositeClock ~ Age,
                                                 data = master_data, na.action = na.exclude))
 
 # 13. Analyze and Explore Results
-# --------------------------------
+# ----
 # - Explore correlations between clocks
 # - Analyze associations with bipolar disorder features 
 # - ...
@@ -469,8 +463,8 @@ fwrite(master_data, "Bipolar_Epigenetic_Clock_Data.csv", sep = ",",
 
 # --- End of R Workflow ---
 
-Execution:
-Run the R script (Part 1) on Hoffman2. This will calculate GrimAge2, dnaMethyAge clocks, Dunedin clocks, and prepare data for Python.
-Run the Python script on Hoffman2 (request GPU resources). This will calculate all pyaging clocks, including PhenoAge, DunedinPoAm, DunedinPACE, and methylCIPHER, and combine them with the R-based clock results.
-Once the Python script is finished, continue running the R script (Part 2) on Hoffman2. This will perform comprehensive benchmarking, create the composite clock, and allow you to explore the integrated results.
-This workflow is more efficient, using pyaging's meta-tool capabilities to simplify the Python steps.
+# Execution:
+# Run the R script (Part 1) on Hoffman2. This will calculate GrimAge2, dnaMethyAge clocks, Dunedin clocks, and prepare data for Python.
+# Run the Python script on Hoffman2 (request GPU resources). This will calculate all pyaging clocks, including PhenoAge, DunedinPoAm, DunedinPACE, and methylCIPHER, and combine them with the R-based clock results.
+# Once the Python script is finished, continue running the R script (Part 2) on Hoffman2. This will perform comprehensive benchmarking, create the composite clock, and allow you to explore the integrated results.
+# This workflow is more efficient, using pyaging's meta-tool capabilities to simplify the Python steps.
