@@ -1,1 +1,4 @@
 *.qs
+*.RData
+.Rprofile
+.Rhistory
