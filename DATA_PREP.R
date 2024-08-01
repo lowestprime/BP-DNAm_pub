@@ -1,5 +1,5 @@
 # Update Sample Sheet and Process Data for GRIMAGE2
-#### Data Prep ####
+# Data Prep ####
 # Go to project dir or skip and run in current project dir
 setwd("~/project-ophoff/BP-DNAm")
 
@@ -28,7 +28,8 @@ BPDNAm_cov <- read.table("From_Roel/highcov_technical_covariates.txt", sep = "\t
   rename(Gender = sex,
          Diagnosis = diagnosis,
          Age_Years = age) %>%
-  mutate(Age_Years = as.numeric(gsub("[^0-9.]", "", Age_Years))) # Remove non-numeric characters and convert to numeric
+  mutate(Age_Years = as.numeric(gsub("[^0-9.]", "", Age_Years)), # Remove non-numeric characters and convert to numeric
+         Sample_Name = gsub("^X(\\d{3})\\.(BG\\d{5})$", "\\1-\\2", Sample_Name)) # Change Sample_Name format
 
 # Read in Complete BIG Data.xlsx as data frame
 bp_master <- read_excel("Complete BIG Data.xlsx")
@@ -96,12 +97,12 @@ BPDNAm_SS_REP <- BPDNAm_SS_updated %>%
             by = "Sample_Name")
 
 # Export BPDNAm_SS_REP with a filename including the count of "_REP" samples
-BPDNAm_SS_REP %>%
-  {
-    num_rep_samples <- sum(str_detect(.$Sample_Name, "_REP$"))
-    filename <- sprintf("BPDNAm_SS_REP_Pairs_%d.csv", num_rep_samples)
-    fwrite(., filename)
-  }
+# BPDNAm_SS_REP %>%
+#   {
+#     num_rep_samples <- sum(str_detect(.$Sample_Name, "_REP$"))
+#     filename <- sprintf("BPDNAm_SS_REP_Pairs_%d.csv", num_rep_samples)
+#     fwrite(., filename)
+#   }
 
 # summarize NAs in BPDNAm_SS_updated
 NA_summary <- BPDNAm_SS_updated %>%
@@ -114,7 +115,7 @@ NA_summary <- BPDNAm_SS_updated %>%
   arrange(desc(NA_Proportion))
 
 # Export NA_summary
-fwrite(NA_summary, "BPDNAm_NA_Summary.csv")
+# fwrite(NA_summary, "BPDNAm_NA_Summary.csv")
 
 # Identify columns to keep (NA proportion < 0.2)
 cols_to_keep <- NA_summary %>%
@@ -130,22 +131,22 @@ BPDNAm_SS_NAs <- BPDNAm_SS_updated %>%
   select(-c("Sample_Group", "Basename"))
 
 # Export BPDNAm_SS_NAs
-BPDNAm_SS_NAs %>%
-  {
-    num_samples <- nrow(.)
-    filename <- sprintf("BPDNAm_NA_Samples_%d.csv", num_samples)
-    fwrite(., filename)
-  }
+# BPDNAm_SS_NAs %>%
+#   {
+#     num_samples <- nrow(.)
+#     filename <- sprintf("BPDNAm_NA_Samples_%d.csv", num_samples)
+#     fwrite(., filename)
+#   }
 
 # Export comma separated list of Sample_Names in BPDNAm_SS_NAs
-BPDNAm_SS_NAs %>%
-  pull(Sample_Name) %>%
-  {
-    sample_names <- .
-    filename <- sprintf("BPDNAm_NA_Sample_Names_%d.txt", length(sample_names))
-    paste(sample_names, collapse = ",") %>%
-      write_file(filename)
-  }
+# BPDNAm_SS_NAs %>%
+#   pull(Sample_Name) %>%
+#   {
+#     sample_names <- .
+#     filename <- sprintf("BPDNAm_NA_Sample_Names_%d.txt", length(sample_names))
+#     paste(sample_names, collapse = ",") %>%
+#       write_file(filename)
+#   }
 
 # Create a subset of BPDNAm_SS_updated with cols_to_keep and no NA rows
 BPDNAm_SS_noNAs <- BPDNAm_SS_updated %>%
@@ -153,14 +154,14 @@ BPDNAm_SS_noNAs <- BPDNAm_SS_updated %>%
   anti_join(BPDNAm_SS_NAs, by = "Sample_Name")
 
 # Export BPDNAm_SS_noNAs
-BPDNAm_SS_noNAs %>%
-  {
-    num_samples <- nrow(.)
-    filename <- sprintf("BPDNAm_noNA_Samples_%d.csv", num_samples)
-    fwrite(., filename)
-  }
+# BPDNAm_SS_noNAs %>%
+#   {
+#     num_samples <- nrow(.)
+#     filename <- sprintf("BPDNAm_noNA_Samples_%d.csv", num_samples)
+#     fwrite(., filename)
+#   }
 
-#### Process Data for GRIMAGE2 ####
+# Process Data for GRIMAGE2 ####
 # load in required packages
 pacman::p_load(qs, ggplot2, plotly, RColorBrewer, reshape2, minfi, GenomicRanges, SummarizedExperiment)
 
@@ -209,20 +210,21 @@ ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
   theme_minimal() +
   labs(title = "Density Plot of Beta Values by Sample Group", x = "Beta Value", y = "Density")
 
-#### Remaining Analysis (Work in Progress) ####
+# Remaining Analysis (Work in Progress) ####
 # Source: https://shorturl.at/hKHuc
 
-#### I. R Workflow (Hoffman2) ####
-# ----
+## I. R Workflow (Hoffman2) ####
 
-# 1. Load Libraries and Set Working Directory
-pacman::p_load(minfi, IlluminaHumanMethylation450kanno.ilmn12.hg19, dplyr, data.table, dnaMethyAge, meffil, methylClock, qs, ggplot2, plotly, RColorBrewer, reshape2, GenomicRanges, SummarizedExperiment)
+### 1. Load Libraries and Set Working Directory ####
+pacman::p_load(minfi, IlluminaHumanMethylation450kanno.ilmn12.hg19, dplyr, data.table, BioAge, dnaMethyAge,
+               meffil, methylclock, qs, ggplot2, plotly, RColorBrewer, reshape2, GenomicRanges, SummarizedExperiment,
+               tidyverse, purrr)
 
-# ... Add other benchmarking libraries as needed (e.g., BioAge) ...
+# ... Add other benchmarking libraries as needed ...
 
 setwd("~/project-ophoff/BP-DNAm")  # Replace with your actual project directory
 
-# 2. Load and Preprocess Methylation Data
+### 2. Load and Preprocess Methylation Data ####
 Density_data <- qread("Density_Data.qs", nthreads = 36)
 sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv") 
 
@@ -243,27 +245,48 @@ sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv")
 beta_values <- Density_data$beta_values
 # beta_values <- getBeta(mSetSqFlt)
 
-# 3. Sample and CpG Verification 
-# ----
+### 3. Sample and CpG Verification ####
 
 # Get sample names from methylation data
-S <- Density_data$sample_groups
+meth_sample_names <- Density_data$sample_groups
 # S <- qread("Density_Data.qs", nthreads=36)$densityPlot
 
 
-# Check for samples in annotation NOT in methylation data
+# Check for samples in Sample Sheet NOT in Methylation Samples
 missing_in_meth <- setdiff(sample_annotation$Sample_Name, meth_sample_names)
 if (length(missing_in_meth) > 0) {
-  warning("Samples in annotation not found in methylation data: ", 
+  warning("Samples in Sample Sheet not found in Methylation Samples: ", 
           paste(missing_in_meth, collapse = ", "))
 }
 
-# Check for samples in methylation data NOT in annotation
+# Check for samples in Methylation Samples NOT in Sample Sheet
 missing_in_annot <- setdiff(meth_sample_names, sample_annotation$Sample_Name)
 if (length(missing_in_annot) > 0) {
-  warning("Samples in methylation data not found in annotation: ", 
+  warning("Samples in Methylation Samples not found in Sample Sheet: ", 
           paste(missing_in_annot, collapse = ", "))
 }
+
+# List of tables to check for missing samples
+tables_to_check <- list(
+  BPDNAm_SS_updated = BPDNAm_SS_updated,
+  BPDNAm_ext = BPDNAm_ext,
+  BPDNAm_cov = BPDNAm_cov,
+  bp_master = bp_master,
+  missing_samples = missing_samples,
+  BPDNAm_SS_NAs = BPDNAm_SS_NAs
+)
+
+# Columns to include in the output
+columns_to_include <- c("Sample_Name", "Age_Years", "Gender", "Diagnosis", 
+                        "Sample_Plate", "Sample_Well", "Sentrix_ID", "Sentrix_Position")
+
+# Process all tables and combine the results
+missing_samples_info <- tables_to_check %>%
+  imap_dfr(~process_table(.x, .y, missing_in_annot)) %>%  # Apply process_table to each table and combine results
+  group_by(Sample_Name) %>%  # Group by Sample_Name
+  summarise(across(everything(), first_non_na), .groups = "drop") %>%  # Summarize by taking the first non-NA value for each column
+  arrange(Sample_Name) %>%  # Arrange by Sample_Name
+  select(Sample_Name, Source_Table, everything())  # Reorder columns to put Source_Table after Sample_Name
 
 # Load GrimAge2 CpG list 
 grimage2_cpgs <- fread("DNAmGrimAge2_1030CpGs.csv")
@@ -278,25 +301,13 @@ if (length(missing_cpgs) > 0) {
        paste(missing_cpgs, collapse = ", "))
 }
 
-# 4. Calculate GrimAge2 (Using Provided Source Code)
-# ----
+### 4. Calculate GrimAge2 (Using Provided Source Code) ####
+
 # Load GrimAge2 source code data
 grimage2 <- readRDS("DNAmGrimAge2_final.rds") # Replace with your file if needed
 cpgs <- grimage2[[1]]
 glmnet.final1 <- grimage2[[2]]
 gold <- grimage2[[3]]
-
-# Define functions from source code
-F_scale <- function(INPUT0, Y.pred0.name, Y.pred.name, gold) {
-  out.para <- subset(gold, var == 'COX')
-  out.para.age <- subset(gold, var == 'Age')
-  m.age <- out.para.age$mean
-  sd.age <- out.para.age$sd
-  Y0 <- INPUT0[, Y.pred0.name]
-  Y <- (Y0 - out.para$mean) / out.para$sd
-  INPUT0[, Y.pred.name] <- as.numeric((Y * sd.age) + m.age)
-  return(INPUT0)
-}
 
 # Step 1: Generate DNAm Protein Variables 
 Ys <- unique(cpgs$Y.pred) 
@@ -331,8 +342,8 @@ for (k in 1:length(old.name)) {
   names(output.all)[id] <- new.name[k]
 }
 
-# 5. Run dnaMethyAge Clocks
-# ----
+### 5. Run dnaMethyAge Clocks ####
+
 dna_methy_age_results <- data.frame(SampleID = sample_annotation$Sample_Name)
 dnam_clocks <- c("HannumG2013", "HorvathS2013", "YangZ2016", "ZhangY2017",
                  "HorvathS2018", "LevineM2018", "McEwenL2019", "ZhangQ2019", 
@@ -345,17 +356,16 @@ for (clock in dnam_clocks) {
   dna_methy_age_results[[paste0("AgeAccel", clock)]] <- dnam_age$AgeAccel
 }
 
-# 6. Run DunedinPoAm and DunedinPACE  
-# ----
+### 6. Run DunedinPoAm and DunedinPACE ####
 dunedin_poam <- DunedinPoAm(beta_values)
 dunedin_pace <- DunedinPACE(beta_values)
 
-# 7. Run PC-Clocks (if needed)
-# ----
+### 7. Run PC-Clocks (if needed) ####
+
 # ... (Code for PC-Clocks similar to dnaMethyAge loop - adapt data format) ... 
 
-# 8. Combine R-based Clock Results and Prepare for Python
-# ----
+### 8. Combine R-based Clock Results and Prepare for Python ####
+
 r_clock_results <- data.frame(SampleID = sample_annotation$Sample_Name,
                              DunedinPoAm = dunedin_poam$PoAmAge,
                              DunedinPACE = dunedin_pace$PACE) %>%
@@ -367,7 +377,7 @@ fwrite(r_clock_results, "R_Clock_Results.csv", sep = ",", row.names = F, quote =
 
 # --- End of R Section (Part 1) ---
 
-#### II. Python Workflow (Hoffman2) ####
+## II. Python Workflow (Hoffman2) ####
 
 # --- PYTHON SECTION ---
 # import pandas as pd
@@ -404,17 +414,16 @@ fwrite(r_clock_results, "R_Clock_Results.csv", sep = ",", row.names = F, quote =
 # 
 # # --- End of Python Section ---
 
-#### III. R Workflow (Hoffman2 - Continued) ####
-# R SECTION (Part 2) ----
+## III. R Workflow (Hoffman2 - Continued) ####
 
-# 9. Import Python Clock Results
+### 9. Import Python Clock Results ####
 python_clock_results <- fread("Python_Clock_Results.csv")
 
-# 10. Combine All Clock Results and Sample Annotation
+### 10. Combine All Clock Results and Sample Annotation ####
 master_data <- left_join(sample_annotation, output.all, by = "SampleID") %>%
               left_join(python_clock_results, by = "SampleID")
 
-# 11. Comprehensive Benchmarking
+### 11. Comprehensive Benchmarking ####
 clocks_to_benchmark <- names(master_data)[grepl("Age$|GrimAge2$", names(master_data))] # Select all clock variables
 
 benchmark_results <- methylClock::benchmarkClocks(master_data, 
@@ -427,8 +436,8 @@ benchmark_results <- methylClock::benchmarkClocks(master_data,
 print(benchmark_results)
 fwrite(benchmark_results, "Clock_Benchmark_Results.csv", sep = ",", row.names = F, quote = F) 
 
-# 12. Create a Composite Clock (using PCR as an example)
-# ----
+### 12. Create a Composite Clock (using PCR as an example) ####
+
 # Select top-performing clocks based on benchmarking (using correlation as example)
 top_clocks <- benchmark_results %>%
                 slice_max(n = 3, order_by = Correlation) %>% # Get top 3 by correlation
@@ -449,8 +458,8 @@ master_data$CompositeClock <- predict(pcr_model, newdata = master_data)
 master_data$AgeAccelComposite <- residuals(lm(CompositeClock ~ Age, 
                                                 data = master_data, na.action = na.exclude))
 
-# 13. Analyze and Explore Results
-# ----
+### 13. Analyze and Explore Results ####
+
 # - Explore correlations between clocks
 # - Analyze associations with bipolar disorder features 
 # - ...
@@ -461,8 +470,8 @@ fwrite(master_data, "Bipolar_Epigenetic_Clock_Data.csv", sep = ",",
 
 # --- End of R Workflow ---
 
-# Execution:
+## IV. Execution: ####
 # Run the R script (Part 1) on Hoffman2. This will calculate GrimAge2, dnaMethyAge clocks, Dunedin clocks, and prepare data for Python.
 # Run the Python script on Hoffman2 (request GPU resources). This will calculate all pyaging clocks, including PhenoAge, DunedinPoAm, DunedinPACE, and methylCIPHER, and combine them with the R-based clock results.
 # Once the Python script is finished, continue running the R script (Part 2) on Hoffman2. This will perform comprehensive benchmarking, create the composite clock, and allow you to explore the integrated results.
-# This workflow is more efficient, using pyaging's meta-tool capabilities to simplify the Python steps.
+# This workflow is more efficient, using pyagings meta-tool capabilities to simplify the Python steps.

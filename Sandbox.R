@@ -24,7 +24,6 @@ source('BPDNAm_external_functions.R')
 get_memory_info()
 detect_custom_cores()
 
-
 # save large files fast
 qsave(beta_values_long,file="beta_values_long.qs",nthreads=36,preset="uncompressed")
 

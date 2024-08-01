@@ -1,14 +1,3 @@
-# Function to recursively print slots of an S4 object
-print_slots <- function(obj) {
-  slot_names <- slotNames(obj)
-  for (slot_name in slot_names) {
-    cat("Slot name:", slot_name, "\n")
-    slot_content <- slot(obj, slot_name)
-    str(slot_content)
-    cat("\n")
-  }
-}
-
 # Function to get total memory from /proc/meminfo or free
 get_memory_info <- function() {
   meminfo <- readLines("/proc/meminfo")
@@ -46,4 +35,49 @@ detect_custom_cores <- function() {
   
   # Print detected resources
   message("Number of cores available: ", num_cores)
+}
+
+# Function to recursively print slots of an S4 object
+print_slots <- function(obj) {
+  slot_names <- slotNames(obj)
+  for (slot_name in slot_names) {
+    cat("Slot name:", slot_name, "\n")
+    slot_content <- slot(obj, slot_name)
+    str(slot_content)
+    cat("\n")
+  }
+}
+
+# Function to process each table (searching by Sample_Name)
+process_table_by_name <- function(table, table_name, missing_samples) {
+  table %>%
+    filter(Sample_Name %in% missing_samples) %>%
+    select(any_of(columns_to_include)) %>%
+    mutate(Source_Table = table_name, Search_Method = "Sample_Name")
+}
+
+# Function to process each table (searching by Sentrix_ID)
+process_table_by_id <- function(table, table_name, missing_sentrix_ids) {
+  table %>%
+    filter(Sentrix_ID %in% missing_sentrix_ids) %>%
+    select(any_of(columns_to_include)) %>%
+    mutate(Source_Table = table_name, Search_Method = "Sentrix_ID")
+}
+
+# Custom function to get the first non-NA value
+first_non_na <- function(x) {
+  non_na <- na.omit(x)
+  if (length(non_na) > 0) non_na[1] else NA
+}
+
+# Define functions from GrimAge2 source code
+F_scale <- function(INPUT0, Y.pred0.name, Y.pred.name, gold) {
+  out.para <- subset(gold, var == 'COX')
+  out.para.age <- subset(gold, var == 'Age')
+  m.age <- out.para.age$mean
+  sd.age <- out.para.age$sd
+  Y0 <- INPUT0[, Y.pred0.name]
+  Y <- (Y0 - out.para$mean) / out.para$sd
+  INPUT0[, Y.pred.name] <- as.numeric((Y * sd.age) + m.age)
+  return(INPUT0)
 }
