@@ -58,10 +58,14 @@ process_table_by_name <- function(table, table_name, missing_samples) {
 
 # Function to process each table (searching by Sentrix_ID)
 process_table_by_id <- function(table, table_name, missing_sentrix_ids) {
-  table %>%
-    filter(Sentrix_ID %in% missing_sentrix_ids) %>%
-    select(any_of(columns_to_include)) %>%
-    mutate(Source_Table = table_name, Search_Method = "Sentrix_ID")
+  if ("Sentrix_ID" %in% names(table)) {
+    table %>%
+      filter(Sentrix_ID %in% missing_sentrix_ids) %>%
+      select(any_of(columns_to_include)) %>%
+      mutate(Source_Table = table_name, Search_Method = "Sentrix_ID")
+  } else {
+    tibble()
+  }
 }
 
 # Custom function to get the first non-NA value

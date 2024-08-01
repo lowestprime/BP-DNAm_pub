@@ -180,6 +180,16 @@ slot_names <- slotNames(mSetSqFlt)
 print(slot_names)
 print_slots(mSetSqFlt)
 
+# Print the annotation information (i.e. array type)
+# For IlluminaHumanMethylation450k: IlluminaHumanMethylation450k, annotation = "ilmn12.hg19"
+# For IlluminaHumanMethylationEPIC: IlluminaHumanMethylationEPIC, annotation = "ilm10b4.hg19"
+annotation(mSetSqFlt)
+
+# Assuming your beta values are in a data frame called 'beta_values'
+# The 450k array has CpG sites that start with "ch".
+# The EPIC array has CpGs that start with "cg".
+head(rownames(mSetSqFlt$beta_values))
+
 # Visualize the distribution of the beta values for each sample after normalization
 # Extract Beta Values from GenomicRatioSet
 # beta_values <- getBeta(mSetSqFlt)
@@ -216,7 +226,10 @@ ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
 ## I. R Workflow (Hoffman2) ####
 
 ### 1. Load Libraries and Set Working Directory ####
-pacman::p_load(minfi, IlluminaHumanMethylation450kanno.ilmn12.hg19, dplyr, data.table, BioAge, dnaMethyAge,
+# fix this install first before proceeding
+BiocManager::install(version='devel')
+BiocManager::install("IlluminaHumanMethylationEPICv2anno.20a1.hg38", lib = "/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
+pacman::p_load(minfi, IlluminaHumanMethylationEPICv2anno.20a1.hg38, dplyr, data.table, BioAge, dnaMethyAge,
                meffil, methylclock, qs, ggplot2, plotly, RColorBrewer, reshape2, GenomicRanges, SummarizedExperiment,
                tidyverse, purrr)
 
@@ -225,7 +238,7 @@ pacman::p_load(minfi, IlluminaHumanMethylation450kanno.ilmn12.hg19, dplyr, data.
 setwd("~/project-ophoff/BP-DNAm")  # Replace with your actual project directory
 
 ### 2. Load and Preprocess Methylation Data ####
-Density_data <- qread("Density_Data.qs", nthreads = 36)
+# Density_data <- qread("Density_Data.qs", nthreads = 36)
 sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv") 
 
 # Quality Control (adapt based on your data):
@@ -242,15 +255,18 @@ sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv")
 #                                  referencePlatform = "IlluminaHumanMethylation450k") 
 
 # Extract beta values 
-beta_values <- Density_data$beta_values
+beta_values <- qread("Density_Data.qs", nthreads = 36)$beta_values
 # beta_values <- getBeta(mSetSqFlt)
 
 ### 3. Sample and CpG Verification ####
 
+# load external functions
+source('BPDNAm_external_functions.R')
+
+#### Sample name check (work in progress) ####
 # Get sample names from methylation data
 meth_sample_names <- Density_data$sample_groups
 # S <- qread("Density_Data.qs", nthreads=36)$densityPlot
-
 
 # Check for samples in Sample Sheet NOT in Methylation Samples
 missing_in_meth <- setdiff(sample_annotation$Sample_Name, meth_sample_names)
@@ -280,19 +296,35 @@ tables_to_check <- list(
 columns_to_include <- c("Sample_Name", "Age_Years", "Gender", "Diagnosis", 
                         "Sample_Plate", "Sample_Well", "Sentrix_ID", "Sentrix_Position")
 
-# Process all tables and combine the results
-missing_samples_info <- tables_to_check %>%
-  imap_dfr(~process_table(.x, .y, missing_in_annot)) %>%  # Apply process_table to each table and combine results
-  group_by(Sample_Name) %>%  # Group by Sample_Name
-  summarise(across(everything(), first_non_na), .groups = "drop") %>%  # Summarize by taking the first non-NA value for each column
-  arrange(Sample_Name) %>%  # Arrange by Sample_Name
-  select(Sample_Name, Source_Table, everything())  # Reorder columns to put Source_Table after Sample_Name
+# Initial search by Sample_Name and extract Sentrix_IDs in one step
+initial_search <- tables_to_check %>%
+  imap_dfr(~process_table_by_name(.x, .y, missing_in_annot))
+missing_sentrix_ids <- initial_search %>%
+  filter(!is.na(Sentrix_ID)) %>%
+  pull(Sentrix_ID)
+
+# Secondary search by Sentrix_ID
+secondary_search <- tables_to_check %>%
+  imap_dfr(~process_table_by_id(.x, .y, missing_sentrix_ids))
+
+# Combine and summarize the results
+missing_samples_info <- bind_rows(initial_search, secondary_search) %>%
+  group_by(Sample_Name) %>%
+  summarise(across(everything(), first_non_na), .groups = "drop") %>%
+  arrange(Sample_Name) %>%
+  select(Sample_Name, Source_Table, Search_Method, everything())
+
+### 4. Calculate GrimAge2 (Using Provided Source Code) ####
+
+# Go to DNAmGrimAgeGitHub dir
+setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
 
 # Load GrimAge2 CpG list 
-grimage2_cpgs <- fread("DNAmGrimAge2_1030CpGs.csv")
+grimage2_cpgs <- fread("input/DNAmGrimAge2_1030CpGs.csv")
 
 # Get CpG names from methylation data 
-data_cpgs <- rownames(mSetSqFlt)
+data_cpgs <- unique(rownames(beta_values))
+# write.csv(data_cpgs, "data_cpgs.csv", row.names = FALSE, quote = FALSE)
 
 # Check for missing CpGs
 missing_cpgs <- setdiff(grimage2_cpgs$var, data_cpgs)
@@ -300,8 +332,7 @@ if (length(missing_cpgs) > 0) {
   stop("GrimAge2 CpGs missing in your methylation data: ", 
        paste(missing_cpgs, collapse = ", "))
 }
-
-### 4. Calculate GrimAge2 (Using Provided Source Code) ####
+write.csv(missing_cpgs, "missing_cpgs.csv", row.names = FALSE, quote = FALSE)
 
 # Load GrimAge2 source code data
 grimage2 <- readRDS("DNAmGrimAge2_final.rds") # Replace with your file if needed
