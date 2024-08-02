@@ -226,16 +226,14 @@ ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
 ## I. R Workflow (Hoffman2) ####
 
 ### 1. Load Libraries and Set Working Directory ####
-# fix this install first before proceeding
-BiocManager::install(version='devel')
-BiocManager::install("IlluminaHumanMethylationEPICv2anno.20a1.hg38", lib = "/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
-pacman::p_load(minfi, IlluminaHumanMethylationEPICv2anno.20a1.hg38, dplyr, data.table, BioAge, dnaMethyAge,
-               meffil, methylclock, qs, ggplot2, plotly, RColorBrewer, reshape2, GenomicRanges, SummarizedExperiment,
-               tidyverse, purrr)
-
+pacman::p_load(minfi, IlluminaHumanMethylationEPICv2anno.20a1.hg38, dplyr, 
+               data.table, BioAge, dnaMethyAge, meffil, methylclock, qs, ggplot2, 
+               plotly, RColorBrewer, reshape2, GenomicRanges, 
+               SummarizedExperiment, tidyverse, purrr)
+# "EPICv2manifest" is an alternative EPICv2 pkg
 # ... Add other benchmarking libraries as needed ...
 
-setwd("~/project-ophoff/BP-DNAm")  # Replace with your actual project directory
+setwd("~/project-ophoff/BP-DNAm")
 
 ### 2. Load and Preprocess Methylation Data ####
 # Density_data <- qread("Density_Data.qs", nthreads = 36)
@@ -258,12 +256,11 @@ sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv")
 beta_values <- qread("Density_Data.qs", nthreads = 36)$beta_values
 # beta_values <- getBeta(mSetSqFlt)
 
-### 3. Sample and CpG Verification ####
+### 3. Sample Verification (work in progress, check mSetSqFlt for missing info) ####
 
 # load external functions
 source('BPDNAm_external_functions.R')
 
-#### Sample name check (work in progress) ####
 # Get sample names from methylation data
 meth_sample_names <- Density_data$sample_groups
 # S <- qread("Density_Data.qs", nthreads=36)$densityPlot
@@ -314,16 +311,21 @@ missing_samples_info <- bind_rows(initial_search, secondary_search) %>%
   arrange(Sample_Name) %>%
   select(Sample_Name, Source_Table, Search_Method, everything())
 
-### 4. Calculate GrimAge2 (Using Provided Source Code) ####
+### 4. CpG Verification and GrimAge2 Calculation (Using Provided Source Code) ####
 
 # Go to DNAmGrimAgeGitHub dir
 setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
 
+# load external functions
+source('BPDNAm_external_functions.R')
+
 # Load GrimAge2 CpG list 
 grimage2_cpgs <- fread("input/DNAmGrimAge2_1030CpGs.csv")
 
-# Get CpG names from methylation data 
-data_cpgs <- unique(rownames(beta_values))
+# Get CpG names from methylation data and clean _XXXX suffixes 
+data_cpgs <- unique(rownames(beta_values)) %>%
+  str_replace_all("_.*$", "")
+data_cpgs.df <- data.frame(data_cpgs)
 # write.csv(data_cpgs, "data_cpgs.csv", row.names = FALSE, quote = FALSE)
 
 # Check for missing CpGs
@@ -332,10 +334,30 @@ if (length(missing_cpgs) > 0) {
   stop("GrimAge2 CpGs missing in your methylation data: ", 
        paste(missing_cpgs, collapse = ", "))
 }
-write.csv(missing_cpgs, "missing_cpgs.csv", row.names = FALSE, quote = FALSE)
+missing_cpgs.df <- data.frame(missing_cpgs)
+# write.csv(missing_cpgs, "missing_cpgs.csv", row.names = FALSE, quote = FALSE)
+
+# Get raw CpG names from methylation data
+data_cpgs_raw <- unique(rownames(beta_values))
+
+# Get all CpG names from the EPIC annotation package
+epic_cpgs <- rownames(getAnnotation(IlluminaHumanMethylationEPICv2anno.20a1.hg38))
+
+# Check if missing CpGs are in EPIC annotation
+missing_in_epic_annotation <- setdiff(missing_cpgs, epic_cpgs)
+
+# Check if raw CpGs are in EPIC annotation
+raw_in_epic_annotation <- setdiff(data_cpgs_raw, epic_cpgs)
+
+if (length(raw_in_epic_annotation) > 0) {
+  message("These CpGs are not in the EPICv2 annotation package:", 
+          paste(raw_in_epic_annotation, collapse = ", "))
+} else {
+  message("All raw CpGs are present in the EPICv2 annotation package.")
+}
 
 # Load GrimAge2 source code data
-grimage2 <- readRDS("DNAmGrimAge2_final.rds") # Replace with your file if needed
+grimage2 <- readRDS("input/DNAmGrimAge2_final.Rds")
 cpgs <- grimage2[[1]]
 glmnet.final1 <- grimage2[[2]]
 gold <- grimage2[[3]]
@@ -344,15 +366,19 @@ gold <- grimage2[[3]]
 Ys <- unique(cpgs$Y.pred) 
 for (k in 1:length(Ys)) {
   cpgs1 <- subset(cpgs, Y.pred == Ys[k])
-  Xs <- subset(dat.meth, select = cpgs1$var)
-  Y.pred <- as.numeric(as.matrix(Xs) %*% cpgs1$beta)
-  dat.meth[, Ys[k]] <- Y.pred
-  attr(dat.meth[, Ys[k]], "dimnames") <- NULL
+  # Select the corresponding CpG rows from beta_values 
+  Xs <- beta_values[match(cpgs1$var, rownames(beta_values)), ]  
+  # Transpose Xs to have samples as rows
+  Xs <- t(Xs)
+  # Calculate predicted values
+  Y.pred <- as.numeric(Xs %*% cpgs1$beta)  
+  # Add predicted values to sample_annotation
+  sample_annotation[, Ys[k]] <- Y.pred  
 }
 
 # Step 2: Generate DNAmGrimAge2 and AgeAccelGrim2
-vars <- c('SampleID', 'Age', 'Female', Ys)
-output.all <- subset(dat.meth, select = vars)
+vars <- c('Sample_Name', 'Age_Years', 'Gender', Ys)
+output.all <- sample_annotation[, ..vars]
 
 # Calculate raw GrimAge2 ('COX')
 output.all$COX <- as.numeric(as.matrix(subset(output.all, select = glmnet.final1$var)) %*% glmnet.final1$beta)

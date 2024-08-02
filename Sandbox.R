@@ -67,6 +67,9 @@ paste(names(merged_data_final), collapse = ", ")
 # List all subdirectories
 list.dirs(path = '~/project-lhernand/ABCD_Longitudinal_Subcortical_Imaging_GWAS/Analysis/GCTA_GWAS/Processed_Data', full.names = T, recursive = T)
 
+# List all files in subdirectories
+list.files(path = '~/project-ophoff/Tools/DNAmGrimAgeGitHub', full.names = T, recursive = T)
+
 # sum different values in df
 sum(merged_data_no_na$ethnicity %in% c("AFR", "AMR", "EUR"))
 
