@@ -252,7 +252,7 @@ sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv")
 # cellCounts <- estimateCellCounts(mSetSqFlt, compositeCellType = "Blood", 
 #                                  referencePlatform = "IlluminaHumanMethylation450k") 
 
-# Extract beta values 
+# Import beta values 
 beta_values <- qread("Density_Data.qs", nthreads = 36)$beta_values
 # beta_values <- getBeta(mSetSqFlt)
 
@@ -262,54 +262,54 @@ beta_values <- qread("Density_Data.qs", nthreads = 36)$beta_values
 source('BPDNAm_external_functions.R')
 
 # Get sample names from methylation data
-meth_sample_names <- Density_data$sample_groups
+meth_sample_names <- qread("Density_Data.qs", nthreads = 36)$sample_groups
 # S <- qread("Density_Data.qs", nthreads=36)$densityPlot
 
-# Check for samples in Sample Sheet NOT in Methylation Samples
-missing_in_meth <- setdiff(sample_annotation$Sample_Name, meth_sample_names)
-if (length(missing_in_meth) > 0) {
-  warning("Samples in Sample Sheet not found in Methylation Samples: ", 
-          paste(missing_in_meth, collapse = ", "))
-}
-
-# Check for samples in Methylation Samples NOT in Sample Sheet
-missing_in_annot <- setdiff(meth_sample_names, sample_annotation$Sample_Name)
-if (length(missing_in_annot) > 0) {
-  warning("Samples in Methylation Samples not found in Sample Sheet: ", 
-          paste(missing_in_annot, collapse = ", "))
-}
-
-# List of tables to check for missing samples
-tables_to_check <- list(
-  BPDNAm_SS_updated = BPDNAm_SS_updated,
-  BPDNAm_ext = BPDNAm_ext,
-  BPDNAm_cov = BPDNAm_cov,
-  bp_master = bp_master,
-  missing_samples = missing_samples,
-  BPDNAm_SS_NAs = BPDNAm_SS_NAs
-)
-
-# Columns to include in the output
-columns_to_include <- c("Sample_Name", "Age_Years", "Gender", "Diagnosis", 
-                        "Sample_Plate", "Sample_Well", "Sentrix_ID", "Sentrix_Position")
-
-# Initial search by Sample_Name and extract Sentrix_IDs in one step
-initial_search <- tables_to_check %>%
-  imap_dfr(~process_table_by_name(.x, .y, missing_in_annot))
-missing_sentrix_ids <- initial_search %>%
-  filter(!is.na(Sentrix_ID)) %>%
-  pull(Sentrix_ID)
-
-# Secondary search by Sentrix_ID
-secondary_search <- tables_to_check %>%
-  imap_dfr(~process_table_by_id(.x, .y, missing_sentrix_ids))
-
-# Combine and summarize the results
-missing_samples_info <- bind_rows(initial_search, secondary_search) %>%
-  group_by(Sample_Name) %>%
-  summarise(across(everything(), first_non_na), .groups = "drop") %>%
-  arrange(Sample_Name) %>%
-  select(Sample_Name, Source_Table, Search_Method, everything())
+# # Check for samples in Sample Sheet NOT in Methylation Samples
+# missing_in_meth <- setdiff(sample_annotation$Sample_Name, meth_sample_names)
+# if (length(missing_in_meth) > 0) {
+#   warning("Samples in Sample Sheet not found in Methylation Samples: ", 
+#           paste(missing_in_meth, collapse = ", "))
+# }
+# 
+# # Check for samples in Methylation Samples NOT in Sample Sheet
+# missing_in_annot <- setdiff(meth_sample_names, sample_annotation$Sample_Name)
+# if (length(missing_in_annot) > 0) {
+#   warning("Samples in Methylation Samples not found in Sample Sheet: ", 
+#           paste(missing_in_annot, collapse = ", "))
+# }
+# 
+# # List of tables to check for missing samples
+# tables_to_check <- list(
+#   BPDNAm_SS_updated = BPDNAm_SS_updated,
+#   BPDNAm_ext = BPDNAm_ext,
+#   BPDNAm_cov = BPDNAm_cov,
+#   bp_master = bp_master,
+#   missing_samples = missing_samples,
+#   BPDNAm_SS_NAs = BPDNAm_SS_NAs
+# )
+# 
+# # Columns to include in the output
+# columns_to_include <- c("Sample_Name", "Age_Years", "Gender", "Diagnosis", 
+#                         "Sample_Plate", "Sample_Well", "Sentrix_ID", "Sentrix_Position")
+# 
+# # Initial search by Sample_Name and extract Sentrix_IDs in one step
+# initial_search <- tables_to_check %>%
+#   imap_dfr(~process_table_by_name(.x, .y, missing_in_annot))
+# missing_sentrix_ids <- initial_search %>%
+#   filter(!is.na(Sentrix_ID)) %>%
+#   pull(Sentrix_ID)
+# 
+# # Secondary search by Sentrix_ID
+# secondary_search <- tables_to_check %>%
+#   imap_dfr(~process_table_by_id(.x, .y, missing_sentrix_ids))
+# 
+# # Combine and summarize the results
+# missing_samples_info <- bind_rows(initial_search, secondary_search) %>%
+#   group_by(Sample_Name) %>%
+#   summarise(across(everything(), first_non_na), .groups = "drop") %>%
+#   arrange(Sample_Name) %>%
+#   select(Sample_Name, Source_Table, Search_Method, everything())
 
 ### 4. CpG Verification and GrimAge2 Calculation (Using Provided Source Code) ####
 
@@ -319,48 +319,54 @@ setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
 # load external functions
 source('BPDNAm_external_functions.R')
 
-# Load GrimAge2 CpG list 
-grimage2_cpgs <- fread("input/DNAmGrimAge2_1030CpGs.csv")
-
-# Get CpG names from methylation data and clean _XXXX suffixes 
-data_cpgs <- unique(rownames(beta_values)) %>%
-  str_replace_all("_.*$", "")
-data_cpgs.df <- data.frame(data_cpgs)
-# write.csv(data_cpgs, "data_cpgs.csv", row.names = FALSE, quote = FALSE)
-
-# Check for missing CpGs
-missing_cpgs <- setdiff(grimage2_cpgs$var, data_cpgs)
-if (length(missing_cpgs) > 0) {
-  stop("GrimAge2 CpGs missing in your methylation data: ", 
-       paste(missing_cpgs, collapse = ", "))
-}
-missing_cpgs.df <- data.frame(missing_cpgs)
-# write.csv(missing_cpgs, "missing_cpgs.csv", row.names = FALSE, quote = FALSE)
-
-# Get raw CpG names from methylation data
-data_cpgs_raw <- unique(rownames(beta_values))
-
-# Get all CpG names from the EPIC annotation package
-epic_cpgs <- rownames(getAnnotation(IlluminaHumanMethylationEPICv2anno.20a1.hg38))
-
-# Check if missing CpGs are in EPIC annotation
-missing_in_epic_annotation <- setdiff(missing_cpgs, epic_cpgs)
-
-# Check if raw CpGs are in EPIC annotation
-raw_in_epic_annotation <- setdiff(data_cpgs_raw, epic_cpgs)
-
-if (length(raw_in_epic_annotation) > 0) {
-  message("These CpGs are not in the EPICv2 annotation package:", 
-          paste(raw_in_epic_annotation, collapse = ", "))
-} else {
-  message("All raw CpGs are present in the EPICv2 annotation package.")
-}
+# # Load GrimAge2 CpG list 
+# grimage2_cpgs <- fread("input/DNAmGrimAge2_1030CpGs.csv")
+# 
+# # Get CpG names from methylation data and clean _XXXX suffixes 
+# data_cpgs <- unique(rownames(beta_values)) %>%
+#   str_replace_all("_.*$", "")
+# data_cpgs.df <- data.frame(data_cpgs)
+# # write.csv(data_cpgs, "data_cpgs.csv", row.names = FALSE, quote = FALSE)
+# 
+# # Check for missing CpGs
+# missing_cpgs <- setdiff(grimage2_cpgs$var, data_cpgs)
+# if (length(missing_cpgs) > 0) {
+#   stop("GrimAge2 CpGs missing in your methylation data: ", 
+#        paste(missing_cpgs, collapse = ", "))
+# }
+# missing_cpgs.df <- data.frame(missing_cpgs)
+# # write.csv(missing_cpgs, "missing_cpgs.csv", row.names = FALSE, quote = FALSE)
+# 
+# # Get raw CpG names from methylation data
+# data_cpgs_raw <- unique(rownames(beta_values))
+# 
+# # Get all CpG names from the EPIC annotation package
+# epic_cpgs <- rownames(getAnnotation(IlluminaHumanMethylationEPICv2anno.20a1.hg38))
+# 
+# # Check if missing CpGs are in EPIC annotation
+# missing_in_epic_annotation <- setdiff(missing_cpgs, epic_cpgs)
+# 
+# # Check if raw CpGs are in EPIC annotation
+# raw_in_epic_annotation <- setdiff(data_cpgs_raw, epic_cpgs)
+# 
+# if (length(raw_in_epic_annotation) > 0) {
+#   message("These CpGs are not in the EPICv2 annotation package:", 
+#           paste(raw_in_epic_annotation, collapse = ", "))
+# } else {
+#   message("All raw CpGs are present in the EPICv2 annotation package.")
+# }
 
 # Load GrimAge2 source code data
 grimage2 <- readRDS("input/DNAmGrimAge2_final.Rds")
 cpgs <- grimage2[[1]]
 glmnet.final1 <- grimage2[[2]]
 gold <- grimage2[[3]]
+
+# find missing samples
+meth_samples <- meth_sample_names
+annot_samples <- sample_annotation$Sample_Name
+extra_samples <- setdiff(meth_samples, annot_samples)
+print(extra_samples)
 
 # Step 1: Generate DNAm Protein Variables 
 Ys <- unique(cpgs$Y.pred) 
