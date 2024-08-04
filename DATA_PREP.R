@@ -176,19 +176,19 @@ source('BPDNAm_external_functions.R')
 qload("BipolarMethylationData.qs", nthreads = 36)
 
 # summarize contents of mSetSqFlt
-slot_names <- slotNames(mSetSqFlt)
-print(slot_names)
-print_slots(mSetSqFlt)
+# slot_names <- slotNames(mSetSqFlt)
+# print(slot_names)
+# print_slots(mSetSqFlt)
 
 # Print the annotation information (i.e. array type)
 # For IlluminaHumanMethylation450k: IlluminaHumanMethylation450k, annotation = "ilmn12.hg19"
 # For IlluminaHumanMethylationEPIC: IlluminaHumanMethylationEPIC, annotation = "ilm10b4.hg19"
-annotation(mSetSqFlt)
+# annotation(mSetSqFlt)
 
 # Assuming your beta values are in a data frame called 'beta_values'
 # The 450k array has CpG sites that start with "ch".
 # The EPIC array has CpGs that start with "cg".
-head(rownames(mSetSqFlt$beta_values))
+# head(rownames(mSetSqFlt$beta_values))
 
 # Visualize the distribution of the beta values for each sample after normalization
 # Extract Beta Values from GenomicRatioSet
@@ -201,24 +201,24 @@ head(rownames(mSetSqFlt$beta_values))
 # densityPlot <- densityPlot(beta_values, sampGroups = sample_groups, main = "Normalized", legend = FALSE)
 # densityPlot <- recordPlot()
 # load density plot data
-densityPlot <- qread("Density_Data.qs", nthreads=36)$densityPlot
-print(densityPlot)
+Density_Data <- qread("Density_Data.qs", nthreads=36)
+print(Density_Data$densityPlot)
 
 # Reshape beta_values to long format
 # beta_values_long <- melt(beta_values, varnames = c("CpG_Site", "Sample"), value.name = "Beta_Value")
-qread(beta_values_long.qs, nthreads = 36)
-sample_groups <- qread("Density_Data.qs", nthreads=36)$sample_groups
+# qread(beta_values_long.qs, nthreads = 36)
+# sample_groups <- qread("Density_Data.qs", nthreads=36)$sample_groups
 
 # Merge with sample_groups
-beta_values_long <- beta_values_long %>%
-  mutate(SampleGroup = sample_groups[match(beta_values_long$Sample, colnames(beta_values))])
+# beta_values_long <- beta_values_long %>%
+#   mutate(SampleGroup = sample_groups[match(beta_values_long$Sample, colnames(beta_values))])
 
 # Plot using ggplot2 with facets
-ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
-  geom_density() +
-  facet_wrap(~ SampleGroup, scales = "free_y") +
-  theme_minimal() +
-  labs(title = "Density Plot of Beta Values by Sample Group", x = "Beta Value", y = "Density")
+# ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
+#   geom_density() +
+#   facet_wrap(~ SampleGroup, scales = "free_y") +
+#   theme_minimal() +
+#   labs(title = "Density Plot of Beta Values by Sample Group", x = "Beta Value", y = "Density")
 
 # Remaining Analysis (Work in Progress) ####
 # Source: https://shorturl.at/hKHuc
@@ -237,7 +237,8 @@ setwd("~/project-ophoff/BP-DNAm")
 
 ### 2. Load and Preprocess Methylation Data ####
 # Density_data <- qread("Density_Data.qs", nthreads = 36)
-sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv") 
+sample_annotation <- BPDNAm_SS_updated
+# fread("BPDNAm_noNA_Samples_2351.csv") 
 
 # Quality Control (adapt based on your data):
 # detP <- detectionP(mSetSqFlt)
@@ -253,7 +254,8 @@ sample_annotation <- fread("BPDNAm_noNA_Samples_2351.csv")
 #                                  referencePlatform = "IlluminaHumanMethylation450k") 
 
 # Import beta values 
-beta_values <- qread("Density_Data.qs", nthreads = 36)$beta_values
+beta_values <- Density_Data$beta_values
+# qread("Density_Data.qs", nthreads = 36)$beta_values
 # beta_values <- getBeta(mSetSqFlt)
 
 ### 3. Sample Verification (work in progress, check mSetSqFlt for missing info) ####
@@ -262,7 +264,8 @@ beta_values <- qread("Density_Data.qs", nthreads = 36)$beta_values
 source('BPDNAm_external_functions.R')
 
 # Get sample names from methylation data
-meth_sample_names <- qread("Density_Data.qs", nthreads = 36)$sample_groups
+meth_sample_names <- Density_Data$sample_groups
+# qread("Density_Data.qs", nthreads = 36)$sample_groups
 # S <- qread("Density_Data.qs", nthreads=36)$densityPlot
 
 # # Check for samples in Sample Sheet NOT in Methylation Samples
@@ -363,10 +366,10 @@ glmnet.final1 <- grimage2[[2]]
 gold <- grimage2[[3]]
 
 # find missing samples
-meth_samples <- meth_sample_names
-annot_samples <- sample_annotation$Sample_Name
-extra_samples <- setdiff(meth_samples, annot_samples)
-print(extra_samples)
+# meth_samples <- meth_sample_names
+#bannot_samples <- sample_annotation$Sample_Name
+# extra_samples <- setdiff(meth_samples, annot_samples)
+# print(extra_samples)
 
 # Step 1: Generate DNAm Protein Variables 
 Ys <- unique(cpgs$Y.pred) 
