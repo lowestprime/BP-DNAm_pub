@@ -253,6 +253,9 @@ sample_annotation <- BPDNAm_SS_updated
 # cellCounts <- estimateCellCounts(mSetSqFlt, compositeCellType = "Blood", 
 #                                  referencePlatform = "IlluminaHumanMethylation450k") 
 
+# load beta values and methylation Sample names
+Density_Data <- qread("Density_Data.qs", nthreads=36)
+
 # Import beta values 
 beta_values <- Density_Data$beta_values
 # qread("Density_Data.qs", nthreads = 36)$beta_values
@@ -316,11 +319,14 @@ meth_sample_names <- Density_Data$sample_groups
 
 ### 4. CpG Verification and GrimAge2 Calculation (Using Provided Source Code) ####
 
+# load packages
+pacman::p_load(bigmemory, biganalytics, parallel, data.table)
+
 # Go to DNAmGrimAgeGitHub dir
 setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
 
 # load external functions
-source('BPDNAm_external_functions.R')
+source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
 
 # # Load GrimAge2 CpG list 
 # grimage2_cpgs <- fread("input/DNAmGrimAge2_1030CpGs.csv")
@@ -367,46 +373,84 @@ gold <- grimage2[[3]]
 
 # find missing samples
 # meth_samples <- meth_sample_names
-#bannot_samples <- sample_annotation$Sample_Name
+# annot_samples <- sample_annotation$Sample_Name
 # extra_samples <- setdiff(meth_samples, annot_samples)
 # print(extra_samples)
 
-# Step 1: Generate DNAm Protein Variables 
-Ys <- unique(cpgs$Y.pred) 
-for (k in 1:length(Ys)) {
-  cpgs1 <- subset(cpgs, Y.pred == Ys[k])
-  # Select the corresponding CpG rows from beta_values 
-  Xs <- beta_values[match(cpgs1$var, rownames(beta_values)), ]  
-  # Transpose Xs to have samples as rows
-  Xs <- t(Xs)
-  # Calculate predicted values
-  Y.pred <- as.numeric(Xs %*% cpgs1$beta)  
-  # Add predicted values to sample_annotation
-  sample_annotation[, Ys[k]] <- Y.pred  
+# Convert beta_values to big.matrix
+beta_values <- as.big.matrix(beta_values)
+
+library(data.table)
+library(bigmemory)
+library(parallel)
+
+# Load GrimAge2 source code data
+grimage2 <- readRDS("input/DNAmGrimAge2_final.Rds")
+cpgs <- data.table(grimage2[[1]])
+glmnet.final1 <- data.table(grimage2[[2]])
+gold <- data.table(grimage2[[3]])
+
+# Assuming beta_values is already a big.matrix. If not, convert it:
+beta_values <- as.big.matrix(beta_values)
+
+# Align data
+common_samples <- intersect(colnames(beta_values), sample_annotation$Sample_Name)
+sample_annotation <- data.table(sample_annotation[match(common_samples, sample_annotation$Sample_Name), ])
+
+# Step 1: Generate DNAm Protein Variables using parallel processing
+Ys <- unique(cpgs$Y.pred)
+num_cores <- detectCores() - 1  # Use all but one core
+cl <- makeCluster(num_cores)
+
+# Export all necessary objects and functions to the cluster
+clusterExport(cl, c("cpgs", "beta_values", "calculate_Y_pred"))
+
+# Load necessary libraries in each cluster
+clusterEvalQ(cl, {
+  library(data.table)
+  library(bigmemory)
+})
+
+Y_preds <- parLapply(cl, Ys, function(Y) calculate_Y_pred(Y, cpgs, beta_values))
+stopCluster(cl)
+
+# Add predictions to sample_annotation
+for (i in seq_along(Ys)) {
+  sample_annotation[, (Ys[i]) := Y_preds[[i]]]
 }
 
 # Step 2: Generate DNAmGrimAge2 and AgeAccelGrim2
 vars <- c('Sample_Name', 'Age_Years', 'Gender', Ys)
 output.all <- sample_annotation[, ..vars]
 
+# Rename and recode variables
+setnames(output.all, "Age_Years", "Age")
+output.all[, Female := as.integer(Gender == "F")]
+output.all[, Gender := NULL]
+
 # Calculate raw GrimAge2 ('COX')
-output.all$COX <- as.numeric(as.matrix(subset(output.all, select = glmnet.final1$var)) %*% glmnet.final1$beta)
-output.all <- F_scale(output.all, 'COX', 'DNAmGrimAge2', gold) 
+model_vars <- intersect(names(output.all), glmnet.final1$var)
+output.all[, COX := as.numeric(as.matrix(.SD) %*% glmnet.final1[var %in% model_vars, beta]), 
+           .SDcols = model_vars]
+
+# Apply F_scale
+output.all <- F_scale(output.all, 'COX', 'DNAmGrimAge2', gold)
 
 # Calculate AgeAccelGrim2
-output.all$DNAmtemp <- output.all$DNAmGrimAge2
-output.all$AgeAccelGrim2 <- residuals(lm(DNAmtemp ~ Age, data = output.all, na.action = na.exclude))
-output.all$DNAmtemp <- output.all$COX <- NULL
+output.all[, AgeAccelGrim2 := resid(lm(DNAmGrimAge2 ~ Age, data = .SD)), .SDcols = c("DNAmGrimAge2", "Age")]
+
+# Remove temporary columns
+output.all[, c("COX") := NULL]
 
 # Rename columns
 old.name <- c('DNAmadm', 'DNAmCystatin_C', 'DNAmGDF_15', 'DNAmleptin', 
               'DNAmpai_1', 'DNAmTIMP_1', 'DNAmlog.CRP', 'DNAmlog.A1C')
 new.name <- c('DNAmADM', 'DNAmCystatinC', 'DNAmGDF15', 'DNAmLeptin', 
               'DNAmPAI1', 'DNAmTIMP1', 'DNAmlogCRP', 'DNAmlogA1C')
-for (k in 1:length(old.name)) {
-  id <- which(names(output.all) == old.name[k])
-  names(output.all)[id] <- new.name[k]
-}
+setnames(output.all, old.name, new.name, skip_absent = TRUE)
+
+# Write output
+fwrite(output.all, "output/myDNAmGrimAge2.csv")
 
 ### 5. Run dnaMethyAge Clocks ####
 

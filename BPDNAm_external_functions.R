@@ -74,14 +74,21 @@ first_non_na <- function(x) {
   if (length(non_na) > 0) non_na[1] else NA
 }
 
+# Function to calculate Y.pred for a single Y
+calculate_Y_pred <- function(Y, cpgs, beta_values) {
+  cpgs1 <- cpgs[Y.pred == Y]
+  Xs <- t(beta_values[cpgs1$var, ])
+  Y.pred <- as.numeric(Xs %*% cpgs1$beta)
+  return(Y.pred)
+}
 # Define functions from GrimAge2 source code
 F_scale <- function(INPUT0, Y.pred0.name, Y.pred.name, gold) {
-  out.para <- subset(gold, var == 'COX')
-  out.para.age <- subset(gold, var == 'Age')
+  out.para <- gold[var == 'COX']
+  out.para.age <- gold[var == 'Age']
   m.age <- out.para.age$mean
   sd.age <- out.para.age$sd
-  Y0 <- INPUT0[, Y.pred0.name]
+  Y0 <- INPUT0[[Y.pred0.name]]
   Y <- (Y0 - out.para$mean) / out.para$sd
-  INPUT0[, Y.pred.name] <- as.numeric((Y * sd.age) + m.age)
+  INPUT0[, (Y.pred.name) := as.numeric((Y * sd.age) + m.age)]
   return(INPUT0)
 }
