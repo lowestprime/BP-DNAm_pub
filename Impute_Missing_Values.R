@@ -1,5 +1,8 @@
+# Change Dir to $SCRATCH
+setwd("/u/scratch/c/cobeaman")
+
 # Load required packages
-pacman::p_load(minfi, igraph, dplyr, leiden, bigstatsr, foreach, doParallel,
+pacman::p_load(minfi, reticulate, igraph, bigstatsr, WGCNA, dplyr, leiden, bigstatsr, foreach, doParallel,
                data.table, BioAge, dnaMethyAge, meffil, methylclock,
                qs, ggplot2, plotly, RColorBrewer, reshape2, GenomicRanges,
                SummarizedExperiment, tidyverse, purrr)
@@ -11,48 +14,35 @@ registerDoParallel(cl)
 
 # Define the path to the data file and the temporary directory
 data_file_path <- "Density_Data.qs"
-temp_data_file_path <- file.path(Sys.getenv("TMPDIR"), "Density_Data.qs")
+temp_data_file_path <- file.path(tempdir(), "Density_Data.qs")
 
 # Copy the data file to the temporary directory for faster I/O
-file.copy(data_file_path, temp_data_file_path)
+file.copy(data_file_path, temp_data_file_path, overwrite = TRUE)
 
 # Accelerate loading of the beta_values object using multiple threads
 beta_values <- qread(temp_data_file_path, nthreads = 36)$beta_values
 
-# Create a Filebacked Big Matrix (FBM) from the large methylation data matrix
+# Use bigstatsr to create a Filebacked Big Matrix (FBM) from the large methylation data matrix
 beta_values_fbm <- as_FBM(beta_values)
 
-# Compute the similarity matrix using Pearson correlation in chunks with parallel processing
-big_cor_parallel <- function(X, size = 1000, fun = cor, method = "pearson") {
-  n <- ncol(X)
-  m <- matrix(0, n, n)
-  # Parallel computation with foreach
-  foreach(i = seq(1, n, by = size), .combine = 'cbind', .packages = 'bigstatsr') %dopar% {
-    chunk_m <- matrix(0, size, n)  # Initialize a chunk matrix
-    for (j in seq(i, n, by = size)) {
-      end_i <- min(i + size - 1, n)
-      end_j <- min(j + size - 1, n)
-      if (i == j) {
-        chunk_m[1:(end_i - i + 1), j:(end_j)] <- fun(X[, i:end_i], method = method)
-      } else {
-        corr_block <- fun(X[, i:end_i], X[, j:end_j], method = method)
-        chunk_m[1:(end_i - i + 1), j:(end_j)] <- corr_block
-        m[j:end_j, i:end_i] <- t(corr_block)
-      }
-    }
-    m[i:end_i, ] <- chunk_m[1:(end_i - i + 1), ]
-  }
-  return(m)
-}
+# Set the number of threads for BLAS to accelerate block matrix computations
+bigparallelr::set_blas_ncores(n_cores)
 
-# Compute the correlation matrix using the optimized function
-similarity_matrix <- big_cor_parallel(beta_values_fbm, fun = cor, method = "pearson")
+# Compte the similarity matrix using bigstatsr::big_cor
+similarity_matrix_fbm <- bigstatsr::big_cor(beta_values_fbm)
+
+# Convert similarity matrix to a dense matrix
+similarity_matrix <- similarity_matrix_fbm[]
 
 # Convert similarity matrix to distance matrix
 distance_matrix <- as.dist(1 - similarity_matrix)
 
-# Create a graph object
-graph <- graph.adjacency(as.matrix(distance_matrix), mode = "undirected", weighted = TRUE, diag = FALSE)
+# Create a graph object using the corrected function
+graph <- graph_from_adjacency_matrix(as.matrix(distance_matrix), mode = "undirected", weighted = TRUE, diag = FALSE)
+
+# Ensure the required Python module 'numpy' is available for the Leiden algorithm
+py_install("numpy", pip = TRUE)
+py_install("leidenalg", pip = TRUE)
 
 # Apply Leiden algorithm
 resolution <- 1.0  # Adjust this parameter as needed
@@ -89,8 +79,9 @@ plot(graph, vertex.color = cluster_membership, main = "Leiden Clustering of Meth
 
 # Ensure any necessary data is copied back to persistent storage before the job ends
 # Example: Save the similarity matrix to the home directory
-saveRDS(similarity_matrix, file.path(Sys.getenv("HOME"), "similarity_matrix.rds"))
-
+persistent_similarity_matrix_path <- file.path(Sys.getenv("HOME"), "similarity_matrix.rds")
+saveRDS(similarity_matrix, persistent_similarity_matrix_path)
+qsavem(file = "imputation.qs", preset = "uncompressed", nthreads = 36)
 # Stop parallel backend
 stopCluster(cl)
 
