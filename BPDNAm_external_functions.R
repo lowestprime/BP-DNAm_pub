@@ -75,7 +75,8 @@ first_non_na <- function(x) {
 }
 
 # Function to calculate Y.pred for a single Y
-calculate_Y_pred <- function(Y, cpgs_subset, beta_values) {
+calculate_Y_pred <- function(Y, cpgs, beta_values) {
+  cpgs_subset <- cpgs[Y.pred == Y]
   Xs <- t(beta_values[cpgs_subset$var, , drop = FALSE])
   Y.pred <- as.numeric(Xs %*% cpgs_subset$beta)
   return(Y.pred)

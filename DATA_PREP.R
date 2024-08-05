@@ -237,7 +237,7 @@ pacman::p_load(minfi, IlluminaHumanMethylationEPICv2anno.20a1.hg38, dplyr,
 setwd("~/project-ophoff/BP-DNAm")
 
 ### 2. Load and Preprocess Methylation Data ####
-# Density_data <- qread("Density_Data.qs", nthreads = 36)
+Density_data <- qread("Density_Data.qs", nthreads = 36)
 sample_annotation <- BPDNAm_SS_updated
 # fread("BPDNAm_noNA_Samples_2351.csv") 
 
@@ -262,15 +262,10 @@ beta_values <- Density_Data$beta_values
 # qread("Density_Data.qs", nthreads = 36)$beta_values
 # beta_values <- getBeta(mSetSqFlt)
 
-### 3. Sample Verification (work in progress, check mSetSqFlt for missing info) ####
+### 3. Sample + cpg Verification (work in progress, check mSetSqFlt for missing info) ####
 
 # load external functions
-source('BPDNAm_external_functions.R')
-
-# Get sample names from methylation data
-meth_sample_names <- Density_Data$sample_groups
-# qread("Density_Data.qs", nthreads = 36)$sample_groups
-# S <- qread("Density_Data.qs", nthreads=36)$densityPlot
+# source('BPDNAm_external_functions.R')
 
 # # Check for samples in Sample Sheet NOT in Methylation Samples
 # missing_in_meth <- setdiff(sample_annotation$Sample_Name, meth_sample_names)
@@ -318,16 +313,10 @@ meth_sample_names <- Density_Data$sample_groups
 #   arrange(Sample_Name) %>%
 #   select(Sample_Name, Source_Table, Search_Method, everything())
 
-### 4. CpG Verification and GrimAge2 Calculation (Using Provided Source Code) ####
-
-# load packages
-pacman::p_load(bigmemory, biganalytics, parallel, data.table)
-
-# Go to DNAmGrimAgeGitHub dir
-setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
-
-# load external functions
-source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
+# Get sample names from methylation data
+# meth_sample_names <- Density_Data$sample_groups
+# qread("Density_Data.qs", nthreads = 36)$sample_groups
+# S <- qread("Density_Data.qs", nthreads=36)$densityPlot
 
 # # Load GrimAge2 CpG list 
 # grimage2_cpgs <- fread("input/DNAmGrimAge2_1030CpGs.csv")
@@ -366,6 +355,30 @@ source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
 #   message("All raw CpGs are present in the EPICv2 annotation package.")
 # }
 
+# find missing samples
+# meth_samples <- meth_sample_names
+# annot_samples <- sample_annotation$Sample_Name
+# extra_samples <- setdiff(meth_samples, annot_samples)
+# print(extra_samples)
+
+### 4. GrimAge2 Calculation (Using Provided Source Code) ####
+
+# load packages
+pacman::p_load(bigmemory, biganalytics, parallel, data.table)
+
+# Go to DNAmGrimAgeGitHub dir
+setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
+
+# load external functions
+source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
+
+# load sample sheet (with NA rows)
+sample_annotation <- BPDNAm_SS_updated
+
+# Get sample names from methylation data
+Density_data <- qread("~/project-ophoff/BP-DNAm/Density_Data.qs", nthreads = 36)
+meth_sample_names <- Density_Data$sample_groups
+
 # Load GrimAge2 source code data
 grimage2 <- readRDS("input/DNAmGrimAge2_final.Rds")
 cpgs <- as.data.table(grimage2[[1]])  # Ensure it's a data.table
@@ -373,18 +386,12 @@ setkey(cpgs, Y.pred)  # Set key for faster subsetting
 glmnet.final1 <- as.data.table(grimage2[[2]])
 gold <- as.data.table(grimage2[[3]])
 
-# find missing samples
-# meth_samples <- meth_sample_names
-# annot_samples <- sample_annotation$Sample_Name
-# extra_samples <- setdiff(meth_samples, annot_samples)
-# print(extra_samples)
-
 # Convert beta_values to big.matrix
 beta_values <- as.big.matrix(beta_values)
 
 # Align data
 common_samples <- intersect(meth_sample_names, sample_annotation$Sample_Name)
-sample_annotation <- data.table(sample_annotation[match(common_samples, sample_annotation$Sample_Name), ])
+sample_annotation <- as.data.table(sample_annotation[match(common_samples, sample_annotation$Sample_Name), ])
 
 # Step 1: Generate DNAm Protein Variables using parallel processing
 # Get unique Y.pred values
@@ -392,9 +399,11 @@ Ys <- unique(cpgs$Y.pred)
 # Parallel processing setup
 num_cores <- detectCores() - 1
 cl <- makeCluster(num_cores)
-clusterExport(cl, c("calculate_Y_pred"))
+# Export necessary objects and functions to the cluster
+clusterExport(cl, c("calculate_Y_pred", "cpgs", "beta_values"))
 clusterEvalQ(cl, {
   library(data.table)
+  setkey(cpgs, Y.pred)  # Set key in each worker
 })
 
 # Run parallel computation
