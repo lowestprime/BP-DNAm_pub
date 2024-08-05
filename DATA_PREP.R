@@ -205,13 +205,14 @@ Density_Data <- qread("Density_Data.qs", nthreads=36)
 print(Density_Data$densityPlot)
 
 # Reshape beta_values to long format
-# beta_values_long <- melt(beta_values, varnames = c("CpG_Site", "Sample"), value.name = "Beta_Value")
+beta_values_long <- melt(beta_values, varnames = c("CpG_Site", "Sample"), value.name = "Beta_Value")
 # qread(beta_values_long.qs, nthreads = 36)
-# sample_groups <- qread("Density_Data.qs", nthreads=36)$sample_groups
+sample_groups <- Density_Data$sample_groups
+# qread("Density_Data.qs", nthreads=36)$sample_groups
 
 # Merge with sample_groups
-# beta_values_long <- beta_values_long %>%
-#   mutate(SampleGroup = sample_groups[match(beta_values_long$Sample, colnames(beta_values))])
+beta_values_long <- beta_values_long %>%
+  mutate(SampleGroup = sample_groups[match(beta_values_long$Sample, colnames(beta_values))])
 
 # Plot using ggplot2 with facets
 # ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
@@ -367,9 +368,10 @@ source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
 
 # Load GrimAge2 source code data
 grimage2 <- readRDS("input/DNAmGrimAge2_final.Rds")
-cpgs <- grimage2[[1]]
-glmnet.final1 <- grimage2[[2]]
-gold <- grimage2[[3]]
+cpgs <- as.data.table(grimage2[[1]])  # Ensure it's a data.table
+setkey(cpgs, Y.pred)  # Set key for faster subsetting
+glmnet.final1 <- as.data.table(grimage2[[2]])
+gold <- as.data.table(grimage2[[3]])
 
 # find missing samples
 # meth_samples <- meth_sample_names
@@ -380,38 +382,27 @@ gold <- grimage2[[3]]
 # Convert beta_values to big.matrix
 beta_values <- as.big.matrix(beta_values)
 
-library(data.table)
-library(bigmemory)
-library(parallel)
-
-# Load GrimAge2 source code data
-grimage2 <- readRDS("input/DNAmGrimAge2_final.Rds")
-cpgs <- data.table(grimage2[[1]])
-glmnet.final1 <- data.table(grimage2[[2]])
-gold <- data.table(grimage2[[3]])
-
-# Assuming beta_values is already a big.matrix. If not, convert it:
-beta_values <- as.big.matrix(beta_values)
-
 # Align data
-common_samples <- intersect(colnames(beta_values), sample_annotation$Sample_Name)
+common_samples <- intersect(meth_sample_names, sample_annotation$Sample_Name)
 sample_annotation <- data.table(sample_annotation[match(common_samples, sample_annotation$Sample_Name), ])
 
 # Step 1: Generate DNAm Protein Variables using parallel processing
+# Get unique Y.pred values
 Ys <- unique(cpgs$Y.pred)
-num_cores <- detectCores() - 1  # Use all but one core
+# Parallel processing setup
+num_cores <- detectCores() - 1
 cl <- makeCluster(num_cores)
-
-# Export all necessary objects and functions to the cluster
-clusterExport(cl, c("cpgs", "beta_values", "calculate_Y_pred"))
-
-# Load necessary libraries in each cluster
+clusterExport(cl, c("calculate_Y_pred"))
 clusterEvalQ(cl, {
   library(data.table)
-  library(bigmemory)
 })
 
-Y_preds <- parLapply(cl, Ys, function(Y) calculate_Y_pred(Y, cpgs, beta_values))
+# Run parallel computation
+Y_preds <- parLapplyLB(cl, Ys, function(Y) {
+  cpgs_subset <- cpgs[Y.pred == Y]
+  calculate_Y_pred(Y, cpgs_subset, beta_values)
+})
+
 stopCluster(cl)
 
 # Add predictions to sample_annotation

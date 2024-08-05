@@ -75,12 +75,12 @@ first_non_na <- function(x) {
 }
 
 # Function to calculate Y.pred for a single Y
-calculate_Y_pred <- function(Y, cpgs, beta_values) {
-  cpgs1 <- cpgs[Y.pred == Y]
-  Xs <- t(beta_values[cpgs1$var, ])
-  Y.pred <- as.numeric(Xs %*% cpgs1$beta)
+calculate_Y_pred <- function(Y, cpgs_subset, beta_values) {
+  Xs <- t(beta_values[cpgs_subset$var, , drop = FALSE])
+  Y.pred <- as.numeric(Xs %*% cpgs_subset$beta)
   return(Y.pred)
 }
+
 # Define functions from GrimAge2 source code
 F_scale <- function(INPUT0, Y.pred0.name, Y.pred.name, gold) {
   out.para <- gold[var == 'COX']
