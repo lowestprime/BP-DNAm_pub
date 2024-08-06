@@ -373,7 +373,7 @@ beta_values <- Density_Data$beta_values
 ### 4. GrimAge2 Calculation (Using Provided Source Code) ####
 #### Step 1: Prepare inputs ####
 # Load required packages
-pacman::p_load(BioAge, biganalytics, biglm, bigmemory, data.table, doParallel, dplyr, dnaMethyAge, foreach, GenomicRanges, 
+pacman::p_load(BioAge, biganalytics, biglm, bigmemory, dplyr, dnaMethyAge, foreach, GenomicRanges, 
                ggplot2, IlluminaHumanMethylationEPICv2anno.20a1.hg38, meffil, methylclock, 
                minfi, plotly, purrr, qs, reshape2, SummarizedExperiment, tidyverse)
 
@@ -382,36 +382,13 @@ setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
 source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
 
 #### Step 2: Generate DNAm Protein Variables, DNAmGrimAge2 and AgeAccelGrim2 ####
-# Main script execution with enhanced debugging and cleanup
-inputs <- NULL
-sink("debug_log.txt")
-tryCatch({
-  inputs <- prepare_inputs()
-  on.exit(cleanup_temp_files(inputs$beta_values_file, inputs$beta_values_desc), add = TRUE)
-  
-  # Print column names of beta_values for debugging
-  print("Column names of beta_values:")
-  print(head(colnames(inputs$beta_values), 10))
-  
-  grimage2_data <- load_grimage2_data()
-  
-  # Print first few entries of cpgs$var for debugging
-  print("First few entries of cpgs$var:")
-  print(head(grimage2_data$cpgs$var, 10))
-  
-  Ys <- unique(grimage2_data$cpgs$Y.pred)
-  results <- calculate_protein_variables(Ys, grimage2_data$cpgs, inputs$beta_values, inputs$sample_annotation)
-  output <- scale_predictions(results, inputs$sample_annotation, grimage2_data$gold)
-  save_output(output, inputs$beta_values_file, inputs$beta_values_desc)
-  generate_GrimAge2_AgeAccelGrim2(inputs$sample_annotation, Ys, grimage2_data$glmnet_final1, grimage2_data$gold)
-}, error = function(e) {
-  cat("Error: ", e$message, "\n")
-}, finally = {
-  if (!is.null(inputs)) {
-    cleanup_temp_files(inputs$beta_values_file, inputs$beta_values_desc)
-  }
-})
-sink()
+inputs <- prepare_inputs()
+grimage2_data <- load_grimage2_data()
+Ys <- unique(grimage2_data$cpgs$Y.pred)
+results <- calculate_protein_variables(Ys, grimage2_data$cpgs, inputs$beta_values, inputs$sample_annotation)
+output <- scale_predictions(results, inputs$sample_annotation, grimage2_data$gold)
+save_output(output, inputs$beta_values_file, inputs$beta_values_desc)
+generate_GrimAge2_AgeAccelGrim2(inputs$sample_annotation, Ys, grimage2_data$glmnet_final1, grimage2_data$gold)
 
 ### 5. Run dnaMethyAge Clocks ####
 
