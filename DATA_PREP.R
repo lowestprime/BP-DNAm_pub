@@ -382,7 +382,7 @@ setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
 source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
 
 #### Step 2: Generate DNAm Protein Variables, DNAmGrimAge2 and AgeAccelGrim2 ####
-# Generate a timestamped filename
+# Generate imestamped filename
 timestamp <- format(Sys.time(), "%m%d%Y_%H%M%S")
 debug_log_file <- paste0("debug_log_", timestamp, ".txt")
 

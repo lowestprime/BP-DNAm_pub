@@ -42,6 +42,9 @@ summary(factor(merged_data_final$batch))
 summary(factor(c(merged_data_final$mri_info_deviceserialnumber, merged_data_final$batch)))
 combined_summary_df <- as.data.frame(as.table(summary(factor(c(merged_data_final$mri_info_deviceserialnumber, merged_data_final$batch)))))
 
+# get NA count for all columns in dataframe
+na_counts <- colSums(is.na(inputs$sample_annotation))
+
 # take me back home
 setwd('~/')
 
