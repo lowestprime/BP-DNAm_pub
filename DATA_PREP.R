@@ -331,7 +331,7 @@ beta_values <- Density_Data$beta_values
 # grimage2_cpgs <- fread("input/DNAmGrimAge2_1030CpGs.csv")
 # 
 # # Get CpG names from methylation data and clean _XXXX suffixes 
-# data_cpgs <- unique(rownames(beta_values)) %>%
+# data_cpgs <- unique(rownames(Density_Data$beta_values)) %>%
 #   str_replace_all("_.*$", "")
 # data_cpgs.df <- data.frame(data_cpgs)
 # # write.csv(data_cpgs, "data_cpgs.csv", row.names = FALSE, quote = FALSE)
@@ -382,28 +382,30 @@ setwd("~/project-ophoff/Tools/DNAmGrimAgeGitHub")
 source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
 
 #### Step 2: Generate DNAm Protein Variables, DNAmGrimAge2 and AgeAccelGrim2 ####
+# Generate a timestamped filename
+timestamp <- format(Sys.time(), "%m%d%Y_%H%M%S")
+debug_log_file <- paste0("debug_log_", timestamp, ".txt")
+
 # Main script execution with enhanced debugging and cleanup
 inputs <- NULL
-sink("debug_log.txt")
+sink(debug_log_file)
 tryCatch({
   inputs <- prepare_inputs()
   on.exit(cleanup_temp_files(inputs$beta_values_file, inputs$beta_values_desc), add = TRUE)
   
   # Print column names of beta_values for debugging
-  print("Column names of beta_values:")
+  cat("Column names of beta_values:\n")
   print(head(colnames(inputs$beta_values), 10))
   
   grimage2_data <- load_grimage2_data()
   
   # Print first few entries of cpgs$var for debugging
-  print("First few entries of cpgs$var:")
+  cat("First few entries of cpgs$var:\n")
   print(head(grimage2_data$cpgs$var, 10))
   
   Ys <- unique(grimage2_data$cpgs$Y.pred)
-  results <- calculate_protein_variables(Ys, grimage2_data$cpgs, inputs$beta_values, inputs$sample_annotation)
-  output <- scale_predictions(results, inputs$sample_annotation, grimage2_data$gold)
-  save_output(output, inputs$beta_values_file, inputs$beta_values_desc)
-  generate_GrimAge2_AgeAccelGrim2(inputs$sample_annotation, Ys, grimage2_data$glmnet_final1, grimage2_data$gold)
+  results <- calculate_protein_variables_test(Ys, grimage2_data$cpgs, inputs$beta_values, inputs$sample_annotation)
+  print(head(results))  # Print the results to verify parallel execution
 }, error = function(e) {
   cat("Error: ", e$message, "\n")
 }, finally = {

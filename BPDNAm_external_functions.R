@@ -76,23 +76,20 @@ first_non_na <- function(x) {
 
 # External function to calculate Y.pred for a single Y
 calculate_Y_pred <- function(Y, cpgs, beta_values, sample_annotation) {
-  print(paste("Starting calculation for Y:", Y))
+  cat(paste("Starting calculation for Y:", Y, "\n"))
   
   cpgs1 <- cpgs[Y.pred == Y]
-  print(paste("cpgs1 dimensions:", dim(cpgs1)))
-  print(paste("First few entries in cpgs1$var:", head(cpgs1$var, 10)))
+  cat(paste("cpgs1 dimensions:", dim(cpgs1), "\n"))
   
+  # Filter cpgs1 to match only CpG names present in beta_values
+  matched_vars <- cpgs1$var %in% colnames(beta_values)
+  cpgs1 <- cpgs1[matched_vars | cpgs1$var %in% c("Intercept", "Age"), ]
+  
+  cat(paste("First few entries in cpgs1$var:", head(cpgs1$var, 10), "\n"))
   cols <- match(cpgs1$var, colnames(beta_values))
-  print(paste("Initial matched cols length:", length(cols)))
+  cat(paste("Initial matched cols length:", length(cols), "\n"))
   cols <- cols[!is.na(cols)]
-  print(paste("Filtered matched cols length:", length(cols)))
-  
-  # Debugging information before column means calculation
-  print(paste("Y:", Y))
-  print(paste("Number of matched columns:", length(cols)))
-  if (length(cols) > 0) {
-    print(paste("Matched columns (first 10):", paste(head(cols, 10), collapse = ", ")))
-  }
+  cat(paste("Filtered matched cols length:", length(cols), "\n"))
   
   # Ensure cols are not empty
   if (length(cols) == 0) {
@@ -100,49 +97,80 @@ calculate_Y_pred <- function(Y, cpgs, beta_values, sample_annotation) {
   }
   
   # Use biganalytics for efficient column means
-  print("Calculating column means for beta_values...")
-  X <- colMeans(beta_values[, cols])
-  print(paste("X length after colMeans:", length(X)))
+  cat("Calculating column means for beta_values...\n")
+  X <- colMeans(beta_values[, cols, drop = FALSE])
+  cat(paste("X length after colMeans:", length(X), "\n"))
   
-  print("Adding intercept and age to X...")
-  X <- c(1, sample_annotation$Age_Years[1], X)  # Add intercept and age
-  print(paste("X length after adding intercept and age:", length(X)))
+  # Add intercept and age to X
+  cat("Adding intercept and age to X...\n")
+  intercept_age <- c(1, sample_annotation$Age_Years[1])
+  X <- c(intercept_age, X)
+  cat(paste("X length after adding intercept and age:", length(X), "\n"))
   
   # Debugging information after column means calculation
-  print(paste("Length of X:", length(X)))
-  print(paste("Length of cpgs1$beta:", length(cpgs1$beta)))
+  cat(paste("Length of X:", length(X), "\n"))
+  cat(paste("Length of cpgs1$beta:", length(cpgs1$beta), "\n"))
   
   if (length(X) != length(cpgs1$beta)) {
-    stop("Length mismatch: Length of X and cpgs1$beta do not match")
+    stop("Length mismatch: Length of X and cpgs1$beta do not match for Y:", Y)
   }
   
-  print("Performing matrix multiplication...")
+  cat("Performing matrix multiplication...\n")
   Y.pred <- as.numeric(X %*% cpgs1$beta)
-  print(paste("Finished calculation for Y:", Y))
+  cat(paste("Finished calculation for Y:", Y, "\n"))
   return(Y.pred)
 }
 
 # Function to calculate DNAm protein variables using parallel processing
-calculate_protein_variables <- function(Ys, cpgs, beta_values, sample_annotation) {
+# # calculate_protein_variables <- function(Ys, cpgs, beta_values, sample_annotation) {
+#   cores <- detectCores() - 1
+#   registerDoParallel(cores)
+#   
+#   results <- foreach(Y = Ys, .combine = cbind, .packages = c("bigmemory", "data.table", "foreach", "doParallel")) %dopar% {
+#     tryCatch({
+#       print(paste("Processing Y:", Y))
+#       Y.pred <- calculate_Y_pred(Y, cpgs, beta_values, sample_annotation)
+#       print(paste("Processed Y:", Y))
+#       return(Y.pred)
+#     }, error = function(e) {
+#       msg <- paste("Error in calculating Y.pred for Y:", Y, " - ", e$message)
+#       print(msg)
+#       return(NULL)  # Return NULL in case of error to avoid stopping the entire foreach loop
+#     })
+#   }
+#   
+#   stopImplicitCluster()
+#   
+#   # Check if results contain NULL values due to errors
+#   if (any(sapply(results, is.null))) {
+#     stop("Errors occurred in foreach loop. Check logs for details.")
+#   }
+#   
+#   results <- as.data.table(results)
+#   if (ncol(results) == 0) {
+#     stop("No results were generated. All tasks may have failed.")
+#   }
+#   setnames(results, Ys)
+#   results
+# }
+calculate_protein_variables_test <- function(Ys, cpgs, beta_values, sample_annotation) {
   cores <- detectCores() - 1
   registerDoParallel(cores)
   
   results <- foreach(Y = Ys, .combine = cbind, .packages = c("bigmemory", "data.table", "foreach", "doParallel")) %dopar% {
     tryCatch({
-      print(paste("Processing Y:", Y))
-      Y.pred <- calculate_Y_pred(Y, cpgs, beta_values, sample_annotation)
-      print(paste("Processed Y:", Y))
-      return(Y.pred)
+      cat(paste("Processing Y:", Y, "\n"))
+      result <- calculate_Y_pred(Y, cpgs, beta_values, sample_annotation)
+      return(result)
     }, error = function(e) {
-      msg <- paste("Error in calculating Y.pred for Y:", Y, " - ", e$message)
-      print(msg)
-      return(NULL)  # Return NULL in case of error to avoid stopping the entire foreach loop
+      msg <- paste("Error in processing Y:", Y, " - ", e$message)
+      cat(msg, "\n")
+      return(NULL)
     })
   }
   
   stopImplicitCluster()
   
-  # Check if results contain NULL values due to errors
   if (any(sapply(results, is.null))) {
     stop("Errors occurred in foreach loop. Check logs for details.")
   }
@@ -169,7 +197,7 @@ F_scale <- function(INPUT0, Y.pred0.name, Y.pred.name, gold) {
 # Function to load and prepare inputs
 prepare_inputs <- function() {
   # Set bigmemory option to allow changing dimnames
-  options(bigmemory.allow.dimnames=TRUE)
+  options(bigmemory.allow.dimnames = TRUE)
   
   # Load sample annotations and density data
   sample_annotation <- fread("~/project-ophoff/BP-DNAm/BPDNAm_SS_updated_2464.csv")
@@ -182,9 +210,14 @@ prepare_inputs <- function() {
     arrange(match(Sample_Name, common_samples))
   setkey(sample_annotation, Basename)
   
-  # Convert beta values to matrix and assign column names
+  # Clean CpG names
+  data_cpgs <- unique(rownames(Density_Data$beta_values)) %>%
+    str_replace_all("_.*$", "")
+  
+  # Convert beta values to matrix, transpose, and assign column names as CpG names
   beta_values_matrix <- as.matrix(Density_Data$beta_values)
-  colnames(beta_values_matrix) <- sample_annotation$Sample_Name
+  beta_values_matrix <- t(beta_values_matrix) # Transpose to make CpG names columns
+  colnames(beta_values_matrix) <- data_cpgs
   
   # Verify column names assignment
   if (is.null(colnames(beta_values_matrix))) {
