@@ -30,6 +30,12 @@ qsave(beta_values_long,file="beta_values_long.qs",nthreads=36,preset="uncompress
 # creating ".RData" in current working directory
 save.image()
 
+# save entire environment with qs qsavem()
+do.call(qsavem, c(lapply(ls(), as.name), 
+                  list(file = "file.qs", 
+                       preset = "fast", 
+                       nthreads = 36)))
+
 # count and list the number of each unique in dataframe column
 summary(factor(merged_data_final$mri_info_deviceserialnumber))
 summary(factor(merged_data_final$batch))
