@@ -37,6 +37,23 @@ detect_custom_cores <- function() {
   message("Number of cores available: ", num_cores)
 }
 
+# Function to safely get the size of objects in an environment
+safe_object_size <- function(env_name) {
+  env <- as.environment(env_name)
+  
+  # Skip locked or base environments
+  if (environmentName(env) %in% c("package:base", "Autoloads")) return(NA)
+  
+  # Try to get the objects; if not accessible, return NA
+  objects <- tryCatch(ls(env, all.names = TRUE), error = function(e) return(NULL))
+  
+  if (is.null(objects)) return(NA)  # Skip if no objects available
+  
+  sum(sapply(objects, function(obj) {
+    tryCatch(object_size(get(obj, envir = env)), error = function(e) NA)
+  }), na.rm = TRUE)
+}
+
 # Function to recursively print slots of an S4 object
 print_slots <- function(obj) {
   slot_names <- slotNames(obj)
@@ -260,6 +277,27 @@ prepare_inputs <- function() {
     beta_values_file = file.path(backingpath, beta_values_file), 
     beta_values_desc = file.path(backingpath, beta_values_desc)
   )
+}
+
+# save files with useful information
+save_with_info <- function(dt, base_name, path = "input") {
+  # Get current time
+  current_time <- format(Sys.time(), "%m%d%Y_%H%M%S")
+  
+  # Create file name
+  file_name <- sprintf("%s_%d_r_%d_c_%s.csv", 
+                       base_name, 
+                       nrow(dt), 
+                       ncol(dt), 
+                       current_time)
+  
+  # Full path
+  full_path <- file.path(path, file_name)
+  
+  # Save file
+  fwrite(dt, full_path)
+  
+  cat("File saved:", full_path, "\n")
 }
 
 # Add cleanup function to delete the backing files
