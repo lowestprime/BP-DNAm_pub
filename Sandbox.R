@@ -61,6 +61,9 @@ setwd('~/R/APPTAINER/h2-rstudio_4.4.0')
 # List Package Functions
 ls("package:qs")
 
+# print first 10 rows and columns of a dataframe
+head(beta_values_final[, 1:10], 10)
+
 # Set the R_LIBS_USER environment variable to specific directory
 .libPaths("/u/home/c/cobeaman/R/APPTAINER/h2-rstudio_4.4.0")
 
@@ -105,3 +108,6 @@ options(stringsAsFactors = F)
 
 # Restart RStudio session
 .rs.restartR()
+
+# launch python notebook from vscode
+python3 h2jupynb -u cobeaman

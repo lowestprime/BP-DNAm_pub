@@ -182,38 +182,6 @@ calculate_protein_variables_test <- function(Ys, cpgs, beta_values, sample_annot
   results
 }
 
-# # calculate_protein_variables <- function(Ys, cpgs, beta_values, sample_annotation) {
-#   cores <- detectCores() - 1
-#   registerDoParallel(cores)
-#   
-#   results <- foreach(Y = Ys, .combine = cbind, .packages = c("bigmemory", "data.table", "foreach", "doParallel")) %dopar% {
-#     tryCatch({
-#       print(paste("Processing Y:", Y))
-#       Y.pred <- calculate_Y_pred(Y, cpgs, beta_values, sample_annotation)
-#       print(paste("Processed Y:", Y))
-#       return(Y.pred)
-#     }, error = function(e) {
-#       msg <- paste("Error in calculating Y.pred for Y:", Y, " - ", e$message)
-#       print(msg)
-#       return(NULL)  # Return NULL in case of error to avoid stopping the entire foreach loop
-#     })
-#   }
-#   
-#   stopImplicitCluster()
-#   
-#   # Check if results contain NULL values due to errors
-#   if (any(sapply(results, is.null))) {
-#     stop("Errors occurred in foreach loop. Check logs for details.")
-#   }
-#   
-#   results <- as.data.table(results)
-#   if (ncol(results) == 0) {
-#     stop("No results were generated. All tasks may have failed.")
-#   }
-#   setnames(results, Ys)
-#   results
-# }
-
 # External function to scale predictions
 F_scale <- function(INPUT0, Y.pred0.name, Y.pred.name, gold) {
   out.para <- gold[var == 'COX']

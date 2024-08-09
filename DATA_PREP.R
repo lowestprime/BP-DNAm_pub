@@ -220,8 +220,8 @@ sample_groups <- Density_Data$sample_groups
 # qread("Density_Data.qs", nthreads=36)$sample_groups
 
 # Merge with sample_groups
-beta_values_long <- beta_values_long %>%
-  mutate(SampleGroup = sample_groups[match(beta_values_long$Sample, colnames(beta_values))])
+# beta_values_long <- beta_values_long %>%
+#   mutate(SampleGroup = sample_groups[match(beta_values_long$Sample, colnames(beta_values))])
 
 # Plot using ggplot2 with facets
 # ggplot(beta_long, aes(x = BetaValue, color = SampleGroup)) +
