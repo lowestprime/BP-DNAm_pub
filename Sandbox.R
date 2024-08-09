@@ -94,9 +94,14 @@ gptstudio:::gptstudio_chat()
 # Remove files from R environement
 remove()
 rm()
+
 # Remove multiple files by pattern
 rm(list = ls(pattern = "_df"))
 rm(nor_dat,plot_list,shapiro_results,list= c(ls(pattern = "subset_"),ls(pattern = "test_")))
+
+# Clear environment
+rm(list=ls())
+options(stringsAsFactors = F)
 
 # Restart RStudio session
 .rs.restartR()
