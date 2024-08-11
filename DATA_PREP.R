@@ -5,16 +5,17 @@ setwd("~/project-ophoff/BP-DNAm")
 
 # load packages
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
-pacman::p_load(dplyr, tidyr, stringr, readr, readxl, data.table, lubridate, tibble)
+pacman::p_load(conflicted, dplyr, tidyr, stringr, readr, readxl, data.table, lubridate, tibble)
 
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
 BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv") %>%
   select(-Pool_ID)
 
+library(dplyr)
 # Read in 2000_sample_covariates.csv as data frame, remove Pool_ID col and rename 'Sample_id' col
 BPDNAm_ext <- read.csv("From_Roel/2000_sample_covariates.csv") %>%
   select(-RIN) %>% 
-  rename(Sample_Name = Sample_id,
+  dplyr::rename(Sample_Name = Sample_id,
          Age_Years = Sample.Age
          ) %>%
   mutate(Age_Years = as.numeric(gsub("[^0-9.]", "", Age_Years)),
@@ -49,16 +50,13 @@ missing_samples <- BPDNAm_SS %>%
 # Identify columns in bp_master that are not in BPDNAm_SS
 new_cols <- setdiff(colnames(bp_master), colnames(BPDNAm_SS))
 
-# Merge BPDNAm_SS with only the new columns from bp_master
 BPDNAm_SS_updated <- BPDNAm_SS %>%
   left_join(bp_master %>% select(Sample_Name, all_of(new_cols)), by = "Sample_Name") %>%
   mutate(
-    Age_Months = interval(`Date of birth`, `Date of sample collection`) %>% 
-      time_length(unit = "months") %>% 
-      floor(),
-    Age_Years = interval(`Date of birth`, `Date of sample collection`) %>% 
-      time_length(unit = "years") %>% 
-      floor()
+    Age_Months = round(interval(`Date of birth`, `Date of sample collection`) %>% 
+                         time_length(unit = "months"), 1),
+    Age_Years = round(interval(`Date of birth`, `Date of sample collection`) %>% 
+                        time_length(unit = "years"), 1)
   ) %>%
   select(Sample_Name, Basename, all_of(new_cols), Age_Years, Age_Months)
 

@@ -39,7 +39,7 @@ beta_values_dt <- as.data.table(t(beta_values_c), keep.rownames = "Basename")
 temp_data <- beta_values_dt %>%
   as.data.frame() %>%
   left_join(sample_annotation %>%
-              select(Basename, Sample_Name, Gender, Age_Years) %>%
+              select(Basename, Sample_Name, Gender, Diagnosis, Age_Years) %>%
               mutate(Female = case_when(
                 Gender == "F" ~ 1,
                 Gender == "M" ~ 0,
@@ -53,7 +53,7 @@ colnames(temp_data)[colnames(temp_data) == "Age_Years"] <- "Age"
 
 # Reorder the columns, bringing SampleID, Age, and Female to the front
 beta_values_final <- temp_data %>%
-  select(SampleID, Age, Female, everything()) %>%
+  select(SampleID, Age, Female, Diagnosis, everything()) %>%
   as.data.table()
 
 # ID missing grimage2 CpGs in beta_values_final
@@ -64,7 +64,7 @@ print(missing_cpgs)
 
 # Assuming grimage2_cpgs is already defined
 beta_values_subset <- beta_values_final %>%
-  select(SampleID, Age, Female, any_of(cleaned_grimage2_cpgs)) %>%
+  select(SampleID, Age, Female, Diagnosis, any_of(cleaned_grimage2_cpgs)) %>%
   as.data.table()
 
 # optional log memory use during workflow
