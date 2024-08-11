@@ -22,12 +22,11 @@
 #### _Density Plot of Normalized Beta Values_
 ![Density Plot of Normalized Beta Values](./BPDNAm_Density_Plot_Betas_nolegend.svg "Density Plot of Normalized Beta Values")
 
-#### _Grimage2 Correlation Scatter Plot_
-
-#### _Grimage2 Cluster Plots_
-
 ### **Stage 2 - Run and analyze GrimAge version 2 data**
-  - 
+#### _Grimage2 Correlation Scatter Plot_
+![Grimage2 Correlation Scatter Plot](./Jupyter/Age_vs_GrimAge2_Correlation_Accessible.svg "Grimage2 Correlation Scatter Plot")
+#### _Grimage2 Cluster Plot_
+![Grimage2 Cluster Plot](./Jupyter/Age_vs_GrimAge2_Biological_Age_Alignment_Sex_Clustering_Optimized.svg "Grimage2 Cluster Plot")
 
 ### **Stage 3 - Additional Analysis**
   - 
