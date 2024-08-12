@@ -45,13 +45,6 @@
     DNAm  log hemoglobin A1C                      DNAmlogA1C                      % (in A1C)
     DNAm  smoking pack years                        DNAmPACKYRS                  
 
-.table-wrapper {
-    overflow-x: auto;
-    overflow-y: auto;
-    max-height: 400px;
-    max-width: 100%;
-}
-
 #### _BPDNAm GrimAge2 Sourcecode All Vallues_
 <div style="overflow-x:auto; overflow-y:auto; max-height:400px; max-width:100%;">
 
