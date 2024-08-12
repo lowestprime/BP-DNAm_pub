@@ -53,8 +53,8 @@
 }
 
 #### _BPDNAm GrimAge2 Sourcecode All Vallues_
-<div class="table-wrapper">
-  
+<div style="overflow-x:auto; overflow-y:auto; max-height:400px; max-width:100%;">
+
 | SampleID | Age | Female | Diagnosis | DNAmGDF15 | DNAmB2M | DNAmCystatinC | DNAmTIMP1 | DNAmADM | DNAmPAI1 | DNAmLeptin | DNAmPACKYRS | DNAmlogCRP | DNAmlogA1C | DNAmGrimAge2 | AgeAccelGrim2 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 431-BG00001 | 51 | 1 | BipolarI | -138.698321632552 | 2917063.96249802 | 756733.774422643 | 19312.2535320095 | 344.666714180644 | 12705.3657796386 | 55144.8794765235 | -36.2827536272347 | 1.10348623014349 | 1.7129759262847 | 33.212300756328 | -2.54523597418208 |
