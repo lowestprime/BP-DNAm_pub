@@ -3,6 +3,7 @@ rm(list=ls())
 options(stringsAsFactors = F)
 
 # Load packages
+if (!require("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(dplyr, tidyverse, data.table, reshape2, purrr, qs, ENmix)
 
 # optional log memory use during workflow
@@ -14,8 +15,8 @@ source('~/project-ophoff/BP-DNAm/BPDNAm_external_functions.R')
 
 # Load the data
 beta_values <- qread("/u/scratch/c/cobeaman/Density_Data.qs", nthreads = 36)$beta_values
-# grimage2_cpgs <- (readRDS("input/DNAmGrimAge2_final.Rds")[[1]])$var
-# grimage2_cpgs <- grimage2_cpgs[-c(1, 2)]
+grimage2_cpgs <- (readRDS("input/DNAmGrimAge2_final.Rds")[[1]])$var
+grimage2_cpgs <- grimage2_cpgs[-c(1, 2)]
 sample_annotation <- fread("~/project-ophoff/BP-DNAm/BPDNAm_SS_updated_2464.csv")
 
 # Clean CpG names
@@ -67,13 +68,13 @@ beta_values_subset <- beta_values_final %>%
   select(SampleID, Age, Female, Diagnosis, any_of(cleaned_grimage2_cpgs)) %>%
   as.data.table()
 
-# optional log memory use during workflow
-# Rprofmem(NULL)
-# summaryRprof("memory_profile.log")
-
 # save to qs object
 # qsavem(beta_values_final, beta_values_subset, file="beta_values.qs", preset = "fast", nthreads = 36)
 
+# Save missing_cpgs
+# missing_cpgs_dt <- as.data.frame(missing_cpgs)
+# save_with_info(missing_cpgs_dt, "missing_cpgs")
+
 # Save beta_values_final and beta_values_subset as CSVs
 # save_with_info(beta_values_final, "mymetharray_final")
-# save_with_info(beta_values_subset, "mymetharray_subset")
+save_with_info(beta_values_subset, "mymetharray_subset")

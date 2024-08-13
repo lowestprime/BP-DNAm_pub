@@ -7,6 +7,14 @@ setwd("~/project-ophoff/BP-DNAm")
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(conflicted, dplyr, tidyr, stringr, readr, readxl, data.table, lubridate, tibble)
 
+conflict_prefer("filter", "dplyr")
+conflict_prefer("select", "dplyr")
+conflict_prefer("rename", "dplyr")
+conflict_prefer("mutate", "dplyr")
+conflict_prefer("recode", "dplyr")
+conflict_prefer("slice", "dplyr")
+conflict_prefer("setdiff", "dplyr")
+
 # Read in Bipolar 2023 Sample Sheet.csv as data frame and remove Pool_ID col
 BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv") %>%
   select(-Pool_ID)
@@ -70,8 +78,8 @@ BPDNAm_SS_updated <- BPDNAm_SS_updated %>%
   mutate(
     Gender = coalesce(Gender.cov, Gender.ext, Gender),
     Diagnosis = coalesce(Diagnosis.cov, Diagnosis.ext, Diagnosis),
-    Age_Years = coalesce(Age_Years.cov, Age_Years.ext, Age_Years),
-    Age_Months = if_else(
+    Age_Years = round(coalesce(Age_Years.cov, Age_Years.ext, Age_Years), 1),
+    Age_Months = round(if_else(
       is.na(interval(`Date of birth`, `Date of sample collection`) %>% 
               time_length(unit = "months") %>% 
               floor()),
@@ -79,7 +87,7 @@ BPDNAm_SS_updated <- BPDNAm_SS_updated %>%
       interval(`Date of birth`, `Date of sample collection`) %>% 
         time_length(unit = "months") %>% 
         floor()
-    )
+    ), 1)
   ) %>%
   select(-ends_with(".cov"), -ends_with(".ext"))
 

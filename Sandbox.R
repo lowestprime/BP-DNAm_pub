@@ -110,4 +110,4 @@ options(stringsAsFactors = F)
 .rs.restartR()
 
 # launch python notebook from vscode
-python3 h2jupynb -u cobeaman
+# python3 h2jupynb -u cobeaman
