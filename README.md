@@ -2504,7 +2504,6 @@
 | 431-BG01403 | 1 | Bipolar | 44 | 31.5 | 0.7 | 747619.2 | 17847.5 | 310.9 | -121.7 | 15362.4 | 35925.3 | 2640123.1 | -43.4 | 1.6 | 1.8 |
 | 431-BG01413 | 1 | Bipolar II | 33.9 | 23.8 | 0.1 | 731192.8 | 17159.5 | 310.8 | -258.1 | 14478.7 | 50973.0 | 2650799.6 | -45.8 | 1.8 | 1.7 |
 | 431-BG01378 | 1 | Bipolar II | 57 | 39.2 | -0.8 | 779561.7 | 19876.8 | 343.9 | -28.2 | 10749.2 | 39070.9 | 2881114.6 | -35.9 | 1.3 | 1.7 |
-
 #### _Pyaging Grimage2 Correlation Scatter Plot_
 ![Grimage2 Correlation Scatter Plot](./Jupyter/Age_vs_GrimAge2_Correlation_Accessible.svg "Grimage2 Correlation Scatter Plot")
 #### _Pyaging Grimage2 Cluster Plot_
