@@ -4,7 +4,7 @@ options(stringsAsFactors = F)
 
 # Load packages
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
-pacman::p_load(dplyr, tidyverse, data.table, reshape2, purrr, qs, ENmix)
+pacman::p_load(dplyr, tidyverse, arrow, data.table, arrow, reshape2, purrr, qs, ENmix)
 
 # optional log memory use during workflow
 # Rprofmem("memory_profile.log")
@@ -77,4 +77,10 @@ beta_values_subset <- beta_values_final %>%
 
 # Save beta_values_final and beta_values_subset as CSVs
 # save_with_info(beta_values_final, "mymetharray_final")
-save_with_info(beta_values_subset, "mymetharray_subset")
+# save_with_info(beta_values_subset, "mymetharray_subset")
+
+# Save Save beta_values_final and beta_values_subset as parquet and feather for faster load
+# write_parquet(beta_values_subset, "input/mymetharray_subset_2458_r_654_c_08112024_142045.parquet")
+# write_feather(beta_values_subset, "input/mymetharray_subset_2458_r_654_c_08112024_142045.feather")
+# write_parquet(beta_values_final, "input/mymetharray_final_2458_r_731791_c_08122024_235109.parquet")
+# write_feather(beta_values_final, "input/mymetharray_final_2458_r_731791_c_08122024_235109.feather")
