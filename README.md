@@ -44,7 +44,7 @@
     DNAm  log hemoglobin A1C                      DNAmlogA1C                      % (in A1C)
     DNAm  smoking pack years                        DNAmPACKYRS                  
 
-[BPDNAm GrimAge2 Sourcecode All Values](BPDNAm_GrimAge2_Sourcecode_All_2458_r_16_c_08112024_151650.csv)
+![BPDNAm GrimAge2 Sourcecode All Values](BPDNAm_GrimAge2_Sourcecode_All_2458_r_16_c_08112024_151650.csv)
 
 #### _Pyaging Grimage2 Correlation Scatter Plot_
 ![Grimage2 Correlation Scatter Plot](./Jupyter/Age_vs_GrimAge2_Correlation_Accessible.svg "Grimage2 Correlation Scatter Plot")
