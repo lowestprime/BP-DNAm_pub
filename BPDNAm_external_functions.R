@@ -279,26 +279,39 @@ prepare_inputs <- function() {
   )
 }
 
-# save files with useful information
-save_with_info <- function(dt, base_name, path = "input") {
+# Function to save a data table with useful information, supporting multiple formats
+save_with_info <- function(dt, base_name, path = "input", formats = c("csv", "parquet", "feather")) {
   # Get current time
   current_time <- format(Sys.time(), "%m%d%Y_%H%M%S")
   
-  # Create file name
-  file_name <- sprintf("%s_%d_r_%d_c_%s.csv", 
-                       base_name, 
-                       nrow(dt), 
-                       ncol(dt), 
-                       current_time)
-  
-  # Full path
-  full_path <- file.path(path, file_name)
-  
-  # Save file
-  fwrite(dt, full_path)
-  
-  cat("File saved:", full_path, "\n")
+  # Iterate through each requested format
+  for (format in formats) {
+    # Create file name based on the format
+    file_name <- sprintf("%s_%d_r_%d_c_%s.%s", 
+                         base_name, 
+                         nrow(dt), 
+                         ncol(dt), 
+                         current_time, 
+                         format)
+    
+    # Full path
+    full_path <- file.path(path, file_name)
+    
+    # Save file based on the format
+    if (format == "csv") {
+      fwrite(dt, full_path)
+    } else if (format == "parquet") {
+      write_parquet(dt, full_path)
+    } else if (format == "feather") {
+      write_feather(dt, full_path)
+    } else {
+      stop("Unsupported file format: ", format)
+    }
+    
+    cat("File saved:", full_path, "\n")
+  }
 }
+
 
 # Add cleanup function to delete the backing files
 cleanup_temp_files <- function(beta_values_file, beta_values_desc) {

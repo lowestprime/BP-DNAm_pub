@@ -5,7 +5,7 @@ setwd("~/project-ophoff/BP-DNAm")
 
 # load packages
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
-pacman::p_load(conflicted, dplyr, tidyr, stringr, readr, readxl, data.table, lubridate, tibble)
+pacman::p_load(conflicted, dplyr, tidyr, stringr, readr, readxl, openxlsx, data.table, lubridate, tibble)
 
 conflict_prefer("filter", "dplyr")
 conflict_prefer("select", "dplyr")
@@ -19,7 +19,6 @@ conflict_prefer("setdiff", "dplyr")
 BPDNAm_SS <- read.csv("Bipolar 2023 Sample Sheet.csv") %>%
   select(-Pool_ID)
 
-library(dplyr)
 # Read in 2000_sample_covariates.csv as data frame, remove Pool_ID col and rename 'Sample_id' col
 BPDNAm_ext <- read.csv("From_Roel/2000_sample_covariates.csv") %>%
   select(-RIN) %>% 
@@ -42,6 +41,9 @@ BPDNAm_cov <- read.table("From_Roel/highcov_technical_covariates.txt", sep = "\t
 
 # Read in Complete BIG Data.xlsx as data frame
 bp_master <- read_excel("Complete BIG Data.xlsx")
+
+# Read in missing 113 samples info
+bp_missing <- read_excel("BPDNA_113Samples_Demographics_08.14.2024.xlsx")
 
 # Rename 'Sample_id' in bp_master to 'Sample_Name' for matching and remove duplicate entries
 bp_master <- bp_master %>% 
@@ -71,14 +73,30 @@ BPDNAm_SS_updated <- BPDNAm_SS %>%
 # Columns to check for missing values
 columns_to_check <- c("Age_Years", "Gender", "Diagnosis")
 
-# Merging and filling more missing values from BPDNAm_cov and BPDNAm_ext
+# Merging and filling missing values from BPDNAm_cov, BPDNAm_ext, bp_missing, and handling REP entries
 BPDNAm_SS_updated <- BPDNAm_SS_updated %>%
+  # Initial joins to bring in data from covariates and missing datasets
   left_join(select(BPDNAm_cov, Sample_Name, Gender, Diagnosis, Age_Years), by = "Sample_Name", suffix = c("", ".cov")) %>%
   left_join(select(BPDNAm_ext, Sample_Name, Gender, Diagnosis, Age_Years), by = "Sample_Name", suffix = c("", ".ext")) %>%
+  left_join(select(bp_missing, Sample_Name, Gender, Diagnosis, Age_Years), by = "Sample_Name", suffix = c("", ".missing")) %>%
+  
+  # Fill in the missing Gender, Diagnosis, and Age_Years
   mutate(
-    Gender = coalesce(Gender.cov, Gender.ext, Gender),
-    Diagnosis = coalesce(Diagnosis.cov, Diagnosis.ext, Diagnosis),
-    Age_Years = round(coalesce(Age_Years.cov, Age_Years.ext, Age_Years), 1),
+    Gender = coalesce(Gender.cov, Gender.ext, Gender.missing, Gender),
+    Diagnosis = coalesce(Diagnosis.cov, Diagnosis.ext, Diagnosis.missing, Diagnosis),
+    Age_Years = round(coalesce(Age_Years.cov, Age_Years.ext, Age_Years.missing, Age_Years), 1)
+  ) %>%
+  
+  # Handle REP entries by copying from non-REP
+  mutate(base_name = str_remove(Sample_Name, "_REP$")) %>%
+  left_join(select(., base_name = Sample_Name, Gender, Diagnosis), by = "base_name", suffix = c("", ".y")) %>%
+  mutate(
+    Gender = if_else(is.na(Gender) & str_detect(Sample_Name, "_REP$"), Gender.y, Gender),
+    Diagnosis = if_else(is.na(Diagnosis) & str_detect(Sample_Name, "_REP$"), Diagnosis.y, Diagnosis)
+  ) %>%
+  
+  # Compute Age_Months based on Age_Years or calculate from dates
+  mutate(
     Age_Months = round(if_else(
       is.na(interval(`Date of birth`, `Date of sample collection`) %>% 
               time_length(unit = "months") %>% 
@@ -89,14 +107,18 @@ BPDNAm_SS_updated <- BPDNAm_SS_updated %>%
         floor()
     ), 1)
   ) %>%
-  select(-ends_with(".cov"), -ends_with(".ext"))
+  
+  # Clean up columns by removing temporary and unnecessary ones
+  select(-ends_with(".cov"), -ends_with(".ext"), -ends_with(".missing"), -base_name, -Gender.y, -Diagnosis.y)
 
-# Export BPDNAm_SS_updated
+# Export BPDNAm_SS_updated to CSV and XLSX
 # BPDNAm_SS_updated %>%
 #   {
 #     num_samples <- nrow(.)
-#     filename <- sprintf("BPDNAm_SS_updated_%d.csv", num_samples)
-#     fwrite(., filename)
+#     filename_csv <- sprintf("BPDNAm_SS_updated_%d.csv", num_samples)
+#     filename_xlsx <- sprintf("BPDNAm_SS_updated_%d.xlsx", num_samples)
+#     fwrite(., filename_csv)
+#     write.xlsx(., filename_xlsx, asTable = TRUE)
 #   }
 
 # summarize Sample_Names with _Rep pair
@@ -107,15 +129,18 @@ BPDNAm_SS_REP <- BPDNAm_SS_updated %>%
   ungroup() %>%
   select(-base_name) %>%
   arrange(Sample_Name) %>%
-  left_join(BPDNAm_SS %>% select(Sample_Name, Basename, Sample_Plate, Sample_Well, Sentrix_ID, Sentrix_Position, Sample_Group), 
-            by = "Sample_Name")
+  left_join(BPDNAm_SS %>% select(Sample_Name, Basename, Sample_Plate, Sample_Well, Sentrix_ID, Sentrix_Position), 
+            by = "Sample_Name") %>%
+  select(-ends_with(".x"), -ends_with(".y"), -"Sample Comment", -Notes)
 
-# Export BPDNAm_SS_REP with a filename including the count of "_REP" samples
+# Export BPDNAm_SS_REP with a filename including the count of "_REP" samples to CSV and XLSX
 # BPDNAm_SS_REP %>%
 #   {
 #     num_rep_samples <- sum(str_detect(.$Sample_Name, "_REP$"))
-#     filename <- sprintf("BPDNAm_SS_REP_Pairs_%d.csv", num_rep_samples)
-#     fwrite(., filename)
+#     filename_csv <- sprintf("BPDNAm_SS_REP_Pairs_%d.csv", num_rep_samples)
+#     filename_xlsx <- sprintf("BPDNAm_SS_REP_Pairs_%d.xlsx", num_rep_samples)
+#     fwrite(., filename_csv)
+#     write.xlsx(., filename_xlsx, asTable = TRUE)
 #   }
 
 # summarize NAs in BPDNAm_SS_updated
@@ -139,17 +164,19 @@ cols_to_keep <- NA_summary %>%
 
 # Create a subset of BPDNAm_SS_updated with cols_to_keep and NA rows joining in cols from missing_data
 BPDNAm_SS_NAs <- BPDNAm_SS_updated %>%
-  select(Sample_Name, all_of(cols_to_keep), -c("Fam_code", "Date of birth", "Date of sample collection", "Age_Months")) %>%
+  select(Sample_Name, all_of(cols_to_keep), -c("Fam_code", "Date of birth", "Date of sample collection")) %>%
   filter(if_any(everything(), is.na)) %>%
   left_join(missing_samples, by = "Sample_Name") %>%
-  select(-c("Sample_Group", "Basename"))
+  select(-c("Sample_Group"))
 
-# Export BPDNAm_SS_NAs
+# Export BPDNAm_SS_NAs to CSV and XLSX
 # BPDNAm_SS_NAs %>%
 #   {
 #     num_samples <- nrow(.)
-#     filename <- sprintf("BPDNAm_NA_Samples_%d.csv", num_samples)
-#     fwrite(., filename)
+#     filename_csv <- sprintf("BPDNAm_NA_Samples_%d.csv", num_samples)
+#     filename_xlsx <- sprintf("BPDNAm_NA_Samples_%d.xlsx", num_samples)
+#     fwrite(., filename_csv)
+#     write.xlsx(., filename_xlsx, asTable = TRUE)
 #   }
 
 # Export comma separated list of Sample_Names in BPDNAm_SS_NAs
@@ -171,8 +198,10 @@ BPDNAm_SS_noNAs <- BPDNAm_SS_updated %>%
 # BPDNAm_SS_noNAs %>%
 #   {
 #     num_samples <- nrow(.)
-#     filename <- sprintf("BPDNAm_noNA_Samples_%d.csv", num_samples)
-#     fwrite(., filename)
+#     filename_csv <- sprintf("BPDNAm_noNA_Samples_%d.csv", num_samples)
+#     filename_xlsx <- sprintf("BPDNAm_noNA_Samples_%d.xlsx", num_samples)
+#     fwrite(., filename_csv)
+#     write.xlsx(., filename_xlsx, asTable = TRUE)
 #   }
 
 # Process Data for GRIMAGE2 ####
