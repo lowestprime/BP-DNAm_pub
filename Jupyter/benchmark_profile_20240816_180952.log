@@ -1,0 +1,431 @@
+2024-08-16 18:09:52,133 - INFO - Starting benchmark: feather_single_thread
+2024-08-16 18:09:52,134 - INFO - Loading feather (single-thread): /u/scratch/c/cobeaman/mymetharray_final_2458_r_731791_c_08152024_192025.feather
+2024-08-16 18:10:09,278 - INFO -          80 function calls in 17.106 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.088    0.088   17.106   17.106 /tmp/ipykernel_90720/2922386952.py:26(load_feather_single_thread)
+        1   17.016   17.016   17.018   17.018 /u/home/c/cobeaman/.local/lib/python3.10/site-packages/pyarrow/feather.py:231(read_table)
+        1    0.000    0.000    0.001    0.001 /u/local/apps/anaconda3/2023.03/lib/python3.10/genericpath.py:39(isdir)
+        1    0.001    0.001    0.001    0.001 {built-in method posix.stat}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:2130(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1467(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1600(_log)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1626(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1680(callHandlers)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:955(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1204(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1088(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1585(makeRecord)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:283(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:932(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:665(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1077(flush)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1549(findCaller)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:597(formatTime)
+        1    0.000    0.000    0.000    0.000 /u/home/c/cobeaman/.local/lib/python3.10/site-packages/pyarrow/util.py:138(_stringify_path)
+        1    0.000    0.000    0.000    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:228(expanduser)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:140(basename)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:117(splitext)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:649(formatMessage)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/genericpath.py:121(_splitext)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:912(acquire)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:438(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:119(getLevelName)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:643(usesTime)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:52(normcase)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:919(release)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:160(<lambda>)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:431(_format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:423(usesTime)
+        1    0.000    0.000    0.000    0.000 {built-in method time.strftime}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:41(_get_sep)
+        1    0.000    0.000    0.000    0.000 {built-in method time.localtime}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        5    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        3    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1430(current_thread)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:806(filter)
+        1    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:359(getMessage)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1724(isEnabledFor)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1129(name)
+        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISDIR}
+        1    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        1    0.000    0.000    0.000    0.000 {built-in method time.time}
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+
+
+
+2024-08-16 18:10:09,279 - INFO - Benchmark complete: feather_single_thread took 17.15 seconds
+2024-08-16 18:10:09,954 - INFO - Starting benchmark: feather_2_threads
+2024-08-16 18:10:09,992 - INFO - Loading feather (multithread, 2 threads): /u/scratch/c/cobeaman/mymetharray_final_2458_r_731791_c_08152024_192025.feather
+2024-08-16 18:10:27,159 - INFO -          174 function calls in 17.165 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   17.165   17.165 /tmp/ipykernel_90720/2922386952.py:31(load_feather_multithread)
+        3    0.000    0.000   17.159    5.720 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:288(wait)
+       11   17.159    1.560   17.159    1.560 {method 'acquire' of '_thread.lock' objects}
+        1    0.000    0.000   17.148   17.148 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:430(result)
+        1    0.000    0.000    0.017    0.017 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:161(submit)
+        1    0.000    0.000    0.017    0.017 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:180(_adjust_thread_count)
+        1    0.000    0.000    0.017    0.017 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:916(start)
+        1    0.000    0.000    0.011    0.011 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:589(wait)
+        1    0.006    0.006    0.006    0.006 {built-in method _thread.start_new_thread}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:2130(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1467(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1600(_log)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:648(__exit__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:216(shutdown)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1064(join)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1102(_wait_for_tstate_lock)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1626(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1680(callHandlers)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:955(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1204(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1088(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1585(makeRecord)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:283(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:932(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:665(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:123(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:827(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:428(acquire)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1028(_stop)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:236(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1549(findCaller)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:422(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:649(formatMessage)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:438(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:597(formatTime)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:431(_format)
+        2    0.000    0.000    0.000    0.000 {method 'put' of '_queue.SimpleQueue' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:800(_maintain_shutdown_locks)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:140(basename)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1077(flush)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:267(__exit__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:330(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/weakref.py:370(remove)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:264(__enter__)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1430(current_thread)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:117(splitext)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:545(__init__)
+        1    0.000    0.000    0.000    0.000 {method '_acquire_restore' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/weakref.py:428(__setitem__)
+        1    0.000    0.000    0.000    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/_weakrefset.py:39(_remove)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/_weakrefset.py:86(add)
+        1    0.000    0.000    0.000    0.000 {built-in method time.localtime}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:41(_get_sep)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:119(getLevelName)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:643(usesTime)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:160(<lambda>)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:276(_acquire_restore)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:279(_is_owned)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:52(normcase)
+        1    0.000    0.000    0.000    0.000 {built-in method time.strftime}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:423(usesTime)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:912(acquire)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:810(<listcomp>)
+        6    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1301(_make_invoke_excepthook)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/genericpath.py:121(_splitext)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:273(_release_save)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:919(release)
+        1    0.000    0.000    0.000    0.000 {method 'difference_update' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:47(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:400(__get_result)
+        4    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1183(daemon)
+        6    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {method '_release_save' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:806(filter)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1129(name)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1724(isEnabledFor)
+        2    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:553(is_set)
+        3    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:90(RLock)
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        2    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:359(getMessage)
+        2    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {method 'release' of '_thread.lock' objects}
+        3    0.000    0.000    0.000    0.000 {method 'locked' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method time.monotonic}
+        3    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 {method 'remove' of 'collections.deque' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        1    0.000    0.000    0.000    0.000 {method '_is_owned' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:645(__enter__)
+        2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method time.time}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+
+
+
+2024-08-16 18:10:27,159 - INFO - Benchmark complete: feather_2_threads took 17.17 seconds
+2024-08-16 18:10:28,095 - INFO - Starting benchmark: feather_4_threads
+2024-08-16 18:10:28,095 - INFO - Loading feather (multithread, 4 threads): /u/scratch/c/cobeaman/mymetharray_final_2458_r_731791_c_08152024_192025.feather
+2024-08-16 18:10:46,739 - INFO -          174 function calls in 18.638 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   18.638   18.638 /tmp/ipykernel_90720/2922386952.py:31(load_feather_multithread)
+       11   18.638    1.694   18.638    1.694 {method 'acquire' of '_thread.lock' objects}
+        3    0.000    0.000   18.638    6.213 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:288(wait)
+        1    0.000    0.000   18.637   18.637 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:430(result)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:161(submit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:180(_adjust_thread_count)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:916(start)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:648(__exit__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:216(shutdown)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:589(wait)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1064(join)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1102(_wait_for_tstate_lock)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:2130(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1028(_stop)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1467(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1600(_log)
+        1    0.000    0.000    0.000    0.000 {built-in method _thread.start_new_thread}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1626(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1680(callHandlers)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:800(_maintain_shutdown_locks)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:955(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/_weakrefset.py:39(_remove)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1204(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1088(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:428(acquire)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:123(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1585(makeRecord)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/weakref.py:370(remove)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:283(__init__)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1430(current_thread)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:827(__init__)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:236(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:932(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:665(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:422(__init__)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:267(__exit__)
+        2    0.000    0.000    0.000    0.000 {method 'put' of '_queue.SimpleQueue' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1077(flush)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1549(findCaller)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:330(__init__)
+        1    0.000    0.000    0.000    0.000 {method '_acquire_restore' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:597(formatTime)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:264(__enter__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:810(<listcomp>)
+        1    0.000    0.000    0.000    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:400(__get_result)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:545(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:140(basename)
+        1    0.000    0.000    0.000    0.000 {method 'difference_update' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/_weakrefset.py:86(add)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:117(splitext)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:279(_is_owned)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:912(acquire)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:643(usesTime)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:276(_acquire_restore)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:649(formatMessage)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:119(getLevelName)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:273(_release_save)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:423(usesTime)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:52(normcase)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:160(<lambda>)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/weakref.py:428(__setitem__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1301(_make_invoke_excepthook)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:919(release)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:438(format)
+        4    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/genericpath.py:121(_splitext)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:90(RLock)
+        6    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        6    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1183(daemon)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:47(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:41(_get_sep)
+        2    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:431(_format)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:553(is_set)
+        1    0.000    0.000    0.000    0.000 {method '_release_save' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method time.strftime}
+        3    0.000    0.000    0.000    0.000 {method 'locked' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method time.localtime}
+        3    0.000    0.000    0.000    0.000 {method 'release' of '_thread.lock' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        3    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1724(isEnabledFor)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:359(getMessage)
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:806(filter)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method time.monotonic}
+        2    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 {method '_is_owned' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1129(name)
+        3    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        2    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.lock' objects}
+        4    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:645(__enter__)
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        1    0.000    0.000    0.000    0.000 {method 'remove' of 'collections.deque' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        1    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method time.time}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+
+
+
+2024-08-16 18:10:46,739 - INFO - Benchmark complete: feather_4_threads took 18.64 seconds
+2024-08-16 18:10:47,555 - INFO - Starting benchmark: feather_16_threads
+2024-08-16 18:10:47,556 - INFO - Loading feather (multithread, 16 threads): /u/scratch/c/cobeaman/mymetharray_final_2458_r_731791_c_08152024_192025.feather
+2024-08-16 18:11:14,997 - INFO -          174 function calls in 27.439 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000   27.439   27.439 /tmp/ipykernel_90720/2922386952.py:31(load_feather_multithread)
+        3    0.000    0.000   27.439    9.146 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:288(wait)
+       11   27.439    2.494   27.439    2.494 {method 'acquire' of '_thread.lock' objects}
+        1    0.000    0.000   27.438   27.438 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:430(result)
+        1    0.000    0.000    0.001    0.001 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:161(submit)
+        1    0.000    0.000    0.001    0.001 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:180(_adjust_thread_count)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:916(start)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:589(wait)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:648(__exit__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:216(shutdown)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1064(join)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1102(_wait_for_tstate_lock)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:2130(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1467(info)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1028(_stop)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1600(_log)
+        1    0.000    0.000    0.000    0.000 {built-in method _thread.start_new_thread}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:800(_maintain_shutdown_locks)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1626(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1680(callHandlers)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:955(handle)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1204(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1088(emit)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:428(acquire)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1585(makeRecord)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:123(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:283(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/weakref.py:370(remove)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1430(current_thread)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:827(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:932(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:665(format)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:236(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/_weakrefset.py:39(_remove)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:422(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'put' of '_queue.SimpleQueue' objects}
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:267(__exit__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1549(findCaller)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1077(flush)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:330(__init__)
+        1    0.000    0.000    0.000    0.000 {method '_acquire_restore' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:810(<listcomp>)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:597(formatTime)
+        3    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:264(__enter__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:649(formatMessage)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:545(__init__)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:438(format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:140(basename)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:431(_format)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/_weakrefset.py:86(add)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:400(__get_result)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:117(splitext)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:643(usesTime)
+        1    0.000    0.000    0.000    0.000 {method 'difference_update' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:276(_acquire_restore)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:119(getLevelName)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:912(acquire)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:279(_is_owned)
+        1    0.000    0.000    0.000    0.000 {method 'discard' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 {method 'flush' of '_io.TextIOWrapper' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:423(usesTime)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:160(<lambda>)
+        4    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:919(release)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/genericpath.py:121(_splitext)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:273(_release_save)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/weakref.py:428(__setitem__)
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1183(daemon)
+        6    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:52(normcase)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:90(RLock)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/posixpath.py:41(_get_sep)
+        6    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1301(_make_invoke_excepthook)
+        2    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:553(is_set)
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/thread.py:47(__init__)
+        2    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method time.strftime}
+        1    0.000    0.000    0.000    0.000 {method '_release_save' of '_thread.RLock' objects}
+        3    0.000    0.000    0.000    0.000 {method 'locked' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method time.localtime}
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:359(getMessage)
+        1    0.000    0.000    0.000    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+        3    0.000    0.000    0.000    0.000 {method 'release' of '_thread.lock' objects}
+        2    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:806(filter)
+        3    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/logging/__init__.py:1724(isEnabledFor)
+        2    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        2    0.000    0.000    0.000    0.000 {built-in method time.monotonic}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/threading.py:1129(name)
+        1    0.000    0.000    0.000    0.000 {method 'remove' of 'collections.deque' objects}
+        3    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        2    0.000    0.000    0.000    0.000 {method '__enter__' of '_thread.lock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method sys._getframe}
+        4    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+        1    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        2    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 /u/local/apps/anaconda3/2023.03/lib/python3.10/concurrent/futures/_base.py:645(__enter__)
+        1    0.000    0.000    0.000    0.000 {method '_is_owned' of '_thread.RLock' objects}
+        2    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method time.time}
+        1    0.000    0.000    0.000    0.000 {built-in method posix.getpid}
+
+
+
+2024-08-16 18:11:14,998 - INFO - Benchmark complete: feather_16_threads took 27.44 seconds
+2024-08-16 18:16:29,301 - INFO - Note: detected 224 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+2024-08-16 18:16:29,301 - INFO - Note: NumExpr detected 224 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2024-08-16 18:16:29,301 - INFO - NumExpr defaulting to 8 threads.

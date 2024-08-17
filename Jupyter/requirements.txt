@@ -1,5 +1,6 @@
 absl-py==2.1.0
 adjustText==1.2.0
+aiofiles==24.1.0
 alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-client==1.11.1
 anaconda-navigator==2.4.0
@@ -245,6 +246,7 @@ pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
 ply==3.11
 pooch @ file:///tmp/build/80754af9/pooch_1623324770023/work
 poyo @ file:///tmp/build/80754af9/poyo_1617751526755/work
+progressbar2==4.4.2
 prometheus-client @ file:///tmp/abs_d3zeliano1/croots/recipe/prometheus_client_1659455100375/work
 prompt-toolkit @ file:///croot/prompt-toolkit_1672387306916/work
 Protego @ file:///tmp/build/80754af9/protego_1598657180827/work
@@ -267,6 +269,7 @@ pydocstyle @ file:///croot/pydocstyle_1675221668445/work
 pyerfa @ file:///home/builder/ci_310/pyerfa_1640793199719/work
 pyflakes @ file:///croot/pyflakes_1674165128613/work
 pyFUME==0.3.1
+pygam==0.9.1
 Pygments==2.18.0
 PyHamcrest @ file:///tmp/build/80754af9/pyhamcrest_1615748656804/work
 PyJWT @ file:///opt/conda/conda-bld/pyjwt_1657544592787/work
@@ -291,6 +294,7 @@ python-lsp-jsonrpc==1.0.0
 python-lsp-server @ file:///croot/python-lsp-server_1677296760843/work
 python-slugify @ file:///tmp/build/80754af9/python-slugify_1620405669636/work
 python-snappy @ file:///croot/python-snappy_1670943913523/work
+python-utils==3.8.2
 pytoolconfig @ file:///croot/pytoolconfig_1676315026871/work
 pytz @ file:///croot/pytz_1671697431263/work
 pyviz-comms @ file:///tmp/build/80754af9/pyviz_comms_1623747165329/work
@@ -321,7 +325,7 @@ ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1666302247304/work
 scikit-image @ file:///croot/scikit-image_1669241743693/work
 scikit-learn==1.5.1
 scikit-learn-intelex==20230228.214242
-scipy==1.14.0
+scipy==1.11.4
 Scrapy @ file:///croot/scrapy_1677738182270/work
 seaborn==0.13.2
 SecretStorage @ file:///home/builder/ci_310/secretstorage_1640812904213/work
