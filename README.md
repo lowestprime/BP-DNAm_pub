@@ -28,9 +28,9 @@
                                               (2) seven DNAm based plasma protein estimates, and 
                                               (3) DNAm based packyears (DNAmPACKYRS)
 
-    ============================================================================================================
+    ==============================================================================================
     Name                                            variable                        unit
-    ============================================================================================================
+    ==============================================================================================
     DNAm  GrimAge2                                DNAmGrimAge2                    year
     GrimAge2 age acceleration                     AgeAccelGrim2                   year
     DNAm  Growth differentiation factor 15        DNAmGDF15                       pg/mL
