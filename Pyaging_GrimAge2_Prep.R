@@ -6,6 +6,9 @@ options(stringsAsFactors = F)
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
 pacman::p_load(dplyr, tidyverse, arrow, data.table, arrow, reshape2, purrr, qs, ENmix)
 
+conflicts_prefer(dplyr::first)
+conflicts_prefer(data.table::second)
+
 # optional log memory use during workflow
 # Rprofmem("memory_profile.log")
 
@@ -61,7 +64,7 @@ beta_values_final <- temp_data %>%
 grimage2_cpgs <- grimage2_cpgs[grepl("^cg", grimage2_cpgs)]
 cleaned_grimage2_cpgs <- unique(grimage2_cpgs)
 missing_cpgs <- setdiff(cleaned_grimage2_cpgs, names(beta_values_final))
-print(missing_cpgs)
+# print(missing_cpgs)
 
 # Assuming grimage2_cpgs is already defined
 beta_values_subset <- beta_values_final %>%
@@ -73,14 +76,8 @@ beta_values_subset <- beta_values_final %>%
 
 # Save missing_cpgs
 # missing_cpgs_dt <- as.data.frame(missing_cpgs)
-# save_with_info(missing_cpgs_dt, "missing_cpgs")
+# save_with_info(missing_cpgs_dt, "missing_cpgs", formats = "csv")
 
-# Save beta_values_final and beta_values_subset as CSVs
+# Save beta_values_final and beta_values_subset as .csv, .parquet and .feather
 # save_with_info(beta_values_final, "mymetharray_final")
 # save_with_info(beta_values_subset, "mymetharray_subset")
-
-# Save Save beta_values_final and beta_values_subset as parquet and feather for faster load
-# write_parquet(beta_values_subset, "input/mymetharray_subset_2458_r_654_c_08112024_142045.parquet")
-# write_feather(beta_values_subset, "input/mymetharray_subset_2458_r_654_c_08112024_142045.feather")
-# write_parquet(beta_values_final, "input/mymetharray_final_2458_r_731791_c_08122024_235109.parquet")
-# write_feather(beta_values_final, "input/mymetharray_final_2458_r_731791_c_08122024_235109.feather")
