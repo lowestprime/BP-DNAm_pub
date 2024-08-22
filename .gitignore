@@ -2,3 +2,4 @@
 *.RData
 .Rprofile
 .Rhistory
+*.pt
