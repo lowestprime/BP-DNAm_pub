@@ -2514,9 +2514,9 @@
 </details>
 
 #### _Pyaging Grimage2 Correlation Scatter Plot_
-![Grimage2 Correlation Scatter Plot](./Jupyter/Age_vs_GrimAge2_Correlation_Accessible.svg "Grimage2 Correlation Scatter Plot")
+![Grimage2 Correlation Scatter Plot](./Plots/Age_vs_GrimAge2_Correlation_MissingProbes_Pie_Updated.svg "Grimage2 Correlation Scatter Plot")
 #### _Pyaging Grimage2 Cluster Plot_
-![Grimage2 Cluster Plot](./Jupyter/Age_vs_GrimAge2_Biological_Age_Alignment_Sex_Clustering_Optimized.svg "Grimage2 Cluster Plot")
+![Grimage2 Cluster Plot](.Plots/Age_vs_GrimAge2_Biological_Age_Alignment_Sex_Clustering_Optimized.svg "Grimage2 Cluster Plot")
 
 ### **Stage 3 - Additional Analysis**
   - 
