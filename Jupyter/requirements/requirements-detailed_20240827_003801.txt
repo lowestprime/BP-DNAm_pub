@@ -1,0 +1,4573 @@
+aiofiles==24.1.0
+anaconda-navigator==2.4.0
+anaconda-project @ file:///opt/conda/conda-bld/anaconda-project_1660339890420/work
+  anaconda-client==1.11.1
+    clyent==1.2.1
+    conda-package-handling @ file:///croot/conda-package-handling_1672865015732/work
+      conda_package_streaming @ file:///croot/conda-package-streaming_1670508151586/work
+        requests==2.28.1
+          certifi==2024.7.4
+          charset-normalizer==2.1.1
+          idna==3.8
+          urllib3==1.26.19
+        zstandard @ file:///croot/zstandard_1677013143055/work
+    defusedxml==0.7.1
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    PyYAML==6.0
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    setuptools==73.0.1
+    six==1.16.0
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+    urllib3==1.26.19
+  conda-pack @ file:///tmp/build/80754af9/conda-pack_1611163042455/work
+    setuptools==73.0.1
+  Jinja2==3.1.4
+    MarkupSafe==2.1.5
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+  ruamel.yaml @ file:///croot/ruamel.yaml_1666304550667/work
+    ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1666302247304/work
+  tornado==6.4.1
+  tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+astropy @ file:///opt/conda/conda-bld/astropy_1657786094003/work
+  numpy==1.26.4
+  packaging==24.1
+  pyerfa @ file:///home/builder/ci_310/pyerfa_1640793199719/work
+    numpy==1.26.4
+  PyYAML==6.0
+async-lru==2.0.4
+  typing_extensions==4.12.2
+autopep8 @ file:///opt/conda/conda-bld/autopep8_1650463822033/work
+  pycodestyle @ file:///croot/pycodestyle_1674267221883/work
+  toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+backports.tarfile==1.2.0
+bcrypt @ file:///tmp/abs_6fpe92qzzo/croots/recipe/bcrypt_1659554336150/work
+  cffi==1.17.0
+    pycparser==2.22
+  six==1.16.0
+Bottleneck==1.4.0
+  numpy==1.26.4
+brotlipy==0.7.0
+  cffi==1.17.0
+    pycparser==2.22
+colorama @ file:///croot/colorama_1672386526460/work
+conda-build==3.23.3
+  beautifulsoup4==4.12.3
+    soupsieve==2.6
+  chardet @ file:///home/builder/ci_310/chardet_1640804867535/work
+  conda==23.1.0
+    pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
+    pycosat @ file:///croot/pycosat_1666805502580/work
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    ruamel.yaml @ file:///croot/ruamel.yaml_1666304550667/work
+      ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1666302247304/work
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+  filelock @ file:///croot/filelock_1672387128942/work
+  glob2 @ file:///home/linux1/recipes/ci/glob2_1610991677669/work
+  Jinja2==3.1.4
+    MarkupSafe==2.1.5
+  libarchive-c @ file:///tmp/build/80754af9/python-libarchive-c_1617780486945/work
+  pkginfo @ file:///croot/pkginfo_1666725041340/work
+  psutil==6.0.0
+  pytz @ file:///croot/pytz_1671697431263/work
+  PyYAML==6.0
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+  setuptools==73.0.1
+  six==1.16.0
+  toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+  tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+conda-repo-cli==1.0.27
+  clyent==1.2.1
+  nbformat==5.4.0
+    fastjsonschema==2.20.0
+    jsonschema==4.23.0
+      attrs==24.2.0
+      jsonschema-specifications==2023.12.1
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+      referencing==0.35.1
+        attrs==24.2.0
+        rpds-py==0.20.0
+      rpds-py==0.20.0
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    traitlets==5.14.3
+  pathlib @ file:///Users/ktietz/demo/mc3/conda-bld/pathlib_1629713961906/work
+  python-dateutil==2.8.2
+    six==1.16.0
+  pytz @ file:///croot/pytz_1671697431263/work
+  PyYAML==6.0
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+  setuptools==73.0.1
+  six==1.16.0
+conda-token @ file:///Users/paulyim/miniconda3/envs/c3i/conda-bld/conda-token_1662660369760/work
+  conda==23.1.0
+    pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
+    pycosat @ file:///croot/pycosat_1666805502580/work
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    ruamel.yaml @ file:///croot/ruamel.yaml_1666304550667/work
+      ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1666302247304/work
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+  conda-content-trust @ file:///tmp/abs_5952f1c8-355c-4855-ad2e-538535021ba5h26t22e5/croots/recipe/conda-content-trust_1658126371814/work
+    cryptography @ file:///croot/cryptography_1677533068310/work
+      cffi==1.17.0
+        pycparser==2.22
+    six==1.16.0
+  packaging==24.1
+conda-verify==3.4.2
+  backports.functools-lru-cache @ file:///tmp/build/80754af9/backports.functools_lru_cache_1618170165463/work
+  backports.tempfile @ file:///home/linux1/recipes/ci/backports.tempfile_1610991236607/work
+    backports.weakref==1.0.post1
+  click==8.1.7
+  future @ file:///croot/future_1677599870788/work
+  Jinja2==3.1.4
+    MarkupSafe==2.1.5
+  PyYAML==6.0
+  six==1.16.0
+cytoolz @ file:///croot/cytoolz_1667465931118/work
+  toolz @ file:///croot/toolz_1667464077321/work
+dask-cuda==24.4.0
+  click==8.1.7
+  numba==0.60.0
+    llvmlite==0.43.0
+    numpy==1.26.4
+  numpy==1.26.4
+  pandas==2.2.1
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    tzdata==2024.1
+  pynvml==11.4.1
+  rapids-dask-dependency==24.4.1
+    dask==2024.1.1
+      click==8.1.7
+      cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+      fsspec @ file:///croot/fsspec_1670336592807/work
+      importlib_metadata==8.2.0
+        zipp @ file:///croot/zipp_1672387121353/work
+      packaging==24.1
+      partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+        locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+        toolz @ file:///croot/toolz_1667464077321/work
+      PyYAML==6.0
+      toolz @ file:///croot/toolz_1667464077321/work
+    dask-expr==0.4.0
+      dask==2024.1.1
+        click==8.1.7
+        cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+        fsspec @ file:///croot/fsspec_1670336592807/work
+        importlib_metadata==8.2.0
+          zipp @ file:///croot/zipp_1672387121353/work
+        packaging==24.1
+        partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+          locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+          toolz @ file:///croot/toolz_1667464077321/work
+        PyYAML==6.0
+        toolz @ file:///croot/toolz_1667464077321/work
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+      pyarrow==14.0.2
+        numpy==1.26.4
+    distributed==2024.1.1
+      click==8.1.7
+      cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+      dask==2024.1.1
+        click==8.1.7
+        cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+        fsspec @ file:///croot/fsspec_1670336592807/work
+        importlib_metadata==8.2.0
+          zipp @ file:///croot/zipp_1672387121353/work
+        packaging==24.1
+        partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+          locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+          toolz @ file:///croot/toolz_1667464077321/work
+        PyYAML==6.0
+        toolz @ file:///croot/toolz_1667464077321/work
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+      msgpack @ file:///opt/conda/conda-bld/msgpack-python_1652362659880/work
+      packaging==24.1
+      psutil==6.0.0
+      PyYAML==6.0
+      sortedcontainers @ file:///tmp/build/80754af9/sortedcontainers_1623949099177/work
+      tblib @ file:///Users/ktietz/demo/mc3/conda-bld/tblib_1629402031467/work
+      toolz @ file:///croot/toolz_1667464077321/work
+      tornado==6.4.1
+      urllib3==1.26.19
+      zict==3.0.0
+  zict==3.0.0
+dask-cudf-cu12==24.4.1
+  cudf-cu12==24.4.1
+    cachetools==5.4.0
+    cuda-python==12.6.0
+    cupy-cuda12x==13.2.0
+      fastrlock==0.8.2
+      numpy==1.26.4
+    fsspec @ file:///croot/fsspec_1670336592807/work
+    numba==0.60.0
+      llvmlite==0.43.0
+      numpy==1.26.4
+    numpy==1.26.4
+    nvtx==0.2.10
+    packaging==24.1
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    protobuf==4.25.4
+    pyarrow==14.0.2
+      numpy==1.26.4
+    pynvjitlink-cu12==0.2.3
+    rich==13.7.1
+      markdown-it-py==3.0.0
+        mdurl==0.1.2
+      Pygments==2.18.0
+    rmm-cu12==24.4.0
+      cuda-python==12.6.0
+      numba==0.60.0
+        llvmlite==0.43.0
+        numpy==1.26.4
+      numpy==1.26.4
+    typing_extensions==4.12.2
+  cupy-cuda12x==13.2.0
+    fastrlock==0.8.2
+    numpy==1.26.4
+  fsspec @ file:///croot/fsspec_1670336592807/work
+  numpy==1.26.4
+  pandas==2.2.1
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    tzdata==2024.1
+  rapids-dask-dependency==24.4.1
+    dask==2024.1.1
+      click==8.1.7
+      cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+      fsspec @ file:///croot/fsspec_1670336592807/work
+      importlib_metadata==8.2.0
+        zipp @ file:///croot/zipp_1672387121353/work
+      packaging==24.1
+      partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+        locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+        toolz @ file:///croot/toolz_1667464077321/work
+      PyYAML==6.0
+      toolz @ file:///croot/toolz_1667464077321/work
+    dask-expr==0.4.0
+      dask==2024.1.1
+        click==8.1.7
+        cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+        fsspec @ file:///croot/fsspec_1670336592807/work
+        importlib_metadata==8.2.0
+          zipp @ file:///croot/zipp_1672387121353/work
+        packaging==24.1
+        partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+          locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+          toolz @ file:///croot/toolz_1667464077321/work
+        PyYAML==6.0
+        toolz @ file:///croot/toolz_1667464077321/work
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+      pyarrow==14.0.2
+        numpy==1.26.4
+    distributed==2024.1.1
+      click==8.1.7
+      cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+      dask==2024.1.1
+        click==8.1.7
+        cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+        fsspec @ file:///croot/fsspec_1670336592807/work
+        importlib_metadata==8.2.0
+          zipp @ file:///croot/zipp_1672387121353/work
+        packaging==24.1
+        partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+          locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+          toolz @ file:///croot/toolz_1667464077321/work
+        PyYAML==6.0
+        toolz @ file:///croot/toolz_1667464077321/work
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+      msgpack @ file:///opt/conda/conda-bld/msgpack-python_1652362659880/work
+      packaging==24.1
+      psutil==6.0.0
+      PyYAML==6.0
+      sortedcontainers @ file:///tmp/build/80754af9/sortedcontainers_1623949099177/work
+      tblib @ file:///Users/ktietz/demo/mc3/conda-bld/tblib_1629402031467/work
+      toolz @ file:///croot/toolz_1667464077321/work
+      tornado==6.4.1
+      urllib3==1.26.19
+      zict==3.0.0
+datashader @ file:///croot/datashader_1676022884151/work
+  colorcet @ file:///croot/colorcet_1668084511401/work
+    pyct @ file:///croot/pyct_1675441480074/work
+      param @ file:///croot/param_1671697421807/work
+  dask==2024.1.1
+    click==8.1.7
+    cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+    fsspec @ file:///croot/fsspec_1670336592807/work
+    importlib_metadata==8.2.0
+      zipp @ file:///croot/zipp_1672387121353/work
+    packaging==24.1
+    partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+      locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+      toolz @ file:///croot/toolz_1667464077321/work
+    PyYAML==6.0
+    toolz @ file:///croot/toolz_1667464077321/work
+  datashape==0.5.4
+    multipledispatch @ file:///home/builder/ci_310/multipledispatch_1640791758119/work
+      six==1.16.0
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+  numba==0.60.0
+    llvmlite==0.43.0
+    numpy==1.26.4
+  numpy==1.26.4
+  pandas==2.2.1
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    tzdata==2024.1
+  param @ file:///croot/param_1671697421807/work
+  Pillow==9.4.0
+  pyct @ file:///croot/pyct_1675441480074/work
+    param @ file:///croot/param_1671697421807/work
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+  scipy==1.11.4
+    numpy==1.26.4
+  toolz @ file:///croot/toolz_1667464077321/work
+  xarray @ file:///croot/xarray_1668776594578/work
+    numpy==1.26.4
+    packaging==24.1
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+flake8 @ file:///croot/flake8_1674581792275/work
+  mccabe @ file:///opt/conda/conda-bld/mccabe_1644221741721/work
+  pycodestyle @ file:///croot/pycodestyle_1674267221883/work
+  pyflakes @ file:///croot/pyflakes_1674165128613/work
+flit_core @ file:///opt/conda/conda-bld/flit-core_1644941570762/work/source/flit_core
+fqdn==1.5.1
+gensim @ file:///croot/gensim_1674852436045/work
+  FuzzyTM==2.0.9
+    numpy==1.26.4
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    pyFUME==0.3.1
+      fst-pso==1.8.1
+        miniful==0.0.6
+          numpy==1.26.4
+          scipy==1.11.4
+            numpy==1.26.4
+        numpy==1.26.4
+      numpy==1.26.4
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+      scipy==1.11.4
+        numpy==1.26.4
+      simpful==2.12.0
+        numpy==1.26.4
+        scipy==1.11.4
+          numpy==1.26.4
+      typing_extensions==4.12.2
+    scipy==1.11.4
+      numpy==1.26.4
+  numpy==1.26.4
+  scipy==1.11.4
+    numpy==1.26.4
+  smart-open @ file:///opt/conda/conda-bld/smart_open_1651563547610/work
+gmpy2 @ file:///tmp/build/80754af9/gmpy2_1645455533097/work
+google-auth-oauthlib==1.0.0
+  google-auth==2.33.0
+    cachetools==5.4.0
+    pyasn1-modules==0.2.8
+      pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+    rsa==4.9
+      pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+  requests-oauthlib==2.0.0
+    oauthlib==3.2.2
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+graphviz==0.20.3
+HeapDict @ file:///Users/ktietz/demo/mc3/conda-bld/heapdict_1630598515714/work
+httpx==0.27.0
+  anyio==3.7.1
+    exceptiongroup==1.2.2
+    idna==3.8
+    sniffio==1.3.1
+  certifi==2024.7.4
+  httpcore==1.0.5
+    certifi==2024.7.4
+    h11==0.14.0
+  idna==3.8
+  sniffio==1.3.1
+hvplot @ file:///croot/hvplot_1670508910345/work
+  bokeh @ file:///tmp/abs_34854e1f-d7d3-4f22-85d9-1075588e4ecdga64o0qg/croots/recipe/bokeh_1658136654619/work
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    numpy==1.26.4
+    packaging==24.1
+    Pillow==9.4.0
+    PyYAML==6.0
+    tornado==6.4.1
+    typing_extensions==4.12.2
+  colorcet @ file:///croot/colorcet_1668084511401/work
+    pyct @ file:///croot/pyct_1675441480074/work
+      param @ file:///croot/param_1671697421807/work
+  holoviews @ file:///croot/holoviews_1676372888382/work
+    colorcet @ file:///croot/colorcet_1668084511401/work
+      pyct @ file:///croot/pyct_1675441480074/work
+        param @ file:///croot/param_1671697421807/work
+    numpy==1.26.4
+    packaging==24.1
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    panel @ file:///croot/panel_1676379587510/work
+      bleach==6.1.0
+        six==1.16.0
+        webencodings==0.5.1
+      bokeh @ file:///tmp/abs_34854e1f-d7d3-4f22-85d9-1075588e4ecdga64o0qg/croots/recipe/bokeh_1658136654619/work
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        numpy==1.26.4
+        packaging==24.1
+        Pillow==9.4.0
+        PyYAML==6.0
+        tornado==6.4.1
+        typing_extensions==4.12.2
+      Markdown @ file:///croot/markdown_1671541909495/work
+      param @ file:///croot/param_1671697421807/work
+      pyct @ file:///croot/pyct_1675441480074/work
+        param @ file:///croot/param_1671697421807/work
+      pyviz-comms @ file:///tmp/build/80754af9/pyviz_comms_1623747165329/work
+        param @ file:///croot/param_1671697421807/work
+      requests==2.28.1
+        certifi==2024.7.4
+        charset-normalizer==2.1.1
+        idna==3.8
+        urllib3==1.26.19
+      setuptools==73.0.1
+      tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+      typing_extensions==4.12.2
+    param @ file:///croot/param_1671697421807/work
+    pyviz-comms @ file:///tmp/build/80754af9/pyviz_comms_1623747165329/work
+      param @ file:///croot/param_1671697421807/work
+  numpy==1.26.4
+  packaging==24.1
+  pandas==2.2.1
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    tzdata==2024.1
+  panel @ file:///croot/panel_1676379587510/work
+    bleach==6.1.0
+      six==1.16.0
+      webencodings==0.5.1
+    bokeh @ file:///tmp/abs_34854e1f-d7d3-4f22-85d9-1075588e4ecdga64o0qg/croots/recipe/bokeh_1658136654619/work
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      numpy==1.26.4
+      packaging==24.1
+      Pillow==9.4.0
+      PyYAML==6.0
+      tornado==6.4.1
+      typing_extensions==4.12.2
+    Markdown @ file:///croot/markdown_1671541909495/work
+    param @ file:///croot/param_1671697421807/work
+    pyct @ file:///croot/pyct_1675441480074/work
+      param @ file:///croot/param_1671697421807/work
+    pyviz-comms @ file:///tmp/build/80754af9/pyviz_comms_1623747165329/work
+      param @ file:///croot/param_1671697421807/work
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    setuptools==73.0.1
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+    typing_extensions==4.12.2
+imagecodecs @ file:///croot/imagecodecs_1677576717595/work
+  numpy==1.26.4
+imbalanced-learn @ file:///croot/imbalanced-learn_1677191565042/work
+  joblib==1.4.2
+  numpy==1.26.4
+  scikit-learn==1.5.1
+    joblib==1.4.2
+    numpy==1.26.4
+    scipy==1.11.4
+      numpy==1.26.4
+    threadpoolctl==3.5.0
+  scipy==1.11.4
+    numpy==1.26.4
+  threadpoolctl==3.5.0
+intake @ file:///croot/intake_1676619859896/work
+  appdirs==1.4.4
+  dask==2024.1.1
+    click==8.1.7
+    cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+    fsspec @ file:///croot/fsspec_1670336592807/work
+    importlib_metadata==8.2.0
+      zipp @ file:///croot/zipp_1672387121353/work
+    packaging==24.1
+    partd @ file:///opt/conda/conda-bld/partd_1647245470509/work
+      locket @ file:///opt/conda/conda-bld/locket_1652903118915/work
+      toolz @ file:///croot/toolz_1667464077321/work
+    PyYAML==6.0
+    toolz @ file:///croot/toolz_1667464077321/work
+  entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+  fsspec @ file:///croot/fsspec_1670336592807/work
+  Jinja2==3.1.4
+    MarkupSafe==2.1.5
+  msgpack @ file:///opt/conda/conda-bld/msgpack-python_1652362659880/work
+  PyYAML==6.0
+ipyparallel==8.8.0
+  decorator==5.1.1
+  entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+  ipykernel==6.29.5
+    comm==0.2.2
+      traitlets==5.14.3
+    debugpy==1.8.5
+    ipython==8.21.0
+      decorator==5.1.1
+      exceptiongroup==1.2.2
+      jedi==0.18.1
+        parso==0.8.4
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      pexpect==4.9.0
+        ptyprocess==0.7.0
+      prompt_toolkit==3.0.47
+        wcwidth==0.2.13
+      Pygments==2.18.0
+      stack-data==0.6.3
+        asttokens==2.4.1
+          six==1.16.0
+        executing==2.0.1
+        pure_eval==0.2.3
+      traitlets==5.14.3
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    matplotlib-inline==0.1.7
+      traitlets==5.14.3
+    nest-asyncio==1.6.0
+    packaging==24.1
+    psutil==6.0.0
+    pyzmq==26.2.0
+    tornado==6.4.1
+    traitlets==5.14.3
+  ipython==8.21.0
+    decorator==5.1.1
+    exceptiongroup==1.2.2
+    jedi==0.18.1
+      parso==0.8.4
+    matplotlib-inline==0.1.7
+      traitlets==5.14.3
+    pexpect==4.9.0
+      ptyprocess==0.7.0
+    prompt_toolkit==3.0.47
+      wcwidth==0.2.13
+    Pygments==2.18.0
+    stack-data==0.6.3
+      asttokens==2.4.1
+        six==1.16.0
+      executing==2.0.1
+      pure_eval==0.2.3
+    traitlets==5.14.3
+  jupyter-client==7.3.4
+    entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    nest-asyncio==1.6.0
+    python-dateutil==2.8.2
+      six==1.16.0
+    pyzmq==26.2.0
+    tornado==6.4.1
+    traitlets==5.14.3
+  psutil==6.0.0
+  python-dateutil==2.8.2
+    six==1.16.0
+  pyzmq==26.2.0
+  tornado==6.4.1
+  tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+  traitlets==5.14.3
+isoduration==20.11.0
+  arrow==1.3.0
+    python-dateutil==2.8.2
+      six==1.16.0
+    types-python-dateutil==2.9.0.20240821
+jax==0.4.30
+  jaxlib==0.4.30
+    ml-dtypes==0.4.0
+      numpy==1.26.4
+      numpy==1.26.4
+    numpy==1.26.4
+    scipy==1.11.4
+      numpy==1.26.4
+  ml-dtypes==0.4.0
+    numpy==1.26.4
+    numpy==1.26.4
+  numpy==1.26.4
+  opt-einsum==3.3.0
+    numpy==1.26.4
+  scipy==1.11.4
+    numpy==1.26.4
+jsonpointer==3.0.0
+jupyter @ file:///tmp/abs_33h4eoipez/croots/recipe/jupyter_1659349046347/work
+  ipykernel==6.29.5
+    comm==0.2.2
+      traitlets==5.14.3
+    debugpy==1.8.5
+    ipython==8.21.0
+      decorator==5.1.1
+      exceptiongroup==1.2.2
+      jedi==0.18.1
+        parso==0.8.4
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      pexpect==4.9.0
+        ptyprocess==0.7.0
+      prompt_toolkit==3.0.47
+        wcwidth==0.2.13
+      Pygments==2.18.0
+      stack-data==0.6.3
+        asttokens==2.4.1
+          six==1.16.0
+        executing==2.0.1
+        pure_eval==0.2.3
+      traitlets==5.14.3
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    matplotlib-inline==0.1.7
+      traitlets==5.14.3
+    nest-asyncio==1.6.0
+    packaging==24.1
+    psutil==6.0.0
+    pyzmq==26.2.0
+    tornado==6.4.1
+    traitlets==5.14.3
+  ipywidgets @ file:///tmp/build/80754af9/ipywidgets_1634143127070/work
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython==8.21.0
+      decorator==5.1.1
+      exceptiongroup==1.2.2
+      jedi==0.18.1
+        parso==0.8.4
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      pexpect==4.9.0
+        ptyprocess==0.7.0
+      prompt_toolkit==3.0.47
+        wcwidth==0.2.13
+      Pygments==2.18.0
+      stack-data==0.6.3
+        asttokens==2.4.1
+          six==1.16.0
+        executing==2.0.1
+        pure_eval==0.2.3
+      traitlets==5.14.3
+    ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+    jupyterlab-widgets @ file:///tmp/build/80754af9/jupyterlab_widgets_1609884341231/work
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    traitlets==5.14.3
+    widgetsnbextension @ file:///tmp/build/80754af9/widgetsnbextension_1645009354667/work
+      notebook==6.5.4
+        argon2-cffi==23.1.0
+          argon2-cffi-bindings==21.2.0
+            cffi==1.17.0
+              pycparser==2.22
+        ipykernel==6.29.5
+          comm==0.2.2
+            traitlets==5.14.3
+          debugpy==1.8.5
+          ipython==8.21.0
+            decorator==5.1.1
+            exceptiongroup==1.2.2
+            jedi==0.18.1
+              parso==0.8.4
+            matplotlib-inline==0.1.7
+              traitlets==5.14.3
+            pexpect==4.9.0
+              ptyprocess==0.7.0
+            prompt_toolkit==3.0.47
+              wcwidth==0.2.13
+            Pygments==2.18.0
+            stack-data==0.6.3
+              asttokens==2.4.1
+                six==1.16.0
+              executing==2.0.1
+              pure_eval==0.2.3
+            traitlets==5.14.3
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          matplotlib-inline==0.1.7
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          packaging==24.1
+          psutil==6.0.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbclassic @ file:///croot/nbclassic_1676902904845/work
+          argon2-cffi==23.1.0
+            argon2-cffi-bindings==21.2.0
+              cffi==1.17.0
+                pycparser==2.22
+          ipykernel==6.29.5
+            comm==0.2.2
+              traitlets==5.14.3
+            debugpy==1.8.5
+            ipython==8.21.0
+              decorator==5.1.1
+              exceptiongroup==1.2.2
+              jedi==0.18.1
+                parso==0.8.4
+              matplotlib-inline==0.1.7
+                traitlets==5.14.3
+              pexpect==4.9.0
+                ptyprocess==0.7.0
+              prompt_toolkit==3.0.47
+                wcwidth==0.2.13
+              Pygments==2.18.0
+              stack-data==0.6.3
+                asttokens==2.4.1
+                  six==1.16.0
+                executing==2.0.1
+                pure_eval==0.2.3
+              traitlets==5.14.3
+            jupyter-client==7.3.4
+              entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nest-asyncio==1.6.0
+              python-dateutil==2.8.2
+                six==1.16.0
+              pyzmq==26.2.0
+              tornado==6.4.1
+              traitlets==5.14.3
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            matplotlib-inline==0.1.7
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            packaging==24.1
+            psutil==6.0.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+          Jinja2==3.1.4
+            MarkupSafe==2.1.5
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+            anyio==3.7.1
+              exceptiongroup==1.2.2
+              idna==3.8
+              sniffio==1.3.1
+            argon2-cffi==23.1.0
+              argon2-cffi-bindings==21.2.0
+                cffi==1.17.0
+                  pycparser==2.22
+            Jinja2==3.1.4
+              MarkupSafe==2.1.5
+            jupyter-client==7.3.4
+              entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nest-asyncio==1.6.0
+              python-dateutil==2.8.2
+                six==1.16.0
+              pyzmq==26.2.0
+              tornado==6.4.1
+              traitlets==5.14.3
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nbconvert==7.4.0
+              beautifulsoup4==4.12.3
+                soupsieve==2.6
+              bleach==6.1.0
+                six==1.16.0
+                webencodings==0.5.1
+              defusedxml==0.7.1
+              Jinja2==3.1.4
+                MarkupSafe==2.1.5
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              jupyterlab_pygments==0.3.0
+              MarkupSafe==2.1.5
+              mistune==2.0.5
+              nbclient==0.10.0
+                jupyter-client==7.3.4
+                  entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+                  jupyter_core==5.7.2
+                    platformdirs==4.2.2
+                    traitlets==5.14.3
+                  nest-asyncio==1.6.0
+                  python-dateutil==2.8.2
+                    six==1.16.0
+                  pyzmq==26.2.0
+                  tornado==6.4.1
+                  traitlets==5.14.3
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                nbformat==5.4.0
+                  fastjsonschema==2.20.0
+                  jsonschema==4.23.0
+                    attrs==24.2.0
+                    jsonschema-specifications==2023.12.1
+                      referencing==0.35.1
+                        attrs==24.2.0
+                        rpds-py==0.20.0
+                    referencing==0.35.1
+                      attrs==24.2.0
+                      rpds-py==0.20.0
+                    rpds-py==0.20.0
+                  jupyter_core==5.7.2
+                    platformdirs==4.2.2
+                    traitlets==5.14.3
+                  traitlets==5.14.3
+                traitlets==5.14.3
+              nbformat==5.4.0
+                fastjsonschema==2.20.0
+                jsonschema==4.23.0
+                  attrs==24.2.0
+                  jsonschema-specifications==2023.12.1
+                    referencing==0.35.1
+                      attrs==24.2.0
+                      rpds-py==0.20.0
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                  rpds-py==0.20.0
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                traitlets==5.14.3
+              packaging==24.1
+              pandocfilters==1.5.1
+              Pygments==2.18.0
+              tinycss2==1.3.0
+                webencodings==0.5.1
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            packaging==24.1
+            prometheus_client==0.20.0
+            pyzmq==26.2.0
+            Send2Trash==1.8.3
+            terminado==0.18.1
+              ptyprocess==0.7.0
+              tornado==6.4.1
+            tornado==6.4.1
+            traitlets==5.14.3
+            websocket-client==1.8.0
+          nbconvert==7.4.0
+            beautifulsoup4==4.12.3
+              soupsieve==2.6
+            bleach==6.1.0
+              six==1.16.0
+              webencodings==0.5.1
+            defusedxml==0.7.1
+            Jinja2==3.1.4
+              MarkupSafe==2.1.5
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            jupyterlab_pygments==0.3.0
+            MarkupSafe==2.1.5
+            mistune==2.0.5
+            nbclient==0.10.0
+              jupyter-client==7.3.4
+                entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                nest-asyncio==1.6.0
+                python-dateutil==2.8.2
+                  six==1.16.0
+                pyzmq==26.2.0
+                tornado==6.4.1
+                traitlets==5.14.3
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nbformat==5.4.0
+                fastjsonschema==2.20.0
+                jsonschema==4.23.0
+                  attrs==24.2.0
+                  jsonschema-specifications==2023.12.1
+                    referencing==0.35.1
+                      attrs==24.2.0
+                      rpds-py==0.20.0
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                  rpds-py==0.20.0
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                traitlets==5.14.3
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            packaging==24.1
+            pandocfilters==1.5.1
+            Pygments==2.18.0
+            tinycss2==1.3.0
+              webencodings==0.5.1
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          notebook_shim @ file:///croot/notebook-shim_1668160579331/work
+            jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+              anyio==3.7.1
+                exceptiongroup==1.2.2
+                idna==3.8
+                sniffio==1.3.1
+              argon2-cffi==23.1.0
+                argon2-cffi-bindings==21.2.0
+                  cffi==1.17.0
+                    pycparser==2.22
+              Jinja2==3.1.4
+                MarkupSafe==2.1.5
+              jupyter-client==7.3.4
+                entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                nest-asyncio==1.6.0
+                python-dateutil==2.8.2
+                  six==1.16.0
+                pyzmq==26.2.0
+                tornado==6.4.1
+                traitlets==5.14.3
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nbconvert==7.4.0
+                beautifulsoup4==4.12.3
+                  soupsieve==2.6
+                bleach==6.1.0
+                  six==1.16.0
+                  webencodings==0.5.1
+                defusedxml==0.7.1
+                Jinja2==3.1.4
+                  MarkupSafe==2.1.5
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                jupyterlab_pygments==0.3.0
+                MarkupSafe==2.1.5
+                mistune==2.0.5
+                nbclient==0.10.0
+                  jupyter-client==7.3.4
+                    entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+                    jupyter_core==5.7.2
+                      platformdirs==4.2.2
+                      traitlets==5.14.3
+                    nest-asyncio==1.6.0
+                    python-dateutil==2.8.2
+                      six==1.16.0
+                    pyzmq==26.2.0
+                    tornado==6.4.1
+                    traitlets==5.14.3
+                  jupyter_core==5.7.2
+                    platformdirs==4.2.2
+                    traitlets==5.14.3
+                  nbformat==5.4.0
+                    fastjsonschema==2.20.0
+                    jsonschema==4.23.0
+                      attrs==24.2.0
+                      jsonschema-specifications==2023.12.1
+                        referencing==0.35.1
+                          attrs==24.2.0
+                          rpds-py==0.20.0
+                      referencing==0.35.1
+                        attrs==24.2.0
+                        rpds-py==0.20.0
+                      rpds-py==0.20.0
+                    jupyter_core==5.7.2
+                      platformdirs==4.2.2
+                      traitlets==5.14.3
+                    traitlets==5.14.3
+                  traitlets==5.14.3
+                nbformat==5.4.0
+                  fastjsonschema==2.20.0
+                  jsonschema==4.23.0
+                    attrs==24.2.0
+                    jsonschema-specifications==2023.12.1
+                      referencing==0.35.1
+                        attrs==24.2.0
+                        rpds-py==0.20.0
+                    referencing==0.35.1
+                      attrs==24.2.0
+                      rpds-py==0.20.0
+                    rpds-py==0.20.0
+                  jupyter_core==5.7.2
+                    platformdirs==4.2.2
+                    traitlets==5.14.3
+                  traitlets==5.14.3
+                packaging==24.1
+                pandocfilters==1.5.1
+                Pygments==2.18.0
+                tinycss2==1.3.0
+                  webencodings==0.5.1
+                traitlets==5.14.3
+              nbformat==5.4.0
+                fastjsonschema==2.20.0
+                jsonschema==4.23.0
+                  attrs==24.2.0
+                  jsonschema-specifications==2023.12.1
+                    referencing==0.35.1
+                      attrs==24.2.0
+                      rpds-py==0.20.0
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                  rpds-py==0.20.0
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                traitlets==5.14.3
+              packaging==24.1
+              prometheus_client==0.20.0
+              pyzmq==26.2.0
+              Send2Trash==1.8.3
+              terminado==0.18.1
+                ptyprocess==0.7.0
+                tornado==6.4.1
+              tornado==6.4.1
+              traitlets==5.14.3
+              websocket-client==1.8.0
+          prometheus_client==0.20.0
+          pyzmq==26.2.0
+          Send2Trash==1.8.3
+          terminado==0.18.1
+            ptyprocess==0.7.0
+            tornado==6.4.1
+          tornado==6.4.1
+          traitlets==5.14.3
+        nbconvert==7.4.0
+          beautifulsoup4==4.12.3
+            soupsieve==2.6
+          bleach==6.1.0
+            six==1.16.0
+            webencodings==0.5.1
+          defusedxml==0.7.1
+          Jinja2==3.1.4
+            MarkupSafe==2.1.5
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          jupyterlab_pygments==0.3.0
+          MarkupSafe==2.1.5
+          mistune==2.0.5
+          nbclient==0.10.0
+            jupyter-client==7.3.4
+              entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nest-asyncio==1.6.0
+              python-dateutil==2.8.2
+                six==1.16.0
+              pyzmq==26.2.0
+              tornado==6.4.1
+              traitlets==5.14.3
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          packaging==24.1
+          pandocfilters==1.5.1
+          Pygments==2.18.0
+          tinycss2==1.3.0
+            webencodings==0.5.1
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        prometheus_client==0.20.0
+        pyzmq==26.2.0
+        Send2Trash==1.8.3
+        terminado==0.18.1
+          ptyprocess==0.7.0
+          tornado==6.4.1
+        tornado==6.4.1
+        traitlets==5.14.3
+  jupyter-console @ file:///croot/jupyter_console_1677674649642/work
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython==8.21.0
+      decorator==5.1.1
+      exceptiongroup==1.2.2
+      jedi==0.18.1
+        parso==0.8.4
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      pexpect==4.9.0
+        ptyprocess==0.7.0
+      prompt_toolkit==3.0.47
+        wcwidth==0.2.13
+      Pygments==2.18.0
+      stack-data==0.6.3
+        asttokens==2.4.1
+          six==1.16.0
+        executing==2.0.1
+        pure_eval==0.2.3
+      traitlets==5.14.3
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    prompt_toolkit==3.0.47
+      wcwidth==0.2.13
+    Pygments==2.18.0
+    pyzmq==26.2.0
+    traitlets==5.14.3
+  nbconvert==7.4.0
+    beautifulsoup4==4.12.3
+      soupsieve==2.6
+    bleach==6.1.0
+      six==1.16.0
+      webencodings==0.5.1
+    defusedxml==0.7.1
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    jupyterlab_pygments==0.3.0
+    MarkupSafe==2.1.5
+    mistune==2.0.5
+    nbclient==0.10.0
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      traitlets==5.14.3
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    packaging==24.1
+    pandocfilters==1.5.1
+    Pygments==2.18.0
+    tinycss2==1.3.0
+      webencodings==0.5.1
+    traitlets==5.14.3
+  notebook==6.5.4
+    argon2-cffi==23.1.0
+      argon2-cffi-bindings==21.2.0
+        cffi==1.17.0
+          pycparser==2.22
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    nbclassic @ file:///croot/nbclassic_1676902904845/work
+      argon2-cffi==23.1.0
+        argon2-cffi-bindings==21.2.0
+          cffi==1.17.0
+            pycparser==2.22
+      ipykernel==6.29.5
+        comm==0.2.2
+          traitlets==5.14.3
+        debugpy==1.8.5
+        ipython==8.21.0
+          decorator==5.1.1
+          exceptiongroup==1.2.2
+          jedi==0.18.1
+            parso==0.8.4
+          matplotlib-inline==0.1.7
+            traitlets==5.14.3
+          pexpect==4.9.0
+            ptyprocess==0.7.0
+          prompt_toolkit==3.0.47
+            wcwidth==0.2.13
+          Pygments==2.18.0
+          stack-data==0.6.3
+            asttokens==2.4.1
+              six==1.16.0
+            executing==2.0.1
+            pure_eval==0.2.3
+          traitlets==5.14.3
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        packaging==24.1
+        psutil==6.0.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+        anyio==3.7.1
+          exceptiongroup==1.2.2
+          idna==3.8
+          sniffio==1.3.1
+        argon2-cffi==23.1.0
+          argon2-cffi-bindings==21.2.0
+            cffi==1.17.0
+              pycparser==2.22
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbconvert==7.4.0
+          beautifulsoup4==4.12.3
+            soupsieve==2.6
+          bleach==6.1.0
+            six==1.16.0
+            webencodings==0.5.1
+          defusedxml==0.7.1
+          Jinja2==3.1.4
+            MarkupSafe==2.1.5
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          jupyterlab_pygments==0.3.0
+          MarkupSafe==2.1.5
+          mistune==2.0.5
+          nbclient==0.10.0
+            jupyter-client==7.3.4
+              entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nest-asyncio==1.6.0
+              python-dateutil==2.8.2
+                six==1.16.0
+              pyzmq==26.2.0
+              tornado==6.4.1
+              traitlets==5.14.3
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          packaging==24.1
+          pandocfilters==1.5.1
+          Pygments==2.18.0
+          tinycss2==1.3.0
+            webencodings==0.5.1
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        packaging==24.1
+        prometheus_client==0.20.0
+        pyzmq==26.2.0
+        Send2Trash==1.8.3
+        terminado==0.18.1
+          ptyprocess==0.7.0
+          tornado==6.4.1
+        tornado==6.4.1
+        traitlets==5.14.3
+        websocket-client==1.8.0
+      nbconvert==7.4.0
+        beautifulsoup4==4.12.3
+          soupsieve==2.6
+        bleach==6.1.0
+          six==1.16.0
+          webencodings==0.5.1
+        defusedxml==0.7.1
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        jupyterlab_pygments==0.3.0
+        MarkupSafe==2.1.5
+        mistune==2.0.5
+        nbclient==0.10.0
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        packaging==24.1
+        pandocfilters==1.5.1
+        Pygments==2.18.0
+        tinycss2==1.3.0
+          webencodings==0.5.1
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      notebook_shim @ file:///croot/notebook-shim_1668160579331/work
+        jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+          anyio==3.7.1
+            exceptiongroup==1.2.2
+            idna==3.8
+            sniffio==1.3.1
+          argon2-cffi==23.1.0
+            argon2-cffi-bindings==21.2.0
+              cffi==1.17.0
+                pycparser==2.22
+          Jinja2==3.1.4
+            MarkupSafe==2.1.5
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nbconvert==7.4.0
+            beautifulsoup4==4.12.3
+              soupsieve==2.6
+            bleach==6.1.0
+              six==1.16.0
+              webencodings==0.5.1
+            defusedxml==0.7.1
+            Jinja2==3.1.4
+              MarkupSafe==2.1.5
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            jupyterlab_pygments==0.3.0
+            MarkupSafe==2.1.5
+            mistune==2.0.5
+            nbclient==0.10.0
+              jupyter-client==7.3.4
+                entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                nest-asyncio==1.6.0
+                python-dateutil==2.8.2
+                  six==1.16.0
+                pyzmq==26.2.0
+                tornado==6.4.1
+                traitlets==5.14.3
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nbformat==5.4.0
+                fastjsonschema==2.20.0
+                jsonschema==4.23.0
+                  attrs==24.2.0
+                  jsonschema-specifications==2023.12.1
+                    referencing==0.35.1
+                      attrs==24.2.0
+                      rpds-py==0.20.0
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                  rpds-py==0.20.0
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                traitlets==5.14.3
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            packaging==24.1
+            pandocfilters==1.5.1
+            Pygments==2.18.0
+            tinycss2==1.3.0
+              webencodings==0.5.1
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          packaging==24.1
+          prometheus_client==0.20.0
+          pyzmq==26.2.0
+          Send2Trash==1.8.3
+          terminado==0.18.1
+            ptyprocess==0.7.0
+            tornado==6.4.1
+          tornado==6.4.1
+          traitlets==5.14.3
+          websocket-client==1.8.0
+      prometheus_client==0.20.0
+      pyzmq==26.2.0
+      Send2Trash==1.8.3
+      terminado==0.18.1
+        ptyprocess==0.7.0
+        tornado==6.4.1
+      tornado==6.4.1
+      traitlets==5.14.3
+    nbconvert==7.4.0
+      beautifulsoup4==4.12.3
+        soupsieve==2.6
+      bleach==6.1.0
+        six==1.16.0
+        webencodings==0.5.1
+      defusedxml==0.7.1
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      jupyterlab_pygments==0.3.0
+      MarkupSafe==2.1.5
+      mistune==2.0.5
+      nbclient==0.10.0
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      packaging==24.1
+      pandocfilters==1.5.1
+      Pygments==2.18.0
+      tinycss2==1.3.0
+        webencodings==0.5.1
+      traitlets==5.14.3
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    nest-asyncio==1.6.0
+    prometheus_client==0.20.0
+    pyzmq==26.2.0
+    Send2Trash==1.8.3
+    terminado==0.18.1
+      ptyprocess==0.7.0
+      tornado==6.4.1
+    tornado==6.4.1
+    traitlets==5.14.3
+  qtconsole @ file:///croot/qtconsole_1674008428467/work
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    Pygments==2.18.0
+    pyzmq==26.2.0
+    QtPy @ file:///opt/conda/conda-bld/qtpy_1662014892439/work
+      packaging==24.1
+    traitlets==5.14.3
+jupyter-events==0.10.0
+  jsonschema==4.23.0
+    attrs==24.2.0
+    jsonschema-specifications==2023.12.1
+      referencing==0.35.1
+        attrs==24.2.0
+        rpds-py==0.20.0
+    referencing==0.35.1
+      attrs==24.2.0
+      rpds-py==0.20.0
+    rpds-py==0.20.0
+  python-json-logger==2.0.7
+  PyYAML==6.0
+  referencing==0.35.1
+    attrs==24.2.0
+    rpds-py==0.20.0
+  rfc3339-validator==0.1.4
+    six==1.16.0
+  rfc3986-validator==0.1.1
+  traitlets==5.14.3
+jupyter_server_terminals==0.5.3
+  terminado==0.18.1
+    ptyprocess==0.7.0
+    tornado==6.4.1
+jupyterlab @ file:///croot/jupyterlab_1675354114448/work
+  ipython==8.21.0
+    decorator==5.1.1
+    exceptiongroup==1.2.2
+    jedi==0.18.1
+      parso==0.8.4
+    matplotlib-inline==0.1.7
+      traitlets==5.14.3
+    pexpect==4.9.0
+      ptyprocess==0.7.0
+    prompt_toolkit==3.0.47
+      wcwidth==0.2.13
+    Pygments==2.18.0
+    stack-data==0.6.3
+      asttokens==2.4.1
+        six==1.16.0
+      executing==2.0.1
+      pure_eval==0.2.3
+    traitlets==5.14.3
+  Jinja2==3.1.4
+    MarkupSafe==2.1.5
+  jupyter_core==5.7.2
+    platformdirs==4.2.2
+    traitlets==5.14.3
+  jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+    anyio==3.7.1
+      exceptiongroup==1.2.2
+      idna==3.8
+      sniffio==1.3.1
+    argon2-cffi==23.1.0
+      argon2-cffi-bindings==21.2.0
+        cffi==1.17.0
+          pycparser==2.22
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    nbconvert==7.4.0
+      beautifulsoup4==4.12.3
+        soupsieve==2.6
+      bleach==6.1.0
+        six==1.16.0
+        webencodings==0.5.1
+      defusedxml==0.7.1
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      jupyterlab_pygments==0.3.0
+      MarkupSafe==2.1.5
+      mistune==2.0.5
+      nbclient==0.10.0
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      packaging==24.1
+      pandocfilters==1.5.1
+      Pygments==2.18.0
+      tinycss2==1.3.0
+        webencodings==0.5.1
+      traitlets==5.14.3
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    packaging==24.1
+    prometheus_client==0.20.0
+    pyzmq==26.2.0
+    Send2Trash==1.8.3
+    terminado==0.18.1
+      ptyprocess==0.7.0
+      tornado==6.4.1
+    tornado==6.4.1
+    traitlets==5.14.3
+    websocket-client==1.8.0
+  jupyterlab_server @ file:///croot/jupyterlab_server_1677143054853/work
+    babel==2.16.0
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    json5==0.9.25
+    jsonschema==4.23.0
+      attrs==24.2.0
+      jsonschema-specifications==2023.12.1
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+      referencing==0.35.1
+        attrs==24.2.0
+        rpds-py==0.20.0
+      rpds-py==0.20.0
+    jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+      anyio==3.7.1
+        exceptiongroup==1.2.2
+        idna==3.8
+        sniffio==1.3.1
+      argon2-cffi==23.1.0
+        argon2-cffi-bindings==21.2.0
+          cffi==1.17.0
+            pycparser==2.22
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nbconvert==7.4.0
+        beautifulsoup4==4.12.3
+          soupsieve==2.6
+        bleach==6.1.0
+          six==1.16.0
+          webencodings==0.5.1
+        defusedxml==0.7.1
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        jupyterlab_pygments==0.3.0
+        MarkupSafe==2.1.5
+        mistune==2.0.5
+        nbclient==0.10.0
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        packaging==24.1
+        pandocfilters==1.5.1
+        Pygments==2.18.0
+        tinycss2==1.3.0
+          webencodings==0.5.1
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      packaging==24.1
+      prometheus_client==0.20.0
+      pyzmq==26.2.0
+      Send2Trash==1.8.3
+      terminado==0.18.1
+        ptyprocess==0.7.0
+        tornado==6.4.1
+      tornado==6.4.1
+      traitlets==5.14.3
+      websocket-client==1.8.0
+    packaging==24.1
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+  nbclassic @ file:///croot/nbclassic_1676902904845/work
+    argon2-cffi==23.1.0
+      argon2-cffi-bindings==21.2.0
+        cffi==1.17.0
+          pycparser==2.22
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+      anyio==3.7.1
+        exceptiongroup==1.2.2
+        idna==3.8
+        sniffio==1.3.1
+      argon2-cffi==23.1.0
+        argon2-cffi-bindings==21.2.0
+          cffi==1.17.0
+            pycparser==2.22
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nbconvert==7.4.0
+        beautifulsoup4==4.12.3
+          soupsieve==2.6
+        bleach==6.1.0
+          six==1.16.0
+          webencodings==0.5.1
+        defusedxml==0.7.1
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        jupyterlab_pygments==0.3.0
+        MarkupSafe==2.1.5
+        mistune==2.0.5
+        nbclient==0.10.0
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        packaging==24.1
+        pandocfilters==1.5.1
+        Pygments==2.18.0
+        tinycss2==1.3.0
+          webencodings==0.5.1
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      packaging==24.1
+      prometheus_client==0.20.0
+      pyzmq==26.2.0
+      Send2Trash==1.8.3
+      terminado==0.18.1
+        ptyprocess==0.7.0
+        tornado==6.4.1
+      tornado==6.4.1
+      traitlets==5.14.3
+      websocket-client==1.8.0
+    nbconvert==7.4.0
+      beautifulsoup4==4.12.3
+        soupsieve==2.6
+      bleach==6.1.0
+        six==1.16.0
+        webencodings==0.5.1
+      defusedxml==0.7.1
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      jupyterlab_pygments==0.3.0
+      MarkupSafe==2.1.5
+      mistune==2.0.5
+      nbclient==0.10.0
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      packaging==24.1
+      pandocfilters==1.5.1
+      Pygments==2.18.0
+      tinycss2==1.3.0
+        webencodings==0.5.1
+      traitlets==5.14.3
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    nest-asyncio==1.6.0
+    notebook_shim @ file:///croot/notebook-shim_1668160579331/work
+      jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+        anyio==3.7.1
+          exceptiongroup==1.2.2
+          idna==3.8
+          sniffio==1.3.1
+        argon2-cffi==23.1.0
+          argon2-cffi-bindings==21.2.0
+            cffi==1.17.0
+              pycparser==2.22
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbconvert==7.4.0
+          beautifulsoup4==4.12.3
+            soupsieve==2.6
+          bleach==6.1.0
+            six==1.16.0
+            webencodings==0.5.1
+          defusedxml==0.7.1
+          Jinja2==3.1.4
+            MarkupSafe==2.1.5
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          jupyterlab_pygments==0.3.0
+          MarkupSafe==2.1.5
+          mistune==2.0.5
+          nbclient==0.10.0
+            jupyter-client==7.3.4
+              entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nest-asyncio==1.6.0
+              python-dateutil==2.8.2
+                six==1.16.0
+              pyzmq==26.2.0
+              tornado==6.4.1
+              traitlets==5.14.3
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          packaging==24.1
+          pandocfilters==1.5.1
+          Pygments==2.18.0
+          tinycss2==1.3.0
+            webencodings==0.5.1
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        packaging==24.1
+        prometheus_client==0.20.0
+        pyzmq==26.2.0
+        Send2Trash==1.8.3
+        terminado==0.18.1
+          ptyprocess==0.7.0
+          tornado==6.4.1
+        tornado==6.4.1
+        traitlets==5.14.3
+        websocket-client==1.8.0
+    prometheus_client==0.20.0
+    pyzmq==26.2.0
+    Send2Trash==1.8.3
+    terminado==0.18.1
+      ptyprocess==0.7.0
+      tornado==6.4.1
+    tornado==6.4.1
+    traitlets==5.14.3
+  notebook==6.5.4
+    argon2-cffi==23.1.0
+      argon2-cffi-bindings==21.2.0
+        cffi==1.17.0
+          pycparser==2.22
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    nbclassic @ file:///croot/nbclassic_1676902904845/work
+      argon2-cffi==23.1.0
+        argon2-cffi-bindings==21.2.0
+          cffi==1.17.0
+            pycparser==2.22
+      ipykernel==6.29.5
+        comm==0.2.2
+          traitlets==5.14.3
+        debugpy==1.8.5
+        ipython==8.21.0
+          decorator==5.1.1
+          exceptiongroup==1.2.2
+          jedi==0.18.1
+            parso==0.8.4
+          matplotlib-inline==0.1.7
+            traitlets==5.14.3
+          pexpect==4.9.0
+            ptyprocess==0.7.0
+          prompt_toolkit==3.0.47
+            wcwidth==0.2.13
+          Pygments==2.18.0
+          stack-data==0.6.3
+            asttokens==2.4.1
+              six==1.16.0
+            executing==2.0.1
+            pure_eval==0.2.3
+          traitlets==5.14.3
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        packaging==24.1
+        psutil==6.0.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+        anyio==3.7.1
+          exceptiongroup==1.2.2
+          idna==3.8
+          sniffio==1.3.1
+        argon2-cffi==23.1.0
+          argon2-cffi-bindings==21.2.0
+            cffi==1.17.0
+              pycparser==2.22
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbconvert==7.4.0
+          beautifulsoup4==4.12.3
+            soupsieve==2.6
+          bleach==6.1.0
+            six==1.16.0
+            webencodings==0.5.1
+          defusedxml==0.7.1
+          Jinja2==3.1.4
+            MarkupSafe==2.1.5
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          jupyterlab_pygments==0.3.0
+          MarkupSafe==2.1.5
+          mistune==2.0.5
+          nbclient==0.10.0
+            jupyter-client==7.3.4
+              entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nest-asyncio==1.6.0
+              python-dateutil==2.8.2
+                six==1.16.0
+              pyzmq==26.2.0
+              tornado==6.4.1
+              traitlets==5.14.3
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          packaging==24.1
+          pandocfilters==1.5.1
+          Pygments==2.18.0
+          tinycss2==1.3.0
+            webencodings==0.5.1
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        packaging==24.1
+        prometheus_client==0.20.0
+        pyzmq==26.2.0
+        Send2Trash==1.8.3
+        terminado==0.18.1
+          ptyprocess==0.7.0
+          tornado==6.4.1
+        tornado==6.4.1
+        traitlets==5.14.3
+        websocket-client==1.8.0
+      nbconvert==7.4.0
+        beautifulsoup4==4.12.3
+          soupsieve==2.6
+        bleach==6.1.0
+          six==1.16.0
+          webencodings==0.5.1
+        defusedxml==0.7.1
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        jupyterlab_pygments==0.3.0
+        MarkupSafe==2.1.5
+        mistune==2.0.5
+        nbclient==0.10.0
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        packaging==24.1
+        pandocfilters==1.5.1
+        Pygments==2.18.0
+        tinycss2==1.3.0
+          webencodings==0.5.1
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      notebook_shim @ file:///croot/notebook-shim_1668160579331/work
+        jupyter-server @ file:///croot/jupyter_server_1671707632269/work
+          anyio==3.7.1
+            exceptiongroup==1.2.2
+            idna==3.8
+            sniffio==1.3.1
+          argon2-cffi==23.1.0
+            argon2-cffi-bindings==21.2.0
+              cffi==1.17.0
+                pycparser==2.22
+          Jinja2==3.1.4
+            MarkupSafe==2.1.5
+          jupyter-client==7.3.4
+            entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            nest-asyncio==1.6.0
+            python-dateutil==2.8.2
+              six==1.16.0
+            pyzmq==26.2.0
+            tornado==6.4.1
+            traitlets==5.14.3
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nbconvert==7.4.0
+            beautifulsoup4==4.12.3
+              soupsieve==2.6
+            bleach==6.1.0
+              six==1.16.0
+              webencodings==0.5.1
+            defusedxml==0.7.1
+            Jinja2==3.1.4
+              MarkupSafe==2.1.5
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            jupyterlab_pygments==0.3.0
+            MarkupSafe==2.1.5
+            mistune==2.0.5
+            nbclient==0.10.0
+              jupyter-client==7.3.4
+                entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                nest-asyncio==1.6.0
+                python-dateutil==2.8.2
+                  six==1.16.0
+                pyzmq==26.2.0
+                tornado==6.4.1
+                traitlets==5.14.3
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              nbformat==5.4.0
+                fastjsonschema==2.20.0
+                jsonschema==4.23.0
+                  attrs==24.2.0
+                  jsonschema-specifications==2023.12.1
+                    referencing==0.35.1
+                      attrs==24.2.0
+                      rpds-py==0.20.0
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                  rpds-py==0.20.0
+                jupyter_core==5.7.2
+                  platformdirs==4.2.2
+                  traitlets==5.14.3
+                traitlets==5.14.3
+              traitlets==5.14.3
+            nbformat==5.4.0
+              fastjsonschema==2.20.0
+              jsonschema==4.23.0
+                attrs==24.2.0
+                jsonschema-specifications==2023.12.1
+                  referencing==0.35.1
+                    attrs==24.2.0
+                    rpds-py==0.20.0
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+                rpds-py==0.20.0
+              jupyter_core==5.7.2
+                platformdirs==4.2.2
+                traitlets==5.14.3
+              traitlets==5.14.3
+            packaging==24.1
+            pandocfilters==1.5.1
+            Pygments==2.18.0
+            tinycss2==1.3.0
+              webencodings==0.5.1
+            traitlets==5.14.3
+          nbformat==5.4.0
+            fastjsonschema==2.20.0
+            jsonschema==4.23.0
+              attrs==24.2.0
+              jsonschema-specifications==2023.12.1
+                referencing==0.35.1
+                  attrs==24.2.0
+                  rpds-py==0.20.0
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+              rpds-py==0.20.0
+            jupyter_core==5.7.2
+              platformdirs==4.2.2
+              traitlets==5.14.3
+            traitlets==5.14.3
+          packaging==24.1
+          prometheus_client==0.20.0
+          pyzmq==26.2.0
+          Send2Trash==1.8.3
+          terminado==0.18.1
+            ptyprocess==0.7.0
+            tornado==6.4.1
+          tornado==6.4.1
+          traitlets==5.14.3
+          websocket-client==1.8.0
+      prometheus_client==0.20.0
+      pyzmq==26.2.0
+      Send2Trash==1.8.3
+      terminado==0.18.1
+        ptyprocess==0.7.0
+        tornado==6.4.1
+      tornado==6.4.1
+      traitlets==5.14.3
+    nbconvert==7.4.0
+      beautifulsoup4==4.12.3
+        soupsieve==2.6
+      bleach==6.1.0
+        six==1.16.0
+        webencodings==0.5.1
+      defusedxml==0.7.1
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      jupyterlab_pygments==0.3.0
+      MarkupSafe==2.1.5
+      mistune==2.0.5
+      nbclient==0.10.0
+        jupyter-client==7.3.4
+          entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          nest-asyncio==1.6.0
+          python-dateutil==2.8.2
+            six==1.16.0
+          pyzmq==26.2.0
+          tornado==6.4.1
+          traitlets==5.14.3
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nbformat==5.4.0
+          fastjsonschema==2.20.0
+          jsonschema==4.23.0
+            attrs==24.2.0
+            jsonschema-specifications==2023.12.1
+              referencing==0.35.1
+                attrs==24.2.0
+                rpds-py==0.20.0
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+            rpds-py==0.20.0
+          jupyter_core==5.7.2
+            platformdirs==4.2.2
+            traitlets==5.14.3
+          traitlets==5.14.3
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      packaging==24.1
+      pandocfilters==1.5.1
+      Pygments==2.18.0
+      tinycss2==1.3.0
+        webencodings==0.5.1
+      traitlets==5.14.3
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    nest-asyncio==1.6.0
+    prometheus_client==0.20.0
+    pyzmq==26.2.0
+    Send2Trash==1.8.3
+    terminado==0.18.1
+      ptyprocess==0.7.0
+      tornado==6.4.1
+    tornado==6.4.1
+    traitlets==5.14.3
+  packaging==24.1
+  tomli==2.0.1
+  tornado==6.4.1
+lz4 @ file:///home/builder/ci_310/lz4_1640887640513/work
+mepylome==0.3.3
+  dash==2.17.1
+    dash-core-components==2.0.0
+    dash-html-components==2.0.0
+    dash-table==5.0.0
+    Flask @ file:///croot/flask_1671217343254/work
+      click==8.1.7
+      itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      Werkzeug @ file:///croot/werkzeug_1671215996852/work
+        MarkupSafe==2.1.5
+    importlib_metadata==8.2.0
+      zipp @ file:///croot/zipp_1672387121353/work
+    nest-asyncio==1.6.0
+    plotly @ file:///tmp/abs_7afcdfad-dbbb-49d2-adea-186abf525c45jbnd8p95/croots/recipe/plotly_1658160053621/work
+      tenacity @ file:///tmp/abs_9ca5cd06-f53b-4ea6-8eea-954e11157fddo5mhurpp/croots/recipe/tenacity_1657899103026/work
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    retrying==1.3.4
+      six==1.16.0
+    setuptools==73.0.1
+    typing_extensions==4.12.2
+    Werkzeug @ file:///croot/werkzeug_1671215996852/work
+      MarkupSafe==2.1.5
+  dash-bootstrap-components==1.6.0
+    dash==2.17.1
+      dash-core-components==2.0.0
+      dash-html-components==2.0.0
+      dash-table==5.0.0
+      Flask @ file:///croot/flask_1671217343254/work
+        click==8.1.7
+        itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+        Jinja2==3.1.4
+          MarkupSafe==2.1.5
+        Werkzeug @ file:///croot/werkzeug_1671215996852/work
+          MarkupSafe==2.1.5
+      importlib_metadata==8.2.0
+        zipp @ file:///croot/zipp_1672387121353/work
+      nest-asyncio==1.6.0
+      plotly @ file:///tmp/abs_7afcdfad-dbbb-49d2-adea-186abf525c45jbnd8p95/croots/recipe/plotly_1658160053621/work
+        tenacity @ file:///tmp/abs_9ca5cd06-f53b-4ea6-8eea-954e11157fddo5mhurpp/croots/recipe/tenacity_1657899103026/work
+      requests==2.28.1
+        certifi==2024.7.4
+        charset-normalizer==2.1.1
+        idna==3.8
+        urllib3==1.26.19
+      retrying==1.3.4
+        six==1.16.0
+      setuptools==73.0.1
+      typing_extensions==4.12.2
+      Werkzeug @ file:///croot/werkzeug_1671215996852/work
+        MarkupSafe==2.1.5
+  numpy==1.26.4
+  odfpy==1.4.1
+    defusedxml==0.7.1
+  pandas==2.2.1
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    tzdata==2024.1
+  psutil==6.0.0
+  pyranges==0.1.2
+    natsort==8.4.0
+    ncls==0.0.68
+      numpy==1.26.4
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    sorted-nearest==0.0.39
+      numpy==1.26.4
+    tabulate @ file:///opt/conda/conda-bld/tabulate_1657784105888/work
+  scikit-learn==1.5.1
+    joblib==1.4.2
+    numpy==1.26.4
+    scipy==1.11.4
+      numpy==1.26.4
+    threadpoolctl==3.5.0
+  tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+  umap-learn==0.5.6
+    numba==0.60.0
+      llvmlite==0.43.0
+      numpy==1.26.4
+    numpy==1.26.4
+    pynndescent==0.5.13
+      joblib==1.4.2
+      llvmlite==0.43.0
+      numba==0.60.0
+        llvmlite==0.43.0
+        numpy==1.26.4
+      scikit-learn==1.5.1
+        joblib==1.4.2
+        numpy==1.26.4
+        scipy==1.11.4
+          numpy==1.26.4
+        threadpoolctl==3.5.0
+      scipy==1.11.4
+        numpy==1.26.4
+    scikit-learn==1.5.1
+      joblib==1.4.2
+      numpy==1.26.4
+      scipy==1.11.4
+        numpy==1.26.4
+      threadpoolctl==3.5.0
+    scipy==1.11.4
+      numpy==1.26.4
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+  xlrd==2.0.1
+methylsuite==1.4.0
+  bs4==0.0.2
+    beautifulsoup4==4.12.3
+      soupsieve==2.6
+  lxml @ file:///opt/conda/conda-bld/lxml_1657545139709/work
+  matplotlib==3.9.1.post1
+    contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+      numpy==1.26.4
+    cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+    fonttools==4.25.0
+    kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+    numpy==1.26.4
+    packaging==24.1
+    Pillow==9.4.0
+    pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+    python-dateutil==2.8.2
+      six==1.16.0
+  methylcheck==0.8.5
+    joblib==1.4.2
+    matplotlib==3.9.1.post1
+      contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+        numpy==1.26.4
+      cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+      fonttools==4.25.0
+      kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+      numpy==1.26.4
+      packaging==24.1
+      Pillow==9.4.0
+      pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+      python-dateutil==2.8.2
+        six==1.16.0
+    numpy==1.26.4
+    openpyxl==3.0.10
+      et-xmlfile==1.1.0
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    scikit-learn==1.5.1
+      joblib==1.4.2
+      numpy==1.26.4
+      scipy==1.11.4
+        numpy==1.26.4
+      threadpoolctl==3.5.0
+    seaborn==0.13.2
+      matplotlib==3.9.1.post1
+        contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+          numpy==1.26.4
+        cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+        fonttools==4.25.0
+        kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+        numpy==1.26.4
+        packaging==24.1
+        Pillow==9.4.0
+        pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+        python-dateutil==2.8.2
+          six==1.16.0
+      numpy==1.26.4
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+    statsmodels @ file:///croot/statsmodels_1676643798791/work
+      numpy==1.26.4
+      packaging==24.1
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+      patsy==0.5.3
+        numpy==1.26.4
+        six==1.16.0
+      scipy==1.11.4
+        numpy==1.26.4
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+    XlsxWriter==3.2.0
+  methylize==1.1.1
+    adjustText==1.2.0
+      matplotlib==3.9.1.post1
+        contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+          numpy==1.26.4
+        cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+        fonttools==4.25.0
+        kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+        numpy==1.26.4
+        packaging==24.1
+        Pillow==9.4.0
+        pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+        python-dateutil==2.8.2
+          six==1.16.0
+      numpy==1.26.4
+      scipy==1.11.4
+        numpy==1.26.4
+    interlap==0.2.7
+    joblib==1.4.2
+    matplotlib==3.9.1.post1
+      contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+        numpy==1.26.4
+      cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+      fonttools==4.25.0
+      kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+      numpy==1.26.4
+      packaging==24.1
+      Pillow==9.4.0
+      pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+      python-dateutil==2.8.2
+        six==1.16.0
+    methylprep==1.7.1
+      bs4==0.0.2
+        beautifulsoup4==4.12.3
+          soupsieve==2.6
+      lxml @ file:///opt/conda/conda-bld/lxml_1657545139709/work
+      numpy==1.26.4
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+      pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+      requests==2.28.1
+        certifi==2024.7.4
+        charset-normalizer==2.1.1
+        idna==3.8
+        urllib3==1.26.19
+      scipy==1.11.4
+        numpy==1.26.4
+      statsmodels @ file:///croot/statsmodels_1676643798791/work
+        numpy==1.26.4
+        packaging==24.1
+        pandas==2.2.1
+          numpy==1.26.4
+          python-dateutil==2.8.2
+            six==1.16.0
+          pytz @ file:///croot/pytz_1671697431263/work
+          tzdata==2024.1
+        patsy==0.5.3
+          numpy==1.26.4
+          six==1.16.0
+        scipy==1.11.4
+          numpy==1.26.4
+      tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+    numpy==1.26.4
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    PyMySQL==1.1.1
+    scipy==1.11.4
+      numpy==1.26.4
+    seaborn==0.13.2
+      matplotlib==3.9.1.post1
+        contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+          numpy==1.26.4
+        cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+        fonttools==4.25.0
+        kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+        numpy==1.26.4
+        packaging==24.1
+        Pillow==9.4.0
+        pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+        python-dateutil==2.8.2
+          six==1.16.0
+      numpy==1.26.4
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+    statsmodels @ file:///croot/statsmodels_1676643798791/work
+      numpy==1.26.4
+      packaging==24.1
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+      patsy==0.5.3
+        numpy==1.26.4
+        six==1.16.0
+      scipy==1.11.4
+        numpy==1.26.4
+    toolshed==0.4.6
+  methylprep==1.7.1
+    bs4==0.0.2
+      beautifulsoup4==4.12.3
+        soupsieve==2.6
+    lxml @ file:///opt/conda/conda-bld/lxml_1657545139709/work
+    numpy==1.26.4
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    scipy==1.11.4
+      numpy==1.26.4
+    statsmodels @ file:///croot/statsmodels_1676643798791/work
+      numpy==1.26.4
+      packaging==24.1
+      pandas==2.2.1
+        numpy==1.26.4
+        python-dateutil==2.8.2
+          six==1.16.0
+        pytz @ file:///croot/pytz_1671697431263/work
+        tzdata==2024.1
+      patsy==0.5.3
+        numpy==1.26.4
+        six==1.16.0
+      scipy==1.11.4
+        numpy==1.26.4
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+  numpy==1.26.4
+  pandas==2.2.1
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    tzdata==2024.1
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+  scipy==1.11.4
+    numpy==1.26.4
+  seaborn==0.13.2
+    matplotlib==3.9.1.post1
+      contourpy @ file:///opt/conda/conda-bld/contourpy_1663827406301/work
+        numpy==1.26.4
+      cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+      fonttools==4.25.0
+      kiwisolver @ file:///croot/kiwisolver_1672387140495/work
+      numpy==1.26.4
+      packaging==24.1
+      Pillow==9.4.0
+      pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+      python-dateutil==2.8.2
+        six==1.16.0
+    numpy==1.26.4
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+  statsmodels @ file:///croot/statsmodels_1676643798791/work
+    numpy==1.26.4
+    packaging==24.1
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    patsy==0.5.3
+      numpy==1.26.4
+      six==1.16.0
+    scipy==1.11.4
+      numpy==1.26.4
+  tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+mkl-fft==1.3.1
+  numpy==1.26.4
+mkl-random @ file:///home/builder/ci_310/mkl_random_1641843545607/work
+  numpy==1.26.4
+mkl-service==2.4.0
+mock @ file:///tmp/build/80754af9/mock_1607622725907/work
+munkres==1.1.4
+navigator-updater==0.3.0
+nltk @ file:///opt/conda/conda-bld/nltk_1645628263994/work
+  click==8.1.7
+  joblib==1.4.2
+  regex @ file:///tmp/abs_41f5bce5-0a2e-45aa-b231-1fd2fbd57753gfpe6sjm/croots/recipe/regex_1658257178822/work
+  tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+overrides==7.7.0
+pep8==1.7.1
+pipdeptree==2.23.1
+  packaging==24.1
+  pip==24.2
+pipdot==0.2
+  Jinja2==3.1.4
+    MarkupSafe==2.1.5
+  pip==24.2
+pooch @ file:///tmp/build/80754af9/pooch_1623324770023/work
+  appdirs==1.4.4
+  packaging==24.1
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+pyaging==0.1.11
+  anndata==0.10.8
+    array_api_compat==1.8
+    exceptiongroup==1.2.2
+    h5py==3.11.0
+      numpy==1.26.4
+    natsort==8.4.0
+    numpy==1.26.4
+    packaging==24.1
+    pandas==2.2.1
+      numpy==1.26.4
+      python-dateutil==2.8.2
+        six==1.16.0
+      pytz @ file:///croot/pytz_1671697431263/work
+      tzdata==2024.1
+    scipy==1.11.4
+      numpy==1.26.4
+  numpy==1.26.4
+  pandas==2.2.1
+    numpy==1.26.4
+    python-dateutil==2.8.2
+      six==1.16.0
+    pytz @ file:///croot/pytz_1671697431263/work
+    tzdata==2024.1
+  scikit-learn==1.5.1
+    joblib==1.4.2
+    numpy==1.26.4
+    scipy==1.11.4
+      numpy==1.26.4
+    threadpoolctl==3.5.0
+  torch==2.4.0
+    filelock @ file:///croot/filelock_1672387128942/work
+    fsspec @ file:///croot/fsspec_1670336592807/work
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    networkx @ file:///opt/conda/conda-bld/networkx_1657784097507/work
+    nvidia-cublas-cu12==12.1.3.1
+    nvidia-cuda-cupti-cu12==12.1.105
+    nvidia-cuda-nvrtc-cu12==12.1.105
+    nvidia-cuda-runtime-cu12==12.1.105
+    nvidia-cudnn-cu12==9.1.0.70
+      nvidia-cublas-cu12==12.1.3.1
+    nvidia-cufft-cu12==11.0.2.54
+    nvidia-curand-cu12==10.3.2.106
+    nvidia-cusolver-cu12==11.4.5.107
+      nvidia-cublas-cu12==12.1.3.1
+      nvidia-cusparse-cu12==12.1.0.106
+        nvidia-nvjitlink-cu12==12.6.20
+      nvidia-nvjitlink-cu12==12.6.20
+    nvidia-cusparse-cu12==12.1.0.106
+      nvidia-nvjitlink-cu12==12.6.20
+    nvidia-nccl-cu12==2.20.5
+    nvidia-nvtx-cu12==12.1.105
+    sympy @ file:///croot/sympy_1668202399572/work
+      mpmath==1.2.1
+    triton==3.0.0
+      filelock @ file:///croot/filelock_1672387128942/work
+    typing_extensions==4.12.2
+pycurl==7.45.1
+pydocstyle @ file:///croot/pydocstyle_1675221668445/work
+  snowballstemmer @ file:///tmp/build/80754af9/snowballstemmer_1637937080595/work
+pydot==3.0.1
+  pyparsing @ file:///opt/conda/conda-bld/pyparsing_1661452539315/work
+pygam==0.9.1
+  numpy==1.26.4
+  progressbar2==4.4.2
+    python-utils==3.8.2
+      typing_extensions==4.12.2
+  scipy==1.11.4
+    numpy==1.26.4
+pygraphviz==1.13
+PyHamcrest @ file:///tmp/build/80754af9/pyhamcrest_1615748656804/work
+PyJWT @ file:///opt/conda/conda-bld/pyjwt_1657544592787/work
+pyodbc @ file:///tmp/abs_d365zrcsdp/croots/recipe/pyodbc_1659513794382/work
+pyrsistent @ file:///home/builder/ci_310/pyrsistent_1640807196327/work
+PySocks @ file:///home/builder/ci_310/pysocks_1640793678128/work
+pytest==7.1.2
+  attrs==24.2.0
+  iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
+  packaging==24.1
+  pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
+  py @ file:///opt/conda/conda-bld/py_1644396412707/work
+  tomli==2.0.1
+python-snappy @ file:///croot/python-snappy_1670943913523/work
+rope @ file:///croot/rope_1676675015455/work
+  pytoolconfig @ file:///croot/pytoolconfig_1676315026871/work
+    packaging==24.1
+    tomli==2.0.1
+ruamel-yaml-conda @ file:///croot/ruamel_yaml_1667489728852/work
+  ruamel.yaml.clib @ file:///croot/ruamel.yaml.clib_1666302247304/work
+scikit-image @ file:///croot/scikit-image_1669241743693/work
+  imageio @ file:///croot/imageio_1677879560821/work
+    numpy==1.26.4
+    Pillow==9.4.0
+  networkx @ file:///opt/conda/conda-bld/networkx_1657784097507/work
+  numpy==1.26.4
+  packaging==24.1
+  Pillow==9.4.0
+  PyWavelets @ file:///croot/pywavelets_1670425177960/work
+    numpy==1.26.4
+  scipy==1.11.4
+    numpy==1.26.4
+  tifffile @ file:///tmp/build/80754af9/tifffile_1627275862826/work
+    numpy==1.26.4
+scikit-learn-intelex==20230228.214242
+  daal4py==2023.0.2
+    numpy==1.26.4
+    scikit-learn==1.5.1
+      joblib==1.4.2
+      numpy==1.26.4
+      scipy==1.11.4
+        numpy==1.26.4
+      threadpoolctl==3.5.0
+  scikit-learn==1.5.1
+    joblib==1.4.2
+    numpy==1.26.4
+    scipy==1.11.4
+      numpy==1.26.4
+    threadpoolctl==3.5.0
+Scrapy @ file:///croot/scrapy_1677738182270/work
+  cryptography @ file:///croot/cryptography_1677533068310/work
+    cffi==1.17.0
+      pycparser==2.22
+  cssselect==1.1.0
+  itemadapter @ file:///tmp/build/80754af9/itemadapter_1626442940632/work
+  itemloaders @ file:///opt/conda/conda-bld/itemloaders_1646805235997/work
+    itemadapter @ file:///tmp/build/80754af9/itemadapter_1626442940632/work
+    jmespath @ file:///Users/ktietz/demo/mc3/conda-bld/jmespath_1630583964805/work
+    parsel @ file:///tmp/build/80754af9/parsel_1646739959912/work
+      cssselect==1.1.0
+      lxml @ file:///opt/conda/conda-bld/lxml_1657545139709/work
+      six==1.16.0
+      w3lib @ file:///Users/ktietz/demo/mc3/conda-bld/w3lib_1629359764703/work
+        six==1.16.0
+    w3lib @ file:///Users/ktietz/demo/mc3/conda-bld/w3lib_1629359764703/work
+      six==1.16.0
+  lxml @ file:///opt/conda/conda-bld/lxml_1657545139709/work
+  packaging==24.1
+  parsel @ file:///tmp/build/80754af9/parsel_1646739959912/work
+    cssselect==1.1.0
+    lxml @ file:///opt/conda/conda-bld/lxml_1657545139709/work
+    six==1.16.0
+    w3lib @ file:///Users/ktietz/demo/mc3/conda-bld/w3lib_1629359764703/work
+      six==1.16.0
+  Protego @ file:///tmp/build/80754af9/protego_1598657180827/work
+    six==1.16.0
+  PyDispatcher==2.0.5
+  pyOpenSSL @ file:///croot/pyopenssl_1677607685877/work
+    cryptography @ file:///croot/cryptography_1677533068310/work
+      cffi==1.17.0
+        pycparser==2.22
+  queuelib==1.5.0
+  service-identity @ file:///Users/ktietz/demo/mc3/conda-bld/service_identity_1629460757137/work
+    attrs==24.2.0
+    cryptography @ file:///croot/cryptography_1677533068310/work
+      cffi==1.17.0
+        pycparser==2.22
+    pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+    pyasn1-modules==0.2.8
+      pyasn1 @ file:///Users/ktietz/demo/mc3/conda-bld/pyasn1_1629708007385/work
+  setuptools==73.0.1
+  tldextract @ file:///opt/conda/conda-bld/tldextract_1646638314385/work
+    filelock @ file:///croot/filelock_1672387128942/work
+    idna==3.8
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    requests-file @ file:///Users/ktietz/demo/mc3/conda-bld/requests-file_1629455781986/work
+      requests==2.28.1
+        certifi==2024.7.4
+        charset-normalizer==2.1.1
+        idna==3.8
+        urllib3==1.26.19
+      six==1.16.0
+  Twisted @ file:///tmp/abs_82802zpkox/croots/recipe/twisted_1659592759417/work
+    attrs==24.2.0
+    Automat @ file:///tmp/build/80754af9/automat_1600298431173/work
+      attrs==24.2.0
+      six==1.16.0
+    constantly==15.1.0
+    hyperlink @ file:///tmp/build/80754af9/hyperlink_1610130746837/work
+      idna==3.8
+    incremental @ file:///tmp/build/80754af9/incremental_1636629750599/work
+    typing_extensions==4.12.2
+    zope.interface @ file:///home/builder/ci_310/zope.interface_1640811449297/work
+      setuptools==73.0.1
+  w3lib @ file:///Users/ktietz/demo/mc3/conda-bld/w3lib_1629359764703/work
+    six==1.16.0
+  zope.interface @ file:///home/builder/ci_310/zope.interface_1640811449297/work
+    setuptools==73.0.1
+sip @ file:///tmp/abs_44cd77b_pu/croots/recipe/sip_1659012365470/work
+  packaging==24.1
+  ply==3.11
+  setuptools==73.0.1
+  toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+spyder @ file:///croot/spyder_1677776123936/work
+  atomicwrites==1.4.0
+  chardet @ file:///home/builder/ci_310/chardet_1640804867535/work
+  cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+  cookiecutter @ file:///opt/conda/conda-bld/cookiecutter_1649151442564/work
+    binaryornot @ file:///tmp/build/80754af9/binaryornot_1617751525010/work
+      chardet @ file:///home/builder/ci_310/chardet_1640804867535/work
+    click==8.1.7
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    jinja2-time @ file:///opt/conda/conda-bld/jinja2-time_1649251842261/work
+      arrow==1.3.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        types-python-dateutil==2.9.0.20240821
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+    poyo @ file:///tmp/build/80754af9/poyo_1617751526755/work
+    python-slugify @ file:///tmp/build/80754af9/python-slugify_1620405669636/work
+      text-unidecode @ file:///Users/ktietz/demo/mc3/conda-bld/text-unidecode_1629401354553/work
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    six==1.16.0
+  diff-match-patch @ file:///Users/ktietz/demo/mc3/conda-bld/diff-match-patch_1630511840874/work
+  intervaltree @ file:///Users/ktietz/demo/mc3/conda-bld/intervaltree_1630511889664/work
+    sortedcontainers @ file:///tmp/build/80754af9/sortedcontainers_1623949099177/work
+  ipython==8.21.0
+    decorator==5.1.1
+    exceptiongroup==1.2.2
+    jedi==0.18.1
+      parso==0.8.4
+    matplotlib-inline==0.1.7
+      traitlets==5.14.3
+    pexpect==4.9.0
+      ptyprocess==0.7.0
+    prompt_toolkit==3.0.47
+      wcwidth==0.2.13
+    Pygments==2.18.0
+    stack-data==0.6.3
+      asttokens==2.4.1
+        six==1.16.0
+      executing==2.0.1
+      pure_eval==0.2.3
+    traitlets==5.14.3
+  jedi==0.18.1
+    parso==0.8.4
+  jellyfish @ file:///tmp/build/80754af9/jellyfish_1647944422765/work
+  jsonschema==4.23.0
+    attrs==24.2.0
+    jsonschema-specifications==2023.12.1
+      referencing==0.35.1
+        attrs==24.2.0
+        rpds-py==0.20.0
+    referencing==0.35.1
+      attrs==24.2.0
+      rpds-py==0.20.0
+    rpds-py==0.20.0
+  keyring @ file:///home/builder/ci_310/keyring_1640884834928/work
+    importlib_metadata==8.2.0
+      zipp @ file:///croot/zipp_1672387121353/work
+    jeepney @ file:///tmp/build/80754af9/jeepney_1627537048313/work
+    SecretStorage @ file:///home/builder/ci_310/secretstorage_1640812904213/work
+      cryptography @ file:///croot/cryptography_1677533068310/work
+        cffi==1.17.0
+          pycparser==2.22
+      jeepney @ file:///tmp/build/80754af9/jeepney_1627537048313/work
+  nbconvert==7.4.0
+    beautifulsoup4==4.12.3
+      soupsieve==2.6
+    bleach==6.1.0
+      six==1.16.0
+      webencodings==0.5.1
+    defusedxml==0.7.1
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    jupyterlab_pygments==0.3.0
+    MarkupSafe==2.1.5
+    mistune==2.0.5
+    nbclient==0.10.0
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nbformat==5.4.0
+        fastjsonschema==2.20.0
+        jsonschema==4.23.0
+          attrs==24.2.0
+          jsonschema-specifications==2023.12.1
+            referencing==0.35.1
+              attrs==24.2.0
+              rpds-py==0.20.0
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+          rpds-py==0.20.0
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        traitlets==5.14.3
+      traitlets==5.14.3
+    nbformat==5.4.0
+      fastjsonschema==2.20.0
+      jsonschema==4.23.0
+        attrs==24.2.0
+        jsonschema-specifications==2023.12.1
+          referencing==0.35.1
+            attrs==24.2.0
+            rpds-py==0.20.0
+        referencing==0.35.1
+          attrs==24.2.0
+          rpds-py==0.20.0
+        rpds-py==0.20.0
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      traitlets==5.14.3
+    packaging==24.1
+    pandocfilters==1.5.1
+    Pygments==2.18.0
+    tinycss2==1.3.0
+      webencodings==0.5.1
+    traitlets==5.14.3
+  numpydoc @ file:///croot/numpydoc_1668085905352/work
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    Sphinx @ file:///opt/conda/conda-bld/sphinx_1657784123546/work
+      alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
+      babel==2.16.0
+      docutils @ file:///opt/conda/conda-bld/docutils_1657175430858/work
+      imagesize @ file:///opt/conda/conda-bld/imagesize_1657179498843/work
+      Jinja2==3.1.4
+        MarkupSafe==2.1.5
+      packaging==24.1
+      Pygments==2.18.0
+      requests==2.28.1
+        certifi==2024.7.4
+        charset-normalizer==2.1.1
+        idna==3.8
+        urllib3==1.26.19
+      snowballstemmer @ file:///tmp/build/80754af9/snowballstemmer_1637937080595/work
+      sphinxcontrib-applehelp @ file:///home/ktietz/src/ci/sphinxcontrib-applehelp_1611920841464/work
+      sphinxcontrib-devhelp @ file:///home/ktietz/src/ci/sphinxcontrib-devhelp_1611920923094/work
+      sphinxcontrib-htmlhelp @ file:///tmp/build/80754af9/sphinxcontrib-htmlhelp_1623945626792/work
+      sphinxcontrib-jsmath @ file:///home/ktietz/src/ci/sphinxcontrib-jsmath_1611920942228/work
+      sphinxcontrib-qthelp @ file:///home/ktietz/src/ci/sphinxcontrib-qthelp_1611921055322/work
+      sphinxcontrib-serializinghtml @ file:///tmp/build/80754af9/sphinxcontrib-serializinghtml_1624451540180/work
+  parso==0.8.4
+  pexpect==4.9.0
+    ptyprocess==0.7.0
+  pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+  psutil==6.0.0
+  Pygments==2.18.0
+  pylint @ file:///croot/pylint_1676919896363/work
+    astroid @ file:///croot/astroid_1676904296642/work
+      lazy-object-proxy @ file:///home/builder/ci_310/lazy-object-proxy_1640791307593/work
+      typing_extensions==4.12.2
+      wrapt @ file:///tmp/abs_c335821b-6e43-4504-9816-b1a52d3d3e1eel6uae8l/croots/recipe/wrapt_1657814400492/work
+    dill @ file:///croot/dill_1667919592856/work
+    isort @ file:///tmp/build/80754af9/isort_1628603791788/work
+    mccabe @ file:///opt/conda/conda-bld/mccabe_1644221741721/work
+    platformdirs==4.2.2
+    tomli==2.0.1
+    tomlkit @ file:///tmp/abs_56_0lnnq5x/croots/recipe/tomlkit_1658946880479/work
+  pylint-venv @ file:///croot/pylint-venv_1673990127282/work
+  pyls-spyder==0.4.0
+    python-lsp-server @ file:///croot/python-lsp-server_1677296760843/work
+      docstring-to-markdown @ file:///croot/docstring-to-markdown_1673447639232/work
+      jedi==0.18.1
+        parso==0.8.4
+      pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
+      python-lsp-jsonrpc==1.0.0
+        ujson @ file:///opt/conda/conda-bld/ujson_1657544923770/work
+      setuptools==73.0.1
+      ujson @ file:///opt/conda/conda-bld/ujson_1657544923770/work
+  PyQt5==5.15.11
+    PyQt5-Qt5==5.15.14
+    PyQt5_sip==12.15.0
+  PyQtWebEngine==5.15.7
+    PyQt5==5.15.11
+      PyQt5-Qt5==5.15.14
+      PyQt5_sip==12.15.0
+    PyQt5_sip==12.15.0
+    PyQtWebEngine-Qt5==5.15.14
+  python-lsp-black @ file:///opt/conda/conda-bld/python-lsp-black_1661852031497/work
+    black @ file:///opt/conda/conda-bld/black_1660237809219/work
+      click==8.1.7
+      mypy-extensions==0.4.3
+      pathspec @ file:///croot/pathspec_1674681560568/work
+      platformdirs==4.2.2
+      tomli==2.0.1
+    python-lsp-server @ file:///croot/python-lsp-server_1677296760843/work
+      docstring-to-markdown @ file:///croot/docstring-to-markdown_1673447639232/work
+      jedi==0.18.1
+        parso==0.8.4
+      pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
+      python-lsp-jsonrpc==1.0.0
+        ujson @ file:///opt/conda/conda-bld/ujson_1657544923770/work
+      setuptools==73.0.1
+      ujson @ file:///opt/conda/conda-bld/ujson_1657544923770/work
+    toml @ file:///tmp/build/80754af9/toml_1616166611790/work
+  python-lsp-server @ file:///croot/python-lsp-server_1677296760843/work
+    docstring-to-markdown @ file:///croot/docstring-to-markdown_1673447639232/work
+    jedi==0.18.1
+      parso==0.8.4
+    pluggy @ file:///tmp/build/80754af9/pluggy_1648024709248/work
+    python-lsp-jsonrpc==1.0.0
+      ujson @ file:///opt/conda/conda-bld/ujson_1657544923770/work
+    setuptools==73.0.1
+    ujson @ file:///opt/conda/conda-bld/ujson_1657544923770/work
+  pyxdg @ file:///tmp/build/80754af9/pyxdg_1603822279816/work
+  pyzmq==26.2.0
+  QDarkStyle @ file:///tmp/build/80754af9/qdarkstyle_1617386714626/work
+    QtPy @ file:///opt/conda/conda-bld/qtpy_1662014892439/work
+      packaging==24.1
+  qstylizer @ file:///croot/qstylizer_1674008522553/work/dist/qstylizer-0.2.2-py2.py3-none-any.whl
+    inflection==0.5.1
+    tinycss2==1.3.0
+      webencodings==0.5.1
+  QtAwesome @ file:///croot/qtawesome_1674008680358/work
+    QtPy @ file:///opt/conda/conda-bld/qtpy_1662014892439/work
+      packaging==24.1
+  qtconsole @ file:///croot/qtconsole_1674008428467/work
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    jupyter_core==5.7.2
+      platformdirs==4.2.2
+      traitlets==5.14.3
+    Pygments==2.18.0
+    pyzmq==26.2.0
+    QtPy @ file:///opt/conda/conda-bld/qtpy_1662014892439/work
+      packaging==24.1
+    traitlets==5.14.3
+  QtPy @ file:///opt/conda/conda-bld/qtpy_1662014892439/work
+    packaging==24.1
+  Rtree @ file:///croot/rtree_1675157851263/work
+  setuptools==73.0.1
+  Sphinx @ file:///opt/conda/conda-bld/sphinx_1657784123546/work
+    alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
+    babel==2.16.0
+    docutils @ file:///opt/conda/conda-bld/docutils_1657175430858/work
+    imagesize @ file:///opt/conda/conda-bld/imagesize_1657179498843/work
+    Jinja2==3.1.4
+      MarkupSafe==2.1.5
+    packaging==24.1
+    Pygments==2.18.0
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    snowballstemmer @ file:///tmp/build/80754af9/snowballstemmer_1637937080595/work
+    sphinxcontrib-applehelp @ file:///home/ktietz/src/ci/sphinxcontrib-applehelp_1611920841464/work
+    sphinxcontrib-devhelp @ file:///home/ktietz/src/ci/sphinxcontrib-devhelp_1611920923094/work
+    sphinxcontrib-htmlhelp @ file:///tmp/build/80754af9/sphinxcontrib-htmlhelp_1623945626792/work
+    sphinxcontrib-jsmath @ file:///home/ktietz/src/ci/sphinxcontrib-jsmath_1611920942228/work
+    sphinxcontrib-qthelp @ file:///home/ktietz/src/ci/sphinxcontrib-qthelp_1611921055322/work
+    sphinxcontrib-serializinghtml @ file:///tmp/build/80754af9/sphinxcontrib-serializinghtml_1624451540180/work
+  spyder-kernels @ file:///croot/spyder-kernels_1673292235155/work
+    cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1632508026186/work
+    ipykernel==6.29.5
+      comm==0.2.2
+        traitlets==5.14.3
+      debugpy==1.8.5
+      ipython==8.21.0
+        decorator==5.1.1
+        exceptiongroup==1.2.2
+        jedi==0.18.1
+          parso==0.8.4
+        matplotlib-inline==0.1.7
+          traitlets==5.14.3
+        pexpect==4.9.0
+          ptyprocess==0.7.0
+        prompt_toolkit==3.0.47
+          wcwidth==0.2.13
+        Pygments==2.18.0
+        stack-data==0.6.3
+          asttokens==2.4.1
+            six==1.16.0
+          executing==2.0.1
+          pure_eval==0.2.3
+        traitlets==5.14.3
+      jupyter-client==7.3.4
+        entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+        jupyter_core==5.7.2
+          platformdirs==4.2.2
+          traitlets==5.14.3
+        nest-asyncio==1.6.0
+        python-dateutil==2.8.2
+          six==1.16.0
+        pyzmq==26.2.0
+        tornado==6.4.1
+        traitlets==5.14.3
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      packaging==24.1
+      psutil==6.0.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    ipython==8.21.0
+      decorator==5.1.1
+      exceptiongroup==1.2.2
+      jedi==0.18.1
+        parso==0.8.4
+      matplotlib-inline==0.1.7
+        traitlets==5.14.3
+      pexpect==4.9.0
+        ptyprocess==0.7.0
+      prompt_toolkit==3.0.47
+        wcwidth==0.2.13
+      Pygments==2.18.0
+      stack-data==0.6.3
+        asttokens==2.4.1
+          six==1.16.0
+        executing==2.0.1
+        pure_eval==0.2.3
+      traitlets==5.14.3
+    jupyter-client==7.3.4
+      entrypoints @ file:///tmp/build/80754af9/entrypoints_1649908313000/work
+      jupyter_core==5.7.2
+        platformdirs==4.2.2
+        traitlets==5.14.3
+      nest-asyncio==1.6.0
+      python-dateutil==2.8.2
+        six==1.16.0
+      pyzmq==26.2.0
+      tornado==6.4.1
+      traitlets==5.14.3
+    pyzmq==26.2.0
+    wurlitzer @ file:///home/builder/ci_310/wurlitzer_1640796026694/work
+  textdistance @ file:///tmp/build/80754af9/textdistance_1612461398012/work
+  three-merge @ file:///tmp/build/80754af9/three-merge_1607553261110/work
+    diff-match-patch @ file:///Users/ktietz/demo/mc3/conda-bld/diff-match-patch_1630511840874/work
+  watchdog @ file:///home/builder/ci_310/watchdog_1640811339391/work
+SQLAlchemy @ file:///tmp/abs_18b3238f-9c23-4182-a392-63af30a93c1er8j_yw60/croots/recipe/sqlalchemy_1657867856580/work
+  greenlet @ file:///croot/greenlet_1670513226095/work
+tables @ file:///croot/pytables_1673967643433/work
+  numexpr @ file:///croot/numexpr_1668713893690/work
+    numpy==1.26.4
+  numpy==1.26.4
+  packaging==24.1
+TBB==0.2
+tensorflow==2.17.0
+  absl-py==2.1.0
+  astunparse==1.6.3
+    six==1.16.0
+    wheel==0.38.4
+  flatbuffers==24.3.25
+  gast==0.4.0
+  google-pasta==0.2.0
+    six==1.16.0
+  grpcio==1.65.4
+  h5py==3.11.0
+    numpy==1.26.4
+  keras==3.5.0
+    absl-py==2.1.0
+    h5py==3.11.0
+      numpy==1.26.4
+    ml-dtypes==0.4.0
+      numpy==1.26.4
+      numpy==1.26.4
+    namex==0.0.8
+    numpy==1.26.4
+    optree==0.12.1
+      typing_extensions==4.12.2
+    packaging==24.1
+    rich==13.7.1
+      markdown-it-py==3.0.0
+        mdurl==0.1.2
+      Pygments==2.18.0
+  libclang==18.1.1
+  ml-dtypes==0.4.0
+    numpy==1.26.4
+    numpy==1.26.4
+  numpy==1.26.4
+  opt-einsum==3.3.0
+    numpy==1.26.4
+  packaging==24.1
+  protobuf==4.25.4
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+  setuptools==73.0.1
+  six==1.16.0
+  tensorboard==2.17.0
+    absl-py==2.1.0
+    grpcio==1.65.4
+    Markdown @ file:///croot/markdown_1671541909495/work
+    numpy==1.26.4
+    protobuf==4.25.4
+    setuptools==73.0.1
+    six==1.16.0
+    tensorboard-data-server==0.7.2
+    Werkzeug @ file:///croot/werkzeug_1671215996852/work
+      MarkupSafe==2.1.5
+  tensorflow-io-gcs-filesystem==0.37.1
+  termcolor==2.4.0
+  typing_extensions==4.12.2
+  wrapt @ file:///tmp/abs_c335821b-6e43-4504-9816-b1a52d3d3e1eel6uae8l/croots/recipe/wrapt_1657814400492/work
+tensorflow-estimator==2.12.0
+transformers @ file:///croot/transformers_1667919440064/work
+  filelock @ file:///croot/filelock_1672387128942/work
+  huggingface-hub @ file:///croot/huggingface_hub_1667490244076/work
+    filelock @ file:///croot/filelock_1672387128942/work
+    packaging==24.1
+    PyYAML==6.0
+    requests==2.28.1
+      certifi==2024.7.4
+      charset-normalizer==2.1.1
+      idna==3.8
+      urllib3==1.26.19
+    tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+    typing_extensions==4.12.2
+  numpy==1.26.4
+  packaging==24.1
+  PyYAML==6.0
+  regex @ file:///tmp/abs_41f5bce5-0a2e-45aa-b231-1fd2fbd57753gfpe6sjm/croots/recipe/regex_1658257178822/work
+  requests==2.28.1
+    certifi==2024.7.4
+    charset-normalizer==2.1.1
+    idna==3.8
+    urllib3==1.26.19
+  tokenizers @ file:///opt/conda/conda-bld/tokenizers_1651822590771/work
+  tqdm @ file:///opt/conda/conda-bld/tqdm_1664392687731/work
+Unidecode @ file:///tmp/build/80754af9/unidecode_1614712377438/work
+uri-template==1.3.0
+webcolors==24.8.0
+whatthepatch @ file:///opt/conda/conda-bld/whatthepatch_1661795988879/work
+yapf @ file:///tmp/build/80754af9/yapf_1615749224965/work
