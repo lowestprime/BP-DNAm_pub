@@ -21,7 +21,7 @@
 
 ### **Stage 1 - Data Preparation and Characterization**
 #### _Density Plot of Normalized Beta Values_
-![Density Plot of Normalized Beta Values](./BPDNAm_Density_Plot_Betas_nolegend.svg "Density Plot of Normalized Beta Values")
+![Density Plot of Normalized Beta Values](./Plots/BPDNAm_Density_Plot_Betas_nolegend.svg "Density Plot of Normalized Beta Values")
 
 ### **Stage 2 - Compute and Analyze GrimAge version 2 Biological Age**
 #### _BPDNAm GrimAge2 Sourcecode All Values_
