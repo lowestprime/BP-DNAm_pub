@@ -1,16 +1,19 @@
 # **BP-DNAm**
 
 ## Tasks
-- [ ] Format sample sheet and crosscheck with DNAm data
-- [ ] Complete [A cross-package Bioconductor workflow for analysing methylation array data vignette](https://bioconductor.org/packages/release/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html#data-exploration) for cohort DNAm data
-- [ ] Compare _REP vs non _REP sample pair methylation data
-- [ ] Finalize sample sheet and DNAm data for [GrimAge version 2](https://www.aging-us.com/article/204434/text)
-- [ ] Compute biological age using other methylation clocks and compare with chronological and GrimAge2
-  - [ ] [dnaMethyAge: predict epigenetic age from DNA methylation data](https://github.com/yiluyucheng/dnaMethyAge)
-  - [ ] [pyaging: a Python-based compendium of GPU-optimized aging clocks](https://github.com/rsinghlab/pyaging)
-  - [ ] [Others](https://chatgpt.com/share/4f6a56e0-6ecb-47fb-be89-32ea2363e644)
-  - [ ] [Others2](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221UxleECM1aPXNsQPsFwGrlLcdvhqkd8-V%22%5D,%22action%22:%22open%22,%22userId%22:%22105635218484851934159%22,%22resourceKeys%22:%7B%7D%7D)
-- [ ] Plot chronological vs methylation-predicted biological age for all samples
+- [ ] Double check QC steps below and search for missing ~180 probes
+  - [ ] Complete [A cross-package Bioconductor workflow for analysing methylation array data vignette](https://bioconductor.org/packages/release/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html#data-exploration) for cohort DNAm data
+  - [ ] compare predicted vs reported sex
+- [ ] Perform other non aging analyses on the dataset
+  - [ ] DMR and standard analyses with this cohort to replicate prior work
+  - [ ] See [Methylcheck](https://github.com/FoxoTech/methylcheck) and [Methylize](https://github.com/FoxoTech/methylize)
+- [ ] Compare _REP vs non _REP sample pair methylation data and acquire missing information for these samples if it differs
+- [ ] Split the non-bipolar "Other" samples with higher granularity
+  - [ ] Ensure age and sex matching between groups and covariate/controlling for other vars; see publications in [Overview Presentation](https://docs.google.com/presentation/d/1er9EI4301XhYFj1IXjf6zHxfra9R18gMWy334dPLy6o/edit) for qc guidance
+- [ ] Compute biological age acceleration using other methylation clocks in [pyaging: a Python-based compendium of GPU-optimized aging clocks](https://pyaging.readthedocs.io/en/latest/clock_glossary.html) and compare with grimage2
+- [ ] Generate More informative plots
+- [ ] Establish plasma protein estimate and other clock output's for outsized influence on ageaccelgrim2 and other measures of accelerated biological aging
+  - [ ] Compare lithium effects on aging in bipolar; see [Methylcheck](https://github.com/FoxoTech/methylcheck)
 
 ## Motivation and Background
   - [Overview Presentation](https://docs.google.com/presentation/d/1er9EI4301XhYFj1IXjf6zHxfra9R18gMWy334dPLy6o/edit)
@@ -22,6 +25,9 @@
 ### **Stage 1 - Data Preparation and Characterization**
 #### _Density Plot of Normalized Beta Values_
 ![Density Plot of Normalized Beta Values](./Plots/BPDNAm_Density_Plot_Betas_nolegend.svg "Density Plot of Normalized Beta Values")
+
+#### _Cohort Demographics_
+
 
 ### **Stage 2 - Compute and Analyze GrimAge version 2 Biological Age**
 #### _BPDNAm GrimAge2 Sourcecode All Values_
