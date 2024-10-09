@@ -1,4 +1,4 @@
-# BP-DNAm
+# Accelerated Biological Aging in Bipolar Disorder
 
 ## Tasks
 - [ ] Double check QC steps below and search for missing ~180 probes
